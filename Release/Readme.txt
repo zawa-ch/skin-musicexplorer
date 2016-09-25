@@ -1,7 +1,7 @@
 ﻿
 name		|MusicExplorer - Original White
 application	|AIMP v4.00
-version		|1.10
+version		|1.12
 copyright	|zawa-ch.
 
 i|当スキンはM+フォントとIPAゴシックを元にしたフォントを使用しています
@@ -13,10 +13,10 @@ i|当スキンはM+フォントとIPAゴシックを元にしたフォントを�
 　併せてプロジェクトファイルも添付しました、このファイルをテンプレートとして新たなスキンを作成してみてください!
 
 2|パッケージ内容
-　MExpW-110.acs4
+　MExpW-112.acs4
 　　スキンファイル
-　　i|SHA256:F6C2E7035521270B2D9A05725B475FA0129D0C142FF1EE6481B14730162EACBD
-　MExp-110.acs4proj
+　　i|SHA256:020C8B275FEAF54344E44D5682109B59697185E7A6F386F8F335EEED88AEEB65
+　MExp-112.acs4proj
 　　スキンのプロジェクトファイル
 　Readme.txt
 　　本テキストファイル
@@ -63,6 +63,17 @@ i|当スキンはM+フォントとIPAゴシックを元にしたフォントを�
 　　Twitter:@stellar_ch
 　SpecialThanks
 　　Twitterにて制作に協力してくださった4名の方々
+
+6|更新情報
+　2016.07.18 v1.01
+　　Twitterフォロワー向け先行配布開始
+　2016.08.28 v1.02
+　　細かな修正を加え、正式配布開始
+　2016.09.01 v1.10
+　　コンパクトモード・プレイコントロールの追加
+　2016.09.25 v1.12
+　　プレイコントロールのレイアウト修正
+　　v1.10よりビジュアライザの一部が表示されない問題を修正
 
 --------------------
 Copyright all reserved zawa-ch. 2016
