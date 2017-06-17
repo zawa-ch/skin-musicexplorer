@@ -1,7 +1,7 @@
 ﻿
 name		|MusicExplorer - Original White
 application	|AIMP v4.00
-version		|1.12
+version		|1.12 Updated
 copyright	|zawa-ch.
 
 i|当スキンはM+フォントとIPAゴシックを元にしたフォントを使用しています
@@ -20,9 +20,6 @@ i|当スキンはM+フォントとIPAゴシックを元にしたフォントを�
 　　スキンのプロジェクトファイル
 　Readme.txt
 　　本テキストファイル
-　SkinMake_Instruction.txt
-　　スキン作成時の注意事項
-　　スキン作成時はこちらも併せて必ずご一読ください
 　ipag00303\IPA_Font_License_Agreement_v1.0.txt
 　　IPAフォントライセンス
 　ipag00303\Readme_ipag00303.txt
@@ -59,7 +56,7 @@ i|当スキンはM+フォントとIPAゴシックを元にしたフォントを�
 
 5|Staff
 　制作:zawa-ch.
-　　stellar.project.zawach@gmail.com
+　　inter.stellar.ch@gmail.com
 　　Twitter:@stellar_ch
 　SpecialThanks
 　　Twitterにて制作に協力してくださった4名の方々
@@ -74,6 +71,8 @@ i|当スキンはM+フォントとIPAゴシックを元にしたフォントを�
 　2016.09.25 v1.12
 　　プレイコントロールのレイアウト修正
 　　v1.10よりビジュアライザの一部が表示されない問題を修正
+　2017.06.17 v1.12 Update
+　　再公開に向けライセンスおよび一部の情報を修正
 
 --------------------
 Copyright all reserved zawa-ch. 2016
