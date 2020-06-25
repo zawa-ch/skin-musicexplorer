@@ -24,10 +24,10 @@
        style="color-interpolation-filters:sRGB;"
        inkscape:label="Blur"
        id="filter1553"
-       x="-0.50000000000000033"
-       y="-0.50000000000000022"
-       width="2.0000000000000004"
-       height="2.0000000000000004">
+       x="-0.5"
+       y="-0.5"
+       width="2"
+       height="2">
       <feGaussianBlur
          stdDeviation="0.5 0.5"
          result="blur"
@@ -41,20 +41,10 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="18.761665"
-     inkscape:cx="16.024536"
-     inkscape:cy="16.989869"
      inkscape:document-units="px"
-     inkscape:current-layer="layer2"
-     inkscape:document-rotation="0"
      showgrid="true"
      units="px"
-     inkscape:pagecheckerboard="true"
-     inkscape:window-width="1920"
-     inkscape:window-height="1121"
-     inkscape:window-x="-9"
-     inkscape:window-y="-9"
-     inkscape:window-maximized="1">
+     inkscape:pagecheckerboard="true">
     <inkscape:grid
        type="xygrid"
        id="grid1507"

@@ -29,7 +29,7 @@
        x="-0.5"
        y="-3.5">
       <feGaussianBlur
-         stdDeviation="0.79999999999999893 0.79999999999999893"
+         stdDeviation="0.8 0.8"
          result="blur"
          id="feGaussianBlur866" />
     </filter>
@@ -41,20 +41,10 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="76.300283"
-     inkscape:cy="15.6208"
      inkscape:document-units="px"
-     inkscape:current-layer="g838"
-     inkscape:document-rotation="0"
      showgrid="false"
      units="px"
-     inkscape:pagecheckerboard="true"
-     inkscape:window-width="1920"
-     inkscape:window-height="1027"
-     inkscape:window-x="-8"
-     inkscape:window-y="22"
-     inkscape:window-maximized="1">
+     inkscape:pagecheckerboard="true">
     <inkscape:grid
        type="xygrid"
        id="grid833"
