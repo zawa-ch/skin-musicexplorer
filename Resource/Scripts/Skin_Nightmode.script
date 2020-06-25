@@ -1,0 +1,23 @@
+procedure Execute(var State: Integer);
+begin
+  case State of
+    0: begin
+      FindResource('Skin.Color.Base').Set('ID', 'Skin.Color.Base.Light'); 
+      FindResource('Skin.Color.Secondory').Set('ID', 'Skin.Color.Secondory.Light');  
+      FindResource('Skin.Color.Secondory-a2').Set('ID', 'Skin.Color.Secondory-a2.Light');    
+      FindResource('Skin.Color.Secondory-a4').Set('ID', 'Skin.Color.Secondory-a4.Light');    
+      FindResource('Skin.FontEx.TextNormal').Set('ID', 'Skin.FontEx.TextNormal.Light');   
+      FindResource('Skin.FontEx.TitleNormal').Set('ID', 'Skin.FontEx.TitleNormal.Light');  
+      FindResource('Skin.FontEx.TitleInactive').Set('ID', 'Skin.FontEx.TitleInactive.Light');
+    end;
+    1: begin
+      FindResource('Skin.Color.Base').Set('ID', 'Skin.Color.Base.Dark');              
+      FindResource('Skin.Color.Secondory').Set('ID', 'Skin.Color.Secondory.Dark'); 
+      FindResource('Skin.Color.Secondory-a2').Set('ID', 'Skin.Color.Secondory-a2.Dark'); 
+      FindResource('Skin.Color.Secondory-a4').Set('ID', 'Skin.Color.Secondory-a4.Dark');   
+      FindResource('Skin.FontEx.TextNormal').Set('ID', 'Skin.FontEx.TextNormal.Dark');   
+      FindResource('Skin.FontEx.TitleNormal').Set('ID', 'Skin.FontEx.TitleNormal.Dark');  
+      FindResource('Skin.FontEx.TitleInactive').Set('ID', 'Skin.FontEx.TitleInactive.Dark');
+    end;
+  end;
+end;
