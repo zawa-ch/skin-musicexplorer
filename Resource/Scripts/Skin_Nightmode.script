@@ -1,25 +1,75 @@
 procedure Execute(var State: Integer);
 begin
   case State of
+    // Light theme
     0: begin
-      FindResource('Skin.Color.Base').Set('ID', 'Skin.Color.Base.Light');    
-      FindResource('Skin.Color.Base-aa').Set('ID', 'Skin.Color.Base-aa.Light'); 
-      FindResource('Skin.Color.Secondory').Set('ID', 'Skin.Color.Secondory.Light');  
-      FindResource('Skin.Color.Secondory-a2').Set('ID', 'Skin.Color.Secondory-a2.Light');    
-      FindResource('Skin.Color.Secondory-a4').Set('ID', 'Skin.Color.Secondory-a4.Light');    
-      FindResource('Skin.FontEx.TextNormal').Set('ID', 'Skin.FontEx.TextNormal.Light');   
-      FindResource('Skin.FontEx.TitleNormal').Set('ID', 'Skin.FontEx.TitleNormal.Light');  
-      FindResource('Skin.FontEx.TitleInactive').Set('ID', 'Skin.FontEx.TitleInactive.Light');
+      FindResource('Skin.Color.Base').Set('ID', 'Theme.Light.Color.Base');
+      FindResource('Skin.Color.Base-aa').Set('ID', 'Theme.Light.Color.Base-aa');
+      FindResource('Skin.Color.Secondory').Set('ID', 'Theme.Light.Color.Secondory');
+      FindResource('Skin.Color.Secondory-a2').Set('ID', 'Theme.Light.Color.Secondory-a2');
+      FindResource('Skin.Color.Secondory-a4').Set('ID', 'Theme.Light.Color.Secondory-a4');
+
+      FindResource('Skin.FontEx.TextNormal').Set('ID', 'Theme.Light.FontEx.TextNormal');
+      FindResource('Skin.FontEx.TitleNormal').Set('ID', 'Theme.Light.FontEx.TitleNormal');
+      FindResource('Skin.FontEx.TitleInactive').Set('ID', 'Theme.Light.FontEx.TitleInactive');
+      FindResource('Skin.FontEx.TabNormal').Set('ID', 'Theme.Light.FontEx.TabNormal');
+      FindResource('Skin.FontEx.TabActive').Set('ID', 'Theme.Light.FontEx.TabActive');
+      FindResource('Skin.FontEx.TabActiveHot').Set('ID', 'Theme.Light.FontEx.TabActiveHot');
+      FindResource('Skin.FontEx.TabHot').Set('ID', 'Theme.Light.FontEx.TabHot');
+      FindResource('Skin.FontEx.TabPlaying').Set('ID', 'Theme.Light.FontEx.TabPlaying');
+      FindResource('Skin.FontEx.TabPlayingActive').Set('ID', 'Theme.Light.FontEx.TabPlayingActive');
+      FindResource('Skin.FontEx.TabPlayingActiveHot').Set('ID', 'Theme.Light.FontEx.TabPlayingActiveHot');
+      FindResource('Skin.FontEx.TabPlayingHot').Set('ID', 'Theme.Light.FontEx.TabPlayingHot');
+
+      FindResource('Skin.Texture.CloseButton').Set('ID', 'Theme.Light.Texture.CloseButton');
+      FindResource('Skin.Texture.MaximizeButton').Set('ID', 'Theme.Light.Texture.MaximizeButton');
+      FindResource('Skin.Texture.MinimizeButton').Set('ID', 'Theme.Light.Texture.MinimizeButton');
+      FindResource('Skin.Texture.NextButton[32]').Set('ID', 'Theme.Light.Texture.NextButton[32]');
+      FindResource('Skin.Texture.PauseButton[32]').Set('ID', 'Theme.Light.Texture.PauseButton[32]');
+      FindResource('Skin.Texture.PlayButton[32]').Set('ID', 'Theme.Light.Texture.PlayButton[32]');
+      FindResource('Skin.Texture.PrevButton[32]').Set('ID', 'Theme.Light.Texture.PrevButton[32]');
+      FindResource('Skin.Texture.RepeatButton[24]').Set('ID', 'Theme.Light.Texture.RepeatButton[24]');
+      FindResource('Skin.Texture.ShuffleButton[24]').Set('ID', 'Theme.Light.Texture.ShuffleButton[24]');
+      FindResource('Skin.Texture.SliderH2.Skin').Set('ID', 'Theme.Light.Texture.SliderH2.Skin');
+      FindResource('Skin.Texture.SliderH2.Thumb').Set('ID', 'Theme.Light.Texture.SliderH2.Thumb');
+      FindResource('Skin.Texture.StopButton[32]').Set('ID', 'Theme.Light.Texture.StopButton[32]');
+      FindResource('Skin.Texture.TabSkin0[24]').Set('ID', 'Theme.Light.Texture.TabSkin0[24]');
+      FindResource('Skin.Texture.TabSkin1[24]').Set('ID', 'Theme.Light.Texture.TabSkin1[24]');
     end;
+    // Dark theme
     1: begin
-      FindResource('Skin.Color.Base').Set('ID', 'Skin.Color.Base.Dark');      
-      FindResource('Skin.Color.Base-aa').Set('ID', 'Skin.Color.Base-aa.Dark');         
-      FindResource('Skin.Color.Secondory').Set('ID', 'Skin.Color.Secondory.Dark'); 
-      FindResource('Skin.Color.Secondory-a2').Set('ID', 'Skin.Color.Secondory-a2.Dark'); 
-      FindResource('Skin.Color.Secondory-a4').Set('ID', 'Skin.Color.Secondory-a4.Dark');   
-      FindResource('Skin.FontEx.TextNormal').Set('ID', 'Skin.FontEx.TextNormal.Dark');   
-      FindResource('Skin.FontEx.TitleNormal').Set('ID', 'Skin.FontEx.TitleNormal.Dark');  
-      FindResource('Skin.FontEx.TitleInactive').Set('ID', 'Skin.FontEx.TitleInactive.Dark');
+      FindResource('Skin.Color.Base').Set('ID', 'Theme.Dark.Color.Base');
+      FindResource('Skin.Color.Base-aa').Set('ID', 'Theme.Dark.Color.Base-aa');
+      FindResource('Skin.Color.Secondory').Set('ID', 'Theme.Dark.Color.Secondory');
+      FindResource('Skin.Color.Secondory-a2').Set('ID', 'Theme.Dark.Color.Secondory-a2');
+      FindResource('Skin.Color.Secondory-a4').Set('ID', 'Theme.Dark.Color.Secondory-a4');
+
+      FindResource('Skin.FontEx.TextNormal').Set('ID', 'Theme.Dark.FontEx.TextNormal');
+      FindResource('Skin.FontEx.TitleNormal').Set('ID', 'Theme.Dark.FontEx.TitleNormal');
+      FindResource('Skin.FontEx.TitleInactive').Set('ID', 'Theme.Dark.FontEx.TitleInactive');
+      // FindResource('Skin.FontEx.TabNormal').Set('ID', 'Theme.Dark.FontEx.TabNormal');
+      // FindResource('Skin.FontEx.TabActive').Set('ID', 'Theme.Dark.FontEx.TabActive');
+      // FindResource('Skin.FontEx.TabActiveHot').Set('ID', 'Theme.Dark.FontEx.TabActiveHot');
+      // FindResource('Skin.FontEx.TabHot').Set('ID', 'Theme.Dark.FontEx.TabHot');
+      // FindResource('Skin.FontEx.TabPlaying').Set('ID', 'Theme.Dark.FontEx.TabPlaying');
+      // FindResource('Skin.FontEx.TabPlayingActive').Set('ID', 'Theme.Dark.FontEx.TabPlayingActive');
+      // FindResource('Skin.FontEx.TabPlayingActiveHot').Set('ID', 'Theme.Dark.FontEx.TabPlayingActiveHot');
+      // FindResource('Skin.FontEx.TabPlayingHot').Set('ID', 'Theme.Dark.FontEx.TabPlayingHot');
+
+      // FindResource('Skin.Texture.CloseButton').Set('ID', 'Theme.Dark.Texture.CloseButton');
+      // FindResource('Skin.Texture.MaximizeButton').Set('ID', 'Theme.Dark.Texture.MaximizeButton');
+      // FindResource('Skin.Texture.MinimizeButton').Set('ID', 'Theme.Dark.Texture.MinimizeButton');
+      // FindResource('Skin.Texture.NextButton[32]').Set('ID', 'Theme.Dark.Texture.NextButton[32]');
+      // FindResource('Skin.Texture.PauseButton[32]').Set('ID', 'Theme.Dark.Texture.PauseButton[32]');
+      // FindResource('Skin.Texture.PlayButton[32]').Set('ID', 'Theme.Dark.Texture.PlayButton[32]');
+      // FindResource('Skin.Texture.PrevButton[32]').Set('ID', 'Theme.Dark.Texture.PrevButton[32]');
+      // FindResource('Skin.Texture.RepeatButton[24]').Set('ID', 'Theme.Dark.Texture.RepeatButton[24]');
+      // FindResource('Skin.Texture.ShuffleButton[24]').Set('ID', 'Theme.Dark.Texture.ShuffleButton[24]');
+      // FindResource('Skin.Texture.SliderH2.Skin').Set('ID', 'Theme.Dark.Texture.SliderH2.Skin');
+      // FindResource('Skin.Texture.SliderH2.Thumb').Set('ID', 'Theme.Dark.Texture.SliderH2.Thumb');
+      // FindResource('Skin.Texture.StopButton[32]').Set('ID', 'Theme.Dark.Texture.StopButton[32]');
+      // FindResource('Skin.Texture.TabSkin0[24]').Set('ID', 'Theme.Dark.Texture.TabSkin0[24]');
+      // FindResource('Skin.Texture.TabSkin1[24]').Set('ID', 'Theme.Dark.Texture.TabSkin1[24]');
     end;
   end;
 end;
