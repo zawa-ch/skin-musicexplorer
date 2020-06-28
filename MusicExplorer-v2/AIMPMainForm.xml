@@ -10,7 +10,6 @@
 			<items>
 				<item class="LayoutContainer" name="MainForm">
 					<properties>
-						<property name="SizeMinimal" value="640,400"/>
 						<property name="Alignment" value="laClient"/>
 						<property name="Color">
 							<property name="ID" value="Skin.Color.Base"/>
@@ -203,7 +202,7 @@
 									<items>
 										<item class="LayoutContainer" name="MF_PV_CoverArea">
 											<properties>
-												<property name="SizeMinimal" value="200,0"/>
+												<property name="SizeMinimal" value="200,200"/>
 												<property name="Alignment" value="laLeft"/>
 												<property name="AlignmentMargins" value="20,0,0,0"/>
 												<property name="Color"/>
@@ -225,6 +224,7 @@
 										<item class="LayoutItem" name="MF_PV_FileInfoArea">
 											<properties>
 												<property name="LayoutDirection" value="ldVertical"/>
+												<property name="SizeMinimal" value="200,0"/>
 												<property name="Alignment" value="laClient"/>
 												<property name="AlignmentMargins" value="20,20,20,20"/>
 											</properties>
