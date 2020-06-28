@@ -2,8 +2,7 @@
 <image>
 	<properties>
 		<property name="Layout" value="ilVertical"/>
-		<property name="FrameCount" value="4"/>
+		<property name="ContentOffsets" value="4,4,4,4"/>
 		<property name="HitTestMaskMode" value="ihtmOpaque"/>
-		<property name="Margins" value="4,4,4,4"/>
 	</properties>
 </image>

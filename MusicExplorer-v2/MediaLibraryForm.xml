@@ -10,7 +10,6 @@
 			<items>
 				<item class="LayoutContainer" name="MediaLibraryFormMain">
 					<properties>
-						<property name="SizeMinimal" value="400,240"/>
 						<property name="Alignment" value="laClient"/>
 						<property name="Color">
 							<property name="ID" value="Skin.Color.Base"/>
@@ -114,187 +113,327 @@
 								</control>
 							</controls>
 						</item>
-						<item class="LayoutSplitView" name="MLF_MainArea">
+						<item class="LayoutItem" name="MLF_MainArea">
 							<properties>
 								<property name="Alignment" value="laClient"/>
-								<property name="Color"/>
-								<property name="Texture" value="MLF_MainArea.Texture"/>
-								<property name="TextureSplitter" value="MLF_MainArea.TextureSplitter"/>
 							</properties>
 							<items>
-								<item class="LayoutContainer" name="MLF_MainArea_0">
+								<item class="LayoutSplitView" name="MLF_MainArea_0">
 									<properties>
-										<property name="SizeMinimal" value="10,0"/>
 										<property name="Alignment" value="laClient"/>
 										<property name="Color"/>
 										<property name="Texture" value="MLF_MainArea_0.Texture"/>
+										<property name="TextureSplitter" value="MLF_MainArea_0.TextureSplitter"/>
 									</properties>
-									<controls>
-										<control link="MLGroupingTree">
+									<items>
+										<item class="LayoutContainer" name="MLF_MainArea_1">
 											<properties>
-												<property name="PlaceInfo" anchors="1,1,1,1" margins="0,0,0,0" Size="0,0"/>
-												<property name="PopupMenu" value="pmMLGroupingTree"/>
-												<property name="Skin" value="MLGroupingTree.Skin"/>
-												<property name="Font">
-													<property name="ID" value="Skin.FontEx.TextNormal"/>
-												</property>
-												<property name="ParentBackground" value="True"/>
-												<property name="Borders" value=""/>
-												<property name="GridLines" value="tlglHorzontal"/>
-												<property name="Style">
-													<property name="ColorBorder">
-														<property name="ID" value="Skin.Color.Unset"/>
-													</property>
-													<property name="ColorContent">
-														<property name="ID" value="Skin.Color.Unset"/>
-													</property>
-													<property name="ColorContentDisabled">
-														<property name="ID" value="Skin.Color.Unset"/>
-													</property>
-													<property name="ColorText">
-														<property name="ID" value="Skin.TextNormal.Color"/>
-													</property>
-													<property name="ColorTextDisabled">
-														<property name="ID" value="Skin.TextDisabled.Color"/>
-													</property>
-												</property>
-												<property name="StyleContent">
-													<property name="GridColor">
-														<property name="ID" value="Skin.SecondoryColor[o50]"/>
-													</property>
-													<property name="IncSearchColor">
-														<property name="ID" value="Skin.Color.Primary"/>
-													</property>
-													<property name="IncSearchColorText">
-														<property name="ID" value="Skin.TextNormal.Color"/>
-													</property>
-													<property name="RowColor1">
-														<property name="ID" value="Skin.Color.Base"/>
-													</property>
-													<property name="RowColor2">
-														<property name="ID" value="Skin.SecondoryColor[o10]"/>
-													</property>
-													<property name="RowColorFocused">
-														<property name="ID" value="Skin.PrimaryColor[o50]"/>
-													</property>
-													<property name="RowColorFocusedText">
-														<property name="ID" value="Skin.TextNormal.Color"/>
-													</property>
-													<property name="RowColorSelected">
-														<property name="ID" value="Skin.PrimaryColor[o50]"/>
-													</property>
-													<property name="RowColorSelectedInactive">
-														<property name="ID" value="Skin.PrimaryColor[o50]"/>
-													</property>
-													<property name="RowColorSelectedText">
-														<property name="ID" value="Skin.TextNormal.Color"/>
-													</property>
-													<property name="RowColorSelectedTextInactive">
-														<property name="ID" value="Skin.TextNormal.Color"/>
-													</property>
-													<property name="RowExpandButton" link="Skin.MediaLibraryGroupingTree.RowExpandButton"/>
-													<property name="FocusRectColor">
-														<property name="Value" value="0"/>
-													</property>
-													<property name="AlphabeticIndex" link="Skin.MediaLibraryGroupingTree.AlphabeticIndex.Skin"/>
-													<property name="AlphabeticIndexCell" link="Skin.MediaLibraryGroupingTree.AlphabeticIndex.Cell"/>
-													<property name="AlphabeticIndexCellFont">
-														<property name="ID" value="Skin.FontEx.TextNormal"/>
-													</property>
-													<property name="AlphabeticIndexCellFontHot">
-														<property name="ID" value="Skin.FontEx.TextNormal"/>
-													</property>
-													<property name="AlphabeticIndexCellFontSelected">
-														<property name="ID" value="Skin.FontEx.TextNormal"/>
-														<property name="Style" value="fsBold"/>
-													</property>
-													<property name="AlphabeticIndexScroller" value="MLGroupingTree.StyleContent.AlphabeticIndexScroller"/>
-													<property name="AlphabeticIndexScrollerGlyph" link="Skin.MediaLibraryGroupingTree.AlphabeticIndex.ScrollerGlyph"/>
-													<property name="NodeImages" value="MLGroupingTree.StyleContent.NodeImages"/>
-												</property>
-												<property name="StyleScrollBox">
-													<property name="TextureBackgroundHorz" value="MLGroupingTree.StyleScrollBox.TextureBackgroundHorz"/>
-													<property name="TextureBackgroundVert" link="Skin.Texture.ScrollBar0V.Skin"/>
-													<property name="TextureButtonsHorz" value="MLGroupingTree.StyleScrollBox.TextureButtonsHorz"/>
-													<property name="TextureButtonsVert" link="Skin.Texture.ScrollBar0V.Buttons"/>
-													<property name="TextureThumbHorz" value="MLGroupingTree.StyleScrollBox.TextureThumbHorz"/>
-													<property name="TextureThumbVert" link="Skin.Texture.ScrollBar0V.Thumb"/>
-													<property name="TextureSizeGripArea" value="MLGroupingTree.StyleScrollBox.TextureSizeGripArea"/>
-												</property>
+												<property name="SizeMinimal" value="10,0"/>
+												<property name="Alignment" value="laClient"/>
+												<property name="AlignmentLevel" value="1"/>
+												<property name="Color"/>
+												<property name="Texture" value="MLF_MainArea_1.Texture"/>
 											</properties>
-										</control>
-									</controls>
+											<controls>
+												<control link="MLGroupingTree">
+													<properties>
+														<property name="PlaceInfo" anchors="1,1,1,1" margins="0,20,0,0" Size="100,120"/>
+														<property name="PopupMenu" value="pmMLGroupingTree"/>
+														<property name="Skin" value="MLGroupingTree.Skin"/>
+														<property name="Font">
+															<property name="ID" value="Skin.FontEx.TextNormal"/>
+														</property>
+														<property name="ParentBackground" value="True"/>
+														<property name="Borders" value=""/>
+														<property name="GridLines" value="tlglHorzontal"/>
+														<property name="Style">
+															<property name="ColorBorder">
+																<property name="ID" value="Skin.Color.Unset"/>
+															</property>
+															<property name="ColorContent">
+																<property name="ID" value="Skin.Color.Unset"/>
+															</property>
+															<property name="ColorContentDisabled">
+																<property name="ID" value="Skin.Color.Unset"/>
+															</property>
+															<property name="ColorText">
+																<property name="ID" value="Skin.TextNormal.Color"/>
+															</property>
+															<property name="ColorTextDisabled">
+																<property name="ID" value="Skin.TextDisabled.Color"/>
+															</property>
+														</property>
+														<property name="StyleContent">
+															<property name="GridColor">
+																<property name="ID" value="Skin.SecondoryColor[o50]"/>
+															</property>
+															<property name="IncSearchColor">
+																<property name="ID" value="Skin.Color.Primary"/>
+															</property>
+															<property name="IncSearchColorText">
+																<property name="ID" value="Skin.TextNormal.Color"/>
+															</property>
+															<property name="RowColor1">
+																<property name="ID" value="Skin.Color.Base"/>
+															</property>
+															<property name="RowColor2">
+																<property name="ID" value="Skin.SecondoryColor[o10]"/>
+															</property>
+															<property name="RowColorFocused">
+																<property name="ID" value="Skin.PrimaryColor[o50]"/>
+															</property>
+															<property name="RowColorFocusedText">
+																<property name="ID" value="Skin.TextNormal.Color"/>
+															</property>
+															<property name="RowColorSelected">
+																<property name="ID" value="Skin.PrimaryColor[o50]"/>
+															</property>
+															<property name="RowColorSelectedInactive">
+																<property name="ID" value="Skin.PrimaryColor[o50]"/>
+															</property>
+															<property name="RowColorSelectedText">
+																<property name="ID" value="Skin.TextNormal.Color"/>
+															</property>
+															<property name="RowColorSelectedTextInactive">
+																<property name="ID" value="Skin.TextNormal.Color"/>
+															</property>
+															<property name="RowExpandButton" link="Skin.MediaLibraryGroupingTree.RowExpandButton"/>
+															<property name="FocusRectColor">
+																<property name="Value" value="0"/>
+															</property>
+															<property name="AlphabeticIndex" link="Skin.MediaLibraryGroupingTree.AlphabeticIndex.Skin"/>
+															<property name="AlphabeticIndexCell" link="Skin.MediaLibraryGroupingTree.AlphabeticIndex.Cell"/>
+															<property name="AlphabeticIndexCellFont">
+																<property name="ID" value="Skin.FontEx.TextNormal"/>
+															</property>
+															<property name="AlphabeticIndexCellFontHot">
+																<property name="ID" value="Skin.FontEx.TextNormal"/>
+															</property>
+															<property name="AlphabeticIndexCellFontSelected">
+																<property name="ID" value="Skin.FontEx.TextNormal"/>
+																<property name="Style" value="fsBold"/>
+															</property>
+															<property name="AlphabeticIndexScroller" value="MLGroupingTree.StyleContent.AlphabeticIndexScroller"/>
+															<property name="AlphabeticIndexScrollerGlyph" link="Skin.MediaLibraryGroupingTree.AlphabeticIndex.ScrollerGlyph"/>
+															<property name="NodeImages" value="MLGroupingTree.StyleContent.NodeImages"/>
+														</property>
+														<property name="StyleScrollBox">
+															<property name="TextureBackgroundHorz" value="MLGroupingTree.StyleScrollBox.TextureBackgroundHorz"/>
+															<property name="TextureBackgroundVert" link="Skin.Texture.ScrollBar0V.Skin"/>
+															<property name="TextureButtonsHorz" value="MLGroupingTree.StyleScrollBox.TextureButtonsHorz"/>
+															<property name="TextureButtonsVert" link="Skin.Texture.ScrollBar0V.Buttons"/>
+															<property name="TextureThumbHorz" value="MLGroupingTree.StyleScrollBox.TextureThumbHorz"/>
+															<property name="TextureThumbVert" link="Skin.Texture.ScrollBar0V.Thumb"/>
+															<property name="TextureSizeGripArea" value="MLGroupingTree.StyleScrollBox.TextureSizeGripArea"/>
+														</property>
+													</properties>
+												</control>
+												<control class="Button" name="Button">
+													<properties>
+														<property name="Bindings">
+															<link Source="prvMusicLibraryManager" SourcePin="GroupingPresets" TargetPin="ContextMenu"/>
+															<link Source="prvMusicLibraryManager" SourcePin="GroupingPresets" TargetPin="DisplayValue"/>
+														</property>
+														<property name="PlaceInfo" anchors="1,1,1,0" margins="0,0,0,120" Size="100,20"/>
+														<property name="Skin" value="Button.Skin"/>
+														<property name="Alignment" value="taLeftJustify"/>
+														<property name="Fonts">
+															<property name="Normal">
+																<property name="ID" value="Skin.FontEx.TextNormal"/>
+															</property>
+															<property name="Hot">
+																<property name="ID" value="Skin.FontEx.TextNormal"/>
+															</property>
+															<property name="Pressed">
+																<property name="ID" value="Skin.FontEx.TextNormal"/>
+															</property>
+															<property name="Disabled">
+																<property name="ID" value="Skin.FontEx.TextInactive"/>
+															</property>
+														</property>
+													</properties>
+												</control>
+											</controls>
+										</item>
+										<item class="LayoutContainer" name="MLF_MainArea_2">
+											<properties>
+												<property name="SizeMinimal" value="30,0"/>
+												<property name="Alignment" value="laClient"/>
+												<property name="Color"/>
+												<property name="Texture" value="MLF_MainArea_2.Texture"/>
+											</properties>
+											<controls>
+												<control link="MLTable">
+													<properties>
+														<property name="PlaceInfo" anchors="1,1,1,1" margins="0,0,0,0" Size="0,0"/>
+														<property name="PopupMenu" value="pmMLTable"/>
+														<property name="Skin" value="MLTable.Skin"/>
+														<property name="Font">
+															<property name="ID" value="Skin.FontEx.TextNormal"/>
+														</property>
+														<property name="ParentBackground" value="True"/>
+														<property name="Borders" value=""/>
+														<property name="GridLines" value="tlglHorzontal"/>
+														<property name="StyleContent">
+															<property name="GridColor">
+																<property name="ID" value="Skin.SecondoryColor[o50]"/>
+															</property>
+															<property name="IncSearchColor">
+																<property name="ID" value="Skin.Color.Primary"/>
+															</property>
+															<property name="IncSearchColorText">
+																<property name="ID" value="Skin.TextNormal.Color"/>
+															</property>
+															<property name="SelectionRectColor">
+																<property name="ID" value="Skin.Color.Secondory"/>
+															</property>
+															<property name="ColumnHeader" link="Skin.MediaLibraryTable.ColumnHeader.Skin"/>
+															<property name="ColumnHeaderFont">
+																<property name="ID" value="Skin.FontEx.TextNormal"/>
+															</property>
+															<property name="ColumnHeaderSortingArrow" link="Skin.MediaLibraryTable.ColumnHeader.SortingArrow"/>
+															<property name="GroupHeaderColor">
+																<property name="ID" value="Skin.SecondoryColor[o10]"/>
+															</property>
+															<property name="GroupHeaderColorBorder">
+																<property name="ID" value="Skin.SecondoryColor[o50]"/>
+															</property>
+															<property name="GroupHeaderFont">
+																<property name="ID" value="Skin.FontEx.TextLarge"/>
+															</property>
+															<property name="RowColor1">
+																<property name="ID" value="Skin.Color.Base"/>
+															</property>
+															<property name="RowColor2">
+																<property name="ID" value="Skin.SecondoryColor[o10]"/>
+															</property>
+															<property name="RowColorFocused">
+																<property name="ID" value="Skin.PrimaryColor[o50]"/>
+															</property>
+															<property name="RowColorFocusedText">
+																<property name="ID" value="Skin.TextNormal.Color"/>
+															</property>
+															<property name="RowColorSelected">
+																<property name="ID" value="Skin.PrimaryColor[o20]"/>
+															</property>
+															<property name="RowColorSelectedInactive">
+																<property name="ID" value="Skin.PrimaryColor[o20]"/>
+															</property>
+															<property name="RowColorSelectedText">
+																<property name="ID" value="Skin.TextNormal.Color"/>
+															</property>
+															<property name="RowColorSelectedTextInactive">
+																<property name="ID" value="Skin.TextNormal.Color"/>
+															</property>
+															<property name="RowContentOffsets">
+																<property name="All" value="4"/>
+															</property>
+															<property name="ColumnHeaderFilterButton" link="Skin.MediaLibraryTable.ColumnHeader.FilterButton"/>
+															<property name="GroupDetailsAllowResize" value="True"/>
+															<property name="GroupDetailsColor">
+																<property name="ID" value="Skin.SecondoryColor[o10]"/>
+															</property>
+															<property name="GroupDetailsColorBorder">
+																<property name="ID" value="Skin.SecondoryColor[o50]"/>
+															</property>
+															<property name="GroupDetailsColorText">
+																<property name="ID" value="Skin.TextNormal.Color"/>
+															</property>
+															<property name="GroupDetailsMinWidth" value="80"/>
+															<property name="GroupDetailsPreviewArea" value="MLTable.StyleContent.GroupDetailsPreviewArea"/>
+															<property name="GroupDetailsWidth" value="120"/>
+															<property name="GroupDetailsTitleFont">
+																<property name="ID" value="Skin.FontEx.TextLarge"/>
+															</property>
+															<property name="GroupDetailsTitleOffsets">
+																<property name="All" value="0"/>
+																<property name="Bottom" value="4"/>
+																<property name="Left" value="4"/>
+																<property name="Right" value="4"/>
+																<property name="Top" value="8"/>
+															</property>
+															<property name="Marks" value="MLTable.StyleContent.Marks"/>
+															<property name="ThumbnailsContentOffsets">
+																<property name="All" value="8"/>
+															</property>
+															<property name="ThumbnailsExpandButton" value="MLTable.StyleContent.ThumbnailsExpandButton"/>
+														</property>
+														<property name="StyleScrollBox">
+															<property name="TextureBackgroundHorz" link="Skin.Texture.ScrollBar0H.Skin"/>
+															<property name="TextureBackgroundVert" link="Skin.Texture.ScrollBar0V.Skin"/>
+															<property name="TextureButtonsHorz" link="Skin.Texture.ScrollBar0H.Buttons"/>
+															<property name="TextureButtonsVert" link="Skin.Texture.ScrollBar0V.Buttons"/>
+															<property name="TextureThumbHorz" link="Skin.Texture.ScrollBar0H.Thumb"/>
+															<property name="TextureThumbVert" link="Skin.Texture.ScrollBar0V.Thumb"/>
+															<property name="TextureSizeGripArea" value="MLTable.StyleScrollBox.TextureSizeGripArea"/>
+														</property>
+														<property name="StyleFilterBox">
+															<property name="StyleTreeListScrollBox">
+																<property name="TextureBackgroundVert" link="Skin.Texture.ScrollBar0V.Skin"/>
+																<property name="TextureThumbVert" link="Skin.Texture.ScrollBar0V.Thumb"/>
+															</property>
+														</property>
+													</properties>
+												</control>
+											</controls>
+										</item>
+									</items>
 								</item>
-								<item class="LayoutContainer" name="MLF_MainArea_1">
+								<item class="LayoutContainer" name="MLF_MainArea_3">
 									<properties>
-										<property name="SizeMinimal" value="30,0"/>
-										<property name="Alignment" value="laClient"/>
-										<property name="AlignmentLevel" value="1"/>
+										<property name="SizeMinimal" value="80,0"/>
+										<property name="Alignment" value="laLeft"/>
 										<property name="Color"/>
-										<property name="Texture" value="MLF_MainArea_1.Texture"/>
+										<property name="Texture" value="MLF_MainArea_3.Texture"/>
 									</properties>
 									<controls>
-										<control link="MLTable">
+										<control class="TabControl" name="TabControl">
 											<properties>
-												<property name="PlaceInfo" anchors="1,1,1,1" margins="0,0,0,0" Size="0,0"/>
-												<property name="PopupMenu" value="pmMLTable"/>
-												<property name="Skin" value="MLTable.Skin"/>
-												<property name="Font">
-													<property name="ID" value="Skin.FontEx.TextNormal"/>
+												<property name="Bindings">
+													<link Source="prvMusicLibraryManager" SourcePin="DataSources" TargetPin="Action"/>
 												</property>
-												<property name="ParentBackground" value="True"/>
-												<property name="Borders" value=""/>
-												<property name="GridLines" value="tlglHorzontal"/>
-												<property name="StyleContent">
-													<property name="GridColor">
-														<property name="Value" value="4292993505"/>
-													</property>
-													<property name="ColumnHeader" link="Skin.MediaLibraryTable.ColumnHeader.Skin"/>
-													<property name="ColumnHeaderFont">
-														<property name="ID" value="Skin.FontEx.TextNormal"/>
-													</property>
-													<property name="ColumnHeaderSortingArrow" link="Skin.MediaLibraryTable.ColumnHeader.SortingArrow"/>
-													<property name="RowContentOffsets">
-														<property name="All" value="4"/>
-													</property>
-													<property name="ColumnHeaderFilterButton" link="Skin.MediaLibraryTable.ColumnHeader.FilterButton"/>
-													<property name="GroupDetailsColorText">
-														<property name="ID" value="Skin.TextNormal.Color"/>
-													</property>
-													<property name="GroupDetailsPreviewArea" value="MLTable.StyleContent.GroupDetailsPreviewArea"/>
-													<property name="GroupDetailsWidth" value="120"/>
-													<property name="GroupDetailsTitleFont">
-														<property name="Height" value="-15"/>
-														<property name="Style" value="fsBold"/>
-													</property>
-													<property name="GroupDetailsTitleOffsets">
-														<property name="All" value="0"/>
-														<property name="Bottom" value="4"/>
-														<property name="Left" value="4"/>
-														<property name="Right" value="4"/>
-														<property name="Top" value="8"/>
-													</property>
-													<property name="Marks" value="MLTable.StyleContent.Marks"/>
-													<property name="ThumbnailsContentOffsets">
-														<property name="All" value="8"/>
-													</property>
-													<property name="ThumbnailsExpandButton" value="MLTable.StyleContent.ThumbnailsExpandButton"/>
+												<property name="PlaceInfo" anchors="1,1,1,1" margins="0,0,0,0" Size="250,23"/>
+												<property name="Skin" value="TabControl.Skin"/>
+												<property name="DragDropIndicator">
+													<property name="ID" value="Skin.Color.Secondory"/>
 												</property>
-												<property name="StyleScrollBox">
-													<property name="TextureBackgroundHorz" link="Skin.Texture.ScrollBar0H.Skin"/>
-													<property name="TextureBackgroundVert" link="Skin.Texture.ScrollBar0V.Skin"/>
-													<property name="TextureButtonsHorz" link="Skin.Texture.ScrollBar0H.Buttons"/>
-													<property name="TextureButtonsVert" link="Skin.Texture.ScrollBar0V.Buttons"/>
-													<property name="TextureThumbHorz" link="Skin.Texture.ScrollBar0H.Thumb"/>
-													<property name="TextureThumbVert" link="Skin.Texture.ScrollBar0V.Thumb"/>
-													<property name="TextureSizeGripArea" value="MLTable.StyleScrollBox.TextureSizeGripArea"/>
+												<property name="DragDropIndicatorBorder">
+													<property name="ID" value="Skin.Color.Secondory"/>
 												</property>
-												<property name="StyleFilterBox">
-													<property name="StyleTreeListScrollBox">
-														<property name="TextureBackgroundVert" link="Skin.Texture.ScrollBar0V.Skin"/>
-														<property name="TextureThumbVert" link="Skin.Texture.ScrollBar0V.Thumb"/>
+												<property name="TabsOptions">
+													<property name="Font">
+														<property name="ID" value="Skin.FontEx.TabNormal"/>
 													</property>
+													<property name="FontHot">
+														<property name="ID" value="Skin.FontEx.TabHot"/>
+													</property>
+													<property name="FontActive">
+														<property name="ID" value="Skin.FontEx.TabActive"/>
+													</property>
+													<property name="FontActiveHot">
+														<property name="ID" value="Skin.FontEx.TabActiveHot"/>
+													</property>
+													<property name="FontPlaying">
+														<property name="ID" value="Skin.FontEx.TabPlaying"/>
+													</property>
+													<property name="FontPlayingActive">
+														<property name="ID" value="Skin.FontEx.TabPlayingActive"/>
+													</property>
+													<property name="FontPlayingActiveHot">
+														<property name="ID" value="Skin.FontEx.TabPlayingActiveHot"/>
+													</property>
+													<property name="FontPlayingHot">
+														<property name="ID" value="Skin.FontEx.TabPlayingHot"/>
+													</property>
+													<property name="AutoSize" value="True"/>
+													<property name="FillTheWidth" value="True"/>
+													<property name="ShowPartiallyVisibleTabs" value="True"/>
+													<property name="Skin" link="Skin.Texture.TabSkin1[24]"/>
+													<property name="TextAlignment" value="taLeftJustify"/>
+													<property name="TextOffsets" value="4,0,4,0"/>
+													<property name="TextOffsetsActive" value="4,0,4,0"/>
 												</property>
+												<property name="VerticalLayout" value="True"/>
 											</properties>
 										</control>
 									</controls>
@@ -334,36 +473,10 @@
 								</item>
 								<item class="LayoutContainer" name="MLF_ToolBar1">
 									<properties>
-										<property name="SizeMinimal" value="24,0"/>
-										<property name="Alignment" value="laLeft"/>
-										<property name="Color"/>
-										<property name="Texture" value="MLF_ToolBar1.Texture"/>
-									</properties>
-									<controls>
-										<control class="Button" name="MLF_LibrarySourceButton">
-											<properties>
-												<property name="Bindings">
-													<link Source="prvMusicLibraryManager" SourcePin="DataSources" TargetPin="ContextMenu"/>
-													<link Source="prvMusicLibraryManager" SourcePin="DataSources" TargetPin="Hint"/>
-												</property>
-												<property name="PlaceInfo" anchors="1,0,0,1" margins="0,4,-2,0" Size="20,21"/>
-												<property name="Skin" value="MLF_LibrarySourceButton.Skin"/>
-												<property name="Fonts">
-													<property name="Normal"/>
-													<property name="Hot"/>
-													<property name="Pressed"/>
-													<property name="Disabled"/>
-												</property>
-											</properties>
-										</control>
-									</controls>
-								</item>
-								<item class="LayoutContainer" name="MLF_ToolBar2">
-									<properties>
 										<property name="SizeMinimal" value="96,0"/>
 										<property name="Alignment" value="laRight"/>
 										<property name="Color"/>
-										<property name="Texture" value="MLF_ToolBar2.Texture"/>
+										<property name="Texture" value="MLF_ToolBar1.Texture"/>
 									</properties>
 									<controls>
 										<control class="Button" name="MLF_AddButton">
@@ -412,9 +525,9 @@
 										</control>
 										<control class="Button" name="MLF_LibraryViewButton">
 											<properties>
-												<property name="PlaceInfo" anchors="0,0,1,0" margins="180,3,0,0" Size="20,21"/>
+												<property name="PlaceInfo" anchors="0,0,1,1" margins="72,-1,0,0" Size="24,24"/>
 												<property name="PopupMenu" value="pmMLTableViews"/>
-												<property name="Skin" value="MLF_LibraryViewButton.Skin"/>
+												<property name="Skin" link="Skin.Texture.OptionButton"/>
 												<property name="Fonts">
 													<property name="Normal"/>
 													<property name="Hot"/>
@@ -425,35 +538,36 @@
 										</control>
 									</controls>
 								</item>
-								<item class="LayoutContainer" name="MLF_ToolBar3">
+								<item class="LayoutContainer" name="MLF_ToolBar2">
 									<properties>
 										<property name="SizeMaximal" value="400,0"/>
 										<property name="Alignment" value="laClient"/>
 										<property name="AlignmentLevel" value="1"/>
+										<property name="AlignmentMargins" value="0,0,4,0"/>
 										<property name="Color">
 											<property name="ID" value="Skin.Color.Secondory-a2"/>
 										</property>
-										<property name="Texture" value="MLF_ToolBar3.Texture"/>
+										<property name="Texture" value="MLF_ToolBar2.Texture"/>
 									</properties>
 									<items>
-										<item class="LayoutTexture" name="MLF_ToolBar3_LayoutFix">
+										<item class="LayoutTexture" name="MLF_ToolBar2_LayoutFix">
 											<properties>
 												<property name="AllowResizeByWidth" value="False"/>
 												<property name="SizeMinimal" value="100,0"/>
 												<property name="Alignment" value="laClient"/>
 												<property name="AlignmentLevel" value="1"/>
 												<property name="Color"/>
-												<property name="Texture" value="MLF_ToolBar3_LayoutFix.Texture"/>
+												<property name="Texture" value="MLF_ToolBar2_LayoutFix.Texture"/>
 											</properties>
 										</item>
-										<item class="LayoutTexture" name="MLF_ToolBar3_LayoutExpand">
+										<item class="LayoutTexture" name="MLF_ToolBar2_LayoutExpand">
 											<properties>
 												<property name="Bindings">
 													<link Source="MLF_SearchEdit" SourcePin="Focused" TargetPin="Visibility"/>
 												</property>
 												<property name="Alignment" value="laClient"/>
 												<property name="Color"/>
-												<property name="Texture" value="MLF_ToolBar3_LayoutExpand.Texture"/>
+												<property name="Texture" value="MLF_ToolBar2_LayoutExpand.Texture"/>
 											</properties>
 										</item>
 									</items>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<skin target="450" edition="0" ID="7e1b2719c4db1591ac202f51808d98dd" AllowColoration="1" ScaleFactors="sf100,sf125,sf150,sf200,sf400" AutoAdjustForInBetweenScaleFactors="1" AutoAdjustForUnsupportedScaleFactors="1">
+<skin target="450" edition="0" ID="3724f8c8c1d4d9b2622ca302b04aad17" AllowColoration="1" ScaleFactors="sf100,sf125,sf150,sf200,sf400" AutoAdjustForInBetweenScaleFactors="1" AutoAdjustForUnsupportedScaleFactors="1">
 	<properties>
 		<resources>
 			<item>
@@ -849,6 +849,13 @@
 				<property name="ID" value="Skin.MediaLibraryGroupingTree.AlphabeticIndex.Cell"/>
 				<property name="ResourceClassName" value="TACLResourceTexture"/>
 				<property name="Resource" value="Skin.MediaLibraryGroupingTree.AlphabeticIndex.CellResource"/>
+			</item>
+			<item>
+				<property name="ID" value="Skin.PrimaryColor[o20]"/>
+				<property name="ResourceClassName" value="TACLResourceColor"/>
+				<property name="Resource">
+					<property name="Value" value="4294962129"/>
+				</property>
 			</item>
 		</resources>
 		<menu>

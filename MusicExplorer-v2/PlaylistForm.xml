@@ -475,8 +475,8 @@
 										</control>
 										<control class="Button" name="PF_PlaylistOptionButton">
 											<properties>
-												<property name="PlaceInfo" anchors="0,0,1,1" margins="128,2,24,0" Size="20,21"/>
-												<property name="PopupMenu" value="pmQuickOptions"/>
+												<property name="PlaceInfo" anchors="0,0,1,1" margins="100,-1,0,0" Size="24,24"/>
+												<property name="PopupMenu" value="pmManagePlaylist"/>
 												<property name="Skin" link="Skin.Texture.OptionButton"/>
 												<property name="Fonts">
 													<property name="Normal"/>
@@ -492,7 +492,7 @@
 													<link Source="prvBookmarks" SourcePin="ContextMenu" TargetPin="ContextMenu"/>
 													<link Source="prvBookmarks" SourcePin="ContextMenu" TargetPin="Hint"/>
 												</property>
-												<property name="PlaceInfo" anchors="0,0,1,1" margins="129,7,0,0" Size="20,21"/>
+												<property name="PlaceInfo" anchors="0,0,1,1" margins="124,-1,24,0" Size="24,24"/>
 												<property name="Skin" link="Skin.Texture.BookmarkButton"/>
 												<property name="Fonts">
 													<property name="Normal"/>
