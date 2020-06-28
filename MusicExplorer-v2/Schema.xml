@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<skin target="450" edition="0" ID="1c475ba0d8a7a629ac7c5efd542bcff4" AllowColoration="1" ScaleFactors="sf100,sf125,sf150,sf200,sf400" AutoAdjustForInBetweenScaleFactors="1" AutoAdjustForUnsupportedScaleFactors="1">
+<skin target="450" edition="0" ID="7e1b2719c4db1591ac202f51808d98dd" AllowColoration="1" ScaleFactors="sf100,sf125,sf150,sf200,sf400" AutoAdjustForInBetweenScaleFactors="1" AutoAdjustForUnsupportedScaleFactors="1">
 	<properties>
 		<resources>
 			<item>
@@ -776,19 +776,19 @@
 				<property name="Resource" value="Skin.Texture.ScrollBar0H.ButtonsResource"/>
 			</item>
 			<item>
-				<property name="ID" value="Skin.MediaLibrary.ColumnHeader.SortingArrow"/>
+				<property name="ID" value="Skin.MediaLibraryTable.ColumnHeader.SortingArrow"/>
 				<property name="ResourceClassName" value="TACLResourceTexture"/>
-				<property name="Resource" value="Skin.MediaLibrary.ColumnHeader.SortingArrowResource"/>
+				<property name="Resource" value="Skin.MediaLibraryTable.ColumnHeader.SortingArrowResource"/>
 			</item>
 			<item>
-				<property name="ID" value="Skin.MediaLibrary.ColumnHeader.FilterButton"/>
+				<property name="ID" value="Skin.MediaLibraryTable.ColumnHeader.FilterButton"/>
 				<property name="ResourceClassName" value="TACLResourceTexture"/>
-				<property name="Resource" value="Skin.MediaLibrary.ColumnHeader.FilterButtonResource"/>
+				<property name="Resource" value="Skin.MediaLibraryTable.ColumnHeader.FilterButtonResource"/>
 			</item>
 			<item>
-				<property name="ID" value="Skin.MediaLibrary.ColumnHeader.Skin"/>
+				<property name="ID" value="Skin.MediaLibraryTable.ColumnHeader.Skin"/>
 				<property name="ResourceClassName" value="TACLResourceTexture"/>
-				<property name="Resource" value="Skin.MediaLibrary.ColumnHeader.SkinResource"/>
+				<property name="Resource" value="Skin.MediaLibraryTable.ColumnHeader.SkinResource"/>
 			</item>
 			<item>
 				<property name="ID" value="Textures.Unset"/>
@@ -808,6 +808,47 @@
 				<property name="Resource">
 					<property name="Value" value="2147483648"/>
 				</property>
+			</item>
+			<item>
+				<property name="ID" value="Skin.MediaLibraryGroupingTree.AlphabeticIndex.Skin"/>
+				<property name="ResourceClassName" value="TACLResourceTexture"/>
+				<property name="Resource" value="Skin.MediaLibraryGroupingTree.AlphabeticIndex.SkinResource"/>
+			</item>
+			<item>
+				<property name="ID" value="Skin.MediaLibraryGroupingTree.AlphabeticIndex.ScrollerGlyph"/>
+				<property name="ResourceClassName" value="TACLResourceTexture"/>
+				<property name="Resource" value="Skin.MediaLibraryGroupingTree.AlphabeticIndex.ScrollerGlyphResource"/>
+			</item>
+			<item>
+				<property name="ID" value="Skin.SecondoryColor[o50]"/>
+				<property name="ResourceClassName" value="TACLResourceColor"/>
+				<property name="Resource">
+					<property name="Value" value="4291677645"/>
+				</property>
+			</item>
+			<item>
+				<property name="ID" value="Skin.SecondoryColor[o10]"/>
+				<property name="ResourceClassName" value="TACLResourceColor"/>
+				<property name="Resource">
+					<property name="Value" value="4294375158"/>
+				</property>
+			</item>
+			<item>
+				<property name="ID" value="Skin.MediaLibraryGroupingTree.RowExpandButton"/>
+				<property name="ResourceClassName" value="TACLResourceTexture"/>
+				<property name="Resource" value="Skin.MediaLibraryGroupingTree.RowExpandButtonResource"/>
+			</item>
+			<item>
+				<property name="ID" value="Skin.PrimaryColor[o50]"/>
+				<property name="ResourceClassName" value="TACLResourceColor"/>
+				<property name="Resource">
+					<property name="Value" value="4294954380"/>
+				</property>
+			</item>
+			<item>
+				<property name="ID" value="Skin.MediaLibraryGroupingTree.AlphabeticIndex.Cell"/>
+				<property name="ResourceClassName" value="TACLResourceTexture"/>
+				<property name="Resource" value="Skin.MediaLibraryGroupingTree.AlphabeticIndex.CellResource"/>
 			</item>
 		</resources>
 		<menu>

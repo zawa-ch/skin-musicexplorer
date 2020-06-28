@@ -159,17 +159,45 @@
 													</property>
 												</property>
 												<property name="StyleContent">
+													<property name="GridColor">
+														<property name="ID" value="Skin.SecondoryColor[o50]"/>
+													</property>
 													<property name="IncSearchColor">
-														<property name="ID" value="Skin.Color.Primary-a8"/>
+														<property name="ID" value="Skin.Color.Primary"/>
 													</property>
 													<property name="IncSearchColorText">
 														<property name="ID" value="Skin.TextNormal.Color"/>
 													</property>
+													<property name="RowColor1">
+														<property name="ID" value="Skin.Color.Base"/>
+													</property>
+													<property name="RowColor2">
+														<property name="ID" value="Skin.SecondoryColor[o10]"/>
+													</property>
+													<property name="RowColorFocused">
+														<property name="ID" value="Skin.PrimaryColor[o50]"/>
+													</property>
+													<property name="RowColorFocusedText">
+														<property name="ID" value="Skin.TextNormal.Color"/>
+													</property>
+													<property name="RowColorSelected">
+														<property name="ID" value="Skin.PrimaryColor[o50]"/>
+													</property>
+													<property name="RowColorSelectedInactive">
+														<property name="ID" value="Skin.PrimaryColor[o50]"/>
+													</property>
+													<property name="RowColorSelectedText">
+														<property name="ID" value="Skin.TextNormal.Color"/>
+													</property>
+													<property name="RowColorSelectedTextInactive">
+														<property name="ID" value="Skin.TextNormal.Color"/>
+													</property>
+													<property name="RowExpandButton" link="Skin.MediaLibraryGroupingTree.RowExpandButton"/>
 													<property name="FocusRectColor">
 														<property name="Value" value="0"/>
 													</property>
-													<property name="AlphabeticIndex" value="MLGroupingTree.StyleContent.AlphabeticIndex"/>
-													<property name="AlphabeticIndexCell" value="MLGroupingTree.StyleContent.AlphabeticIndexCell"/>
+													<property name="AlphabeticIndex" link="Skin.MediaLibraryGroupingTree.AlphabeticIndex.Skin"/>
+													<property name="AlphabeticIndexCell" link="Skin.MediaLibraryGroupingTree.AlphabeticIndex.Cell"/>
 													<property name="AlphabeticIndexCellFont">
 														<property name="ID" value="Skin.FontEx.TextNormal"/>
 													</property>
@@ -181,17 +209,17 @@
 														<property name="Style" value="fsBold"/>
 													</property>
 													<property name="AlphabeticIndexScroller" value="MLGroupingTree.StyleContent.AlphabeticIndexScroller"/>
-													<property name="AlphabeticIndexScrollerGlyph" value="MLGroupingTree.StyleContent.AlphabeticIndexScrollerGlyph"/>
+													<property name="AlphabeticIndexScrollerGlyph" link="Skin.MediaLibraryGroupingTree.AlphabeticIndex.ScrollerGlyph"/>
 													<property name="NodeImages" value="MLGroupingTree.StyleContent.NodeImages"/>
 												</property>
 												<property name="StyleScrollBox">
-													<property name="TextureBackgroundHorz" link="Textures.Unset"/>
+													<property name="TextureBackgroundHorz" value="MLGroupingTree.StyleScrollBox.TextureBackgroundHorz"/>
 													<property name="TextureBackgroundVert" link="Skin.Texture.ScrollBar0V.Skin"/>
-													<property name="TextureButtonsHorz" link="Textures.Unset"/>
+													<property name="TextureButtonsHorz" value="MLGroupingTree.StyleScrollBox.TextureButtonsHorz"/>
 													<property name="TextureButtonsVert" link="Skin.Texture.ScrollBar0V.Buttons"/>
-													<property name="TextureThumbHorz" link="Textures.Unset"/>
+													<property name="TextureThumbHorz" value="MLGroupingTree.StyleScrollBox.TextureThumbHorz"/>
 													<property name="TextureThumbVert" link="Skin.Texture.ScrollBar0V.Thumb"/>
-													<property name="TextureSizeGripArea" link="Textures.Unset"/>
+													<property name="TextureSizeGripArea" value="MLGroupingTree.StyleScrollBox.TextureSizeGripArea"/>
 												</property>
 											</properties>
 										</control>
@@ -221,15 +249,15 @@
 													<property name="GridColor">
 														<property name="Value" value="4292993505"/>
 													</property>
-													<property name="ColumnHeader" link="Skin.MediaLibrary.ColumnHeader.Skin"/>
+													<property name="ColumnHeader" link="Skin.MediaLibraryTable.ColumnHeader.Skin"/>
 													<property name="ColumnHeaderFont">
 														<property name="ID" value="Skin.FontEx.TextNormal"/>
 													</property>
-													<property name="ColumnHeaderSortingArrow" link="Skin.MediaLibrary.ColumnHeader.SortingArrow"/>
+													<property name="ColumnHeaderSortingArrow" link="Skin.MediaLibraryTable.ColumnHeader.SortingArrow"/>
 													<property name="RowContentOffsets">
 														<property name="All" value="4"/>
 													</property>
-													<property name="ColumnHeaderFilterButton" link="Skin.MediaLibrary.ColumnHeader.FilterButton"/>
+													<property name="ColumnHeaderFilterButton" link="Skin.MediaLibraryTable.ColumnHeader.FilterButton"/>
 													<property name="GroupDetailsColorText">
 														<property name="ID" value="Skin.TextNormal.Color"/>
 													</property>

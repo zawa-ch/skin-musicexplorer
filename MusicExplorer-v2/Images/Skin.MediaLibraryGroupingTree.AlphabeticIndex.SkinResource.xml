@@ -3,6 +3,6 @@
 	<properties>
 		<property name="ContentOffsets" value="2,2,2,4"/>
 		<property name="HitTestMaskMode" value="ihtmOpaque"/>
-		<property name="Margins" value="0,0,0,4"/>
+		<property name="Margins" value="0,0,0,16"/>
 	</properties>
 </image>

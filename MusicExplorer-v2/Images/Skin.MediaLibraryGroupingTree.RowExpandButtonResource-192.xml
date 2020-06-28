@@ -2,7 +2,7 @@
 <image>
 	<properties>
 		<property name="Layout" value="ilVertical"/>
-		<property name="FrameCount" value="8"/>
+		<property name="FrameCount" value="2"/>
 		<property name="HitTestMaskMode" value="ihtmOpaque"/>
 		<property name="StretchMode" value="isCenter"/>
 	</properties>
