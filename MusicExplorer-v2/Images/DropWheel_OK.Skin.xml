@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<image>
+	<properties>
+		<property name="Layout" value="ilVertical"/>
+		<property name="HitTestMaskMode" value="ihtmMask"/>
+	</properties>
+</image>

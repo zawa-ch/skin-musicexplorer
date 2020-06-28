@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+	<items>
+		<item class="LayoutContainer" name="LayoutContainer">
+			<properties>
+				<property name="SizeMinimal" value="300,30"/>
+				<property name="Color">
+					<property name="Value" value="4290822336"/>
+				</property>
+				<property name="Texture" link="Skin.Texture.MinimizeButton"/>
+			</properties>
+		</item>
+	</items>
+</layout>

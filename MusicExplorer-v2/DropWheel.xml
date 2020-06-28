@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+	<items>
+		<item class="LayoutContainer" name="DropWheel">
+			<properties>
+				<property name="AllowResizeByHeight" value="False"/>
+				<property name="AllowResizeByWidth" value="False"/>
+				<property name="SizeMinimal" value="128,128"/>
+				<property name="Color">
+					<property name="Value" value="4290822336"/>
+				</property>
+				<property name="Texture" link="Skin.Texture.MinimizeButton"/>
+			</properties>
+			<controls>
+				<control link="DropWheel_CUR">
+					<properties>
+						<property name="PlaceInfo" anchors="1,1,0,0" margins="83,23,12,-1" Size="36,78"/>
+						<property name="Skin" value="DropWheel_CUR.Skin"/>
+						<property name="FramesPerState" value="2"/>
+						<property name="Fonts">
+							<property name="Normal">
+								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+								<property name="Color" value="4278190080"/>
+								<property name="Height" value="-11"/>
+								<property name="Name" value="Tahoma"/>
+								<property name="Quality" value="fqDefault"/>
+								<property name="Style" value=""/>
+							</property>
+							<property name="Hot">
+								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+								<property name="Color" value="4278190080"/>
+								<property name="Height" value="-11"/>
+								<property name="Name" value="Tahoma"/>
+								<property name="Quality" value="fqDefault"/>
+								<property name="Style" value=""/>
+							</property>
+							<property name="Pressed">
+								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+								<property name="Color" value="4278190080"/>
+								<property name="Height" value="-11"/>
+								<property name="Name" value="Tahoma"/>
+								<property name="Quality" value="fqDefault"/>
+								<property name="Style" value=""/>
+							</property>
+							<property name="Disabled">
+								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+								<property name="Color" value="4278190080"/>
+								<property name="Height" value="-11"/>
+								<property name="Name" value="Tahoma"/>
+								<property name="Quality" value="fqDefault"/>
+								<property name="Style" value=""/>
+							</property>
+						</property>
+					</properties>
+				</control>
+				<control link="DropWheel_RND">
+					<properties>
+						<property name="PlaceInfo" anchors="1,1,0,0" margins="9,23,68,-1" Size="36,78"/>
+						<property name="Skin" value="DropWheel_RND.Skin"/>
+						<property name="FramesPerState" value="2"/>
+						<property name="Fonts">
+							<property name="Normal">
+								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+								<property name="Color" value="4278190080"/>
+								<property name="Height" value="-11"/>
+								<property name="Name" value="Tahoma"/>
+								<property name="Quality" value="fqDefault"/>
+								<property name="Style" value=""/>
+							</property>
+							<property name="Hot">
+								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+								<property name="Color" value="4278190080"/>
+								<property name="Height" value="-11"/>
+								<property name="Name" value="Tahoma"/>
+								<property name="Quality" value="fqDefault"/>
+								<property name="Style" value=""/>
+							</property>
+							<property name="Pressed">
+								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+								<property name="Color" value="4278190080"/>
+								<property name="Height" value="-11"/>
+								<property name="Name" value="Tahoma"/>
+								<property name="Quality" value="fqDefault"/>
+								<property name="Style" value=""/>
+							</property>
+							<property name="Disabled">
+								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+								<property name="Color" value="4278190080"/>
+								<property name="Height" value="-11"/>
+								<property name="Name" value="Tahoma"/>
+								<property name="Quality" value="fqDefault"/>
+								<property name="Style" value=""/>
+							</property>
+						</property>
+					</properties>
+				</control>
+				<control link="DropWheel_BTM">
+					<properties>
+						<property name="PlaceInfo" anchors="1,1,0,0" margins="25,81,-1,13" Size="77,36"/>
+						<property name="Skin" value="DropWheel_BTM.Skin"/>
+						<property name="FramesPerState" value="2"/>
+						<property name="Fonts">
+							<property name="Normal">
+								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+								<property name="Color" value="4278190080"/>
+								<property name="Height" value="-11"/>
+								<property name="Name" value="Tahoma"/>
+								<property name="Quality" value="fqDefault"/>
+								<property name="Style" value=""/>
+							</property>
+							<property name="Hot">
+								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+								<property name="Color" value="4278190080"/>
+								<property name="Height" value="-11"/>
+								<property name="Name" value="Tahoma"/>
+								<property name="Quality" value="fqDefault"/>
+								<property name="Style" value=""/>
+							</property>
+							<property name="Pressed">
+								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+								<property name="Color" value="4278190080"/>
+								<property name="Height" value="-11"/>
+								<property name="Name" value="Tahoma"/>
+								<property name="Quality" value="fqDefault"/>
+								<property name="Style" value=""/>
+							</property>
+							<property name="Disabled">
+								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+								<property name="Color" value="4278190080"/>
+								<property name="Height" value="-11"/>
+								<property name="Name" value="Tahoma"/>
+								<property name="Quality" value="fqDefault"/>
+								<property name="Style" value=""/>
+							</property>
+						</property>
+					</properties>
+				</control>
+				<control link="DropWheel_TOP">
+					<properties>
+						<property name="PlaceInfo" anchors="1,1,0,0" margins="26,8,-1,69" Size="77,36"/>
+						<property name="Skin" value="DropWheel_TOP.Skin"/>
+						<property name="FramesPerState" value="2"/>
+						<property name="Fonts">
+							<property name="Normal">
+								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+								<property name="Color" value="4278190080"/>
+								<property name="Height" value="-11"/>
+								<property name="Name" value="Tahoma"/>
+								<property name="Quality" value="fqDefault"/>
+								<property name="Style" value=""/>
+							</property>
+							<property name="Hot">
+								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+								<property name="Color" value="4278190080"/>
+								<property name="Height" value="-11"/>
+								<property name="Name" value="Tahoma"/>
+								<property name="Quality" value="fqDefault"/>
+								<property name="Style" value=""/>
+							</property>
+							<property name="Pressed">
+								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+								<property name="Color" value="4278190080"/>
+								<property name="Height" value="-11"/>
+								<property name="Name" value="Tahoma"/>
+								<property name="Quality" value="fqDefault"/>
+								<property name="Style" value=""/>
+							</property>
+							<property name="Disabled">
+								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+								<property name="Color" value="4278190080"/>
+								<property name="Height" value="-11"/>
+								<property name="Name" value="Tahoma"/>
+								<property name="Quality" value="fqDefault"/>
+								<property name="Style" value=""/>
+							</property>
+						</property>
+					</properties>
+				</control>
+				<control link="DropWheel_Cancel">
+					<properties>
+						<property name="PlaceInfo" anchors="1,1,0,0" margins="102,7,20,103" Size="16,16"/>
+						<property name="Skin" value="DropWheel_Cancel.Skin"/>
+						<property name="Fonts">
+							<property name="Normal">
+								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+								<property name="Color" value="4278190080"/>
+								<property name="Height" value="-11"/>
+								<property name="Name" value="Tahoma"/>
+								<property name="Quality" value="fqDefault"/>
+								<property name="Style" value=""/>
+							</property>
+							<property name="Hot">
+								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+								<property name="Color" value="4278190080"/>
+								<property name="Height" value="-11"/>
+								<property name="Name" value="Tahoma"/>
+								<property name="Quality" value="fqDefault"/>
+								<property name="Style" value=""/>
+							</property>
+							<property name="Pressed">
+								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+								<property name="Color" value="4278190080"/>
+								<property name="Height" value="-11"/>
+								<property name="Name" value="Tahoma"/>
+								<property name="Quality" value="fqDefault"/>
+								<property name="Style" value=""/>
+							</property>
+							<property name="Disabled">
+								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+								<property name="Color" value="4278190080"/>
+								<property name="Height" value="-11"/>
+								<property name="Name" value="Tahoma"/>
+								<property name="Quality" value="fqDefault"/>
+								<property name="Style" value=""/>
+							</property>
+						</property>
+					</properties>
+				</control>
+				<control link="DropWheel_OK">
+					<properties>
+						<property name="PlaceInfo" anchors="1,1,0,0" margins="35,34,31,31" Size="57,57"/>
+						<property name="Skin" value="DropWheel_OK.Skin"/>
+						<property name="Fonts">
+							<property name="Normal">
+								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+								<property name="Color" value="4278190080"/>
+								<property name="Height" value="-11"/>
+								<property name="Name" value="Tahoma"/>
+								<property name="Quality" value="fqDefault"/>
+								<property name="Style" value=""/>
+							</property>
+							<property name="Hot">
+								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+								<property name="Color" value="4278190080"/>
+								<property name="Height" value="-11"/>
+								<property name="Name" value="Tahoma"/>
+								<property name="Quality" value="fqDefault"/>
+								<property name="Style" value=""/>
+							</property>
+							<property name="Pressed">
+								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+								<property name="Color" value="4278190080"/>
+								<property name="Height" value="-11"/>
+								<property name="Name" value="Tahoma"/>
+								<property name="Quality" value="fqDefault"/>
+								<property name="Style" value=""/>
+							</property>
+							<property name="Disabled">
+								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+								<property name="Color" value="4278190080"/>
+								<property name="Height" value="-11"/>
+								<property name="Name" value="Tahoma"/>
+								<property name="Quality" value="fqDefault"/>
+								<property name="Style" value=""/>
+							</property>
+						</property>
+					</properties>
+				</control>
+			</controls>
+		</item>
+	</items>
+</layout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+	<items>
+		<item class="LayoutContainer" name="QFI">
+			<properties>
+				<property name="AllowResizeByHeight" value="False"/>
+				<property name="AllowResizeByWidth" value="False"/>
+				<property name="SizeMinimal" value="269,122"/>
+				<property name="Color">
+					<property name="Value" value="4290822336"/>
+				</property>
+				<property name="Texture" value="QFI.Texture"/>
+			</properties>
+		</item>
+	</items>
+</layout>
