@@ -135,20 +135,63 @@
 												<property name="PlaceInfo" anchors="1,1,1,1" margins="0,0,0,0" Size="0,0"/>
 												<property name="PopupMenu" value="pmMLGroupingTree"/>
 												<property name="Skin" value="MLGroupingTree.Skin"/>
-												<property name="Font"/>
-												<property name="Borders" value="mLeft,mTop,mRight,mBottom"/>
-												<property name="GridLines" value="tlglVertical,tlglHorzontal"/>
+												<property name="Font">
+													<property name="ID" value="Skin.FontEx.TextNormal"/>
+												</property>
+												<property name="ParentBackground" value="True"/>
+												<property name="Borders" value=""/>
+												<property name="GridLines" value="tlglHorzontal"/>
+												<property name="Style">
+													<property name="ColorBorder">
+														<property name="ID" value="Skin.Color.Unset"/>
+													</property>
+													<property name="ColorContent">
+														<property name="ID" value="Skin.Color.Unset"/>
+													</property>
+													<property name="ColorContentDisabled">
+														<property name="ID" value="Skin.Color.Unset"/>
+													</property>
+													<property name="ColorText">
+														<property name="ID" value="Skin.TextNormal.Color"/>
+													</property>
+													<property name="ColorTextDisabled">
+														<property name="ID" value="Skin.TextDisabled.Color"/>
+													</property>
+												</property>
 												<property name="StyleContent">
+													<property name="IncSearchColor">
+														<property name="ID" value="Skin.Color.Primary-a8"/>
+													</property>
+													<property name="IncSearchColorText">
+														<property name="ID" value="Skin.TextNormal.Color"/>
+													</property>
+													<property name="FocusRectColor">
+														<property name="Value" value="0"/>
+													</property>
 													<property name="AlphabeticIndex" value="MLGroupingTree.StyleContent.AlphabeticIndex"/>
 													<property name="AlphabeticIndexCell" value="MLGroupingTree.StyleContent.AlphabeticIndexCell"/>
+													<property name="AlphabeticIndexCellFont">
+														<property name="ID" value="Skin.FontEx.TextNormal"/>
+													</property>
+													<property name="AlphabeticIndexCellFontHot">
+														<property name="ID" value="Skin.FontEx.TextNormal"/>
+													</property>
+													<property name="AlphabeticIndexCellFontSelected">
+														<property name="ID" value="Skin.FontEx.TextNormal"/>
+														<property name="Style" value="fsBold"/>
+													</property>
 													<property name="AlphabeticIndexScroller" value="MLGroupingTree.StyleContent.AlphabeticIndexScroller"/>
 													<property name="AlphabeticIndexScrollerGlyph" value="MLGroupingTree.StyleContent.AlphabeticIndexScrollerGlyph"/>
 													<property name="NodeImages" value="MLGroupingTree.StyleContent.NodeImages"/>
 												</property>
 												<property name="StyleScrollBox">
-													<property name="TextureBackgroundHorz" value="MLGroupingTree.StyleScrollBox.TextureBackgroundHorz"/>
-													<property name="TextureThumbHorz" value="MLGroupingTree.StyleScrollBox.TextureThumbHorz"/>
-													<property name="TextureSizeGripArea" value="MLGroupingTree.StyleScrollBox.TextureSizeGripArea"/>
+													<property name="TextureBackgroundHorz" link="Textures.Unset"/>
+													<property name="TextureBackgroundVert" link="Skin.Texture.ScrollBar0V.Skin"/>
+													<property name="TextureButtonsHorz" link="Textures.Unset"/>
+													<property name="TextureButtonsVert" link="Skin.Texture.ScrollBar0V.Buttons"/>
+													<property name="TextureThumbHorz" link="Textures.Unset"/>
+													<property name="TextureThumbVert" link="Skin.Texture.ScrollBar0V.Thumb"/>
+													<property name="TextureSizeGripArea" link="Textures.Unset"/>
 												</property>
 											</properties>
 										</control>

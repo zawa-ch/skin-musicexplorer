@@ -3,7 +3,6 @@
 	<properties>
 		<property name="Layout" value="ilVertical"/>
 		<property name="ContentOffsets" value="2,2,2,2"/>
-		<property name="FrameCount" value="4"/>
 		<property name="HitTestMaskMode" value="ihtmOpaque"/>
 		<property name="Margins" value="2,2,2,2"/>
 	</properties>

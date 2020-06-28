@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<skin target="450" edition="0" ID="3abd555508c27ad043fcbb43a0ec1a5f" AllowColoration="1" ScaleFactors="sf100,sf125,sf150,sf200,sf400" AutoAdjustForInBetweenScaleFactors="1" AutoAdjustForUnsupportedScaleFactors="1">
+<skin target="450" edition="0" ID="1c475ba0d8a7a629ac7c5efd542bcff4" AllowColoration="1" ScaleFactors="sf100,sf125,sf150,sf200,sf400" AutoAdjustForInBetweenScaleFactors="1" AutoAdjustForUnsupportedScaleFactors="1">
 	<properties>
 		<resources>
 			<item>
@@ -789,6 +789,25 @@
 				<property name="ID" value="Skin.MediaLibrary.ColumnHeader.Skin"/>
 				<property name="ResourceClassName" value="TACLResourceTexture"/>
 				<property name="Resource" value="Skin.MediaLibrary.ColumnHeader.SkinResource"/>
+			</item>
+			<item>
+				<property name="ID" value="Textures.Unset"/>
+				<property name="ResourceClassName" value="TASETexture"/>
+				<property name="Resource" value="Textures.UnsetResource"/>
+			</item>
+			<item>
+				<property name="ID" value="Skin.TextDisabled.Color"/>
+				<property name="ResourceClassName" value="TACLResourceColor"/>
+				<property name="Resource">
+					<property name="ID" value="Theme.Light.TextDisabled.Color"/>
+				</property>
+			</item>
+			<item>
+				<property name="ID" value="Theme.Light.TextDisabled.Color"/>
+				<property name="ResourceClassName" value="TACLResourceColor"/>
+				<property name="Resource">
+					<property name="Value" value="2147483648"/>
+				</property>
 			</item>
 		</resources>
 		<menu>
