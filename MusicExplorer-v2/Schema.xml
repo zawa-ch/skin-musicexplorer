@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<skin target="450" edition="0" ID="93d6b56cad92043084559e1f9665b6b9" AllowColoration="1" ScaleFactors="sf100,sf125,sf150,sf200,sf400" AutoAdjustForInBetweenScaleFactors="1" AutoAdjustForUnsupportedScaleFactors="1">
+<skin target="450" edition="0" ID="beacd01ea3149dd44abc95c017d9439b" AllowColoration="1">
 	<properties>
 		<resources>
 			<item>
@@ -981,16 +981,16 @@
 		</menu>
 		<hint>
 			<property name="ColorBorder">
-				<property name="Value" value="4282400832"/>
+				<property name="Value" value="4282335039"/>
 			</property>
 			<property name="ColorContent1">
-				<property name="Value" value="4283256141"/>
+				<property name="Value" value="4294967295"/>
 			</property>
 			<property name="ColorContent2">
 				<property name="Value" value="0"/>
 			</property>
 			<property name="ColorText">
-				<property name="Value" value="4294638330"/>
+				<property name="Value" value="4278190080"/>
 			</property>
 		</hint>
 		<blur>
