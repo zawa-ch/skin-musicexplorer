@@ -201,8 +201,8 @@
 															<property name="FocusRectColor">
 																<property name="Value" value="0"/>
 															</property>
-															<property name="AlphabeticIndex" link="Skin.GroupingTree.AlphabeticIndex.Skin"/>
-															<property name="AlphabeticIndexCell" link="Skin.GroupingTree.AlphabeticIndex.Cell"/>
+															<property name="AlphabeticIndex" link="Skin.GroupingTree.AlphabeticIndexSkin"/>
+															<property name="AlphabeticIndexCell" link="Skin.GroupingTree.AlphabeticIndexCell"/>
 															<property name="AlphabeticIndexCellFont">
 																<property name="ID" value="Skin.TextNormal"/>
 															</property>
@@ -214,7 +214,7 @@
 																<property name="Style" value="fsBold"/>
 															</property>
 															<property name="AlphabeticIndexScroller" value="MLGroupingTree.StyleContent.AlphabeticIndexScroller"/>
-															<property name="AlphabeticIndexScrollerGlyph" link="Skin.GroupingTree.AlphabeticIndex.ScrollerGlyph"/>
+															<property name="AlphabeticIndexScrollerGlyph" link="Skin.GroupingTree.AlphabeticIndexScrollerGlyph"/>
 															<property name="NodeImages" value="MLGroupingTree.StyleContent.NodeImages"/>
 														</property>
 														<property name="StyleScrollBox">
@@ -287,11 +287,11 @@
 															<property name="SelectionRectColor">
 																<property name="ID" value="Skin.SecondoryColor"/>
 															</property>
-															<property name="ColumnHeader" link="Skin.LibraryTable.ColumnHeader.Skin"/>
+															<property name="ColumnHeader" link="Skin.LibraryTable.ColumnHeaderSkin"/>
 															<property name="ColumnHeaderFont">
 																<property name="ID" value="Skin.TextNormal"/>
 															</property>
-															<property name="ColumnHeaderSortingArrow" link="Skin.LibraryTable.ColumnHeader.SortingArrow"/>
+															<property name="ColumnHeaderSortingArrow" link="Skin.LibraryTable.ColumnHeaderSortingArrow"/>
 															<property name="GroupHeaderColor">
 																<property name="ID" value="Skin.SecondoryColor[o10]"/>
 															</property>
@@ -328,7 +328,7 @@
 															<property name="RowContentOffsets">
 																<property name="All" value="4"/>
 															</property>
-															<property name="ColumnHeaderFilterButton" link="Skin.LibraryTable.ColumnHeader.FilterButton"/>
+															<property name="ColumnHeaderFilterButton" link="Skin.LibraryTable.ColumnHeaderFilterButton"/>
 															<property name="GroupDetailsAllowResize" value="True"/>
 															<property name="GroupDetailsColor">
 																<property name="ID" value="Skin.SecondoryColor[o10]"/>
@@ -352,7 +352,7 @@
 																<property name="Right" value="4"/>
 																<property name="Top" value="8"/>
 															</property>
-															<property name="Marks" value="MLTable.StyleContent.Marks"/>
+															<property name="Marks" link="Skin.LibraryTable.Marks"/>
 															<property name="ThumbnailsContentOffsets">
 																<property name="All" value="8"/>
 															</property>

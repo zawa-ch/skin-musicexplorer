@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<skin target="450" edition="0" ID="ab20a82d35a8609d5dbb83fca4a0510a" AllowColoration="1">
+<skin target="450" edition="0" ID="c1fe9f909a952bd06bfca5bccece3022" AllowColoration="1">
 	<properties>
 		<resources>
 			<item>
@@ -776,19 +776,19 @@
 				<property name="Resource" value="Skin.ScrollBarH.ButtonsResource"/>
 			</item>
 			<item>
-				<property name="ID" value="Skin.LibraryTable.ColumnHeader.SortingArrow"/>
+				<property name="ID" value="Skin.LibraryTable.ColumnHeaderSortingArrow"/>
 				<property name="ResourceClassName" value="TACLResourceTexture"/>
-				<property name="Resource" value="Skin.LibraryTable.ColumnHeader.SortingArrowResource"/>
+				<property name="Resource" value="Skin.LibraryTable.ColumnHeaderSortingArrowResource"/>
 			</item>
 			<item>
-				<property name="ID" value="Skin.LibraryTable.ColumnHeader.FilterButton"/>
+				<property name="ID" value="Skin.LibraryTable.ColumnHeaderFilterButton"/>
 				<property name="ResourceClassName" value="TACLResourceTexture"/>
-				<property name="Resource" value="Skin.LibraryTable.ColumnHeader.FilterButtonResource"/>
+				<property name="Resource" value="Skin.LibraryTable.ColumnHeaderFilterButtonResource"/>
 			</item>
 			<item>
-				<property name="ID" value="Skin.LibraryTable.ColumnHeader.Skin"/>
+				<property name="ID" value="Skin.LibraryTable.ColumnHeaderSkin"/>
 				<property name="ResourceClassName" value="TACLResourceTexture"/>
-				<property name="Resource" value="Skin.LibraryTable.ColumnHeader.SkinResource"/>
+				<property name="Resource" value="Skin.LibraryTable.ColumnHeaderSkinResource"/>
 			</item>
 			<item>
 				<property name="ID" value="Textures.Unset"/>
@@ -810,14 +810,14 @@
 				</property>
 			</item>
 			<item>
-				<property name="ID" value="Skin.GroupingTree.AlphabeticIndex.Skin"/>
+				<property name="ID" value="Skin.GroupingTree.AlphabeticIndexSkin"/>
 				<property name="ResourceClassName" value="TACLResourceTexture"/>
-				<property name="Resource" value="Skin.GroupingTree.AlphabeticIndex.SkinResource"/>
+				<property name="Resource" value="Skin.GroupingTree.AlphabeticIndexSkinResource"/>
 			</item>
 			<item>
-				<property name="ID" value="Skin.GroupingTree.AlphabeticIndex.ScrollerGlyph"/>
+				<property name="ID" value="Skin.GroupingTree.AlphabeticIndexScrollerGlyph"/>
 				<property name="ResourceClassName" value="TACLResourceTexture"/>
-				<property name="Resource" value="Skin.GroupingTree.AlphabeticIndex.ScrollerGlyphResource"/>
+				<property name="Resource" value="Skin.GroupingTree.AlphabeticIndexScrollerGlyphResource"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.SecondoryColor[o50]"/>
@@ -846,9 +846,9 @@
 				</property>
 			</item>
 			<item>
-				<property name="ID" value="Skin.GroupingTree.AlphabeticIndex.Cell"/>
+				<property name="ID" value="Skin.GroupingTree.AlphabeticIndexCell"/>
 				<property name="ResourceClassName" value="TACLResourceTexture"/>
-				<property name="Resource" value="Skin.GroupingTree.AlphabeticIndex.CellResource"/>
+				<property name="Resource" value="Skin.GroupingTree.AlphabeticIndexCellResource"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.PrimaryColor[o20]"/>
@@ -925,6 +925,11 @@
 				<property name="ResourceClassName" value="TACLResourceTexture"/>
 				<property name="Resource" value="Skin.ContextMenu.SeparatorResource"/>
 			</item>
+			<item>
+				<property name="ID" value="Skin.LibraryTable.Marks"/>
+				<property name="ResourceClassName" value="TACLResourceTexture"/>
+				<property name="Resource" value="Skin.LibraryTable.MarksResource"/>
+			</item>
 		</resources>
 		<menu>
 			<property name="Borders">
@@ -935,19 +940,19 @@
 				<property name="Top" value="1"/>
 			</property>
 			<property name="ColorBorder1">
-				<property name="ID" value="Skin.Color.ActiveWindowEdge"/>
+				<property name="ID" value="Skin.ActiveWindowEdge.Color"/>
 			</property>
 			<property name="ColorBorder2">
 				<property name="Value" value="0"/>
 			</property>
 			<property name="Font">
-				<property name="ID" value="Skin.FontEx.TextNormal"/>
+				<property name="ID" value="Skin.TextNormal"/>
 			</property>
 			<property name="FontDisabled">
 				<property name="ID" value="Skin.TextDisabled.Font"/>
 			</property>
 			<property name="FontSelected">
-				<property name="ID" value="Skin.FontEx.TextNormal"/>
+				<property name="ID" value="Skin.TextNormal"/>
 			</property>
 			<property name="Texture" link="Skin.ContextMenu.Texture"/>
 			<property name="TextureGutter" link="Skin.ContextMenu.Texture"/>
@@ -976,8 +981,8 @@
 			<property name="ColorListTextSelectionHot">
 				<property name="ID" value="Skin.TextNormal.Color"/>
 			</property>
-			<property name="TextureScrollBar" link="Skin.Texture.ScrollBar0V.Skin"/>
-			<property name="TextureScrollBarThumb" link="Skin.Texture.ScrollBar0V.Thumb"/>
+			<property name="TextureScrollBar" link="Skin.ScrollBarV.Skin"/>
+			<property name="TextureScrollBarThumb" link="Skin.ScrollBarV.Thumb"/>
 		</menu>
 		<hint>
 			<property name="ColorBorder">
