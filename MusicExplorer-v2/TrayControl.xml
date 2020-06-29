@@ -1,14 +1,240 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
 	<items>
-		<item class="LayoutContainer" name="LayoutContainer">
+		<item class="LayoutContainer" name="TrayControlMain">
 			<properties>
-				<property name="SizeMinimal" value="300,30"/>
+				<property name="SizeMinimal" value="240,24"/>
 				<property name="Color">
-					<property name="Value" value="4290822336"/>
+					<property name="ID" value="Skin.Color.Base"/>
 				</property>
-				<property name="Texture" link="Skin.Texture.MinimizeButton"/>
+				<property name="Texture" value="TrayControlMain.Texture"/>
 			</properties>
+			<items>
+				<item class="LayoutContainer" name="TC_InfoArea">
+					<properties>
+						<property name="Bindings">
+							<link Source="TC_CtrlArea" SourcePin="Visibility" TargetPin="Visibility" Expression="NOT Value"/>
+						</property>
+						<property name="Alignment" value="laClient"/>
+						<property name="Color"/>
+						<property name="Texture" value="TC_InfoArea.Texture"/>
+					</properties>
+					<controls>
+						<control class="TextDisplay" name="TC_FileInfoText">
+							<properties>
+								<property name="Bindings">
+									<link Source="TC_FileInfo" SourcePin="Result" TargetPin="DisplayValue"/>
+								</property>
+								<property name="PlaceInfo" anchors="1,1,1,1" margins="4,0,4,4" Size="232,24"/>
+								<property name="Skin" value="TC_FileInfoText.Skin"/>
+								<property name="Color"/>
+								<property name="Font">
+									<property name="ID" value="Skin.FontEx.TextNormal"/>
+								</property>
+							</properties>
+						</control>
+					</controls>
+				</item>
+				<item class="LayoutContainer" name="TC_CtrlArea">
+					<properties>
+						<property name="Bindings">
+							<link Source="TrayControlMain" SourcePin="IsActive" TargetPin="Visibility"/>
+						</property>
+						<property name="Alignment" value="laClient"/>
+						<property name="AlignmentLevel" value="1"/>
+						<property name="Color"/>
+						<property name="Texture" value="TC_CtrlArea.Texture"/>
+					</properties>
+					<controls>
+						<control class="Button" name="TC_RepeatButton">
+							<properties>
+								<property name="Bindings">
+									<link Source="acPlayerRepeat" SourcePin="Action" TargetPin="Action"/>
+									<link Source="acPlayerRepeat" SourcePin="Action" TargetPin="ContextMenu"/>
+									<link Source="acPlayerRepeat" SourcePin="Action" TargetPin="Hint"/>
+									<link Source="acPlayerRepeat" SourcePin="State" TargetPin="State"/>
+								</property>
+								<property name="PlaceInfo" anchors="1,0,0,1" margins="148,0,80,0" Size="24,24"/>
+								<property name="Skin" link="Skin.Texture.RepeatButton[24]"/>
+								<property name="FramesPerState" value="3"/>
+								<property name="Fonts">
+									<property name="Normal"/>
+									<property name="Hot"/>
+									<property name="Pressed"/>
+									<property name="Disabled"/>
+								</property>
+							</properties>
+						</control>
+						<control class="Button" name="TC_ShuffleButton">
+							<properties>
+								<property name="Bindings">
+									<link Source="acPlayerShuffle" SourcePin="Action" TargetPin="Action"/>
+									<link Source="acPlayerShuffle" SourcePin="Action" TargetPin="ContextMenu"/>
+									<link Source="acPlayerShuffle" SourcePin="Action" TargetPin="Hint"/>
+									<link Source="acPlayerShuffle" SourcePin="State" TargetPin="State"/>
+								</property>
+								<property name="PlaceInfo" anchors="1,0,0,1" margins="172,0,56,0" Size="24,24"/>
+								<property name="Skin" link="Skin.Texture.ShuffleButton[24]"/>
+								<property name="FramesPerState" value="3"/>
+								<property name="Fonts">
+									<property name="Normal"/>
+									<property name="Hot"/>
+									<property name="Pressed"/>
+									<property name="Disabled"/>
+								</property>
+							</properties>
+						</control>
+						<control class="Button" name="TC_PrevButton">
+							<properties>
+								<property name="Bindings">
+									<link Source="acPlayerPrevTrack" SourcePin="Action" TargetPin="Action"/>
+									<link Source="acPlayerPrevTrack" SourcePin="Action" TargetPin="ContextMenu"/>
+									<link Source="acPlayerPrevTrack" SourcePin="Action" TargetPin="Hint"/>
+									<link Source="acPlayerSeekBackward" SourcePin="Action" TargetPin="ActionOnHold"/>
+								</property>
+								<property name="PlaceInfo" anchors="1,0,0,1" margins="24,0,204,0" Size="24,24"/>
+								<property name="Skin" link="Skin.Texture.PrevButton[24]"/>
+								<property name="Fonts">
+									<property name="Normal"/>
+									<property name="Hot"/>
+									<property name="Pressed"/>
+									<property name="Disabled"/>
+								</property>
+							</properties>
+						</control>
+						<control class="Button" name="TC_PlayButton">
+							<properties>
+								<property name="Bindings">
+									<link Source="acPlayerPlay" SourcePin="Action" TargetPin="Action"/>
+									<link Source="acPlayerPlay" SourcePin="Action" TargetPin="ContextMenu"/>
+									<link Source="acPlayerPlay" SourcePin="Action" TargetPin="Hint"/>
+									<link Source="prvPlayerState" SourcePin="State" TargetPin="State" Expression="Value = 1"/>
+								</property>
+								<property name="PlaceInfo" anchors="1,0,0,1" margins="48,0,180,0" Size="24,24"/>
+								<property name="Skin" link="Skin.Texture.PlayButton[24]"/>
+								<property name="Fonts">
+									<property name="Normal"/>
+									<property name="Hot"/>
+									<property name="Pressed"/>
+									<property name="Disabled"/>
+								</property>
+							</properties>
+						</control>
+						<control class="Button" name="TC_PauseButton">
+							<properties>
+								<property name="Bindings">
+									<link Source="acPlayerPause" SourcePin="Action" TargetPin="Action"/>
+									<link Source="acPlayerPause" SourcePin="Action" TargetPin="ContextMenu"/>
+									<link Source="acPlayerPause" SourcePin="Action" TargetPin="Hint"/>
+									<link Source="prvPlayerState" SourcePin="State" TargetPin="State" Expression="Value = 2"/>
+								</property>
+								<property name="PlaceInfo" anchors="1,0,0,1" margins="72,0,156,0" Size="24,24"/>
+								<property name="Skin" link="Skin.Texture.PauseButton[24]"/>
+								<property name="Fonts">
+									<property name="Normal"/>
+									<property name="Hot"/>
+									<property name="Pressed"/>
+									<property name="Disabled"/>
+								</property>
+							</properties>
+						</control>
+						<control class="Button" name="TC_StopButton">
+							<properties>
+								<property name="Bindings">
+									<link Source="acPlayerStop" SourcePin="Action" TargetPin="Action"/>
+									<link Source="acPlayerStop" SourcePin="Action" TargetPin="ContextMenu"/>
+									<link Source="acPlayerStop" SourcePin="Action" TargetPin="Hint"/>
+									<link Source="acPlayerStop" SourcePin="Flashing" TargetPin="State"/>
+								</property>
+								<property name="PlaceInfo" anchors="1,0,0,1" margins="96,0,132,0" Size="24,24"/>
+								<property name="Skin" link="Skin.Texture.StopButton[24]"/>
+								<property name="Fonts">
+									<property name="Normal"/>
+									<property name="Hot"/>
+									<property name="Pressed"/>
+									<property name="Disabled"/>
+								</property>
+							</properties>
+						</control>
+						<control class="Button" name="TC_NextButton">
+							<properties>
+								<property name="Bindings">
+									<link Source="acPlayerNextTrack" SourcePin="Action" TargetPin="Action"/>
+									<link Source="acPlayerNextTrack" SourcePin="Action" TargetPin="ContextMenu"/>
+									<link Source="acPlayerNextTrack" SourcePin="Action" TargetPin="Hint"/>
+									<link Source="acPlayerSeekForward" SourcePin="Action" TargetPin="ActionOnHold"/>
+								</property>
+								<property name="PlaceInfo" anchors="1,0,0,1" margins="120,0,108,0" Size="24,24"/>
+								<property name="Skin" link="Skin.Texture.NextButton[24]"/>
+								<property name="Fonts">
+									<property name="Normal"/>
+									<property name="Hot"/>
+									<property name="Pressed"/>
+									<property name="Disabled"/>
+								</property>
+							</properties>
+						</control>
+					</controls>
+				</item>
+			</items>
+			<controls>
+				<control class="SliderHorizontal" name="TC_Seekbar0">
+					<properties>
+						<property name="Bindings">
+							<link Source="prvPlayerState" SourcePin="Action" TargetPin="Action"/>
+							<link Source="prvPlayingFileInfo" SourcePin="Waveform" TargetPin="Waveform"/>
+						</property>
+						<property name="PlaceInfo" anchors="1,1,1,1" margins="0,0,0,0" Size="0,0"/>
+						<property name="Skin" value="TC_Seekbar0.Skin"/>
+						<property name="Color"/>
+						<property name="ColorProgress"/>
+						<property name="SkinThumb" value="TC_Seekbar0.SkinThumb"/>
+						<property name="TextLabels">
+							<property name="Font"/>
+							<property name="FontProgress"/>
+							<property name="OverlayColor"/>
+						</property>
+						<property name="Waveform">
+							<property name="Offsets" value="0,0,0,-24"/>
+							<property name="Color">
+								<property name="ID" value="Skin.Color.Secondory-a4"/>
+							</property>
+							<property name="ColorProgress">
+								<property name="ID" value="Skin.Color.Primary-a8"/>
+							</property>
+						</property>
+					</properties>
+				</control>
+				<control class="SliderHorizontal" name="TC_Seekbar1">
+					<properties>
+						<property name="Bindings">
+							<link Source="prvPlayerState" SourcePin="Action" TargetPin="Action"/>
+							<link Source="prvPlayerState" SourcePin="Action" TargetPin="ContextMenu"/>
+							<link Source="prvPlayerState" SourcePin="Action" TargetPin="Hint"/>
+						</property>
+						<property name="PlaceInfo" anchors="1,0,1,1" margins="0,20,0,0" Size="48,4"/>
+						<property name="Skin" value="TC_Seekbar1.Skin"/>
+						<property name="Color"/>
+						<property name="ColorProgress">
+							<property name="ID" value="Skin.Color.Primary"/>
+						</property>
+						<property name="SkinThumb" value="TC_Seekbar1.SkinThumb"/>
+						<property name="TextLabels">
+							<property name="Font"/>
+							<property name="FontProgress"/>
+							<property name="OverlayColor"/>
+						</property>
+						<property name="Waveform">
+							<property name="Color">
+								<property name="Value" value="0"/>
+							</property>
+							<property name="ColorProgress">
+								<property name="Value" value="0"/>
+							</property>
+						</property>
+					</properties>
+				</control>
+			</controls>
 		</item>
 	</items>
 </layout>

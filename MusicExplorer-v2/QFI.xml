@@ -1,16 +1,302 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
 	<items>
-		<item class="LayoutContainer" name="QFI">
+		<item class="LayoutContainer" name="QFIMain">
 			<properties>
 				<property name="AllowResizeByHeight" value="False"/>
-				<property name="AllowResizeByWidth" value="False"/>
-				<property name="SizeMinimal" value="269,122"/>
+				<property name="SizeMinimal" value="280,0"/>
+				<property name="Alignment" value="laClient"/>
 				<property name="Color">
-					<property name="Value" value="4290822336"/>
+					<property name="ID" value="Skin.Color.Base"/>
 				</property>
-				<property name="Texture" value="QFI.Texture"/>
+				<property name="Texture" value="QFIMain.Texture"/>
 			</properties>
+			<items>
+				<item class="LayoutContainer" name="QFI_CoverArea">
+					<properties>
+						<property name="Bindings">
+							<link Source="prvPlayingFileInfo" SourcePin="CoverArt" TargetPin="Visibility"/>
+						</property>
+						<property name="SizeMinimal" value="80,80"/>
+						<property name="Alignment" value="laLeft"/>
+						<property name="KeepAspectRatioOnResize" value="True"/>
+						<property name="Color"/>
+						<property name="Texture" value="QFI_CoverArea.Texture"/>
+					</properties>
+					<controls>
+						<control class="CoverArtDisplay" name="QFI_CoverArtDisplay">
+							<properties>
+								<property name="Bindings">
+									<link Source="prvPlayingFileInfo" SourcePin="CoverArt" TargetPin="DisplayValue"/>
+								</property>
+								<property name="PlaceInfo" anchors="1,1,1,1" margins="8,8,8,8" Size="120,120"/>
+								<property name="Skin" value="QFI_CoverArtDisplay.Skin"/>
+							</properties>
+						</control>
+					</controls>
+				</item>
+				<item class="LayoutContainer" name="QFI_FileInfoArea">
+					<properties>
+						<property name="SizeMinimal" value="10,0"/>
+						<property name="Alignment" value="laClient"/>
+						<property name="Color"/>
+						<property name="Texture" value="QFI_FileInfoArea.Texture"/>
+					</properties>
+					<controls>
+						<control class="TextDisplay" name="QFI_FileInfoText0">
+							<properties>
+								<property name="Bindings">
+									<link Source="prvPlayingFileInfo" SourcePin="FileInfo" TargetPin="DisplayValue" TextFormat="%UserTemplate1"/>
+								</property>
+								<property name="PlaceInfo" anchors="1,1,1,0" margins="8,8,64,56" Size="112,16"/>
+								<property name="Skin" value="QFI_FileInfoText0.Skin"/>
+								<property name="AlignmentVertical" value="taAlignBottom"/>
+								<property name="Color"/>
+								<property name="Font">
+									<property name="ID" value="Skin.FontEx.TextLarge"/>
+								</property>
+							</properties>
+						</control>
+						<control class="TextDisplay" name="QFI_FileInfoText1">
+							<properties>
+								<property name="Bindings">
+									<link Source="prvPlayingFileInfo" SourcePin="FileInfo" TargetPin="DisplayValue" TextFormat="%UserTemplate2"/>
+								</property>
+								<property name="PlaceInfo" anchors="1,1,1,0" margins="8,24,8,44" Size="184,16"/>
+								<property name="Skin" value="QFI_FileInfoText1.Skin"/>
+								<property name="Color"/>
+								<property name="Font">
+									<property name="ID" value="Skin.FontEx.TextNormal"/>
+								</property>
+							</properties>
+						</control>
+						<control class="TextDisplay" name="QFI_FileInfoText2">
+							<properties>
+								<property name="Bindings">
+									<link Source="prvPlayingFileInfo" SourcePin="FileInfo" TargetPin="DisplayValue" TextFormat="%UserTemplate3"/>
+								</property>
+								<property name="PlaceInfo" anchors="1,1,1,0" margins="8,40,8,32" Size="184,16"/>
+								<property name="Skin" value="QFI_FileInfoText2.Skin"/>
+								<property name="Color"/>
+								<property name="Font">
+									<property name="ID" value="Skin.FontEx.TextNormal"/>
+								</property>
+							</properties>
+						</control>
+						<control class="TextDisplay" name="QFI_FileInfoText3">
+							<properties>
+								<property name="Bindings">
+									<link Source="prvPlayingFileInfo" SourcePin="FileInfo" TargetPin="DisplayValue" TextFormat="%UserTemplate5"/>
+								</property>
+								<property name="PlaceInfo" anchors="1,0,1,1" margins="8,56,8,8" Size="184,12"/>
+								<property name="Skin" value="QFI_FileInfoText3.Skin"/>
+								<property name="Color"/>
+								<property name="Font">
+									<property name="ID" value="Skin.FontEx.TextSmall"/>
+								</property>
+							</properties>
+						</control>
+						<control class="TextDisplay" name="QFI_FileInfoText4">
+							<properties>
+								<property name="Bindings">
+									<link Source="prvPlayingFileInfo" SourcePin="FileInfo" TargetPin="DisplayValue" TextFormat="%Duration"/>
+								</property>
+								<property name="PlaceInfo" anchors="0,1,1,0" margins="132,8,8,56" Size="52,16"/>
+								<property name="Skin" value="QFI_FileInfoText4.Skin"/>
+								<property name="Alignment" value="taRightJustify"/>
+								<property name="AlignmentVertical" value="taAlignBottom"/>
+								<property name="Color"/>
+								<property name="Font">
+									<property name="ID" value="Skin.FontEx.TextLarge"/>
+								</property>
+							</properties>
+						</control>
+					</controls>
+				</item>
+			</items>
+		</item>
+		<item class="LayoutItem" name="QFIEdge_Top">
+			<properties>
+				<property name="SizeMinimal" value="1,1"/>
+			</properties>
+			<items>
+				<item class="LayoutTexture" name="QFIEdge_Top_0">
+					<properties>
+						<property name="Bindings">
+							<link Source="QFI_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 0"/>
+						</property>
+						<property name="Alignment" value="laClient"/>
+						<property name="Color">
+							<property name="Value" value="4290756543"/>
+						</property>
+						<property name="Texture" value="QFIEdge_Top_0.Texture"/>
+					</properties>
+				</item>
+				<item class="LayoutTexture" name="QFIEdge_Top_1">
+					<properties>
+						<property name="Bindings">
+							<link Source="QFI_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 1"/>
+						</property>
+						<property name="Alignment" value="laClient"/>
+						<property name="AlignmentLevel" value="1"/>
+						<property name="Color">
+							<property name="Value" value="4282335039"/>
+						</property>
+						<property name="Texture" value="QFIEdge_Top_1.Texture"/>
+					</properties>
+				</item>
+				<item class="LayoutTexture" name="QFIEdge_Top_2">
+					<properties>
+						<property name="Bindings">
+							<link Source="QFI_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 2"/>
+						</property>
+						<property name="Alignment" value="laClient"/>
+						<property name="AlignmentLevel" value="2"/>
+						<property name="Color">
+							<property name="Value" value="4294941465"/>
+						</property>
+						<property name="Texture" value="QFIEdge_Top_2.Texture"/>
+					</properties>
+				</item>
+			</items>
+		</item>
+		<item class="LayoutItem" name="QFIEdge_Bottom">
+			<properties>
+				<property name="SizeMinimal" value="1,1"/>
+				<property name="Alignment" value="laBottom"/>
+			</properties>
+			<items>
+				<item class="LayoutTexture" name="QFIEdge_Bottom_0">
+					<properties>
+						<property name="Bindings">
+							<link Source="QFI_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 0"/>
+						</property>
+						<property name="Alignment" value="laClient"/>
+						<property name="Color">
+							<property name="Value" value="4290756543"/>
+						</property>
+						<property name="Texture" value="QFIEdge_Bottom_0.Texture"/>
+					</properties>
+				</item>
+				<item class="LayoutTexture" name="QFIEdge_Bottom_1">
+					<properties>
+						<property name="Bindings">
+							<link Source="QFI_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 1"/>
+						</property>
+						<property name="Alignment" value="laClient"/>
+						<property name="AlignmentLevel" value="1"/>
+						<property name="Color">
+							<property name="Value" value="4282335039"/>
+						</property>
+						<property name="Texture" value="QFIEdge_Bottom_1.Texture"/>
+					</properties>
+				</item>
+				<item class="LayoutTexture" name="QFIEdge_Bottom_2">
+					<properties>
+						<property name="Bindings">
+							<link Source="QFI_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 2"/>
+						</property>
+						<property name="Alignment" value="laClient"/>
+						<property name="AlignmentLevel" value="2"/>
+						<property name="Color">
+							<property name="Value" value="4294941465"/>
+						</property>
+						<property name="Texture" value="QFIEdge_Bottom_2.Texture"/>
+					</properties>
+				</item>
+			</items>
+		</item>
+		<item class="LayoutItem" name="QFIEdge_Left">
+			<properties>
+				<property name="SizeMinimal" value="1,1"/>
+				<property name="Alignment" value="laLeft"/>
+			</properties>
+			<items>
+				<item class="LayoutTexture" name="QFIEdge_Left_0">
+					<properties>
+						<property name="Bindings">
+							<link Source="QFI_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 0"/>
+						</property>
+						<property name="Alignment" value="laClient"/>
+						<property name="Color">
+							<property name="Value" value="4290756543"/>
+						</property>
+						<property name="Texture" value="QFIEdge_Left_0.Texture"/>
+					</properties>
+				</item>
+				<item class="LayoutTexture" name="QFIEdge_Left_1">
+					<properties>
+						<property name="Bindings">
+							<link Source="QFI_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 1"/>
+						</property>
+						<property name="Alignment" value="laClient"/>
+						<property name="AlignmentLevel" value="1"/>
+						<property name="Color">
+							<property name="Value" value="4282335039"/>
+						</property>
+						<property name="Texture" value="QFIEdge_Left_1.Texture"/>
+					</properties>
+				</item>
+				<item class="LayoutTexture" name="QFIEdge_Left_2">
+					<properties>
+						<property name="Bindings">
+							<link Source="QFI_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 2"/>
+						</property>
+						<property name="Alignment" value="laClient"/>
+						<property name="AlignmentLevel" value="2"/>
+						<property name="Color">
+							<property name="Value" value="4294941465"/>
+						</property>
+						<property name="Texture" value="QFIEdge_Left_2.Texture"/>
+					</properties>
+				</item>
+			</items>
+		</item>
+		<item class="LayoutItem" name="QFIEdge_Right">
+			<properties>
+				<property name="SizeMinimal" value="1,1"/>
+				<property name="Alignment" value="laRight"/>
+			</properties>
+			<items>
+				<item class="LayoutTexture" name="QFIEdge_Right_0">
+					<properties>
+						<property name="Bindings">
+							<link Source="QFI_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 0"/>
+						</property>
+						<property name="Alignment" value="laClient"/>
+						<property name="Color">
+							<property name="Value" value="4290756543"/>
+						</property>
+						<property name="Texture" value="QFIEdge_Right_0.Texture"/>
+					</properties>
+				</item>
+				<item class="LayoutTexture" name="QFIEdge_Right_1">
+					<properties>
+						<property name="Bindings">
+							<link Source="QFI_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 1"/>
+						</property>
+						<property name="Alignment" value="laClient"/>
+						<property name="AlignmentLevel" value="1"/>
+						<property name="Color">
+							<property name="Value" value="4282335039"/>
+						</property>
+						<property name="Texture" value="QFIEdge_Right_1.Texture"/>
+					</properties>
+				</item>
+				<item class="LayoutTexture" name="QFIEdge_Right_2">
+					<properties>
+						<property name="Bindings">
+							<link Source="QFI_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 2"/>
+						</property>
+						<property name="Alignment" value="laClient"/>
+						<property name="AlignmentLevel" value="2"/>
+						<property name="Color">
+							<property name="Value" value="4294941465"/>
+						</property>
+						<property name="Texture" value="QFIEdge_Right_2.Texture"/>
+					</properties>
+				</item>
+			</items>
 		</item>
 	</items>
 </layout>

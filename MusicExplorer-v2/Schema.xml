@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<skin target="450" edition="0" ID="eef0bb786ffa99f4f9ce555565aff1e9" AllowColoration="1" ScaleFactors="sf100,sf125,sf150,sf200,sf400" AutoAdjustForInBetweenScaleFactors="1" AutoAdjustForUnsupportedScaleFactors="1">
+<skin target="450" edition="0" ID="6a62c35135f09b57c910f23af23f6843" AllowColoration="1" ScaleFactors="sf100,sf125,sf150,sf200,sf400" AutoAdjustForInBetweenScaleFactors="1" AutoAdjustForUnsupportedScaleFactors="1">
 	<properties>
 		<resources>
 			<item>
@@ -991,6 +991,7 @@
 		</form>
 		<form name="DropWheel">
 			<properties>
+				<property name="MagnetRectOffsets" value="17,17,17,17"/>
 				<property name="SizingHitTestAreaWidth" value="5"/>
 			</properties>
 		</form>
@@ -1001,6 +1002,7 @@
 		</form>
 		<form name="QFI">
 			<properties>
+				<property name="MagnetRectOffsets" value="1,1,1,1"/>
 				<property name="SizingHitTestAreaWidth" value="5"/>
 			</properties>
 		</form>
@@ -1199,6 +1201,22 @@
 			<properties>
 				<property name="Bindings">
 					<link Source="DropWheel" SourcePin="Active" TargetPin="Value1"/>
+					<link Source="Setting_PrimaryColorEdge" SourcePin="Position" TargetPin="Value2"/>
+				</property>
+				<property name="Expression" value="If(Value1, If(Value2, 2, 1), 0)"/>
+			</properties>
+		</provider>
+		<provider name="TC_FileInfo" class="StringOperatorConcatenatorNotificator">
+			<properties>
+				<property name="Bindings">
+					<link Source="prvPlayingFileInfo" SourcePin="FileInfo" TargetPin="Value1" TextFormat="%IF(%UserTemplate2,%UserTemplate2 - ,)%UserTemplate1"/>
+				</property>
+			</properties>
+		</provider>
+		<provider name="QFI_WindowEdgeSelector" class="LogicalOperatorCommutator">
+			<properties>
+				<property name="Bindings">
+					<link Source="QFI" SourcePin="Active" TargetPin="Value1"/>
 					<link Source="Setting_PrimaryColorEdge" SourcePin="Position" TargetPin="Value2"/>
 				</property>
 				<property name="Expression" value="If(Value1, If(Value2, 2, 1), 0)"/>
