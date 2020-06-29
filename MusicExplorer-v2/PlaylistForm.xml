@@ -10,6 +10,7 @@
 			<items>
 				<item class="LayoutContainer" name="PlaylistFormMain">
 					<properties>
+						<property name="SizeMinimal" value="200,200"/>
 						<property name="Alignment" value="laClient"/>
 						<property name="Color">
 							<property name="ID" value="Skin.Color.Base"/>

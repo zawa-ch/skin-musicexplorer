@@ -519,7 +519,7 @@
 															<link Source="acVisualFullScreen" SourcePin="Action" TargetPin="Hint"/>
 														</property>
 														<property name="PlaceInfo" anchors="0,0,1,1" margins="605,9,0,0" Size="20,21"/>
-														<property name="Skin" value="MF_VIS_VisFullScreenButton.Skin"/>
+														<property name="Skin" link="Skin.Texture.DisplayButton"/>
 														<property name="Fonts">
 															<property name="Normal"/>
 															<property name="Hot"/>
