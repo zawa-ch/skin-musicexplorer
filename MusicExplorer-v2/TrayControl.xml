@@ -5,7 +5,7 @@
 			<properties>
 				<property name="SizeMinimal" value="240,24"/>
 				<property name="Color">
-					<property name="ID" value="Skin.Color.Base"/>
+					<property name="ID" value="Skin.BaseColor"/>
 				</property>
 				<property name="Texture" value="TrayControlMain.Texture"/>
 			</properties>
@@ -29,7 +29,7 @@
 								<property name="Skin" value="TC_FileInfoText.Skin"/>
 								<property name="Color"/>
 								<property name="Font">
-									<property name="ID" value="Skin.FontEx.TextNormal"/>
+									<property name="ID" value="Skin.TextNormal"/>
 								</property>
 							</properties>
 						</control>
@@ -55,7 +55,7 @@
 									<link Source="acPlayerRepeat" SourcePin="State" TargetPin="State"/>
 								</property>
 								<property name="PlaceInfo" anchors="1,0,0,1" margins="148,0,80,0" Size="24,24"/>
-								<property name="Skin" link="Skin.Texture.RepeatButton[24]"/>
+								<property name="Skin" link="Skin.RepeatButton.Texture"/>
 								<property name="FramesPerState" value="3"/>
 								<property name="Fonts">
 									<property name="Normal"/>
@@ -74,7 +74,7 @@
 									<link Source="acPlayerShuffle" SourcePin="State" TargetPin="State"/>
 								</property>
 								<property name="PlaceInfo" anchors="1,0,0,1" margins="172,0,56,0" Size="24,24"/>
-								<property name="Skin" link="Skin.Texture.ShuffleButton[24]"/>
+								<property name="Skin" link="Skin.ShuffleButton.Texture"/>
 								<property name="FramesPerState" value="3"/>
 								<property name="Fonts">
 									<property name="Normal"/>
@@ -93,7 +93,7 @@
 									<link Source="acPlayerSeekBackward" SourcePin="Action" TargetPin="ActionOnHold"/>
 								</property>
 								<property name="PlaceInfo" anchors="1,0,0,1" margins="24,0,204,0" Size="24,24"/>
-								<property name="Skin" link="Skin.Texture.PrevButton[24]"/>
+								<property name="Skin" link="Skin.PrevButton.Texture[24]"/>
 								<property name="Fonts">
 									<property name="Normal"/>
 									<property name="Hot"/>
@@ -111,7 +111,7 @@
 									<link Source="prvPlayerState" SourcePin="State" TargetPin="State" Expression="Value = 1"/>
 								</property>
 								<property name="PlaceInfo" anchors="1,0,0,1" margins="48,0,180,0" Size="24,24"/>
-								<property name="Skin" link="Skin.Texture.PlayButton[24]"/>
+								<property name="Skin" link="Skin.PlayButton.Texture[24]"/>
 								<property name="Fonts">
 									<property name="Normal"/>
 									<property name="Hot"/>
@@ -129,7 +129,7 @@
 									<link Source="prvPlayerState" SourcePin="State" TargetPin="State" Expression="Value = 2"/>
 								</property>
 								<property name="PlaceInfo" anchors="1,0,0,1" margins="72,0,156,0" Size="24,24"/>
-								<property name="Skin" link="Skin.Texture.PauseButton[24]"/>
+								<property name="Skin" link="Skin.PauseButton.Texture[24]"/>
 								<property name="Fonts">
 									<property name="Normal"/>
 									<property name="Hot"/>
@@ -147,7 +147,7 @@
 									<link Source="acPlayerStop" SourcePin="Flashing" TargetPin="State"/>
 								</property>
 								<property name="PlaceInfo" anchors="1,0,0,1" margins="96,0,132,0" Size="24,24"/>
-								<property name="Skin" link="Skin.Texture.StopButton[24]"/>
+								<property name="Skin" link="Skin.StopButton.Texture[24]"/>
 								<property name="Fonts">
 									<property name="Normal"/>
 									<property name="Hot"/>
@@ -165,7 +165,7 @@
 									<link Source="acPlayerSeekForward" SourcePin="Action" TargetPin="ActionOnHold"/>
 								</property>
 								<property name="PlaceInfo" anchors="1,0,0,1" margins="120,0,108,0" Size="24,24"/>
-								<property name="Skin" link="Skin.Texture.NextButton[24]"/>
+								<property name="Skin" link="Skin.NextButton.Texture[24]"/>
 								<property name="Fonts">
 									<property name="Normal"/>
 									<property name="Hot"/>
@@ -197,10 +197,10 @@
 						<property name="Waveform">
 							<property name="Offsets" value="0,0,0,-24"/>
 							<property name="Color">
-								<property name="ID" value="Skin.Color.Secondory-a4"/>
+								<property name="ID" value="Skin.SecondoryColor[t50]"/>
 							</property>
 							<property name="ColorProgress">
-								<property name="ID" value="Skin.Color.Primary-a8"/>
+								<property name="ID" value="Skin.PrimaryColor[t50]"/>
 							</property>
 						</property>
 					</properties>
@@ -216,7 +216,7 @@
 						<property name="Skin" value="TC_Seekbar1.Skin"/>
 						<property name="Color"/>
 						<property name="ColorProgress">
-							<property name="ID" value="Skin.Color.Primary"/>
+							<property name="ID" value="Skin.PrimaryColor"/>
 						</property>
 						<property name="SkinThumb" value="TC_Seekbar1.SkinThumb"/>
 						<property name="TextLabels">

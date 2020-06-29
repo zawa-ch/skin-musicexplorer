@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<imageSet>
-	<image dpi="96">Skin.Texture.ScrollBar0V.UpButtonResource</image>
-	<image dpi="120">Skin.Texture.ScrollBar0V.UpButtonResource-120</image>
-	<image dpi="144">Skin.Texture.ScrollBar0V.UpButtonResource-144</image>
-	<image dpi="192">Skin.Texture.ScrollBar0V.UpButtonResource-192</image>
-	<image dpi="384">Skin.Texture.ScrollBar0V.UpButtonResource-384</image>
-</imageSet>

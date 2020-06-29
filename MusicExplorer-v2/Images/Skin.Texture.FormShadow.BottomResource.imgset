@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<imageSet>
-	<image dpi="96">Skin.Texture.FormShadow.BottomResource</image>
-	<image dpi="120">Skin.Texture.FormShadow.BottomResource-120</image>
-	<image dpi="144">Skin.Texture.FormShadow.BottomResource-144</image>
-	<image dpi="192">Skin.Texture.FormShadow.BottomResource-192</image>
-	<image dpi="384">Skin.Texture.FormShadow.BottomResource-384</image>
-</imageSet>

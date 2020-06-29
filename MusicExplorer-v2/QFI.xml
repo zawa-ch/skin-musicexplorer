@@ -7,7 +7,7 @@
 				<property name="SizeMinimal" value="280,0"/>
 				<property name="Alignment" value="laClient"/>
 				<property name="Color">
-					<property name="ID" value="Skin.Color.Base"/>
+					<property name="ID" value="Skin.BaseColor"/>
 				</property>
 				<property name="Texture" value="QFIMain.Texture"/>
 			</properties>
@@ -53,7 +53,7 @@
 								<property name="AlignmentVertical" value="taAlignBottom"/>
 								<property name="Color"/>
 								<property name="Font">
-									<property name="ID" value="Skin.FontEx.TextLarge"/>
+									<property name="ID" value="Skin.TextNormal.Large"/>
 								</property>
 							</properties>
 						</control>
@@ -66,7 +66,7 @@
 								<property name="Skin" value="QFI_FileInfoText1.Skin"/>
 								<property name="Color"/>
 								<property name="Font">
-									<property name="ID" value="Skin.FontEx.TextNormal"/>
+									<property name="ID" value="Skin.TextNormal"/>
 								</property>
 							</properties>
 						</control>
@@ -79,7 +79,7 @@
 								<property name="Skin" value="QFI_FileInfoText2.Skin"/>
 								<property name="Color"/>
 								<property name="Font">
-									<property name="ID" value="Skin.FontEx.TextNormal"/>
+									<property name="ID" value="Skin.TextNormal"/>
 								</property>
 							</properties>
 						</control>
@@ -92,7 +92,7 @@
 								<property name="Skin" value="QFI_FileInfoText3.Skin"/>
 								<property name="Color"/>
 								<property name="Font">
-									<property name="ID" value="Skin.FontEx.TextSmall"/>
+									<property name="ID" value="Skin.TextNormal.Small"/>
 								</property>
 							</properties>
 						</control>
@@ -107,7 +107,7 @@
 								<property name="AlignmentVertical" value="taAlignBottom"/>
 								<property name="Color"/>
 								<property name="Font">
-									<property name="ID" value="Skin.FontEx.TextLarge"/>
+									<property name="ID" value="Skin.TextNormal.Large"/>
 								</property>
 							</properties>
 						</control>

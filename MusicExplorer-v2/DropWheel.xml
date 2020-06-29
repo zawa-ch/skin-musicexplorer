@@ -15,7 +15,7 @@
 						<property name="SizeMinimal" value="128,128"/>
 						<property name="Alignment" value="laClient"/>
 						<property name="Color">
-							<property name="ID" value="Skin.Color.Base"/>
+							<property name="ID" value="Skin.BaseColor"/>
 						</property>
 						<property name="Texture" value="DropWheel.Texture"/>
 					</properties>
@@ -23,7 +23,7 @@
 						<control link="DropWheel_CUR">
 							<properties>
 								<property name="PlaceInfo" anchors="0,0,1,0" margins="83,27,0,27" Size="40,48"/>
-								<property name="Skin" link="Skin.Texture.RightButton"/>
+								<property name="Skin" link="Skin.RightButton.Texture"/>
 								<property name="FramesPerState" value="2"/>
 								<property name="Fonts">
 									<property name="Normal">
@@ -64,7 +64,7 @@
 						<control link="DropWheel_RND">
 							<properties>
 								<property name="PlaceInfo" anchors="1,0,0,0" margins="0,27,83,27" Size="40,48"/>
-								<property name="Skin" link="Skin.Texture.RandomButton"/>
+								<property name="Skin" link="Skin.RandomButton.Texture"/>
 								<property name="FramesPerState" value="2"/>
 								<property name="Fonts">
 									<property name="Normal">
@@ -105,7 +105,7 @@
 						<control link="DropWheel_BTM">
 							<properties>
 								<property name="PlaceInfo" anchors="0,0,0,1" margins="40,88,40,0" Size="48,40"/>
-								<property name="Skin" link="Skin.Texture.BottomButton"/>
+								<property name="Skin" link="Skin.BottomButton.Texture"/>
 								<property name="FramesPerState" value="2"/>
 								<property name="Fonts">
 									<property name="Normal">
@@ -146,7 +146,7 @@
 						<control link="DropWheel_TOP">
 							<properties>
 								<property name="PlaceInfo" anchors="0,1,0,0" margins="25,0,25,84" Size="48,40"/>
-								<property name="Skin" link="Skin.Texture.TopButton"/>
+								<property name="Skin" link="Skin.TopButton.Texture"/>
 								<property name="FramesPerState" value="2"/>
 								<property name="Fonts">
 									<property name="Normal">
@@ -187,7 +187,7 @@
 						<control link="DropWheel_Cancel">
 							<properties>
 								<property name="PlaceInfo" anchors="0,1,1,0" margins="100,4,4,100" Size="20,20"/>
-								<property name="Skin" link="Skin.Texture.CloseButton"/>
+								<property name="Skin" link="Skin.CloseButton.Texture"/>
 								<property name="Fonts">
 									<property name="Normal">
 										<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>

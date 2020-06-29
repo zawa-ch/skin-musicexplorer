@@ -10,10 +10,9 @@
 			<items>
 				<item class="LayoutContainer" name="PlaylistFormMain">
 					<properties>
-						<property name="SizeMinimal" value="200,200"/>
 						<property name="Alignment" value="laClient"/>
 						<property name="Color">
-							<property name="ID" value="Skin.Color.Base"/>
+							<property name="ID" value="Skin.BaseColor"/>
 						</property>
 						<property name="Texture" value="PlaylistFormMain.Texture"/>
 					</properties>
@@ -38,7 +37,7 @@
 										<property name="Skin" value="PF_TitleTextInactive.Skin"/>
 										<property name="Color"/>
 										<property name="Font">
-											<property name="ID" value="Skin.FontEx.TitleInactive"/>
+											<property name="ID" value="Skin.TitleInactive.FontEx"/>
 										</property>
 										<property name="Template" value="Playlist"/>
 									</properties>
@@ -52,7 +51,7 @@
 										<property name="Skin" value="PF_TitleText.Skin"/>
 										<property name="Color"/>
 										<property name="Font">
-											<property name="ID" value="Skin.FontEx.TitleNormal"/>
+											<property name="ID" value="Skin.TitleNormal.Font"/>
 										</property>
 										<property name="Template" value="Playlist"/>
 									</properties>
@@ -65,7 +64,7 @@
 											<link Source="PlaylistForm" SourcePin="Visible" TargetPin="Hint"/>
 										</property>
 										<property name="PlaceInfo" anchors="0,1,1,1" margins="110,0,0,0" Size="40,24"/>
-										<property name="Skin" link="Skin.Texture.CloseButton"/>
+										<property name="Skin" link="Skin.CloseButton.Texture"/>
 										<property name="Fonts">
 											<property name="Normal"/>
 											<property name="Hot"/>
@@ -82,7 +81,7 @@
 											<link Source="PlaylistForm" SourcePin="Maximize" TargetPin="State"/>
 										</property>
 										<property name="PlaceInfo" anchors="0,1,1,1" margins="78,0,40,0" Size="40,24"/>
-										<property name="Skin" link="Skin.Texture.MaximizeButton"/>
+										<property name="Skin" link="Skin.MaximizeButton.Texture"/>
 										<property name="Fonts">
 											<property name="Normal"/>
 											<property name="Hot"/>
@@ -94,7 +93,7 @@
 								<control class="Button" name="PF_TitleMenuButton">
 									<properties>
 										<property name="PlaceInfo" anchors="1,1,0,1" margins="0,0,72,0" Size="30,24"/>
-										<property name="Skin" link="Skin.Texture.MainmenuButton"/>
+										<property name="Skin" link="Skin.MainmenuButton.Texture"/>
 										<property name="Fonts">
 											<property name="Normal">
 												<property name="ID" value="Skin.TitleButton.Fonts.Normal"/>
@@ -142,39 +141,39 @@
 												<property name="PopupMenu" value="pmPlaylistTabs"/>
 												<property name="Skin" value="PF_PlaylistTab.Skin"/>
 												<property name="DragDropIndicator">
-													<property name="ID" value="Skin.Color.Secondory"/>
+													<property name="ID" value="Skin.SecondoryColor"/>
 												</property>
 												<property name="DragDropIndicatorBorder">
-													<property name="ID" value="Skin.Color.Secondory"/>
+													<property name="ID" value="Skin.SecondoryColor"/>
 												</property>
 												<property name="TabsOptions">
 													<property name="Font">
-														<property name="ID" value="Skin.FontEx.TabNormal"/>
+														<property name="ID" value="Skin.Tab.Normal.Font"/>
 													</property>
 													<property name="FontHot">
-														<property name="ID" value="Skin.FontEx.TabHot"/>
+														<property name="ID" value="Skin.Tab.Hot.Font"/>
 													</property>
 													<property name="FontActive">
-														<property name="ID" value="Skin.FontEx.TabActive"/>
+														<property name="ID" value="Skin.Tab.Active.Font"/>
 													</property>
 													<property name="FontActiveHot">
-														<property name="ID" value="Skin.FontEx.TabActiveHot"/>
+														<property name="ID" value="Skin.Tab.ActiveHot.Font"/>
 													</property>
 													<property name="FontPlaying">
-														<property name="ID" value="Skin.FontEx.TabPlaying"/>
+														<property name="ID" value="Skin.Tab.Playing.Font"/>
 													</property>
 													<property name="FontPlayingActive">
-														<property name="ID" value="Skin.FontEx.TabPlayingActive"/>
+														<property name="ID" value="Skin.Tab.PlayingActive.Font"/>
 													</property>
 													<property name="FontPlayingActiveHot">
-														<property name="ID" value="Skin.FontEx.TabPlayingActiveHot"/>
+														<property name="ID" value="Skin.Tab.PlayingActiveHot.Font"/>
 													</property>
 													<property name="FontPlayingHot">
-														<property name="ID" value="Skin.FontEx.TabPlayingHot"/>
+														<property name="ID" value="Skin.Tab.PlayingHot.Font"/>
 													</property>
 													<property name="AutoSize" value="True"/>
 													<property name="ShowPartiallyVisibleTabs" value="True"/>
-													<property name="Skin" link="Skin.Texture.TabSkin1[24]"/>
+													<property name="Skin" link="Skin.Tab[1].Skin"/>
 													<property name="TextAlignment" value="taLeftJustify"/>
 													<property name="TextOffsets" value="4,0,4,0"/>
 													<property name="TextOffsetsActive" value="4,0,4,0"/>
@@ -214,7 +213,7 @@
 															</property>
 															<property name="ContentOffsets" value="0,0,0,0"/>
 															<property name="FocusRectColor">
-																<property name="ID" value="Skin.Color.Secondory"/>
+																<property name="ID" value="Skin.SecondoryColor"/>
 															</property>
 															<property name="HeaderBackground" value="Playlist.Resources.HeaderBackground"/>
 															<property name="HeaderBackgroundColors">
@@ -241,31 +240,31 @@
 															<property name="HeaderSwitches" value="Playlist.Resources.HeaderSwitches"/>
 															<property name="ItemBackgroundColors">
 																<property name="Normal">
-																	<property name="ID" value="Skin.Color.Unset"/>
+																	<property name="ID" value="Colors.Unset"/>
 																</property>
 																<property name="Normal2">
-																	<property name="ID" value="Skin.Color.Secondory-a2"/>
+																	<property name="ID" value="Skin.SecondoryColor[t10]"/>
 																</property>
 																<property name="Playing">
-																	<property name="ID" value="Skin.Color.Primary-a8"/>
+																	<property name="ID" value="Skin.PrimaryColor[t50]"/>
 																</property>
 																<property name="PlayingSelected">
-																	<property name="ID" value="Skin.Color.Primary-a8"/>
+																	<property name="ID" value="Skin.PrimaryColor[t50]"/>
 																</property>
 																<property name="PlayingSelectedFocused">
-																	<property name="ID" value="Skin.Color.Primary-a8"/>
+																	<property name="ID" value="Skin.PrimaryColor[t50]"/>
 																</property>
 																<property name="PlayingSelectedInactive">
-																	<property name="ID" value="Skin.Color.Primary-a8"/>
+																	<property name="ID" value="Skin.PrimaryColor[t50]"/>
 																</property>
 																<property name="Selected">
-																	<property name="ID" value="Skin.Color.Secondory-a4"/>
+																	<property name="ID" value="Skin.SecondoryColor[t50]"/>
 																</property>
 																<property name="SelectedFocused">
-																	<property name="ID" value="Skin.Color.Secondory-a4"/>
+																	<property name="ID" value="Skin.SecondoryColor[t50]"/>
 																</property>
 																<property name="SelectedInactive">
-																	<property name="ID" value="Skin.Color.Secondory-a4"/>
+																	<property name="ID" value="Skin.SecondoryColor[t50]"/>
 																</property>
 															</property>
 															<property name="ItemIndents" value="8,2,4,2"/>
@@ -372,10 +371,10 @@
 															<link Source="Playlist" SourcePin="Scrolling" TargetPin="Action"/>
 														</property>
 														<property name="PlaceInfo" anchors="0,1,1,1" margins="4,0,0,0" Size="12,40"/>
-														<property name="Skin" link="Skin.Texture.ScrollBar0V.Skin"/>
-														<property name="SkinButtonDown" link="Skin.Texture.ScrollBar0V.DownButton"/>
-														<property name="SkinButtonUp" link="Skin.Texture.ScrollBar0V.UpButton"/>
-														<property name="SkinThumb" link="Skin.Texture.ScrollBar0V.Thumb"/>
+														<property name="Skin" link="Skin.ScrollBarV.Skin"/>
+														<property name="SkinButtonDown" link="Skin.ScrollBarV.DownButton"/>
+														<property name="SkinButtonUp" link="Skin.ScrollBarV.UpButton"/>
+														<property name="SkinThumb" link="Skin.ScrollBarV.Thumb"/>
 													</properties>
 												</control>
 											</controls>
@@ -409,7 +408,7 @@
 												<property name="Skin" value="TextDisplay.Skin"/>
 												<property name="Color"/>
 												<property name="Font">
-													<property name="ID" value="Skin.FontEx.TextNormal"/>
+													<property name="ID" value="Skin.TextNormal"/>
 												</property>
 											</properties>
 										</control>
@@ -427,7 +426,7 @@
 											<properties>
 												<property name="PlaceInfo" anchors="0,0,1,1" margins="24,-1,124,0" Size="24,24"/>
 												<property name="PopupMenu" value="pmAdd"/>
-												<property name="Skin" link="Skin.Texture.AddButton"/>
+												<property name="Skin" link="Skin.AddButton.Texture"/>
 												<property name="Fonts">
 													<property name="Normal"/>
 													<property name="Hot"/>
@@ -440,7 +439,7 @@
 											<properties>
 												<property name="PlaceInfo" anchors="0,0,1,1" margins="48,-1,100,0" Size="24,24"/>
 												<property name="PopupMenu" value="pmDelete"/>
-												<property name="Skin" link="Skin.Texture.DeleteButton"/>
+												<property name="Skin" link="Skin.DeleteButton.Texture"/>
 												<property name="Fonts">
 													<property name="Normal"/>
 													<property name="Hot"/>
@@ -453,7 +452,7 @@
 											<properties>
 												<property name="PlaceInfo" anchors="0,0,1,1" margins="72,-1,76,0" Size="24,24"/>
 												<property name="PopupMenu" value="pmSorting"/>
-												<property name="Skin" link="Skin.Texture.SortButton"/>
+												<property name="Skin" link="Skin.SortButton.Texture"/>
 												<property name="Fonts">
 													<property name="Normal"/>
 													<property name="Hot"/>
@@ -466,7 +465,7 @@
 											<properties>
 												<property name="PlaceInfo" anchors="0,0,1,1" margins="100,2,56,0" Size="20,21"/>
 												<property name="PopupMenu" value="pmMisc"/>
-												<property name="Skin" link="Skin.Texture.MiscButton"/>
+												<property name="Skin" link="Skin.MiscButton.Texture"/>
 												<property name="Fonts">
 													<property name="Normal"/>
 													<property name="Hot"/>
@@ -479,7 +478,7 @@
 											<properties>
 												<property name="PlaceInfo" anchors="0,0,1,1" margins="100,-1,0,0" Size="24,24"/>
 												<property name="PopupMenu" value="pmManagePlaylist"/>
-												<property name="Skin" link="Skin.Texture.OptionButton"/>
+												<property name="Skin" link="Skin.OptionButton.Texture"/>
 												<property name="Fonts">
 													<property name="Normal"/>
 													<property name="Hot"/>
@@ -495,7 +494,7 @@
 													<link Source="prvBookmarks" SourcePin="ContextMenu" TargetPin="Hint"/>
 												</property>
 												<property name="PlaceInfo" anchors="0,0,1,1" margins="124,-1,24,0" Size="24,24"/>
-												<property name="Skin" link="Skin.Texture.BookmarkButton"/>
+												<property name="Skin" link="Skin.BookmarkButton.Texture"/>
 												<property name="Fonts">
 													<property name="Normal"/>
 													<property name="Hot"/>
@@ -513,7 +512,7 @@
 										<property name="AlignmentLevel" value="1"/>
 										<property name="AlignmentMargins" value="4,0,4,0"/>
 										<property name="Color">
-											<property name="ID" value="Skin.Color.Secondory-a2"/>
+											<property name="ID" value="Skin.SecondoryColor[t10]"/>
 										</property>
 										<property name="Texture" value="PF_ToolBar2.Texture"/>
 									</properties>
@@ -549,14 +548,14 @@
 												<property name="PlaceInfo" anchors="1,1,1,1" margins="4,0,24,0" Size="92,24"/>
 												<property name="Skin" value="PF_SearchEdit.Skin"/>
 												<property name="Color">
-													<property name="ID" value="Skin.Color.Unset"/>
+													<property name="ID" value="Colors.Unset"/>
 												</property>
 												<property name="Font">
-													<property name="ID" value="Skin.FontEx.TextNormal"/>
+													<property name="ID" value="Skin.TextNormal"/>
 												</property>
 												<property name="HintTextColor"/>
 												<property name="SelectionColor">
-													<property name="ID" value="Skin.Color.Primary-a8"/>
+													<property name="ID" value="Skin.PrimaryColor[t50]"/>
 												</property>
 												<property name="SelectionTextColor">
 													<property name="ID" value="Skin.TextNormal.Color"/>
@@ -572,7 +571,7 @@
 													<link Source="PF_SearchEdit" SourcePin="Text" TargetPin="Visibility"/>
 												</property>
 												<property name="PlaceInfo" anchors="0,0,1,1" margins="76,7,0,0" Size="20,21"/>
-												<property name="Skin" link="Skin.Texture.BackSpaceButton"/>
+												<property name="Skin" link="Skin.BackSpaceButton.Texture"/>
 												<property name="Fonts">
 													<property name="Normal"/>
 													<property name="Hot"/>
@@ -587,7 +586,7 @@
 									<properties>
 										<property name="SizeMinimal" value="0,1"/>
 										<property name="Color">
-											<property name="ID" value="Skin.Color.Secondory"/>
+											<property name="ID" value="Skin.SecondoryColor"/>
 										</property>
 										<property name="Texture" value="PF_ToolBarSepalater.Texture"/>
 									</properties>
@@ -601,7 +600,7 @@
 								</property>
 								<property name="Alignment" value="laBottom"/>
 								<property name="Color">
-									<property name="ID" value="Skin.Color.Secondory-a2"/>
+									<property name="ID" value="Skin.SecondoryColor[t10]"/>
 								</property>
 								<property name="Texture" value="PF_PlayCtrlBar.Texture"/>
 							</properties>
@@ -636,10 +635,10 @@
 												</property>
 												<property name="Waveform">
 													<property name="Color">
-														<property name="ID" value="Skin.Color.Secondory-a4"/>
+														<property name="ID" value="Skin.SecondoryColor[t50]"/>
 													</property>
 													<property name="ColorProgress">
-														<property name="ID" value="Skin.Color.Primary-a8"/>
+														<property name="ID" value="Skin.PrimaryColor[t50]"/>
 													</property>
 												</property>
 											</properties>
@@ -662,7 +661,7 @@
 												<property name="Alignment" value="taRightJustify"/>
 												<property name="Color"/>
 												<property name="Font">
-													<property name="ID" value="Skin.FontEx.TextNormal"/>
+													<property name="ID" value="Skin.TextNormal"/>
 												</property>
 											</properties>
 										</control>
@@ -675,7 +674,7 @@
 												<property name="Skin" value="PF_PlayInfoText.Skin"/>
 												<property name="Color"/>
 												<property name="Font">
-													<property name="ID" value="Skin.FontEx.TextNormal"/>
+													<property name="ID" value="Skin.TextNormal"/>
 												</property>
 											</properties>
 										</control>
@@ -698,7 +697,7 @@
 													<link Source="acPlayerSeekBackward" SourcePin="Action" TargetPin="ActionOnHold"/>
 												</property>
 												<property name="PlaceInfo" anchors="1,0,0,1" margins="0,-8,368,0" Size="24,24"/>
-												<property name="Skin" link="Skin.Texture.PrevButton[24]"/>
+												<property name="Skin" link="Skin.PrevButton.Texture[24]"/>
 												<property name="Fonts">
 													<property name="Normal"/>
 													<property name="Hot"/>
@@ -716,7 +715,7 @@
 													<link Source="prvPlayerState" SourcePin="State" TargetPin="State" Expression="Value = 1"/>
 												</property>
 												<property name="PlaceInfo" anchors="1,0,0,1" margins="24,-8,344,0" Size="24,24"/>
-												<property name="Skin" link="Skin.Texture.PlayButton[24]"/>
+												<property name="Skin" link="Skin.PlayButton.Texture[24]"/>
 												<property name="Fonts">
 													<property name="Normal"/>
 													<property name="Hot"/>
@@ -734,7 +733,7 @@
 													<link Source="prvPlayerState" SourcePin="State" TargetPin="State" Expression="Value = 2"/>
 												</property>
 												<property name="PlaceInfo" anchors="1,0,0,1" margins="48,-8,320,0" Size="24,24"/>
-												<property name="Skin" link="Skin.Texture.PauseButton[24]"/>
+												<property name="Skin" link="Skin.PauseButton.Texture[24]"/>
 												<property name="Fonts">
 													<property name="Normal"/>
 													<property name="Hot"/>
@@ -752,7 +751,7 @@
 													<link Source="acPlayerStop" SourcePin="Flashing" TargetPin="State"/>
 												</property>
 												<property name="PlaceInfo" anchors="1,0,0,1" margins="72,-8,296,0" Size="24,24"/>
-												<property name="Skin" link="Skin.Texture.StopButton[24]"/>
+												<property name="Skin" link="Skin.StopButton.Texture[24]"/>
 												<property name="Fonts">
 													<property name="Normal"/>
 													<property name="Hot"/>
@@ -770,7 +769,7 @@
 													<link Source="acPlayerSeekForward" SourcePin="Action" TargetPin="ActionOnHold"/>
 												</property>
 												<property name="PlaceInfo" anchors="1,0,0,1" margins="96,-8,272,0" Size="24,24"/>
-												<property name="Skin" link="Skin.Texture.NextButton[24]"/>
+												<property name="Skin" link="Skin.NextButton.Texture[24]"/>
 												<property name="Fonts">
 													<property name="Normal"/>
 													<property name="Hot"/>
@@ -789,7 +788,7 @@
 													<link Source="acPlayerRepeat" SourcePin="State" TargetPin="State"/>
 												</property>
 												<property name="PlaceInfo" anchors="1,0,0,1" margins="128,0,186,0" Size="24,24"/>
-												<property name="Skin" link="Skin.Texture.RepeatButton[24]"/>
+												<property name="Skin" link="Skin.RepeatButton.Texture"/>
 												<property name="FramesPerState" value="3"/>
 												<property name="Fonts">
 													<property name="Normal"/>
@@ -809,7 +808,7 @@
 													<link Source="acPlayerShuffle" SourcePin="State" TargetPin="State"/>
 												</property>
 												<property name="PlaceInfo" anchors="1,0,0,1" margins="152,0,162,0" Size="24,24"/>
-												<property name="Skin" link="Skin.Texture.ShuffleButton[24]"/>
+												<property name="Skin" link="Skin.ShuffleButton.Texture"/>
 												<property name="FramesPerState" value="3"/>
 												<property name="Fonts">
 													<property name="Normal"/>

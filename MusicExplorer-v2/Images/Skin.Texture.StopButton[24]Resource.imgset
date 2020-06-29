@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<imageSet>
-	<image dpi="96">Skin.Texture.StopButton[24]Resource</image>
-	<image dpi="120">Skin.Texture.StopButton[24]Resource-120</image>
-	<image dpi="144">Skin.Texture.StopButton[24]Resource-144</image>
-	<image dpi="192">Skin.Texture.StopButton[24]Resource-192</image>
-	<image dpi="384">Skin.Texture.StopButton[24]Resource-384</image>
-</imageSet>

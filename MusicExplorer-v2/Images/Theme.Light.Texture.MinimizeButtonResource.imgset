@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<imageSet>
-	<image dpi="96">Theme.Light.Texture.MinimizeButtonResource</image>
-	<image dpi="120">Theme.Light.Texture.MinimizeButtonResource-120</image>
-	<image dpi="144">Theme.Light.Texture.MinimizeButtonResource-144</image>
-	<image dpi="192">Theme.Light.Texture.MinimizeButtonResource-192</image>
-	<image dpi="384">Theme.Light.Texture.MinimizeButtonResource-384</image>
-</imageSet>

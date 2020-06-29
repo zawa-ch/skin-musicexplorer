@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<imageSet>
+	<image dpi="96">Skin.ScrollBarH.ButtonsResource</image>
+	<image dpi="120">Skin.ScrollBarH.ButtonsResource-120</image>
+	<image dpi="144">Skin.ScrollBarH.ButtonsResource-144</image>
+</imageSet>

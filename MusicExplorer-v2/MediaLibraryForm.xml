@@ -12,7 +12,7 @@
 					<properties>
 						<property name="Alignment" value="laClient"/>
 						<property name="Color">
-							<property name="ID" value="Skin.Color.Base"/>
+							<property name="ID" value="Skin.BaseColor"/>
 						</property>
 						<property name="Texture" value="MediaLibraryFormMain.Texture"/>
 					</properties>
@@ -37,7 +37,7 @@
 										<property name="Skin" value="MLF_TitleTextInactive.Skin"/>
 										<property name="Color"/>
 										<property name="Font">
-											<property name="ID" value="Skin.FontEx.TitleInactive"/>
+											<property name="ID" value="Skin.TitleInactive.FontEx"/>
 										</property>
 										<property name="Template" value="Media Library"/>
 									</properties>
@@ -51,7 +51,7 @@
 										<property name="Skin" value="MLF_TitleText.Skin"/>
 										<property name="Color"/>
 										<property name="Font">
-											<property name="ID" value="Skin.FontEx.TitleNormal"/>
+											<property name="ID" value="Skin.TitleNormal.Font"/>
 										</property>
 										<property name="Template" value="Media Library"/>
 									</properties>
@@ -64,7 +64,7 @@
 											<link Source="MediaLibraryForm" SourcePin="Visible" TargetPin="Hint"/>
 										</property>
 										<property name="PlaceInfo" anchors="0,1,1,1" margins="136,0,0,0" Size="40,24"/>
-										<property name="Skin" link="Skin.Texture.CloseButton"/>
+										<property name="Skin" link="Skin.CloseButton.Texture"/>
 										<property name="Fonts">
 											<property name="Normal"/>
 											<property name="Hot"/>
@@ -81,7 +81,7 @@
 											<link Source="MediaLibraryForm" SourcePin="Maximize" TargetPin="State"/>
 										</property>
 										<property name="PlaceInfo" anchors="0,1,1,1" margins="104,0,40,0" Size="40,24"/>
-										<property name="Skin" link="Skin.Texture.MaximizeButton"/>
+										<property name="Skin" link="Skin.MaximizeButton.Texture"/>
 										<property name="Fonts">
 											<property name="Normal"/>
 											<property name="Hot"/>
@@ -94,7 +94,7 @@
 									<properties>
 										<property name="PlaceInfo" anchors="1,1,0,1" margins="0,0,138,0" Size="30,24"/>
 										<property name="PopupMenu" value="pmMLMainMenu"/>
-										<property name="Skin" link="Skin.Texture.MainmenuButton"/>
+										<property name="Skin" link="Skin.MainmenuButton.Texture"/>
 										<property name="Fonts">
 											<property name="Normal">
 												<property name="ID" value="Skin.TitleButton.Fonts.Normal"/>
@@ -141,20 +141,20 @@
 														<property name="PopupMenu" value="pmMLGroupingTree"/>
 														<property name="Skin" value="MLGroupingTree.Skin"/>
 														<property name="Font">
-															<property name="ID" value="Skin.FontEx.TextNormal"/>
+															<property name="ID" value="Skin.TextNormal"/>
 														</property>
 														<property name="ParentBackground" value="True"/>
 														<property name="Borders" value=""/>
 														<property name="GridLines" value="tlglHorzontal"/>
 														<property name="Style">
 															<property name="ColorBorder">
-																<property name="ID" value="Skin.Color.Unset"/>
+																<property name="ID" value="Colors.Unset"/>
 															</property>
 															<property name="ColorContent">
-																<property name="ID" value="Skin.Color.Unset"/>
+																<property name="ID" value="Colors.Unset"/>
 															</property>
 															<property name="ColorContentDisabled">
-																<property name="ID" value="Skin.Color.Unset"/>
+																<property name="ID" value="Colors.Unset"/>
 															</property>
 															<property name="ColorText">
 																<property name="ID" value="Skin.TextNormal.Color"/>
@@ -168,13 +168,13 @@
 																<property name="ID" value="Skin.SecondoryColor[o50]"/>
 															</property>
 															<property name="IncSearchColor">
-																<property name="ID" value="Skin.Color.Primary"/>
+																<property name="ID" value="Skin.PrimaryColor"/>
 															</property>
 															<property name="IncSearchColorText">
 																<property name="ID" value="Skin.TextNormal.Color"/>
 															</property>
 															<property name="RowColor1">
-																<property name="ID" value="Skin.Color.Base"/>
+																<property name="ID" value="Skin.BaseColor"/>
 															</property>
 															<property name="RowColor2">
 																<property name="ID" value="Skin.SecondoryColor[o10]"/>
@@ -197,33 +197,33 @@
 															<property name="RowColorSelectedTextInactive">
 																<property name="ID" value="Skin.TextNormal.Color"/>
 															</property>
-															<property name="RowExpandButton" link="Skin.MediaLibraryGroupingTree.RowExpandButton"/>
+															<property name="RowExpandButton" link="Skin.GroupingTree.RowExpandButton"/>
 															<property name="FocusRectColor">
 																<property name="Value" value="0"/>
 															</property>
-															<property name="AlphabeticIndex" link="Skin.MediaLibraryGroupingTree.AlphabeticIndex.Skin"/>
-															<property name="AlphabeticIndexCell" link="Skin.MediaLibraryGroupingTree.AlphabeticIndex.Cell"/>
+															<property name="AlphabeticIndex" link="Skin.GroupingTree.AlphabeticIndex.Skin"/>
+															<property name="AlphabeticIndexCell" link="Skin.GroupingTree.AlphabeticIndex.Cell"/>
 															<property name="AlphabeticIndexCellFont">
-																<property name="ID" value="Skin.FontEx.TextNormal"/>
+																<property name="ID" value="Skin.TextNormal"/>
 															</property>
 															<property name="AlphabeticIndexCellFontHot">
-																<property name="ID" value="Skin.FontEx.TextNormal"/>
+																<property name="ID" value="Skin.TextNormal"/>
 															</property>
 															<property name="AlphabeticIndexCellFontSelected">
-																<property name="ID" value="Skin.FontEx.TextNormal"/>
+																<property name="ID" value="Skin.TextNormal"/>
 																<property name="Style" value="fsBold"/>
 															</property>
 															<property name="AlphabeticIndexScroller" value="MLGroupingTree.StyleContent.AlphabeticIndexScroller"/>
-															<property name="AlphabeticIndexScrollerGlyph" link="Skin.MediaLibraryGroupingTree.AlphabeticIndex.ScrollerGlyph"/>
+															<property name="AlphabeticIndexScrollerGlyph" link="Skin.GroupingTree.AlphabeticIndex.ScrollerGlyph"/>
 															<property name="NodeImages" value="MLGroupingTree.StyleContent.NodeImages"/>
 														</property>
 														<property name="StyleScrollBox">
 															<property name="TextureBackgroundHorz" value="MLGroupingTree.StyleScrollBox.TextureBackgroundHorz"/>
-															<property name="TextureBackgroundVert" link="Skin.Texture.ScrollBar0V.Skin"/>
+															<property name="TextureBackgroundVert" link="Skin.ScrollBarV.Skin"/>
 															<property name="TextureButtonsHorz" value="MLGroupingTree.StyleScrollBox.TextureButtonsHorz"/>
-															<property name="TextureButtonsVert" link="Skin.Texture.ScrollBar0V.Buttons"/>
+															<property name="TextureButtonsVert" link="Skin.ScrollBarV.Buttons"/>
 															<property name="TextureThumbHorz" value="MLGroupingTree.StyleScrollBox.TextureThumbHorz"/>
-															<property name="TextureThumbVert" link="Skin.Texture.ScrollBar0V.Thumb"/>
+															<property name="TextureThumbVert" link="Skin.ScrollBarV.Thumb"/>
 															<property name="TextureSizeGripArea" value="MLGroupingTree.StyleScrollBox.TextureSizeGripArea"/>
 														</property>
 													</properties>
@@ -239,16 +239,16 @@
 														<property name="Alignment" value="taLeftJustify"/>
 														<property name="Fonts">
 															<property name="Normal">
-																<property name="ID" value="Skin.FontEx.TextNormal"/>
+																<property name="ID" value="Skin.TextNormal"/>
 															</property>
 															<property name="Hot">
-																<property name="ID" value="Skin.FontEx.TextNormal"/>
+																<property name="ID" value="Skin.TextNormal"/>
 															</property>
 															<property name="Pressed">
-																<property name="ID" value="Skin.FontEx.TextNormal"/>
+																<property name="ID" value="Skin.TextNormal"/>
 															</property>
 															<property name="Disabled">
-																<property name="ID" value="Skin.FontEx.TextInactive"/>
+																<property name="ID" value="Skin.TextDisabled.FontEx"/>
 															</property>
 														</property>
 													</properties>
@@ -269,7 +269,7 @@
 														<property name="PopupMenu" value="pmMLTable"/>
 														<property name="Skin" value="MLTable.Skin"/>
 														<property name="Font">
-															<property name="ID" value="Skin.FontEx.TextNormal"/>
+															<property name="ID" value="Skin.TextNormal"/>
 														</property>
 														<property name="ParentBackground" value="True"/>
 														<property name="Borders" value=""/>
@@ -279,19 +279,19 @@
 																<property name="ID" value="Skin.SecondoryColor[o50]"/>
 															</property>
 															<property name="IncSearchColor">
-																<property name="ID" value="Skin.Color.Primary"/>
+																<property name="ID" value="Skin.PrimaryColor"/>
 															</property>
 															<property name="IncSearchColorText">
 																<property name="ID" value="Skin.TextNormal.Color"/>
 															</property>
 															<property name="SelectionRectColor">
-																<property name="ID" value="Skin.Color.Secondory"/>
+																<property name="ID" value="Skin.SecondoryColor"/>
 															</property>
-															<property name="ColumnHeader" link="Skin.MediaLibraryTable.ColumnHeader.Skin"/>
+															<property name="ColumnHeader" link="Skin.LibraryTable.ColumnHeader.Skin"/>
 															<property name="ColumnHeaderFont">
-																<property name="ID" value="Skin.FontEx.TextNormal"/>
+																<property name="ID" value="Skin.TextNormal"/>
 															</property>
-															<property name="ColumnHeaderSortingArrow" link="Skin.MediaLibraryTable.ColumnHeader.SortingArrow"/>
+															<property name="ColumnHeaderSortingArrow" link="Skin.LibraryTable.ColumnHeader.SortingArrow"/>
 															<property name="GroupHeaderColor">
 																<property name="ID" value="Skin.SecondoryColor[o10]"/>
 															</property>
@@ -299,10 +299,10 @@
 																<property name="ID" value="Skin.SecondoryColor[o50]"/>
 															</property>
 															<property name="GroupHeaderFont">
-																<property name="ID" value="Skin.FontEx.TextLarge"/>
+																<property name="ID" value="Skin.TextNormal.Large"/>
 															</property>
 															<property name="RowColor1">
-																<property name="ID" value="Skin.Color.Base"/>
+																<property name="ID" value="Skin.BaseColor"/>
 															</property>
 															<property name="RowColor2">
 																<property name="ID" value="Skin.SecondoryColor[o10]"/>
@@ -328,7 +328,7 @@
 															<property name="RowContentOffsets">
 																<property name="All" value="4"/>
 															</property>
-															<property name="ColumnHeaderFilterButton" link="Skin.MediaLibraryTable.ColumnHeader.FilterButton"/>
+															<property name="ColumnHeaderFilterButton" link="Skin.LibraryTable.ColumnHeader.FilterButton"/>
 															<property name="GroupDetailsAllowResize" value="True"/>
 															<property name="GroupDetailsColor">
 																<property name="ID" value="Skin.SecondoryColor[o10]"/>
@@ -343,7 +343,7 @@
 															<property name="GroupDetailsPreviewArea" value="MLTable.StyleContent.GroupDetailsPreviewArea"/>
 															<property name="GroupDetailsWidth" value="120"/>
 															<property name="GroupDetailsTitleFont">
-																<property name="ID" value="Skin.FontEx.TextLarge"/>
+																<property name="ID" value="Skin.TextNormal.Large"/>
 															</property>
 															<property name="GroupDetailsTitleOffsets">
 																<property name="All" value="0"/>
@@ -359,18 +359,18 @@
 															<property name="ThumbnailsExpandButton" value="MLTable.StyleContent.ThumbnailsExpandButton"/>
 														</property>
 														<property name="StyleScrollBox">
-															<property name="TextureBackgroundHorz" link="Skin.Texture.ScrollBar0H.Skin"/>
-															<property name="TextureBackgroundVert" link="Skin.Texture.ScrollBar0V.Skin"/>
-															<property name="TextureButtonsHorz" link="Skin.Texture.ScrollBar0H.Buttons"/>
-															<property name="TextureButtonsVert" link="Skin.Texture.ScrollBar0V.Buttons"/>
-															<property name="TextureThumbHorz" link="Skin.Texture.ScrollBar0H.Thumb"/>
-															<property name="TextureThumbVert" link="Skin.Texture.ScrollBar0V.Thumb"/>
+															<property name="TextureBackgroundHorz" link="Skin.ScrollBarH.Skin"/>
+															<property name="TextureBackgroundVert" link="Skin.ScrollBarV.Skin"/>
+															<property name="TextureButtonsHorz" link="Skin.ScrollBarH.Buttons"/>
+															<property name="TextureButtonsVert" link="Skin.ScrollBarV.Buttons"/>
+															<property name="TextureThumbHorz" link="Skin.ScrollBarH.Thumb"/>
+															<property name="TextureThumbVert" link="Skin.ScrollBarV.Thumb"/>
 															<property name="TextureSizeGripArea" value="MLTable.StyleScrollBox.TextureSizeGripArea"/>
 														</property>
 														<property name="StyleFilterBox">
 															<property name="StyleTreeListScrollBox">
-																<property name="TextureBackgroundVert" link="Skin.Texture.ScrollBar0V.Skin"/>
-																<property name="TextureThumbVert" link="Skin.Texture.ScrollBar0V.Thumb"/>
+																<property name="TextureBackgroundVert" link="Skin.ScrollBarV.Skin"/>
+																<property name="TextureThumbVert" link="Skin.ScrollBarV.Thumb"/>
 															</property>
 														</property>
 													</properties>
@@ -395,40 +395,40 @@
 												<property name="PlaceInfo" anchors="1,1,1,1" margins="0,0,0,0" Size="250,23"/>
 												<property name="Skin" value="TabControl.Skin"/>
 												<property name="DragDropIndicator">
-													<property name="ID" value="Skin.Color.Secondory"/>
+													<property name="ID" value="Skin.SecondoryColor"/>
 												</property>
 												<property name="DragDropIndicatorBorder">
-													<property name="ID" value="Skin.Color.Secondory"/>
+													<property name="ID" value="Skin.SecondoryColor"/>
 												</property>
 												<property name="TabsOptions">
 													<property name="Font">
-														<property name="ID" value="Skin.FontEx.TabNormal"/>
+														<property name="ID" value="Skin.Tab.Normal.Font"/>
 													</property>
 													<property name="FontHot">
-														<property name="ID" value="Skin.FontEx.TabHot"/>
+														<property name="ID" value="Skin.Tab.Hot.Font"/>
 													</property>
 													<property name="FontActive">
-														<property name="ID" value="Skin.FontEx.TabActive"/>
+														<property name="ID" value="Skin.Tab.Active.Font"/>
 													</property>
 													<property name="FontActiveHot">
-														<property name="ID" value="Skin.FontEx.TabActiveHot"/>
+														<property name="ID" value="Skin.Tab.ActiveHot.Font"/>
 													</property>
 													<property name="FontPlaying">
-														<property name="ID" value="Skin.FontEx.TabPlaying"/>
+														<property name="ID" value="Skin.Tab.Playing.Font"/>
 													</property>
 													<property name="FontPlayingActive">
-														<property name="ID" value="Skin.FontEx.TabPlayingActive"/>
+														<property name="ID" value="Skin.Tab.PlayingActive.Font"/>
 													</property>
 													<property name="FontPlayingActiveHot">
-														<property name="ID" value="Skin.FontEx.TabPlayingActiveHot"/>
+														<property name="ID" value="Skin.Tab.PlayingActiveHot.Font"/>
 													</property>
 													<property name="FontPlayingHot">
-														<property name="ID" value="Skin.FontEx.TabPlayingHot"/>
+														<property name="ID" value="Skin.Tab.PlayingHot.Font"/>
 													</property>
 													<property name="AutoSize" value="True"/>
 													<property name="FillTheWidth" value="True"/>
 													<property name="ShowPartiallyVisibleTabs" value="True"/>
-													<property name="Skin" link="Skin.Texture.TabSkin1[24]"/>
+													<property name="Skin" link="Skin.Tab[1].Skin"/>
 													<property name="TextAlignment" value="taLeftJustify"/>
 													<property name="TextOffsets" value="4,0,4,0"/>
 													<property name="TextOffsetsActive" value="4,0,4,0"/>
@@ -465,7 +465,7 @@
 												<property name="Skin" value="TextDisplay1.Skin"/>
 												<property name="Color"/>
 												<property name="Font">
-													<property name="ID" value="Skin.FontEx.TextNormal"/>
+													<property name="ID" value="Skin.TextNormal"/>
 												</property>
 											</properties>
 										</control>
@@ -488,7 +488,7 @@
 													<link Source="acMLAddFiles" SourcePin="Action" TargetPin="Hint"/>
 												</property>
 												<property name="PlaceInfo" anchors="0,0,1,1" margins="117,7,72,0" Size="20,21"/>
-												<property name="Skin" link="Skin.Texture.AddButton"/>
+												<property name="Skin" link="Skin.AddButton.Texture"/>
 												<property name="Fonts">
 													<property name="Normal"/>
 													<property name="Hot"/>
@@ -501,7 +501,7 @@
 											<properties>
 												<property name="PlaceInfo" anchors="0,0,1,1" margins="132,5,48,0" Size="20,21"/>
 												<property name="PopupMenu" value="pmMLDelete"/>
-												<property name="Skin" link="Skin.Texture.DeleteButton"/>
+												<property name="Skin" link="Skin.DeleteButton.Texture"/>
 												<property name="Fonts">
 													<property name="Normal"/>
 													<property name="Hot"/>
@@ -514,7 +514,7 @@
 											<properties>
 												<property name="PlaceInfo" anchors="0,0,1,1" margins="156,7,24,0" Size="20,21"/>
 												<property name="PopupMenu" value="pmMLMisc"/>
-												<property name="Skin" link="Skin.Texture.MiscButton"/>
+												<property name="Skin" link="Skin.MiscButton.Texture"/>
 												<property name="Fonts">
 													<property name="Normal"/>
 													<property name="Hot"/>
@@ -527,7 +527,7 @@
 											<properties>
 												<property name="PlaceInfo" anchors="0,0,1,1" margins="72,-1,0,0" Size="24,24"/>
 												<property name="PopupMenu" value="pmMLTableViews"/>
-												<property name="Skin" link="Skin.Texture.OptionButton"/>
+												<property name="Skin" link="Skin.OptionButton.Texture"/>
 												<property name="Fonts">
 													<property name="Normal"/>
 													<property name="Hot"/>
@@ -545,7 +545,7 @@
 										<property name="AlignmentLevel" value="1"/>
 										<property name="AlignmentMargins" value="0,0,4,0"/>
 										<property name="Color">
-											<property name="ID" value="Skin.Color.Secondory-a2"/>
+											<property name="ID" value="Skin.SecondoryColor[t10]"/>
 										</property>
 										<property name="Texture" value="MLF_ToolBar2.Texture"/>
 									</properties>
@@ -581,7 +581,7 @@
 												<property name="Skin" value="MLF_SearchEdit.Skin"/>
 												<property name="Color"/>
 												<property name="Font">
-													<property name="ID" value="Skin.FontEx.TextNormal"/>
+													<property name="ID" value="Skin.TextNormal"/>
 													<property name="Color" value="4278190080"/>
 													<property name="Height" value="13"/>
 													<property name="Name" value="Yu Gothic UI"/>
@@ -606,7 +606,7 @@
 													<link Source="MLF_SearchEdit" SourcePin="Text" TargetPin="Visibility"/>
 												</property>
 												<property name="PlaceInfo" anchors="0,0,1,1" margins="264,7,0,0" Size="24,24"/>
-												<property name="Skin" link="Skin.Texture.BackSpaceButton"/>
+												<property name="Skin" link="Skin.BackSpaceButton.Texture"/>
 												<property name="Fonts">
 													<property name="Normal"/>
 													<property name="Hot"/>
@@ -621,7 +621,7 @@
 									<properties>
 										<property name="SizeMinimal" value="0,1"/>
 										<property name="Color">
-											<property name="ID" value="Skin.Color.Secondory"/>
+											<property name="ID" value="Skin.SecondoryColor"/>
 										</property>
 										<property name="Texture" value="MLF_ToolBarSeparater.Texture"/>
 									</properties>
@@ -670,10 +670,10 @@
 												</property>
 												<property name="Waveform">
 													<property name="Color">
-														<property name="ID" value="Skin.Color.Secondory-a4"/>
+														<property name="ID" value="Skin.SecondoryColor[t50]"/>
 													</property>
 													<property name="ColorProgress">
-														<property name="ID" value="Skin.Color.Primary-a8"/>
+														<property name="ID" value="Skin.PrimaryColor[t50]"/>
 													</property>
 												</property>
 											</properties>
@@ -696,7 +696,7 @@
 												<property name="Alignment" value="taRightJustify"/>
 												<property name="Color"/>
 												<property name="Font">
-													<property name="ID" value="Skin.FontEx.TextNormal"/>
+													<property name="ID" value="Skin.TextNormal"/>
 												</property>
 											</properties>
 										</control>
@@ -709,7 +709,7 @@
 												<property name="Skin" value="MLF_PlayInfoText.Skin"/>
 												<property name="Color"/>
 												<property name="Font">
-													<property name="ID" value="Skin.FontEx.TextNormal"/>
+													<property name="ID" value="Skin.TextNormal"/>
 												</property>
 											</properties>
 										</control>
@@ -732,7 +732,7 @@
 													<link Source="acPlayerSeekBackward" SourcePin="Action" TargetPin="ActionOnHold"/>
 												</property>
 												<property name="PlaceInfo" anchors="1,0,0,1" margins="0,0,144,0" Size="24,24"/>
-												<property name="Skin" link="Skin.Texture.PrevButton[24]"/>
+												<property name="Skin" link="Skin.PrevButton.Texture[24]"/>
 												<property name="Fonts">
 													<property name="Normal"/>
 													<property name="Hot"/>
@@ -750,7 +750,7 @@
 													<link Source="prvPlayerState" SourcePin="State" TargetPin="State" Expression="Value = 1"/>
 												</property>
 												<property name="PlaceInfo" anchors="1,0,0,1" margins="24,0,120,0" Size="24,24"/>
-												<property name="Skin" link="Skin.Texture.PlayButton[24]"/>
+												<property name="Skin" link="Skin.PlayButton.Texture[24]"/>
 												<property name="Fonts">
 													<property name="Normal"/>
 													<property name="Hot"/>
@@ -768,7 +768,7 @@
 													<link Source="prvPlayerState" SourcePin="State" TargetPin="State" Expression="Value = 2"/>
 												</property>
 												<property name="PlaceInfo" anchors="1,0,0,1" margins="48,0,96,0" Size="24,24"/>
-												<property name="Skin" link="Skin.Texture.PauseButton[24]"/>
+												<property name="Skin" link="Skin.PauseButton.Texture[24]"/>
 												<property name="Fonts">
 													<property name="Normal"/>
 													<property name="Hot"/>
@@ -786,7 +786,7 @@
 													<link Source="acPlayerStop" SourcePin="Flashing" TargetPin="State"/>
 												</property>
 												<property name="PlaceInfo" anchors="1,0,0,1" margins="72,0,72,0" Size="24,24"/>
-												<property name="Skin" link="Skin.Texture.StopButton[24]"/>
+												<property name="Skin" link="Skin.StopButton.Texture[24]"/>
 												<property name="Fonts">
 													<property name="Normal"/>
 													<property name="Hot"/>
@@ -804,7 +804,7 @@
 													<link Source="acPlayerSeekForward" SourcePin="Action" TargetPin="ActionOnHold"/>
 												</property>
 												<property name="PlaceInfo" anchors="1,0,0,1" margins="96,0,48,0" Size="24,24"/>
-												<property name="Skin" link="Skin.Texture.NextButton[24]"/>
+												<property name="Skin" link="Skin.NextButton.Texture[24]"/>
 												<property name="Fonts">
 													<property name="Normal"/>
 													<property name="Hot"/>
@@ -823,7 +823,7 @@
 													<link Source="acPlayerRepeat" SourcePin="State" TargetPin="State"/>
 												</property>
 												<property name="PlaceInfo" anchors="1,0,0,1" margins="128,0,16,0" Size="24,24"/>
-												<property name="Skin" link="Skin.Texture.RepeatButton[24]"/>
+												<property name="Skin" link="Skin.RepeatButton.Texture"/>
 												<property name="FramesPerState" value="3"/>
 												<property name="Fonts">
 													<property name="Normal"/>
@@ -843,7 +843,7 @@
 													<link Source="acPlayerShuffle" SourcePin="State" TargetPin="State"/>
 												</property>
 												<property name="PlaceInfo" anchors="1,0,0,1" margins="152,0,0,0" Size="24,24"/>
-												<property name="Skin" link="Skin.Texture.ShuffleButton[24]"/>
+												<property name="Skin" link="Skin.ShuffleButton.Texture"/>
 												<property name="FramesPerState" value="3"/>
 												<property name="Fonts">
 													<property name="Normal"/>
