@@ -1,262 +1,574 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
 	<items>
-		<item class="LayoutContainer" name="DropWheel">
+		<item class="LayoutTexture" name="DW_WindowArea">
 			<properties>
-				<property name="AllowResizeByHeight" value="False"/>
-				<property name="AllowResizeByWidth" value="False"/>
-				<property name="SizeMinimal" value="128,128"/>
-				<property name="Color">
-					<property name="Value" value="4290822336"/>
-				</property>
-				<property name="Texture" link="Skin.Texture.MinimizeButton"/>
+				<property name="Alignment" value="laClient"/>
+				<property name="Color"/>
+				<property name="Texture" value="DW_WindowArea.Texture"/>
 			</properties>
-			<controls>
-				<control link="DropWheel_CUR">
+			<items>
+				<item class="LayoutContainer" name="DropWheel">
 					<properties>
-						<property name="PlaceInfo" anchors="1,1,0,0" margins="83,23,12,-1" Size="36,78"/>
-						<property name="Skin" value="DropWheel_CUR.Skin"/>
-						<property name="FramesPerState" value="2"/>
-						<property name="Fonts">
-							<property name="Normal">
-								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
-								<property name="Color" value="4278190080"/>
-								<property name="Height" value="-11"/>
-								<property name="Name" value="Tahoma"/>
-								<property name="Quality" value="fqDefault"/>
-								<property name="Style" value=""/>
-							</property>
-							<property name="Hot">
-								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
-								<property name="Color" value="4278190080"/>
-								<property name="Height" value="-11"/>
-								<property name="Name" value="Tahoma"/>
-								<property name="Quality" value="fqDefault"/>
-								<property name="Style" value=""/>
-							</property>
-							<property name="Pressed">
-								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
-								<property name="Color" value="4278190080"/>
-								<property name="Height" value="-11"/>
-								<property name="Name" value="Tahoma"/>
-								<property name="Quality" value="fqDefault"/>
-								<property name="Style" value=""/>
-							</property>
-							<property name="Disabled">
-								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
-								<property name="Color" value="4278190080"/>
-								<property name="Height" value="-11"/>
-								<property name="Name" value="Tahoma"/>
-								<property name="Quality" value="fqDefault"/>
-								<property name="Style" value=""/>
-							</property>
+						<property name="AllowResizeByHeight" value="False"/>
+						<property name="AllowResizeByWidth" value="False"/>
+						<property name="SizeMinimal" value="128,128"/>
+						<property name="Alignment" value="laClient"/>
+						<property name="Color">
+							<property name="ID" value="Skin.Color.Base"/>
 						</property>
+						<property name="Texture" value="DropWheel.Texture"/>
 					</properties>
-				</control>
-				<control link="DropWheel_RND">
+					<controls>
+						<control link="DropWheel_CUR">
+							<properties>
+								<property name="PlaceInfo" anchors="0,0,1,0" margins="83,27,0,27" Size="40,48"/>
+								<property name="Skin" link="Skin.Texture.RightButton"/>
+								<property name="FramesPerState" value="2"/>
+								<property name="Fonts">
+									<property name="Normal">
+										<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+										<property name="Color" value="4278190080"/>
+										<property name="Height" value="-11"/>
+										<property name="Name" value="Tahoma"/>
+										<property name="Quality" value="fqDefault"/>
+										<property name="Style" value=""/>
+									</property>
+									<property name="Hot">
+										<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+										<property name="Color" value="4278190080"/>
+										<property name="Height" value="-11"/>
+										<property name="Name" value="Tahoma"/>
+										<property name="Quality" value="fqDefault"/>
+										<property name="Style" value=""/>
+									</property>
+									<property name="Pressed">
+										<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+										<property name="Color" value="4278190080"/>
+										<property name="Height" value="-11"/>
+										<property name="Name" value="Tahoma"/>
+										<property name="Quality" value="fqDefault"/>
+										<property name="Style" value=""/>
+									</property>
+									<property name="Disabled">
+										<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+										<property name="Color" value="4278190080"/>
+										<property name="Height" value="-11"/>
+										<property name="Name" value="Tahoma"/>
+										<property name="Quality" value="fqDefault"/>
+										<property name="Style" value=""/>
+									</property>
+								</property>
+							</properties>
+						</control>
+						<control link="DropWheel_RND">
+							<properties>
+								<property name="PlaceInfo" anchors="1,0,0,0" margins="0,27,83,27" Size="40,48"/>
+								<property name="Skin" link="Skin.Texture.RandomButton"/>
+								<property name="FramesPerState" value="2"/>
+								<property name="Fonts">
+									<property name="Normal">
+										<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+										<property name="Color" value="4278190080"/>
+										<property name="Height" value="-11"/>
+										<property name="Name" value="Tahoma"/>
+										<property name="Quality" value="fqDefault"/>
+										<property name="Style" value=""/>
+									</property>
+									<property name="Hot">
+										<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+										<property name="Color" value="4278190080"/>
+										<property name="Height" value="-11"/>
+										<property name="Name" value="Tahoma"/>
+										<property name="Quality" value="fqDefault"/>
+										<property name="Style" value=""/>
+									</property>
+									<property name="Pressed">
+										<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+										<property name="Color" value="4278190080"/>
+										<property name="Height" value="-11"/>
+										<property name="Name" value="Tahoma"/>
+										<property name="Quality" value="fqDefault"/>
+										<property name="Style" value=""/>
+									</property>
+									<property name="Disabled">
+										<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+										<property name="Color" value="4278190080"/>
+										<property name="Height" value="-11"/>
+										<property name="Name" value="Tahoma"/>
+										<property name="Quality" value="fqDefault"/>
+										<property name="Style" value=""/>
+									</property>
+								</property>
+							</properties>
+						</control>
+						<control link="DropWheel_BTM">
+							<properties>
+								<property name="PlaceInfo" anchors="0,0,0,1" margins="40,88,40,0" Size="48,40"/>
+								<property name="Skin" link="Skin.Texture.BottomButton"/>
+								<property name="FramesPerState" value="2"/>
+								<property name="Fonts">
+									<property name="Normal">
+										<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+										<property name="Color" value="4278190080"/>
+										<property name="Height" value="-11"/>
+										<property name="Name" value="Tahoma"/>
+										<property name="Quality" value="fqDefault"/>
+										<property name="Style" value=""/>
+									</property>
+									<property name="Hot">
+										<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+										<property name="Color" value="4278190080"/>
+										<property name="Height" value="-11"/>
+										<property name="Name" value="Tahoma"/>
+										<property name="Quality" value="fqDefault"/>
+										<property name="Style" value=""/>
+									</property>
+									<property name="Pressed">
+										<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+										<property name="Color" value="4278190080"/>
+										<property name="Height" value="-11"/>
+										<property name="Name" value="Tahoma"/>
+										<property name="Quality" value="fqDefault"/>
+										<property name="Style" value=""/>
+									</property>
+									<property name="Disabled">
+										<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+										<property name="Color" value="4278190080"/>
+										<property name="Height" value="-11"/>
+										<property name="Name" value="Tahoma"/>
+										<property name="Quality" value="fqDefault"/>
+										<property name="Style" value=""/>
+									</property>
+								</property>
+							</properties>
+						</control>
+						<control link="DropWheel_TOP">
+							<properties>
+								<property name="PlaceInfo" anchors="0,1,0,0" margins="25,0,25,84" Size="48,40"/>
+								<property name="Skin" link="Skin.Texture.TopButton"/>
+								<property name="FramesPerState" value="2"/>
+								<property name="Fonts">
+									<property name="Normal">
+										<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+										<property name="Color" value="4278190080"/>
+										<property name="Height" value="-11"/>
+										<property name="Name" value="Tahoma"/>
+										<property name="Quality" value="fqDefault"/>
+										<property name="Style" value=""/>
+									</property>
+									<property name="Hot">
+										<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+										<property name="Color" value="4278190080"/>
+										<property name="Height" value="-11"/>
+										<property name="Name" value="Tahoma"/>
+										<property name="Quality" value="fqDefault"/>
+										<property name="Style" value=""/>
+									</property>
+									<property name="Pressed">
+										<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+										<property name="Color" value="4278190080"/>
+										<property name="Height" value="-11"/>
+										<property name="Name" value="Tahoma"/>
+										<property name="Quality" value="fqDefault"/>
+										<property name="Style" value=""/>
+									</property>
+									<property name="Disabled">
+										<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+										<property name="Color" value="4278190080"/>
+										<property name="Height" value="-11"/>
+										<property name="Name" value="Tahoma"/>
+										<property name="Quality" value="fqDefault"/>
+										<property name="Style" value=""/>
+									</property>
+								</property>
+							</properties>
+						</control>
+						<control link="DropWheel_Cancel">
+							<properties>
+								<property name="PlaceInfo" anchors="0,1,1,0" margins="100,4,4,100" Size="20,20"/>
+								<property name="Skin" link="Skin.Texture.CloseButton"/>
+								<property name="Fonts">
+									<property name="Normal">
+										<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+										<property name="Color" value="4278190080"/>
+										<property name="Height" value="-11"/>
+										<property name="Name" value="Tahoma"/>
+										<property name="Quality" value="fqDefault"/>
+										<property name="Style" value=""/>
+									</property>
+									<property name="Hot">
+										<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+										<property name="Color" value="4278190080"/>
+										<property name="Height" value="-11"/>
+										<property name="Name" value="Tahoma"/>
+										<property name="Quality" value="fqDefault"/>
+										<property name="Style" value=""/>
+									</property>
+									<property name="Pressed">
+										<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+										<property name="Color" value="4278190080"/>
+										<property name="Height" value="-11"/>
+										<property name="Name" value="Tahoma"/>
+										<property name="Quality" value="fqDefault"/>
+										<property name="Style" value=""/>
+									</property>
+									<property name="Disabled">
+										<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+										<property name="Color" value="4278190080"/>
+										<property name="Height" value="-11"/>
+										<property name="Name" value="Tahoma"/>
+										<property name="Quality" value="fqDefault"/>
+										<property name="Style" value=""/>
+									</property>
+								</property>
+							</properties>
+						</control>
+						<control link="DropWheel_OK">
+							<properties>
+								<property name="PlaceInfo" anchors="0,0,0,0" margins="35,34,35,34" Size="48,48"/>
+								<property name="Skin" value="DropWheel_OK.Skin"/>
+								<property name="Fonts">
+									<property name="Normal">
+										<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+										<property name="Color" value="4278190080"/>
+										<property name="Height" value="-11"/>
+										<property name="Name" value="Tahoma"/>
+										<property name="Quality" value="fqDefault"/>
+										<property name="Style" value=""/>
+									</property>
+									<property name="Hot">
+										<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+										<property name="Color" value="4278190080"/>
+										<property name="Height" value="-11"/>
+										<property name="Name" value="Tahoma"/>
+										<property name="Quality" value="fqDefault"/>
+										<property name="Style" value=""/>
+									</property>
+									<property name="Pressed">
+										<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+										<property name="Color" value="4278190080"/>
+										<property name="Height" value="-11"/>
+										<property name="Name" value="Tahoma"/>
+										<property name="Quality" value="fqDefault"/>
+										<property name="Style" value=""/>
+									</property>
+									<property name="Disabled">
+										<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
+										<property name="Color" value="4278190080"/>
+										<property name="Height" value="-11"/>
+										<property name="Name" value="Tahoma"/>
+										<property name="Quality" value="fqDefault"/>
+										<property name="Style" value=""/>
+									</property>
+								</property>
+							</properties>
+						</control>
+					</controls>
+				</item>
+				<item class="LayoutItem" name="DropWheelEdge_Top">
 					<properties>
-						<property name="PlaceInfo" anchors="1,1,0,0" margins="9,23,68,-1" Size="36,78"/>
-						<property name="Skin" value="DropWheel_RND.Skin"/>
-						<property name="FramesPerState" value="2"/>
-						<property name="Fonts">
-							<property name="Normal">
-								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
-								<property name="Color" value="4278190080"/>
-								<property name="Height" value="-11"/>
-								<property name="Name" value="Tahoma"/>
-								<property name="Quality" value="fqDefault"/>
-								<property name="Style" value=""/>
-							</property>
-							<property name="Hot">
-								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
-								<property name="Color" value="4278190080"/>
-								<property name="Height" value="-11"/>
-								<property name="Name" value="Tahoma"/>
-								<property name="Quality" value="fqDefault"/>
-								<property name="Style" value=""/>
-							</property>
-							<property name="Pressed">
-								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
-								<property name="Color" value="4278190080"/>
-								<property name="Height" value="-11"/>
-								<property name="Name" value="Tahoma"/>
-								<property name="Quality" value="fqDefault"/>
-								<property name="Style" value=""/>
-							</property>
-							<property name="Disabled">
-								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
-								<property name="Color" value="4278190080"/>
-								<property name="Height" value="-11"/>
-								<property name="Name" value="Tahoma"/>
-								<property name="Quality" value="fqDefault"/>
-								<property name="Style" value=""/>
-							</property>
-						</property>
+						<property name="SizeMinimal" value="1,1"/>
 					</properties>
-				</control>
-				<control link="DropWheel_BTM">
+					<items>
+						<item class="LayoutTexture" name="DropWheelEdge_Top_0">
+							<properties>
+								<property name="Bindings">
+									<link Source="DW_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 0"/>
+								</property>
+								<property name="Alignment" value="laClient"/>
+								<property name="Color">
+									<property name="Value" value="4290756543"/>
+								</property>
+								<property name="Texture" value="DropWheelEdge_Top_0.Texture"/>
+							</properties>
+						</item>
+						<item class="LayoutTexture" name="DropWheelEdge_Top_1">
+							<properties>
+								<property name="Bindings">
+									<link Source="DW_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 1"/>
+								</property>
+								<property name="Alignment" value="laClient"/>
+								<property name="AlignmentLevel" value="1"/>
+								<property name="Color">
+									<property name="Value" value="4282335039"/>
+								</property>
+								<property name="Texture" value="DropWheelEdge_Top_1.Texture"/>
+							</properties>
+						</item>
+						<item class="LayoutTexture" name="DropWheelEdge_Top_2">
+							<properties>
+								<property name="Bindings">
+									<link Source="DW_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 2"/>
+								</property>
+								<property name="Alignment" value="laClient"/>
+								<property name="AlignmentLevel" value="2"/>
+								<property name="Color">
+									<property name="Value" value="4294941465"/>
+								</property>
+								<property name="Texture" value="DropWheelEdge_Top_2.Texture"/>
+							</properties>
+						</item>
+					</items>
+				</item>
+				<item class="LayoutItem" name="DropWheelEdge_Bottom">
 					<properties>
-						<property name="PlaceInfo" anchors="1,1,0,0" margins="25,81,-1,13" Size="77,36"/>
-						<property name="Skin" value="DropWheel_BTM.Skin"/>
-						<property name="FramesPerState" value="2"/>
-						<property name="Fonts">
-							<property name="Normal">
-								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
-								<property name="Color" value="4278190080"/>
-								<property name="Height" value="-11"/>
-								<property name="Name" value="Tahoma"/>
-								<property name="Quality" value="fqDefault"/>
-								<property name="Style" value=""/>
-							</property>
-							<property name="Hot">
-								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
-								<property name="Color" value="4278190080"/>
-								<property name="Height" value="-11"/>
-								<property name="Name" value="Tahoma"/>
-								<property name="Quality" value="fqDefault"/>
-								<property name="Style" value=""/>
-							</property>
-							<property name="Pressed">
-								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
-								<property name="Color" value="4278190080"/>
-								<property name="Height" value="-11"/>
-								<property name="Name" value="Tahoma"/>
-								<property name="Quality" value="fqDefault"/>
-								<property name="Style" value=""/>
-							</property>
-							<property name="Disabled">
-								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
-								<property name="Color" value="4278190080"/>
-								<property name="Height" value="-11"/>
-								<property name="Name" value="Tahoma"/>
-								<property name="Quality" value="fqDefault"/>
-								<property name="Style" value=""/>
-							</property>
-						</property>
+						<property name="SizeMinimal" value="1,1"/>
+						<property name="Alignment" value="laBottom"/>
 					</properties>
-				</control>
-				<control link="DropWheel_TOP">
+					<items>
+						<item class="LayoutTexture" name="DropWheelEdge_Bottom_0">
+							<properties>
+								<property name="Bindings">
+									<link Source="DW_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 0"/>
+								</property>
+								<property name="Alignment" value="laClient"/>
+								<property name="Color">
+									<property name="Value" value="4290756543"/>
+								</property>
+								<property name="Texture" value="DropWheelEdge_Bottom_0.Texture"/>
+							</properties>
+						</item>
+						<item class="LayoutTexture" name="DropWheelEdge_Bottom_1">
+							<properties>
+								<property name="Bindings">
+									<link Source="DW_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 1"/>
+								</property>
+								<property name="Alignment" value="laClient"/>
+								<property name="AlignmentLevel" value="1"/>
+								<property name="Color">
+									<property name="Value" value="4282335039"/>
+								</property>
+								<property name="Texture" value="DropWheelEdge_Bottom_1.Texture"/>
+							</properties>
+						</item>
+						<item class="LayoutTexture" name="DropWheelEdge_Bottom_2">
+							<properties>
+								<property name="Bindings">
+									<link Source="DW_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 2"/>
+								</property>
+								<property name="Alignment" value="laClient"/>
+								<property name="AlignmentLevel" value="2"/>
+								<property name="Color">
+									<property name="Value" value="4294941465"/>
+								</property>
+								<property name="Texture" value="DropWheelEdge_Bottom_2.Texture"/>
+							</properties>
+						</item>
+					</items>
+				</item>
+				<item class="LayoutItem" name="DropWheelEdge_Left">
 					<properties>
-						<property name="PlaceInfo" anchors="1,1,0,0" margins="26,8,-1,69" Size="77,36"/>
-						<property name="Skin" value="DropWheel_TOP.Skin"/>
-						<property name="FramesPerState" value="2"/>
-						<property name="Fonts">
-							<property name="Normal">
-								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
-								<property name="Color" value="4278190080"/>
-								<property name="Height" value="-11"/>
-								<property name="Name" value="Tahoma"/>
-								<property name="Quality" value="fqDefault"/>
-								<property name="Style" value=""/>
-							</property>
-							<property name="Hot">
-								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
-								<property name="Color" value="4278190080"/>
-								<property name="Height" value="-11"/>
-								<property name="Name" value="Tahoma"/>
-								<property name="Quality" value="fqDefault"/>
-								<property name="Style" value=""/>
-							</property>
-							<property name="Pressed">
-								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
-								<property name="Color" value="4278190080"/>
-								<property name="Height" value="-11"/>
-								<property name="Name" value="Tahoma"/>
-								<property name="Quality" value="fqDefault"/>
-								<property name="Style" value=""/>
-							</property>
-							<property name="Disabled">
-								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
-								<property name="Color" value="4278190080"/>
-								<property name="Height" value="-11"/>
-								<property name="Name" value="Tahoma"/>
-								<property name="Quality" value="fqDefault"/>
-								<property name="Style" value=""/>
-							</property>
-						</property>
+						<property name="SizeMinimal" value="1,1"/>
+						<property name="Alignment" value="laLeft"/>
 					</properties>
-				</control>
-				<control link="DropWheel_Cancel">
+					<items>
+						<item class="LayoutTexture" name="DropWheelEdge_Left_0">
+							<properties>
+								<property name="Bindings">
+									<link Source="DW_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 0"/>
+								</property>
+								<property name="Alignment" value="laClient"/>
+								<property name="Color">
+									<property name="Value" value="4290756543"/>
+								</property>
+								<property name="Texture" value="DropWheelEdge_Left_0.Texture"/>
+							</properties>
+						</item>
+						<item class="LayoutTexture" name="DropWheelEdge_Left_1">
+							<properties>
+								<property name="Bindings">
+									<link Source="DW_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 1"/>
+								</property>
+								<property name="Alignment" value="laClient"/>
+								<property name="AlignmentLevel" value="1"/>
+								<property name="Color">
+									<property name="Value" value="4282335039"/>
+								</property>
+								<property name="Texture" value="DropWheelEdge_Left_1.Texture"/>
+							</properties>
+						</item>
+						<item class="LayoutTexture" name="DropWheelEdge_Left_2">
+							<properties>
+								<property name="Bindings">
+									<link Source="DW_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 2"/>
+								</property>
+								<property name="Alignment" value="laClient"/>
+								<property name="AlignmentLevel" value="2"/>
+								<property name="Color">
+									<property name="Value" value="4294941465"/>
+								</property>
+								<property name="Texture" value="DropWheelEdge_Left_2.Texture"/>
+							</properties>
+						</item>
+					</items>
+				</item>
+				<item class="LayoutItem" name="DropWheelEdge_Right">
 					<properties>
-						<property name="PlaceInfo" anchors="1,1,0,0" margins="102,7,20,103" Size="16,16"/>
-						<property name="Skin" value="DropWheel_Cancel.Skin"/>
-						<property name="Fonts">
-							<property name="Normal">
-								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
-								<property name="Color" value="4278190080"/>
-								<property name="Height" value="-11"/>
-								<property name="Name" value="Tahoma"/>
-								<property name="Quality" value="fqDefault"/>
-								<property name="Style" value=""/>
-							</property>
-							<property name="Hot">
-								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
-								<property name="Color" value="4278190080"/>
-								<property name="Height" value="-11"/>
-								<property name="Name" value="Tahoma"/>
-								<property name="Quality" value="fqDefault"/>
-								<property name="Style" value=""/>
-							</property>
-							<property name="Pressed">
-								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
-								<property name="Color" value="4278190080"/>
-								<property name="Height" value="-11"/>
-								<property name="Name" value="Tahoma"/>
-								<property name="Quality" value="fqDefault"/>
-								<property name="Style" value=""/>
-							</property>
-							<property name="Disabled">
-								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
-								<property name="Color" value="4278190080"/>
-								<property name="Height" value="-11"/>
-								<property name="Name" value="Tahoma"/>
-								<property name="Quality" value="fqDefault"/>
-								<property name="Style" value=""/>
-							</property>
-						</property>
+						<property name="SizeMinimal" value="1,1"/>
+						<property name="Alignment" value="laRight"/>
 					</properties>
-				</control>
-				<control link="DropWheel_OK">
+					<items>
+						<item class="LayoutTexture" name="DropWheelEdge_Right_0">
+							<properties>
+								<property name="Bindings">
+									<link Source="DW_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 0"/>
+								</property>
+								<property name="Alignment" value="laClient"/>
+								<property name="Color">
+									<property name="Value" value="4290756543"/>
+								</property>
+								<property name="Texture" value="DropWheelEdge_Right_0.Texture"/>
+							</properties>
+						</item>
+						<item class="LayoutTexture" name="DropWheelEdge_Right_1">
+							<properties>
+								<property name="Bindings">
+									<link Source="DW_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 1"/>
+								</property>
+								<property name="Alignment" value="laClient"/>
+								<property name="AlignmentLevel" value="1"/>
+								<property name="Color">
+									<property name="Value" value="4282335039"/>
+								</property>
+								<property name="Texture" value="DropWheelEdge_Right_1.Texture"/>
+							</properties>
+						</item>
+						<item class="LayoutTexture" name="DropWheelEdge_Right_2">
+							<properties>
+								<property name="Bindings">
+									<link Source="DW_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 2"/>
+								</property>
+								<property name="Alignment" value="laClient"/>
+								<property name="AlignmentLevel" value="2"/>
+								<property name="Color">
+									<property name="Value" value="4294941465"/>
+								</property>
+								<property name="Texture" value="DropWheelEdge_Right_2.Texture"/>
+							</properties>
+						</item>
+					</items>
+				</item>
+			</items>
+		</item>
+		<item class="LayoutItem" name="DropWheelShadow_Top">
+			<properties>
+				<property name="SizeMaximal" value="0,16"/>
+				<property name="SizeMinimal" value="16,16"/>
+			</properties>
+			<items>
+				<item class="LayoutTexture" name="DropWheelShadow_Top_0">
 					<properties>
-						<property name="PlaceInfo" anchors="1,1,0,0" margins="35,34,31,31" Size="57,57"/>
-						<property name="Skin" value="DropWheel_OK.Skin"/>
-						<property name="Fonts">
-							<property name="Normal">
-								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
-								<property name="Color" value="4278190080"/>
-								<property name="Height" value="-11"/>
-								<property name="Name" value="Tahoma"/>
-								<property name="Quality" value="fqDefault"/>
-								<property name="Style" value=""/>
-							</property>
-							<property name="Hot">
-								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
-								<property name="Color" value="4278190080"/>
-								<property name="Height" value="-11"/>
-								<property name="Name" value="Tahoma"/>
-								<property name="Quality" value="fqDefault"/>
-								<property name="Style" value=""/>
-							</property>
-							<property name="Pressed">
-								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
-								<property name="Color" value="4278190080"/>
-								<property name="Height" value="-11"/>
-								<property name="Name" value="Tahoma"/>
-								<property name="Quality" value="fqDefault"/>
-								<property name="Style" value=""/>
-							</property>
-							<property name="Disabled">
-								<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>
-								<property name="Color" value="4278190080"/>
-								<property name="Height" value="-11"/>
-								<property name="Name" value="Tahoma"/>
-								<property name="Quality" value="fqDefault"/>
-								<property name="Style" value=""/>
-							</property>
+						<property name="Bindings">
+							<link Source="Setting_FormShadow" SourcePin="Position" TargetPin="Visibility" Expression=" NOT Value"/>
 						</property>
+						<property name="Alignment" value="laClient"/>
+						<property name="Color"/>
+						<property name="Texture" value="DropWheelShadow_Top_0.Texture"/>
 					</properties>
-				</control>
-			</controls>
+				</item>
+				<item class="LayoutTexture" name="DropWheelShadow_Top_1">
+					<properties>
+						<property name="Bindings">
+							<link Source="Setting_FormShadow" SourcePin="Position" TargetPin="Visibility"/>
+						</property>
+						<property name="Alignment" value="laClient"/>
+						<property name="AlignmentLevel" value="1"/>
+						<property name="Color"/>
+						<property name="Texture" value="DropWheelShadow_Top_1.Texture"/>
+					</properties>
+				</item>
+			</items>
+		</item>
+		<item class="LayoutItem" name="DropWheelShadow_Bottom">
+			<properties>
+				<property name="SizeMaximal" value="0,16"/>
+				<property name="SizeMinimal" value="16,16"/>
+				<property name="Alignment" value="laBottom"/>
+			</properties>
+			<items>
+				<item class="LayoutTexture" name="DropWheelShadow_Bottom_0">
+					<properties>
+						<property name="Bindings">
+							<link Source="Setting_FormShadow" SourcePin="Position" TargetPin="Visibility" Expression=" NOT Value"/>
+						</property>
+						<property name="Alignment" value="laClient"/>
+						<property name="Color"/>
+						<property name="Texture" value="DropWheelShadow_Bottom_0.Texture"/>
+					</properties>
+				</item>
+				<item class="LayoutTexture" name="DropWheelShadow_Bottom_1">
+					<properties>
+						<property name="Bindings">
+							<link Source="Setting_FormShadow" SourcePin="Position" TargetPin="Visibility"/>
+						</property>
+						<property name="Alignment" value="laClient"/>
+						<property name="AlignmentLevel" value="1"/>
+						<property name="Color"/>
+						<property name="Texture" value="DropWheelShadow_Bottom_1.Texture"/>
+					</properties>
+				</item>
+			</items>
+		</item>
+		<item class="LayoutItem" name="DropWheelShadow_Left">
+			<properties>
+				<property name="SizeMaximal" value="16,0"/>
+				<property name="SizeMinimal" value="16,16"/>
+				<property name="Alignment" value="laLeft"/>
+			</properties>
+			<items>
+				<item class="LayoutTexture" name="DropWheelShadow_Left_0">
+					<properties>
+						<property name="Bindings">
+							<link Source="Setting_FormShadow" SourcePin="Position" TargetPin="Visibility" Expression=" NOT Value"/>
+						</property>
+						<property name="Alignment" value="laClient"/>
+						<property name="Color"/>
+						<property name="Texture" value="DropWheelShadow_Left_0.Texture"/>
+					</properties>
+				</item>
+				<item class="LayoutTexture" name="DropWheelShadow_Left_1">
+					<properties>
+						<property name="Bindings">
+							<link Source="Setting_FormShadow" SourcePin="Position" TargetPin="Visibility"/>
+						</property>
+						<property name="Alignment" value="laClient"/>
+						<property name="AlignmentLevel" value="1"/>
+						<property name="Color"/>
+						<property name="Texture" value="DropWheelShadow_Left_1.Texture"/>
+					</properties>
+				</item>
+			</items>
+		</item>
+		<item class="LayoutItem" name="DropWheelShadow_Right">
+			<properties>
+				<property name="SizeMaximal" value="16,0"/>
+				<property name="SizeMinimal" value="16,16"/>
+				<property name="Alignment" value="laRight"/>
+			</properties>
+			<items>
+				<item class="LayoutTexture" name="DropWheelShadow_Right_0">
+					<properties>
+						<property name="Bindings">
+							<link Source="Setting_FormShadow" SourcePin="Position" TargetPin="Visibility" Expression=" NOT Value"/>
+						</property>
+						<property name="Alignment" value="laClient"/>
+						<property name="Color"/>
+						<property name="Texture" value="DropWheelShadow_Right_0.Texture"/>
+					</properties>
+				</item>
+				<item class="LayoutTexture" name="DropWheelShadow_Right_1">
+					<properties>
+						<property name="Bindings">
+							<link Source="Setting_FormShadow" SourcePin="Position" TargetPin="Visibility"/>
+						</property>
+						<property name="Alignment" value="laClient"/>
+						<property name="AlignmentLevel" value="1"/>
+						<property name="Color"/>
+						<property name="Texture" value="DropWheelShadow_Right_1.Texture"/>
+					</properties>
+				</item>
+			</items>
 		</item>
 	</items>
 </layout>

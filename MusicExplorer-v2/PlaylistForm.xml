@@ -201,6 +201,7 @@
 											<controls>
 												<control link="Playlist">
 													<properties>
+														<property name="Tag" value="3"/>
 														<property name="PlaceInfo" anchors="1,1,1,1" margins="0,0,0,0" Size="0,0"/>
 														<property name="PopupMenu" value="pmPlaylistMain"/>
 														<property name="Skin" value="Playlist.Skin"/>
@@ -208,7 +209,7 @@
 														<property name="Resources">
 															<property name="Background" value="Playlist.Resources.Background"/>
 															<property name="BackgroundColor">
-																<property name="ID" value="Skin.Color.Unset"/>
+																<property name="Value" value="0"/>
 															</property>
 															<property name="ContentOffsets" value="0,0,0,0"/>
 															<property name="FocusRectColor">
@@ -220,7 +221,7 @@
 																<property name="SelectedFocused"/>
 																<property name="SelectedInactive"/>
 															</property>
-															<property name="HeaderExpandButtons" value="Playlist.Resources.HeaderExpandButtons"/>
+															<property name="HeaderExpandButtons" link="Skin.Playlist.HeaderExpandButton"/>
 															<property name="HeaderFonts">
 																<property name="Normal">
 																	<property name="ID" value="Skin.Playlist.Header.Normal"/>

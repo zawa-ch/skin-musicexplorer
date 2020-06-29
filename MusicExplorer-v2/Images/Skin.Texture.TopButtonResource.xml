@@ -2,6 +2,7 @@
 <image>
 	<properties>
 		<property name="FrameCount" value="4"/>
+		<property name="HitTestMaskFrameIndex" value="1"/>
 		<property name="HitTestMaskMode" value="ihtmOpaque"/>
 		<property name="StretchMode" value="isCenter"/>
 	</properties>

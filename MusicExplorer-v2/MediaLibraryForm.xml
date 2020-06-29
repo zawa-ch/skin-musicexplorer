@@ -867,7 +867,7 @@
 						<item class="LayoutTexture" name="MediaLibraryFormEdge_Top_0">
 							<properties>
 								<property name="Bindings">
-									<link Source="PF_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 0"/>
+									<link Source="MLF_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 0"/>
 								</property>
 								<property name="Alignment" value="laClient"/>
 								<property name="Color">
@@ -879,7 +879,7 @@
 						<item class="LayoutTexture" name="MediaLibraryFormEdge_Top_1">
 							<properties>
 								<property name="Bindings">
-									<link Source="PF_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 1"/>
+									<link Source="MLF_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 1"/>
 								</property>
 								<property name="Alignment" value="laClient"/>
 								<property name="AlignmentLevel" value="1"/>
@@ -892,7 +892,7 @@
 						<item class="LayoutTexture" name="MediaLibraryFormEdge_Top_2">
 							<properties>
 								<property name="Bindings">
-									<link Source="PF_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 2"/>
+									<link Source="MLF_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 2"/>
 								</property>
 								<property name="Alignment" value="laClient"/>
 								<property name="AlignmentLevel" value="2"/>
@@ -913,7 +913,7 @@
 						<item class="LayoutTexture" name="MediaLibraryFormEdge_Bottom_0">
 							<properties>
 								<property name="Bindings">
-									<link Source="PF_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 0"/>
+									<link Source="MLF_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 0"/>
 								</property>
 								<property name="Alignment" value="laClient"/>
 								<property name="Color">
@@ -925,7 +925,7 @@
 						<item class="LayoutTexture" name="MediaLibraryFormEdge_Bottom_1">
 							<properties>
 								<property name="Bindings">
-									<link Source="PF_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 1"/>
+									<link Source="MLF_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 1"/>
 								</property>
 								<property name="Alignment" value="laClient"/>
 								<property name="AlignmentLevel" value="1"/>
@@ -938,7 +938,7 @@
 						<item class="LayoutTexture" name="MediaLibraryFormEdge_Bottom_2">
 							<properties>
 								<property name="Bindings">
-									<link Source="PF_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 2"/>
+									<link Source="MLF_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 2"/>
 								</property>
 								<property name="Alignment" value="laClient"/>
 								<property name="AlignmentLevel" value="2"/>
@@ -959,7 +959,7 @@
 						<item class="LayoutTexture" name="MediaLibraryFormEdge_Left_0">
 							<properties>
 								<property name="Bindings">
-									<link Source="PF_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 0"/>
+									<link Source="MLF_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 0"/>
 								</property>
 								<property name="Alignment" value="laClient"/>
 								<property name="Color">
@@ -971,7 +971,7 @@
 						<item class="LayoutTexture" name="MediaLibraryFormEdge_Left_1">
 							<properties>
 								<property name="Bindings">
-									<link Source="PF_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 1"/>
+									<link Source="MLF_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 1"/>
 								</property>
 								<property name="Alignment" value="laClient"/>
 								<property name="AlignmentLevel" value="1"/>
@@ -984,7 +984,7 @@
 						<item class="LayoutTexture" name="MediaLibraryFormEdge_Left_2">
 							<properties>
 								<property name="Bindings">
-									<link Source="PF_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 2"/>
+									<link Source="MLF_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 2"/>
 								</property>
 								<property name="Alignment" value="laClient"/>
 								<property name="AlignmentLevel" value="2"/>
@@ -1005,7 +1005,7 @@
 						<item class="LayoutTexture" name="MediaLibraryFormEdge_Right_0">
 							<properties>
 								<property name="Bindings">
-									<link Source="PF_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 0"/>
+									<link Source="MLF_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 0"/>
 								</property>
 								<property name="Alignment" value="laClient"/>
 								<property name="Color">
@@ -1017,7 +1017,7 @@
 						<item class="LayoutTexture" name="MediaLibraryFormEdge_Right_1">
 							<properties>
 								<property name="Bindings">
-									<link Source="PF_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 1"/>
+									<link Source="MLF_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 1"/>
 								</property>
 								<property name="Alignment" value="laClient"/>
 								<property name="AlignmentLevel" value="1"/>
@@ -1030,7 +1030,7 @@
 						<item class="LayoutTexture" name="MediaLibraryFormEdge_Right_2">
 							<properties>
 								<property name="Bindings">
-									<link Source="PF_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 2"/>
+									<link Source="MLF_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 2"/>
 								</property>
 								<property name="Alignment" value="laClient"/>
 								<property name="AlignmentLevel" value="2"/>

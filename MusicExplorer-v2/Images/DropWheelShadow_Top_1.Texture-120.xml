@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <image>
 	<properties>
-		<property name="FrameCount" value="4"/>
 		<property name="HitTestMaskMode" value="ihtmOpaque"/>
-		<property name="StretchMode" value="isCenter"/>
+		<property name="Margins" value="79,0,79,0"/>
 	</properties>
 </image>

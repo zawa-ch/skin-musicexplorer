@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<skin target="450" edition="0" ID="7c2ca1f6e2a67a96d06ea176315072bc" AllowColoration="1" ScaleFactors="sf100,sf125,sf150,sf200,sf400" AutoAdjustForInBetweenScaleFactors="1" AutoAdjustForUnsupportedScaleFactors="1">
+<skin target="450" edition="0" ID="eef0bb786ffa99f4f9ce555565aff1e9" AllowColoration="1" ScaleFactors="sf100,sf125,sf150,sf200,sf400" AutoAdjustForInBetweenScaleFactors="1" AutoAdjustForUnsupportedScaleFactors="1">
 	<properties>
 		<resources>
 			<item>
@@ -857,6 +857,51 @@
 					<property name="Value" value="4294962129"/>
 				</property>
 			</item>
+			<item>
+				<property name="ID" value="Skin.Texture.TopButton"/>
+				<property name="ResourceClassName" value="TASETexture"/>
+				<property name="Resource" value="Skin.Texture.TopButtonResource"/>
+			</item>
+			<item>
+				<property name="ID" value="Skin.Texture.BottomButton"/>
+				<property name="ResourceClassName" value="TASETexture"/>
+				<property name="Resource" value="Skin.Texture.BottomButtonResource"/>
+			</item>
+			<item>
+				<property name="ID" value="Skin.Texture.DownButton"/>
+				<property name="ResourceClassName" value="TASETexture"/>
+				<property name="Resource" value="Skin.Texture.DownButtonResource"/>
+			</item>
+			<item>
+				<property name="ID" value="Skin.Texture.LeftButton"/>
+				<property name="ResourceClassName" value="TASETexture"/>
+				<property name="Resource" value="Skin.Texture.LeftButtonResource"/>
+			</item>
+			<item>
+				<property name="ID" value="Skin.Texture.RightButton"/>
+				<property name="ResourceClassName" value="TASETexture"/>
+				<property name="Resource" value="Skin.Texture.RightButtonResource"/>
+			</item>
+			<item>
+				<property name="ID" value="Skin.Texture.UpButton"/>
+				<property name="ResourceClassName" value="TASETexture"/>
+				<property name="Resource" value="Skin.Texture.UpButtonResource"/>
+			</item>
+			<item>
+				<property name="ID" value="Skin.Texture.RandomButton"/>
+				<property name="ResourceClassName" value="TASETexture"/>
+				<property name="Resource" value="Skin.Texture.RandomButtonResource"/>
+			</item>
+			<item>
+				<property name="ID" value="Skin.Playlist.HeaderExpandButton"/>
+				<property name="ResourceClassName" value="TASETexture"/>
+				<property name="Resource" value="Skin.Playlist.HeaderExpandButtonResource"/>
+			</item>
+			<item>
+				<property name="ID" value="Skin.Texture.CenterButton"/>
+				<property name="ResourceClassName" value="TASETexture"/>
+				<property name="Resource" value="Skin.Texture.CenterButtonResource"/>
+			</item>
 		</resources>
 		<menu>
 			<property name="Borders">
@@ -1139,6 +1184,24 @@
 					<link Source="MLTable" SourcePin="Size" TargetPin="Value4"/>
 				</property>
 				<property name="Expression" value="%TextValue1 :: %TextValue2, %TextValue3, %TextValue4"/>
+			</properties>
+		</provider>
+		<provider name="MLF_WindowEdgeSelector" class="LogicalOperatorCommutator">
+			<properties>
+				<property name="Bindings">
+					<link Source="MediaLibraryForm" SourcePin="Active" TargetPin="Value1"/>
+					<link Source="Setting_PrimaryColorEdge" SourcePin="Position" TargetPin="Value2"/>
+				</property>
+				<property name="Expression" value="If(Value1, If(Value2, 2, 1), 0)"/>
+			</properties>
+		</provider>
+		<provider name="DW_WindowEdgeSelector" class="LogicalOperatorCommutator">
+			<properties>
+				<property name="Bindings">
+					<link Source="DropWheel" SourcePin="Active" TargetPin="Value1"/>
+					<link Source="Setting_PrimaryColorEdge" SourcePin="Position" TargetPin="Value2"/>
+				</property>
+				<property name="Expression" value="If(Value1, If(Value2, 2, 1), 0)"/>
 			</properties>
 		</provider>
 	</providers>
