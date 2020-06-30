@@ -8,17 +8,23 @@ Windowsのファイラから着想を得たAIMP用スキン
 
 ## 動作環境
 
-- AIMP for Windows v4.00、またはそれ以降
+- < v2.00  
+  AIMP for Windows v4.00、またはそれ以降  
+- v2.00-
+  AIMP for Windows v4.60、またはそれ以降
 
 AIMP公式サイトから最新のバージョンをダウンロードできます: [http://www.aimp.ru/](http://www.aimp.ru/?do=download&os=windows)
 
 ## スクリーンショット
 
-![screenshot1](assets/Thumb.png)
+- v1.12  
+  ![v1.12 screenshot](assets/Thumb.png)
+- v2.00 alpha 50  
+  ![v2.00 alpha50 screenshot](assets/v2-thumbnail0.png)
 
 ## 開発環境
 
-- AIMP SkinEditor v4.00 build 887  
+- AIMP SkinEditor v4.60 build 1085  
 
 AIMP公式サイトからダウンロードできます: [http://www.aimp.ru/](http://www.aimp.ru/?do=download&os=windows&cat=se)
 
@@ -32,6 +38,8 @@ AIMP公式サイトからダウンロードできます: [http://www.aimp.ru/](h
 
 ## リリースノート
 
+- 2020.06.30 v2.00 alpha 50
+    プロジェクト再始動、すべてのリソースを0から作成
 - 2017.06.17 v1.12 Update  
     再公開に向けライセンスおよび一部の情報を修正  
 - 2016.09.25 v1.12  
