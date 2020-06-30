@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<imageSet>
+	<image dpi="96">DropWheelShadow_Right_1.Texture</image>
+	<image dpi="120">DropWheelShadow_Right_1.Texture-120</image>
+	<image dpi="144">DropWheelShadow_Right_1.Texture-144</image>
+	<image dpi="192">DropWheelShadow_Right_1.Texture-192</image>
+	<image dpi="384">DropWheelShadow_Right_1.Texture-384</image>
+</imageSet>

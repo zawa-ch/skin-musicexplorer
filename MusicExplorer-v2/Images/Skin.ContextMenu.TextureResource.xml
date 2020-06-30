@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<image>
+	<properties>
+		<property name="FrameCount" value="6"/>
+		<property name="HitTestMaskMode" value="ihtmMask"/>
+		<property name="Margins" value="2,2,2,2"/>
+	</properties>
+</image>

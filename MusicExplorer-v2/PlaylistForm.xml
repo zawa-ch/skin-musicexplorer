@@ -1,0 +1,1132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+	<items>
+		<item class="LayoutTexture" name="PF_WindowArea">
+			<properties>
+				<property name="Alignment" value="laClient"/>
+				<property name="Color"/>
+				<property name="Texture" value="PF_WindowArea.Texture"/>
+			</properties>
+			<items>
+				<item class="LayoutContainer" name="PlaylistFormMain">
+					<properties>
+						<property name="Alignment" value="laClient"/>
+						<property name="Color">
+							<property name="ID" value="Skin.BaseColor"/>
+						</property>
+						<property name="Texture" value="PlaylistFormMain.Texture"/>
+					</properties>
+					<items>
+						<item class="LayoutContainer" name="PF_TitleBar">
+							<properties>
+								<property name="Bindings">
+									<link Source="PlaylistForm" SourcePin="Docked" TargetPin="Visibility" Expression=" NOT Value"/>
+								</property>
+								<property name="SizeMaximal" value="0,24"/>
+								<property name="SizeMinimal" value="110,24"/>
+								<property name="Color"/>
+								<property name="Texture" value="PF_TitleBar.Texture"/>
+							</properties>
+							<controls>
+								<control class="TextDisplay" name="PF_TitleTextInactive">
+									<properties>
+										<property name="Bindings">
+											<link Source="PlaylistForm" SourcePin="Active" TargetPin="Visibility" Expression=" NOT Value"/>
+										</property>
+										<property name="PlaceInfo" anchors="1,1,1,1" margins="34,0,84,0" Size="0,24"/>
+										<property name="Skin" value="PF_TitleTextInactive.Skin"/>
+										<property name="Color"/>
+										<property name="Font">
+											<property name="ID" value="Skin.TitleInactive.FontEx"/>
+										</property>
+										<property name="Template" value="Playlist"/>
+									</properties>
+								</control>
+								<control class="TextDisplay" name="PF_TitleText">
+									<properties>
+										<property name="Bindings">
+											<link Source="PlaylistForm" SourcePin="Active" TargetPin="Visibility"/>
+										</property>
+										<property name="PlaceInfo" anchors="1,1,1,1" margins="34,0,84,0" Size="0,24"/>
+										<property name="Skin" value="PF_TitleText.Skin"/>
+										<property name="Color"/>
+										<property name="Font">
+											<property name="ID" value="Skin.TitleNormal.Font"/>
+										</property>
+										<property name="Template" value="Playlist"/>
+									</properties>
+								</control>
+								<control class="Button" name="PF_TitleExitButton">
+									<properties>
+										<property name="Bindings">
+											<link Source="PlaylistForm" SourcePin="Visible" TargetPin="Accessibility" Expression="0"/>
+											<link Source="PlaylistForm" SourcePin="Visible" TargetPin="Action"/>
+											<link Source="PlaylistForm" SourcePin="Visible" TargetPin="Hint"/>
+										</property>
+										<property name="PlaceInfo" anchors="0,1,1,1" margins="110,0,0,0" Size="40,24"/>
+										<property name="Skin" link="Skin.CloseButton.Texture"/>
+										<property name="Fonts">
+											<property name="Normal"/>
+											<property name="Hot"/>
+											<property name="Pressed"/>
+											<property name="Disabled"/>
+										</property>
+									</properties>
+								</control>
+								<control class="Button" name="PF_TitleMaximizeButton">
+									<properties>
+										<property name="Bindings">
+											<link Source="PlaylistForm" SourcePin="Maximize" TargetPin="Action"/>
+											<link Source="PlaylistForm" SourcePin="Maximize" TargetPin="Hint"/>
+											<link Source="PlaylistForm" SourcePin="Maximize" TargetPin="State"/>
+										</property>
+										<property name="PlaceInfo" anchors="0,1,1,1" margins="78,0,40,0" Size="40,24"/>
+										<property name="Skin" link="Skin.MaximizeButton.Texture"/>
+										<property name="Fonts">
+											<property name="Normal"/>
+											<property name="Hot"/>
+											<property name="Pressed"/>
+											<property name="Disabled"/>
+										</property>
+									</properties>
+								</control>
+								<control class="Button" name="PF_TitleMenuButton">
+									<properties>
+										<property name="PlaceInfo" anchors="1,1,0,1" margins="0,0,72,0" Size="30,24"/>
+										<property name="Skin" link="Skin.MainmenuButton.Texture"/>
+										<property name="Fonts">
+											<property name="Normal">
+												<property name="ID" value="Skin.TitleButton.Fonts.Normal"/>
+											</property>
+											<property name="Hot">
+												<property name="ID" value="Skin.TitleButton.Fonts.Normal"/>
+											</property>
+											<property name="Pressed">
+												<property name="ID" value="Skin.TitleButton.Fonts.Normal"/>
+											</property>
+											<property name="Disabled">
+												<property name="ID" value="Skin.TitleButton.Fonts.Normal"/>
+											</property>
+										</property>
+									</properties>
+								</control>
+							</controls>
+						</item>
+						<item class="LayoutSplitView" name="PF_MainArea">
+							<properties>
+								<property name="Alignment" value="laClient"/>
+								<property name="Color"/>
+								<property name="Texture" value="PF_MainArea.Texture"/>
+								<property name="TextureSplitter" value="PF_MainArea.TextureSplitter"/>
+							</properties>
+							<items>
+								<item class="LayoutContainer" name="PF_MainArea_TAB">
+									<properties>
+										<property name="Bindings">
+											<link Source="prvPlaylistManager" SourcePin="SingleMode" TargetPin="Visibility" Expression=" NOT Value"/>
+										</property>
+										<property name="SizeMinimal" value="10,0"/>
+										<property name="Alignment" value="laClient"/>
+										<property name="Color"/>
+										<property name="Texture" value="PF_MainArea_TAB.Texture"/>
+									</properties>
+									<controls>
+										<control class="TabControl" name="PF_PlaylistTab">
+											<properties>
+												<property name="Bindings">
+													<link Source="prvPlaylistManager" SourcePin="Action" TargetPin="Action"/>
+													<link Source="prvPlaylistManager" SourcePin="Action" TargetPin="ContextMenu"/>
+												</property>
+												<property name="PlaceInfo" anchors="1,1,1,1" margins="0,0,0,0" Size="250,23"/>
+												<property name="PopupMenu" value="pmPlaylistTabs"/>
+												<property name="Skin" value="PF_PlaylistTab.Skin"/>
+												<property name="DragDropIndicator">
+													<property name="ID" value="Skin.SecondoryColor"/>
+												</property>
+												<property name="DragDropIndicatorBorder">
+													<property name="ID" value="Skin.SecondoryColor"/>
+												</property>
+												<property name="TabsOptions">
+													<property name="Font">
+														<property name="ID" value="Skin.Tab.Normal.Font"/>
+													</property>
+													<property name="FontHot">
+														<property name="ID" value="Skin.Tab.Hot.Font"/>
+													</property>
+													<property name="FontActive">
+														<property name="ID" value="Skin.Tab.Active.Font"/>
+													</property>
+													<property name="FontActiveHot">
+														<property name="ID" value="Skin.Tab.ActiveHot.Font"/>
+													</property>
+													<property name="FontPlaying">
+														<property name="ID" value="Skin.Tab.Playing.Font"/>
+													</property>
+													<property name="FontPlayingActive">
+														<property name="ID" value="Skin.Tab.PlayingActive.Font"/>
+													</property>
+													<property name="FontPlayingActiveHot">
+														<property name="ID" value="Skin.Tab.PlayingActiveHot.Font"/>
+													</property>
+													<property name="FontPlayingHot">
+														<property name="ID" value="Skin.Tab.PlayingHot.Font"/>
+													</property>
+													<property name="AutoSize" value="True"/>
+													<property name="ShowPartiallyVisibleTabs" value="True"/>
+													<property name="Skin" link="Skin.Tab[1].Skin"/>
+													<property name="TextAlignment" value="taLeftJustify"/>
+													<property name="TextOffsets" value="4,0,4,0"/>
+													<property name="TextOffsetsActive" value="4,0,4,0"/>
+												</property>
+												<property name="VerticalLayout" value="True"/>
+											</properties>
+										</control>
+									</controls>
+								</item>
+								<item class="LayoutContainer" name="PF_MainArea_PLS">
+									<properties>
+										<property name="SizeMinimal" value="30,0"/>
+										<property name="Alignment" value="laClient"/>
+										<property name="AlignmentLevel" value="1"/>
+										<property name="Color"/>
+										<property name="Texture" value="PF_MainArea_PLS.Texture"/>
+									</properties>
+									<items>
+										<item class="LayoutContainer" name="PF_PLS_Contents">
+											<properties>
+												<property name="Alignment" value="laClient"/>
+												<property name="Color"/>
+												<property name="Texture" value="PF_PLS_Contents.Texture"/>
+											</properties>
+											<controls>
+												<control link="Playlist">
+													<properties>
+														<property name="Tag" value="3"/>
+														<property name="PlaceInfo" anchors="1,1,1,1" margins="0,0,0,0" Size="0,0"/>
+														<property name="PopupMenu" value="pmPlaylistMain"/>
+														<property name="Skin" value="Playlist.Skin"/>
+														<property name="ParentBackground" value="True"/>
+														<property name="Resources">
+															<property name="Background" value="Playlist.Resources.Background"/>
+															<property name="BackgroundColor">
+																<property name="Value" value="0"/>
+															</property>
+															<property name="ContentOffsets" value="0,0,0,0"/>
+															<property name="FocusRectColor">
+																<property name="ID" value="Skin.SecondoryColor"/>
+															</property>
+															<property name="HeaderBackground" value="Playlist.Resources.HeaderBackground"/>
+															<property name="HeaderBackgroundColors">
+																<property name="Selected"/>
+																<property name="SelectedFocused"/>
+																<property name="SelectedInactive"/>
+															</property>
+															<property name="HeaderExpandButtons" link="Skin.Playlist.HeaderExpandButton"/>
+															<property name="HeaderFonts">
+																<property name="Normal">
+																	<property name="ID" value="Skin.Playlist.Header.Normal"/>
+																</property>
+																<property name="Selected">
+																	<property name="ID" value="Skin.Playlist.Header.Normal"/>
+																</property>
+																<property name="SelectedFocused">
+																	<property name="ID" value="Skin.Playlist.Header.Normal"/>
+																</property>
+																<property name="SelectedInactive">
+																	<property name="ID" value="Skin.Playlist.Header.Normal"/>
+																</property>
+															</property>
+															<property name="HeaderIndents" value="4,2,4,2"/>
+															<property name="HeaderSwitches" value="Playlist.Resources.HeaderSwitches"/>
+															<property name="ItemBackgroundColors">
+																<property name="Normal">
+																	<property name="ID" value="Colors.Unset"/>
+																</property>
+																<property name="Normal2">
+																	<property name="ID" value="Skin.SecondoryColor[t10]"/>
+																</property>
+																<property name="Playing">
+																	<property name="ID" value="Skin.PrimaryColor[t50]"/>
+																</property>
+																<property name="PlayingSelected">
+																	<property name="ID" value="Skin.PrimaryColor[t50]"/>
+																</property>
+																<property name="PlayingSelectedFocused">
+																	<property name="ID" value="Skin.PrimaryColor[t50]"/>
+																</property>
+																<property name="PlayingSelectedInactive">
+																	<property name="ID" value="Skin.PrimaryColor[t50]"/>
+																</property>
+																<property name="Selected">
+																	<property name="ID" value="Skin.SecondoryColor[t50]"/>
+																</property>
+																<property name="SelectedFocused">
+																	<property name="ID" value="Skin.SecondoryColor[t50]"/>
+																</property>
+																<property name="SelectedInactive">
+																	<property name="ID" value="Skin.SecondoryColor[t50]"/>
+																</property>
+															</property>
+															<property name="ItemIndents" value="8,2,4,2"/>
+															<property name="ItemLine1Fonts">
+																<property name="Dead">
+																	<property name="ID" value="Skin.Playlist.ItemLine1.Dead"/>
+																</property>
+																<property name="DeadSelected">
+																	<property name="ID" value="Skin.Playlist.ItemLine1.Dead"/>
+																</property>
+																<property name="DeadSelectedFocused">
+																	<property name="ID" value="Skin.Playlist.ItemLine1.Dead"/>
+																</property>
+																<property name="DeadSelectedInactive">
+																	<property name="ID" value="Skin.Playlist.ItemLine1.Dead"/>
+																</property>
+																<property name="Normal">
+																	<property name="ID" value="Skin.Playlist.ItemLine1.Normal"/>
+																</property>
+																<property name="Playing">
+																	<property name="ID" value="Skin.Playlist.ItemLine1.Normal"/>
+																</property>
+																<property name="PlayingSelected">
+																	<property name="ID" value="Skin.Playlist.ItemLine1.Normal"/>
+																</property>
+																<property name="PlayingSelectedFocused">
+																	<property name="ID" value="Skin.Playlist.ItemLine1.Normal"/>
+																</property>
+																<property name="PlayingSelectedInactive">
+																	<property name="ID" value="Skin.Playlist.ItemLine1.Normal"/>
+																</property>
+																<property name="Selected">
+																	<property name="ID" value="Skin.Playlist.ItemLine1.Normal"/>
+																</property>
+																<property name="SelectedFocused">
+																	<property name="ID" value="Skin.Playlist.ItemLine1.Normal"/>
+																</property>
+																<property name="SelectedInactive">
+																	<property name="ID" value="Skin.Playlist.ItemLine1.Normal"/>
+																</property>
+															</property>
+															<property name="ItemLine2Fonts">
+																<property name="Dead">
+																	<property name="ID" value="Skin.Playlist.ItemLine2.Dead"/>
+																</property>
+																<property name="DeadSelected">
+																	<property name="ID" value="Skin.Playlist.ItemLine2.Dead"/>
+																</property>
+																<property name="DeadSelectedFocused">
+																	<property name="ID" value="Skin.Playlist.ItemLine2.Dead"/>
+																</property>
+																<property name="DeadSelectedInactive">
+																	<property name="ID" value="Skin.Playlist.ItemLine2.Dead"/>
+																</property>
+																<property name="Normal">
+																	<property name="ID" value="Skin.Playlist.ItemLine2.Normal"/>
+																</property>
+																<property name="Playing">
+																	<property name="ID" value="Skin.Playlist.ItemLine2.Normal"/>
+																</property>
+																<property name="PlayingSelected">
+																	<property name="ID" value="Skin.Playlist.ItemLine2.Normal"/>
+																</property>
+																<property name="PlayingSelectedFocused">
+																	<property name="ID" value="Skin.Playlist.ItemLine2.Normal"/>
+																</property>
+																<property name="PlayingSelectedInactive">
+																	<property name="ID" value="Skin.Playlist.ItemLine2.Normal"/>
+																</property>
+																<property name="Selected">
+																	<property name="ID" value="Skin.Playlist.ItemLine2.Normal"/>
+																</property>
+																<property name="SelectedFocused">
+																	<property name="ID" value="Skin.Playlist.ItemLine2.Normal"/>
+																</property>
+																<property name="SelectedInactive">
+																	<property name="ID" value="Skin.Playlist.ItemLine2.Normal"/>
+																</property>
+															</property>
+															<property name="ItemLine2Offset" value="1"/>
+															<property name="ItemMarks" value="Playlist.Resources.ItemMarks"/>
+															<property name="ItemSwitches" value="Playlist.Resources.ItemSwitches"/>
+															<property name="OverlayColor"/>
+														</property>
+													</properties>
+												</control>
+											</controls>
+										</item>
+										<item class="LayoutContainer" name="PF_PLS_VScrollArea">
+											<properties>
+												<property name="Bindings">
+													<link Source="Playlist" SourcePin="Scrolling" TargetPin="Visibility"/>
+												</property>
+												<property name="SizeMinimal" value="12,0"/>
+												<property name="Alignment" value="laRight"/>
+												<property name="Color"/>
+												<property name="Texture" value="PF_PLS_VScrollArea.Texture"/>
+											</properties>
+											<controls>
+												<control class="ScrollBarVertical" name="PF_PLSScrollBarVertical">
+													<properties>
+														<property name="Bindings">
+															<link Source="Playlist" SourcePin="Scrolling" TargetPin="Accessibility"/>
+															<link Source="Playlist" SourcePin="Scrolling" TargetPin="Action"/>
+														</property>
+														<property name="PlaceInfo" anchors="0,1,1,1" margins="4,0,0,0" Size="12,40"/>
+														<property name="Skin" link="Skin.ScrollBarV.Skin"/>
+														<property name="SkinButtonDown" link="Skin.ScrollBarV.DownButton"/>
+														<property name="SkinButtonUp" link="Skin.ScrollBarV.UpButton"/>
+														<property name="SkinThumb" link="Skin.ScrollBarV.Thumb"/>
+													</properties>
+												</control>
+											</controls>
+										</item>
+									</items>
+								</item>
+							</items>
+						</item>
+						<item class="LayoutTexture" name="PF_ToolBar">
+							<properties>
+								<property name="SizeMinimal" value="0,24"/>
+								<property name="Alignment" value="laBottom"/>
+								<property name="AlignmentLevel" value="1"/>
+								<property name="Color"/>
+								<property name="Texture" value="PF_ToolBar.Texture"/>
+							</properties>
+							<items>
+								<item class="LayoutContainer" name="PF_ToolBar0">
+									<properties>
+										<property name="Alignment" value="laClient"/>
+										<property name="Color"/>
+										<property name="Texture" value="PF_ToolBar0.Texture"/>
+									</properties>
+									<controls>
+										<control class="TextDisplay" name="TextDisplay">
+											<properties>
+												<property name="Bindings">
+													<link Source="String_PlaylistInfo" SourcePin="Result" TargetPin="DisplayValue"/>
+												</property>
+												<property name="PlaceInfo" anchors="1,1,1,1" margins="4,0,4,0" Size="120,20"/>
+												<property name="Skin" value="TextDisplay.Skin"/>
+												<property name="Color"/>
+												<property name="Font">
+													<property name="ID" value="Skin.TextNormal"/>
+												</property>
+											</properties>
+										</control>
+									</controls>
+								</item>
+								<item class="LayoutContainer" name="PF_ToolBar1">
+									<properties>
+										<property name="SizeMinimal" value="148,0"/>
+										<property name="Alignment" value="laRight"/>
+										<property name="Color"/>
+										<property name="Texture" value="PF_ToolBar1.Texture"/>
+									</properties>
+									<controls>
+										<control class="Button" name="PF_PlaylistAddButton">
+											<properties>
+												<property name="PlaceInfo" anchors="0,0,1,1" margins="24,-1,124,0" Size="24,24"/>
+												<property name="PopupMenu" value="pmAdd"/>
+												<property name="Skin" link="Skin.AddButton.Texture"/>
+												<property name="Fonts">
+													<property name="Normal"/>
+													<property name="Hot"/>
+													<property name="Pressed"/>
+													<property name="Disabled"/>
+												</property>
+											</properties>
+										</control>
+										<control class="Button" name="PF_PlaylistDeleteButton">
+											<properties>
+												<property name="PlaceInfo" anchors="0,0,1,1" margins="48,-1,100,0" Size="24,24"/>
+												<property name="PopupMenu" value="pmDelete"/>
+												<property name="Skin" link="Skin.DeleteButton.Texture"/>
+												<property name="Fonts">
+													<property name="Normal"/>
+													<property name="Hot"/>
+													<property name="Pressed"/>
+													<property name="Disabled"/>
+												</property>
+											</properties>
+										</control>
+										<control class="Button" name="PF_PlaylistSortButton">
+											<properties>
+												<property name="PlaceInfo" anchors="0,0,1,1" margins="72,-1,76,0" Size="24,24"/>
+												<property name="PopupMenu" value="pmSorting"/>
+												<property name="Skin" link="Skin.SortButton.Texture"/>
+												<property name="Fonts">
+													<property name="Normal"/>
+													<property name="Hot"/>
+													<property name="Pressed"/>
+													<property name="Disabled"/>
+												</property>
+											</properties>
+										</control>
+										<control class="Button" name="PF_PlaylistMiscButton">
+											<properties>
+												<property name="PlaceInfo" anchors="0,0,1,1" margins="100,2,56,0" Size="20,21"/>
+												<property name="PopupMenu" value="pmMisc"/>
+												<property name="Skin" link="Skin.MiscButton.Texture"/>
+												<property name="Fonts">
+													<property name="Normal"/>
+													<property name="Hot"/>
+													<property name="Pressed"/>
+													<property name="Disabled"/>
+												</property>
+											</properties>
+										</control>
+										<control class="Button" name="PF_PlaylistOptionButton">
+											<properties>
+												<property name="PlaceInfo" anchors="0,0,1,1" margins="100,-1,0,0" Size="24,24"/>
+												<property name="PopupMenu" value="pmManagePlaylist"/>
+												<property name="Skin" link="Skin.OptionButton.Texture"/>
+												<property name="Fonts">
+													<property name="Normal"/>
+													<property name="Hot"/>
+													<property name="Pressed"/>
+													<property name="Disabled"/>
+												</property>
+											</properties>
+										</control>
+										<control class="Button" name="PF_BookmarkButton">
+											<properties>
+												<property name="Bindings">
+													<link Source="prvBookmarks" SourcePin="ContextMenu" TargetPin="ContextMenu"/>
+													<link Source="prvBookmarks" SourcePin="ContextMenu" TargetPin="Hint"/>
+												</property>
+												<property name="PlaceInfo" anchors="0,0,1,1" margins="124,-1,24,0" Size="24,24"/>
+												<property name="Skin" link="Skin.BookmarkButton.Texture"/>
+												<property name="Fonts">
+													<property name="Normal"/>
+													<property name="Hot"/>
+													<property name="Pressed"/>
+													<property name="Disabled"/>
+												</property>
+											</properties>
+										</control>
+									</controls>
+								</item>
+								<item class="LayoutContainer" name="PF_ToolBar2">
+									<properties>
+										<property name="SizeMaximal" value="400,0"/>
+										<property name="Alignment" value="laClient"/>
+										<property name="AlignmentLevel" value="1"/>
+										<property name="AlignmentMargins" value="4,0,4,0"/>
+										<property name="Color">
+											<property name="ID" value="Skin.SecondoryColor[t10]"/>
+										</property>
+										<property name="Texture" value="PF_ToolBar2.Texture"/>
+									</properties>
+									<items>
+										<item class="LayoutTexture" name="PF_ToolBar2_LayoutFix">
+											<properties>
+												<property name="AllowResizeByHeight" value="False"/>
+												<property name="AllowResizeByWidth" value="False"/>
+												<property name="SizeMinimal" value="100,0"/>
+												<property name="Alignment" value="laClient"/>
+												<property name="Color"/>
+												<property name="Texture" value="PF_ToolBar2_LayoutFix.Texture"/>
+											</properties>
+										</item>
+										<item class="LayoutTexture" name="PF_ToolBar2_LayoutExpand">
+											<properties>
+												<property name="Bindings">
+													<link Source="PF_SearchEdit" SourcePin="Focused" TargetPin="Visibility"/>
+												</property>
+												<property name="Alignment" value="laClient"/>
+												<property name="AlignmentLevel" value="1"/>
+												<property name="Color"/>
+												<property name="Texture" value="PF_ToolBar2_LayoutExpand.Texture"/>
+											</properties>
+										</item>
+									</items>
+									<controls>
+										<control class="SearchEdit" name="PF_SearchEdit">
+											<properties>
+												<property name="Bindings">
+													<link Source="Playlist" SourcePin="QuickSearch" TargetPin="Action"/>
+												</property>
+												<property name="PlaceInfo" anchors="1,1,1,1" margins="4,0,24,0" Size="92,24"/>
+												<property name="Skin" value="PF_SearchEdit.Skin"/>
+												<property name="Color">
+													<property name="ID" value="Colors.Unset"/>
+												</property>
+												<property name="Font">
+													<property name="ID" value="Skin.TextNormal"/>
+												</property>
+												<property name="HintTextColor"/>
+												<property name="SelectionColor">
+													<property name="ID" value="Skin.PrimaryColor[t50]"/>
+												</property>
+												<property name="SelectionTextColor">
+													<property name="ID" value="Skin.TextNormal.Color"/>
+												</property>
+											</properties>
+										</control>
+										<control class="Button" name="PF_SearchCancelButton">
+											<properties>
+												<property name="Bindings">
+													<link Source="PF_SearchEdit" SourcePin="Cancel" TargetPin="Accessibility"/>
+													<link Source="PF_SearchEdit" SourcePin="Cancel" TargetPin="Action"/>
+													<link Source="PF_SearchEdit" SourcePin="Cancel" TargetPin="Hint"/>
+													<link Source="PF_SearchEdit" SourcePin="Text" TargetPin="Visibility"/>
+												</property>
+												<property name="PlaceInfo" anchors="0,0,1,1" margins="76,7,0,0" Size="20,21"/>
+												<property name="Skin" link="Skin.BackSpaceButton.Texture"/>
+												<property name="Fonts">
+													<property name="Normal"/>
+													<property name="Hot"/>
+													<property name="Pressed"/>
+													<property name="Disabled"/>
+												</property>
+											</properties>
+										</control>
+									</controls>
+								</item>
+								<item class="LayoutTexture" name="PF_ToolBarSepalater">
+									<properties>
+										<property name="SizeMinimal" value="0,1"/>
+										<property name="Color">
+											<property name="ID" value="Skin.SecondoryColor"/>
+										</property>
+										<property name="Texture" value="PF_ToolBarSepalater.Texture"/>
+									</properties>
+								</item>
+							</items>
+						</item>
+						<item class="LayoutTexture" name="PF_PlayCtrlBar">
+							<properties>
+								<property name="Bindings">
+									<link Source="PlaylistForm" SourcePin="Docked" TargetPin="Visibility" Expression=" NOT Value"/>
+								</property>
+								<property name="Alignment" value="laBottom"/>
+								<property name="Color">
+									<property name="ID" value="Skin.SecondoryColor[t10]"/>
+								</property>
+								<property name="Texture" value="PF_PlayCtrlBar.Texture"/>
+							</properties>
+							<items>
+								<item class="LayoutContainer" name="PF_PlayCtrlBar_SeekArea">
+									<properties>
+										<property name="AllowResizeByHeight" value="False"/>
+										<property name="SizeMinimal" value="120,24"/>
+										<property name="Alignment" value="laClient"/>
+										<property name="Color"/>
+										<property name="Texture" value="PF_PlayCtrlBar_SeekArea.Texture"/>
+									</properties>
+									<controls>
+										<control class="SliderHorizontal" name="PF_Seekbar0">
+											<properties>
+												<property name="Bindings">
+													<link Source="prvPlayerState" SourcePin="Action" TargetPin="Accessibility"/>
+													<link Source="prvPlayerState" SourcePin="Action" TargetPin="Action"/>
+													<link Source="prvPlayerState" SourcePin="Action" TargetPin="Hint"/>
+													<link Source="MF_Seekbar0_Visibility" SourcePin="Result" TargetPin="Visibility"/>
+													<link Source="prvPlayingFileInfo" SourcePin="Waveform" TargetPin="Waveform"/>
+												</property>
+												<property name="PlaceInfo" anchors="1,1,1,1" margins="0,0,0,0" Size="257,24"/>
+												<property name="Skin" value="PF_Seekbar0.Skin"/>
+												<property name="Color"/>
+												<property name="ColorProgress"/>
+												<property name="SkinThumb" value="PF_Seekbar0.SkinThumb"/>
+												<property name="TextLabels">
+													<property name="Font"/>
+													<property name="FontProgress"/>
+													<property name="OverlayColor"/>
+												</property>
+												<property name="Waveform">
+													<property name="Color">
+														<property name="ID" value="Skin.SecondoryColor[t50]"/>
+													</property>
+													<property name="ColorProgress">
+														<property name="ID" value="Skin.PrimaryColor[t50]"/>
+													</property>
+												</property>
+											</properties>
+										</control>
+										<control class="BlurredGlass" name="PF_SeekbarBlurGlass">
+											<properties>
+												<property name="PlaceInfo" anchors="1,1,1,1" margins="0,0,0,0" Size="100,100"/>
+												<property name="Skin" value="PF_SeekbarBlurGlass.Skin"/>
+												<property name="BlurLevel" value="20"/>
+												<property name="Color"/>
+											</properties>
+										</control>
+										<control class="TextDisplay" name="PF_PlayTimeText">
+											<properties>
+												<property name="Bindings">
+													<link Source="String_Playtime" SourcePin="Result" TargetPin="DisplayValue"/>
+												</property>
+												<property name="PlaceInfo" anchors="0,1,1,1" margins="276,0,4,0" Size="112,24"/>
+												<property name="Skin" value="PF_PlayTimeText.Skin"/>
+												<property name="Alignment" value="taRightJustify"/>
+												<property name="Color"/>
+												<property name="Font">
+													<property name="ID" value="Skin.TextNormal"/>
+												</property>
+											</properties>
+										</control>
+										<control class="TextDisplay" name="PF_PlayInfoText">
+											<properties>
+												<property name="Bindings">
+													<link Source="String_RotaryPlayingFileInfoWithNotification" SourcePin="Result" TargetPin="DisplayValue"/>
+												</property>
+												<property name="PlaceInfo" anchors="1,1,1,1" margins="4,0,120,0" Size="120,20"/>
+												<property name="Skin" value="PF_PlayInfoText.Skin"/>
+												<property name="Color"/>
+												<property name="Font">
+													<property name="ID" value="Skin.TextNormal"/>
+												</property>
+											</properties>
+										</control>
+									</controls>
+								</item>
+								<item class="LayoutContainer" name="PF_PlayCtrlBar_CtrlArea">
+									<properties>
+										<property name="SizeMinimal" value="176,24"/>
+										<property name="Alignment" value="laBottom"/>
+										<property name="Color"/>
+										<property name="Texture" value="PF_PlayCtrlBar_CtrlArea.Texture"/>
+									</properties>
+									<controls>
+										<control class="Button" name="PF_PrevButton">
+											<properties>
+												<property name="Bindings">
+													<link Source="acPlayerPrevTrack" SourcePin="Action" TargetPin="Action"/>
+													<link Source="acPlayerPrevTrack" SourcePin="Action" TargetPin="ContextMenu"/>
+													<link Source="acPlayerPrevTrack" SourcePin="Action" TargetPin="Hint"/>
+													<link Source="acPlayerSeekBackward" SourcePin="Action" TargetPin="ActionOnHold"/>
+												</property>
+												<property name="PlaceInfo" anchors="1,0,0,1" margins="0,-8,368,0" Size="24,24"/>
+												<property name="Skin" link="Skin.PrevButton.Texture[24]"/>
+												<property name="Fonts">
+													<property name="Normal"/>
+													<property name="Hot"/>
+													<property name="Pressed"/>
+													<property name="Disabled"/>
+												</property>
+											</properties>
+										</control>
+										<control class="Button" name="PF_PlayButton">
+											<properties>
+												<property name="Bindings">
+													<link Source="acPlayerPlay" SourcePin="Action" TargetPin="Action"/>
+													<link Source="acPlayerPlay" SourcePin="Action" TargetPin="ContextMenu"/>
+													<link Source="acPlayerPlay" SourcePin="Action" TargetPin="Hint"/>
+													<link Source="prvPlayerState" SourcePin="State" TargetPin="State" Expression="Value = 1"/>
+												</property>
+												<property name="PlaceInfo" anchors="1,0,0,1" margins="24,-8,344,0" Size="24,24"/>
+												<property name="Skin" link="Skin.PlayButton.Texture[24]"/>
+												<property name="Fonts">
+													<property name="Normal"/>
+													<property name="Hot"/>
+													<property name="Pressed"/>
+													<property name="Disabled"/>
+												</property>
+											</properties>
+										</control>
+										<control class="Button" name="PF_PauseButton">
+											<properties>
+												<property name="Bindings">
+													<link Source="acPlayerPause" SourcePin="Action" TargetPin="Action"/>
+													<link Source="acPlayerPause" SourcePin="Action" TargetPin="ContextMenu"/>
+													<link Source="acPlayerPause" SourcePin="Action" TargetPin="Hint"/>
+													<link Source="prvPlayerState" SourcePin="State" TargetPin="State" Expression="Value = 2"/>
+												</property>
+												<property name="PlaceInfo" anchors="1,0,0,1" margins="48,-8,320,0" Size="24,24"/>
+												<property name="Skin" link="Skin.PauseButton.Texture[24]"/>
+												<property name="Fonts">
+													<property name="Normal"/>
+													<property name="Hot"/>
+													<property name="Pressed"/>
+													<property name="Disabled"/>
+												</property>
+											</properties>
+										</control>
+										<control class="Button" name="PF_StopButton">
+											<properties>
+												<property name="Bindings">
+													<link Source="acPlayerStop" SourcePin="Action" TargetPin="Action"/>
+													<link Source="acPlayerStop" SourcePin="Action" TargetPin="ContextMenu"/>
+													<link Source="acPlayerStop" SourcePin="Action" TargetPin="Hint"/>
+													<link Source="acPlayerStop" SourcePin="Flashing" TargetPin="State"/>
+												</property>
+												<property name="PlaceInfo" anchors="1,0,0,1" margins="72,-8,296,0" Size="24,24"/>
+												<property name="Skin" link="Skin.StopButton.Texture[24]"/>
+												<property name="Fonts">
+													<property name="Normal"/>
+													<property name="Hot"/>
+													<property name="Pressed"/>
+													<property name="Disabled"/>
+												</property>
+											</properties>
+										</control>
+										<control class="Button" name="PF_NextButton">
+											<properties>
+												<property name="Bindings">
+													<link Source="acPlayerNextTrack" SourcePin="Action" TargetPin="Action"/>
+													<link Source="acPlayerNextTrack" SourcePin="Action" TargetPin="ContextMenu"/>
+													<link Source="acPlayerNextTrack" SourcePin="Action" TargetPin="Hint"/>
+													<link Source="acPlayerSeekForward" SourcePin="Action" TargetPin="ActionOnHold"/>
+												</property>
+												<property name="PlaceInfo" anchors="1,0,0,1" margins="96,-8,272,0" Size="24,24"/>
+												<property name="Skin" link="Skin.NextButton.Texture[24]"/>
+												<property name="Fonts">
+													<property name="Normal"/>
+													<property name="Hot"/>
+													<property name="Pressed"/>
+													<property name="Disabled"/>
+												</property>
+											</properties>
+										</control>
+										<control class="Button" name="PF_RepeatButton">
+											<properties>
+												<property name="Bindings">
+													<link Source="acPlayerRepeat" SourcePin="Action" TargetPin="Accessibility"/>
+													<link Source="acPlayerRepeat" SourcePin="Action" TargetPin="Action"/>
+													<link Source="acPlayerRepeat" SourcePin="Action" TargetPin="ContextMenu"/>
+													<link Source="acPlayerRepeat" SourcePin="Action" TargetPin="Hint"/>
+													<link Source="acPlayerRepeat" SourcePin="State" TargetPin="State"/>
+												</property>
+												<property name="PlaceInfo" anchors="1,0,0,1" margins="128,0,186,0" Size="24,24"/>
+												<property name="Skin" link="Skin.RepeatButton.Texture"/>
+												<property name="FramesPerState" value="3"/>
+												<property name="Fonts">
+													<property name="Normal"/>
+													<property name="Hot"/>
+													<property name="Pressed"/>
+													<property name="Disabled"/>
+												</property>
+											</properties>
+										</control>
+										<control class="Button" name="PF_ShuffleButton">
+											<properties>
+												<property name="Bindings">
+													<link Source="acPlayerShuffle" SourcePin="Action" TargetPin="Accessibility"/>
+													<link Source="acPlayerShuffle" SourcePin="Action" TargetPin="Action"/>
+													<link Source="acPlayerShuffle" SourcePin="Action" TargetPin="ContextMenu"/>
+													<link Source="acPlayerShuffle" SourcePin="Action" TargetPin="Hint"/>
+													<link Source="acPlayerShuffle" SourcePin="State" TargetPin="State"/>
+												</property>
+												<property name="PlaceInfo" anchors="1,0,0,1" margins="152,0,162,0" Size="24,24"/>
+												<property name="Skin" link="Skin.ShuffleButton.Texture"/>
+												<property name="FramesPerState" value="3"/>
+												<property name="Fonts">
+													<property name="Normal"/>
+													<property name="Hot"/>
+													<property name="Pressed"/>
+													<property name="Disabled"/>
+												</property>
+											</properties>
+										</control>
+									</controls>
+								</item>
+							</items>
+						</item>
+					</items>
+				</item>
+				<item class="LayoutItem" name="PlaylistFormEdge_Top">
+					<properties>
+						<property name="SizeMinimal" value="1,1"/>
+					</properties>
+					<items>
+						<item class="LayoutTexture" name="PlaylistFormEdge_Top_0">
+							<properties>
+								<property name="Bindings">
+									<link Source="PF_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 0"/>
+								</property>
+								<property name="Alignment" value="laClient"/>
+								<property name="Color">
+									<property name="Value" value="4290756543"/>
+								</property>
+								<property name="Texture" value="PlaylistFormEdge_Top_0.Texture"/>
+							</properties>
+						</item>
+						<item class="LayoutTexture" name="PlaylistFormEdge_Top_1">
+							<properties>
+								<property name="Bindings">
+									<link Source="PF_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 1"/>
+								</property>
+								<property name="Alignment" value="laClient"/>
+								<property name="AlignmentLevel" value="1"/>
+								<property name="Color">
+									<property name="Value" value="4282335039"/>
+								</property>
+								<property name="Texture" value="PlaylistFormEdge_Top_1.Texture"/>
+							</properties>
+						</item>
+						<item class="LayoutTexture" name="PlaylistFormEdge_Top_2">
+							<properties>
+								<property name="Bindings">
+									<link Source="PF_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 2"/>
+								</property>
+								<property name="Alignment" value="laClient"/>
+								<property name="AlignmentLevel" value="2"/>
+								<property name="Color">
+									<property name="Value" value="4294941465"/>
+								</property>
+								<property name="Texture" value="PlaylistFormEdge_Top_2.Texture"/>
+							</properties>
+						</item>
+					</items>
+				</item>
+				<item class="LayoutItem" name="PlaylistFormEdge_Bottom">
+					<properties>
+						<property name="SizeMinimal" value="1,1"/>
+						<property name="Alignment" value="laBottom"/>
+					</properties>
+					<items>
+						<item class="LayoutTexture" name="PlaylistFormEdge_Bottom_0">
+							<properties>
+								<property name="Bindings">
+									<link Source="PF_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 0"/>
+								</property>
+								<property name="Alignment" value="laClient"/>
+								<property name="Color">
+									<property name="Value" value="4290756543"/>
+								</property>
+								<property name="Texture" value="PlaylistFormEdge_Bottom_0.Texture"/>
+							</properties>
+						</item>
+						<item class="LayoutTexture" name="PlaylistFormEdge_Bottom_1">
+							<properties>
+								<property name="Bindings">
+									<link Source="PF_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 1"/>
+								</property>
+								<property name="Alignment" value="laClient"/>
+								<property name="AlignmentLevel" value="1"/>
+								<property name="Color">
+									<property name="Value" value="4282335039"/>
+								</property>
+								<property name="Texture" value="PlaylistFormEdge_Bottom_1.Texture"/>
+							</properties>
+						</item>
+						<item class="LayoutTexture" name="PlaylistFormEdge_Bottom_2">
+							<properties>
+								<property name="Bindings">
+									<link Source="PF_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 2"/>
+								</property>
+								<property name="Alignment" value="laClient"/>
+								<property name="AlignmentLevel" value="2"/>
+								<property name="Color">
+									<property name="Value" value="4294941465"/>
+								</property>
+								<property name="Texture" value="PlaylistFormEdge_Bottom_2.Texture"/>
+							</properties>
+						</item>
+					</items>
+				</item>
+				<item class="LayoutItem" name="PlaylistFormEdge_Left">
+					<properties>
+						<property name="SizeMinimal" value="1,1"/>
+						<property name="Alignment" value="laLeft"/>
+					</properties>
+					<items>
+						<item class="LayoutTexture" name="PlaylistFormEdge_Left_0">
+							<properties>
+								<property name="Bindings">
+									<link Source="PF_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 0"/>
+								</property>
+								<property name="Alignment" value="laClient"/>
+								<property name="Color">
+									<property name="Value" value="4290756543"/>
+								</property>
+								<property name="Texture" value="PlaylistFormEdge_Left_0.Texture"/>
+							</properties>
+						</item>
+						<item class="LayoutTexture" name="PlaylistFormEdge_Left_1">
+							<properties>
+								<property name="Bindings">
+									<link Source="PF_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 1"/>
+								</property>
+								<property name="Alignment" value="laClient"/>
+								<property name="AlignmentLevel" value="1"/>
+								<property name="Color">
+									<property name="Value" value="4282335039"/>
+								</property>
+								<property name="Texture" value="PlaylistFormEdge_Left_1.Texture"/>
+							</properties>
+						</item>
+						<item class="LayoutTexture" name="PlaylistFormEdge_Left_2">
+							<properties>
+								<property name="Bindings">
+									<link Source="PF_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 2"/>
+								</property>
+								<property name="Alignment" value="laClient"/>
+								<property name="AlignmentLevel" value="2"/>
+								<property name="Color">
+									<property name="Value" value="4294941465"/>
+								</property>
+								<property name="Texture" value="PlaylistFormEdge_Left_2.Texture"/>
+							</properties>
+						</item>
+					</items>
+				</item>
+				<item class="LayoutItem" name="PlaylistFormEdge_Right">
+					<properties>
+						<property name="SizeMinimal" value="1,1"/>
+						<property name="Alignment" value="laRight"/>
+					</properties>
+					<items>
+						<item class="LayoutTexture" name="PlaylistFormEdge_Right_0">
+							<properties>
+								<property name="Bindings">
+									<link Source="PF_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 0"/>
+								</property>
+								<property name="Alignment" value="laClient"/>
+								<property name="Color">
+									<property name="Value" value="4290756543"/>
+								</property>
+								<property name="Texture" value="PlaylistFormEdge_Right_0.Texture"/>
+							</properties>
+						</item>
+						<item class="LayoutTexture" name="PlaylistFormEdge_Right_1">
+							<properties>
+								<property name="Bindings">
+									<link Source="PF_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 1"/>
+								</property>
+								<property name="Alignment" value="laClient"/>
+								<property name="AlignmentLevel" value="1"/>
+								<property name="Color">
+									<property name="Value" value="4282335039"/>
+								</property>
+								<property name="Texture" value="PlaylistFormEdge_Right_1.Texture"/>
+							</properties>
+						</item>
+						<item class="LayoutTexture" name="PlaylistFormEdge_Right_2">
+							<properties>
+								<property name="Bindings">
+									<link Source="PF_WindowEdgeSelector" SourcePin="Result" TargetPin="Visibility" Expression="Value = 2"/>
+								</property>
+								<property name="Alignment" value="laClient"/>
+								<property name="AlignmentLevel" value="2"/>
+								<property name="Color">
+									<property name="Value" value="4294941465"/>
+								</property>
+								<property name="Texture" value="PlaylistFormEdge_Right_2.Texture"/>
+							</properties>
+						</item>
+					</items>
+				</item>
+			</items>
+		</item>
+		<item class="LayoutItem" name="PlaylistFormShadow_Top">
+			<properties>
+				<property name="SizeMaximal" value="0,16"/>
+				<property name="SizeMinimal" value="16,16"/>
+			</properties>
+			<items>
+				<item class="LayoutTexture" name="PlaylistFormShadow_Top_0">
+					<properties>
+						<property name="Bindings">
+							<link Source="Setting_FormShadow" SourcePin="Position" TargetPin="Visibility" Expression=" NOT Value"/>
+						</property>
+						<property name="Alignment" value="laClient"/>
+						<property name="Color"/>
+						<property name="Texture" value="PlaylistFormShadow_Top_0.Texture"/>
+					</properties>
+				</item>
+				<item class="LayoutTexture" name="PlaylistFormShadow_Top_1">
+					<properties>
+						<property name="Bindings">
+							<link Source="Setting_FormShadow" SourcePin="Position" TargetPin="Visibility"/>
+						</property>
+						<property name="Alignment" value="laClient"/>
+						<property name="AlignmentLevel" value="1"/>
+						<property name="Color"/>
+						<property name="Texture" value="PlaylistFormShadow_Top_1.Texture"/>
+					</properties>
+				</item>
+			</items>
+		</item>
+		<item class="LayoutItem" name="PlaylistFormShadow_Bottom">
+			<properties>
+				<property name="SizeMaximal" value="0,16"/>
+				<property name="SizeMinimal" value="16,16"/>
+				<property name="Alignment" value="laBottom"/>
+			</properties>
+			<items>
+				<item class="LayoutTexture" name="PlaylistFormShadow_Bottom_0">
+					<properties>
+						<property name="Bindings">
+							<link Source="Setting_FormShadow" SourcePin="Position" TargetPin="Visibility" Expression=" NOT Value"/>
+						</property>
+						<property name="Alignment" value="laClient"/>
+						<property name="Color"/>
+						<property name="Texture" value="PlaylistFormShadow_Bottom_0.Texture"/>
+					</properties>
+				</item>
+				<item class="LayoutTexture" name="PlaylistFormShadow_Bottom_1">
+					<properties>
+						<property name="Bindings">
+							<link Source="Setting_FormShadow" SourcePin="Position" TargetPin="Visibility"/>
+						</property>
+						<property name="Alignment" value="laClient"/>
+						<property name="AlignmentLevel" value="1"/>
+						<property name="Color"/>
+						<property name="Texture" value="PlaylistFormShadow_Bottom_1.Texture"/>
+					</properties>
+				</item>
+			</items>
+		</item>
+		<item class="LayoutItem" name="PlaylistFormShadow_Left">
+			<properties>
+				<property name="SizeMaximal" value="16,0"/>
+				<property name="SizeMinimal" value="16,16"/>
+				<property name="Alignment" value="laLeft"/>
+			</properties>
+			<items>
+				<item class="LayoutTexture" name="PlaylistFormShadow_Left_0">
+					<properties>
+						<property name="Bindings">
+							<link Source="Setting_FormShadow" SourcePin="Position" TargetPin="Visibility" Expression=" NOT Value"/>
+						</property>
+						<property name="Alignment" value="laClient"/>
+						<property name="Color"/>
+						<property name="Texture" value="PlaylistFormShadow_Left_0.Texture"/>
+					</properties>
+				</item>
+				<item class="LayoutTexture" name="PlaylistFormShadow_Left_1">
+					<properties>
+						<property name="Bindings">
+							<link Source="Setting_FormShadow" SourcePin="Position" TargetPin="Visibility"/>
+						</property>
+						<property name="Alignment" value="laClient"/>
+						<property name="AlignmentLevel" value="1"/>
+						<property name="Color"/>
+						<property name="Texture" value="PlaylistFormShadow_Left_1.Texture"/>
+					</properties>
+				</item>
+			</items>
+		</item>
+		<item class="LayoutItem" name="PlaylistFormShadow_Right">
+			<properties>
+				<property name="SizeMaximal" value="16,0"/>
+				<property name="SizeMinimal" value="16,16"/>
+				<property name="Alignment" value="laRight"/>
+			</properties>
+			<items>
+				<item class="LayoutTexture" name="PlaylistFormShadow_Right_0">
+					<properties>
+						<property name="Bindings">
+							<link Source="Setting_FormShadow" SourcePin="Position" TargetPin="Visibility" Expression=" NOT Value"/>
+						</property>
+						<property name="Alignment" value="laClient"/>
+						<property name="Color"/>
+						<property name="Texture" value="PlaylistFormShadow_Right_0.Texture"/>
+					</properties>
+				</item>
+				<item class="LayoutTexture" name="PlaylistFormShadow_Right_1">
+					<properties>
+						<property name="Bindings">
+							<link Source="Setting_FormShadow" SourcePin="Position" TargetPin="Visibility"/>
+						</property>
+						<property name="Alignment" value="laClient"/>
+						<property name="AlignmentLevel" value="1"/>
+						<property name="Color"/>
+						<property name="Texture" value="PlaylistFormShadow_Right_1.Texture"/>
+					</properties>
+				</item>
+			</items>
+		</item>
+	</items>
+</layout>

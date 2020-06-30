@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<image>
+	<properties>
+		<property name="Layout" value="ilVertical"/>
+		<property name="ContentOffsets" value="2,2,2,2"/>
+		<property name="HitTestMaskMode" value="ihtmOpaque"/>
+		<property name="Margins" value="2,2,2,2"/>
+	</properties>
+</image>
