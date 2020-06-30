@@ -4,7 +4,7 @@
 		<item class="LayoutContainer" name="QFIMain">
 			<properties>
 				<property name="AllowResizeByHeight" value="False"/>
-				<property name="SizeMinimal" value="280,0"/>
+				<property name="SizeMinimal" value="280,80"/>
 				<property name="Alignment" value="laClient"/>
 				<property name="Color">
 					<property name="ID" value="Skin.BaseColor"/>
