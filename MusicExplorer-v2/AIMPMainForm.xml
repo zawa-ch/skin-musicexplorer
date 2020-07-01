@@ -188,6 +188,7 @@
 						</item>
 						<item class="LayoutTabbedGroup" name="MF_MainArea">
 							<properties>
+								<property name="SizeMinimal" value="480,200"/>
 								<property name="Alignment" value="laClient"/>
 							</properties>
 							<items>

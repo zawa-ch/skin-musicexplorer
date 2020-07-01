@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<skin target="450" edition="0" ID="899076a1aa9a60fde4171c5eaa940cd6" AllowColoration="1">
+<skin target="450" edition="0" ID="7f91f14c83f6eca1d7aa8906c4bee372" AllowColoration="1">
 	<properties>
 		<resources>
 			<item>
@@ -33,17 +33,17 @@
 			<item>
 				<property name="ID" value="Skin.MinimizeButton.Texture"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Light.MinimizeButton.Texture"/>
+				<property name="Resource" value="Skin.MinimizeButton.TextureResource"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.CloseButton.Texture"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Light.CloseButton.Texture"/>
+				<property name="Resource" value="Skin.CloseButton.TextureResource"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.MaximizeButton.Texture"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Light.MaximizeButton.Texture"/>
+				<property name="Resource" value="Skin.MaximizeButton.TextureResource"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.PrimaryColor"/>
@@ -191,12 +191,12 @@
 			<item>
 				<property name="ID" value="Skin.Slider[2].Skin"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Light.Slider[2].Skin"/>
+				<property name="Resource" value="Skin.Slider[2].SkinResource"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.Slider[2].Thumb"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Light.Slider[2].Thumb"/>
+				<property name="Resource" value="Skin.Slider[2].ThumbResource"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.RatingMark.Texture"/>
@@ -307,7 +307,7 @@
 			<item>
 				<property name="ID" value="Skin.Tab[0].Skin"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Light.Tab[0].Skin"/>
+				<property name="Resource" value="Skin.Tab[0].SkinResource"/>
 			</item>
 			<item>
 				<property name="ID" value="Theme.Light.Tab.Normal.Font"/>
@@ -445,22 +445,7 @@
 			<item>
 				<property name="ID" value="Skin.Tab[1].Skin"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Light.Tab[1].Skin"/>
-			</item>
-			<item>
-				<property name="ID" value="Theme.Light.CloseButton.Texture"/>
-				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" value="Theme.Light.CloseButton.TextureResource"/>
-			</item>
-			<item>
-				<property name="ID" value="Theme.Light.MaximizeButton.Texture"/>
-				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" value="Theme.Light.MaximizeButton.TextureResource"/>
-			</item>
-			<item>
-				<property name="ID" value="Theme.Light.MinimizeButton.Texture"/>
-				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" value="Theme.Light.MinimizeButton.TextureResource"/>
+				<property name="Resource" value="Skin.Tab[1].SkinResource"/>
 			</item>
 			<item>
 				<property name="ID" value="Theme.Light.RepeatButton.Texture"/>
@@ -473,34 +458,9 @@
 				<property name="Resource" value="Theme.Light.ShuffleButton.TextureResource"/>
 			</item>
 			<item>
-				<property name="ID" value="Theme.Light.Slider[2].Skin"/>
-				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" value="Theme.Light.Slider[2].SkinResource"/>
-			</item>
-			<item>
-				<property name="ID" value="Theme.Light.Slider[2].Thumb"/>
-				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" value="Theme.Light.Slider[2].ThumbResource"/>
-			</item>
-			<item>
-				<property name="ID" value="Theme.Light.Tab[0].Skin"/>
-				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" value="Theme.Light.Tab[0].SkinResource"/>
-			</item>
-			<item>
-				<property name="ID" value="Theme.Light.Tab[1].Skin"/>
-				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" value="Theme.Light.Tab[1].SkinResource"/>
-			</item>
-			<item>
 				<property name="ID" value="Skin.Slider[0].Skin"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Light.Slider[0].Skin"/>
-			</item>
-			<item>
-				<property name="ID" value="Theme.Light.Slider[0].Skin"/>
-				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" value="Theme.Light.Slider[0].SkinResource"/>
+				<property name="Resource" value="Skin.Slider[0].SkinResource"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.PrevButton.Texture"/>
@@ -716,16 +676,6 @@
 				</property>
 			</item>
 			<item>
-				<property name="ID" value="Skin.ScrollBarV.Buttons"/>
-				<property name="ResourceClassName" value="TACLResourceTexture"/>
-				<property name="Resource" value="Skin.ScrollBarV.ButtonsResource"/>
-			</item>
-			<item>
-				<property name="ID" value="Skin.ScrollBarH.Buttons"/>
-				<property name="ResourceClassName" value="TACLResourceTexture"/>
-				<property name="Resource" value="Skin.ScrollBarH.ButtonsResource"/>
-			</item>
-			<item>
 				<property name="ID" value="Skin.LibraryTable.ColumnHeaderSortingArrow"/>
 				<property name="ResourceClassName" value="TACLResourceTexture"/>
 				<property name="Resource" value="Skin.LibraryTable.ColumnHeaderSortingArrowResource"/>
@@ -784,11 +734,6 @@
 				</property>
 			</item>
 			<item>
-				<property name="ID" value="Skin.GroupingTree.RowExpandButton"/>
-				<property name="ResourceClassName" value="TACLResourceTexture"/>
-				<property name="Resource" value="Skin.GroupingTree.RowExpandButtonResource"/>
-			</item>
-			<item>
 				<property name="ID" value="Skin.PrimaryColor[o50]"/>
 				<property name="ResourceClassName" value="TACLResourceColor"/>
 				<property name="Resource">
@@ -843,9 +788,9 @@
 				<property name="Resource" value="Skin.RandomButton.TextureResource"/>
 			</item>
 			<item>
-				<property name="ID" value="Skin.Playlist.HeaderExpandButton"/>
+				<property name="ID" value="Skin.ExpandButton.Texture"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" value="Skin.Playlist.HeaderExpandButtonResource"/>
+				<property name="Resource" value="Skin.ExpandButton.TextureResource"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.CenterButton.Texture"/>
@@ -884,6 +829,26 @@
 				<property name="ID" value="Skin.StatusGauge.Texture"/>
 				<property name="ResourceClassName" value="TASETexture"/>
 				<property name="Resource" value="Skin.StatusGauge.TextureResource"/>
+			</item>
+			<item>
+				<property name="ID" value="Skin.ScrollBarH.Buttons"/>
+				<property name="ResourceClassName" value="TASETexture"/>
+				<property name="Resource" value="Skin.ScrollBarH.ButtonsResource"/>
+			</item>
+			<item>
+				<property name="ID" value="Skin.ScrollBarV.Buttons"/>
+				<property name="ResourceClassName" value="TASETexture"/>
+				<property name="Resource" value="Skin.ScrollBarV.ButtonsResource"/>
+			</item>
+			<item>
+				<property name="ID" value="Skin.ScrollBarH.Skin.NoButton"/>
+				<property name="ResourceClassName" value="TASETexture"/>
+				<property name="Resource" value="Skin.ScrollBarH.Skin.NoButtonResource"/>
+			</item>
+			<item>
+				<property name="ID" value="Skin.ScrollBarV.Skin.NoButton"/>
+				<property name="ResourceClassName" value="TASETexture"/>
+				<property name="Resource" value="Skin.ScrollBarV.Skin.NoButtonResource"/>
 			</item>
 		</resources>
 		<menu>
@@ -936,7 +901,7 @@
 			<property name="ColorListTextSelectionHot">
 				<property name="ID" value="Skin.TextNormal.Color"/>
 			</property>
-			<property name="TextureScrollBar" link="Skin.ScrollBarV.Skin"/>
+			<property name="TextureScrollBar" link="Skin.ScrollBarV.Skin.NoButton"/>
 			<property name="TextureScrollBarThumb" link="Skin.ScrollBarV.Thumb"/>
 		</menu>
 		<hint>

@@ -108,13 +108,14 @@
 	>
 		<path
 			id="rect0"
-			d="M 4,4 H 28 V 28 H 4 Z"
-			style="fill:none;stroke:none"
+			d="M 0,0 H 32 V 32 H 0 Z"
+			style="fill:none;stroke:none;stroke-width:1.33334"
 		/>
 		<path
 			id="path1"
-			d="M 21,20.5 16,12 11,20.5 h 6.5"
-			style="fill:none;stroke:#ff9b19;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round"
+			d="M 26,25 16,8 6,25 h 13"
+			style="fill:none;stroke:#ff9b19;stroke-width:3;stroke-linecap:round;stroke-linejoin:round"
+			sodipodi:nodetypes="cccc"
 		/>
 	</g>
 </svg>

@@ -221,7 +221,7 @@
 																<property name="SelectedFocused"/>
 																<property name="SelectedInactive"/>
 															</property>
-															<property name="HeaderExpandButtons" link="Skin.Playlist.HeaderExpandButton"/>
+															<property name="HeaderExpandButtons" link="Skin.ExpandButton.Texture"/>
 															<property name="HeaderFonts">
 																<property name="Normal">
 																	<property name="ID" value="Skin.Playlist.Header.Normal"/>

@@ -197,7 +197,7 @@
 															<property name="RowColorSelectedTextInactive">
 																<property name="ID" value="Skin.TextNormal.Color"/>
 															</property>
-															<property name="RowExpandButton" link="Skin.GroupingTree.RowExpandButton"/>
+															<property name="RowExpandButton" link="Skin.ExpandButton.Texture"/>
 															<property name="FocusRectColor">
 																<property name="Value" value="0"/>
 															</property>
@@ -370,6 +370,7 @@
 														<property name="StyleFilterBox">
 															<property name="StyleTreeListScrollBox">
 																<property name="TextureBackgroundVert" link="Skin.ScrollBarV.Skin"/>
+																<property name="TextureButtonsVert" link="Skin.ScrollBarV.Buttons"/>
 																<property name="TextureThumbVert" link="Skin.ScrollBarV.Thumb"/>
 															</property>
 														</property>
