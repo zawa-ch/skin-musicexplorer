@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<skin target="450" edition="0" ID="e47a891e6831f5e14f696a6104e17e1c" AllowColoration="1">
+<skin target="450" edition="0" ID="899076a1aa9a60fde4171c5eaa940cd6" AllowColoration="1">
 	<properties>
 		<resources>
 			<item>
@@ -124,31 +124,6 @@
 					<property name="ID" value="Skin.FontFamily"/>
 					<property name="Color" value="4278190080"/>
 				</property>
-			</item>
-			<item>
-				<property name="ID" value="Skin.PrevButton.Texture[32]"/>
-				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Light.PrevButton.Texture[32]"/>
-			</item>
-			<item>
-				<property name="ID" value="Skin.PlayButton.Texture[32]"/>
-				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Light.PlayButton.Texture[32]"/>
-			</item>
-			<item>
-				<property name="ID" value="Skin.PauseButton.Texture[32]"/>
-				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Light.PauseButton.Texture[32]"/>
-			</item>
-			<item>
-				<property name="ID" value="Skin.StopButton.Texture[32]"/>
-				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Light.StopButton.Texture[32]"/>
-			</item>
-			<item>
-				<property name="ID" value="Skin.NextButton.Texture[32]"/>
-				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Light.NextButton.Texture[32]"/>
 			</item>
 			<item>
 				<property name="ID" value="Theme.Light.SecondoryColor"/>
@@ -488,26 +463,6 @@
 				<property name="Resource" value="Theme.Light.MinimizeButton.TextureResource"/>
 			</item>
 			<item>
-				<property name="ID" value="Theme.Light.NextButton.Texture[32]"/>
-				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" value="Theme.Light.NextButton.Texture[32]Resource"/>
-			</item>
-			<item>
-				<property name="ID" value="Theme.Light.PauseButton.Texture[32]"/>
-				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" value="Theme.Light.PauseButton.Texture[32]Resource"/>
-			</item>
-			<item>
-				<property name="ID" value="Theme.Light.PlayButton.Texture[32]"/>
-				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" value="Theme.Light.PlayButton.Texture[32]Resource"/>
-			</item>
-			<item>
-				<property name="ID" value="Theme.Light.PrevButton.Texture[32]"/>
-				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" value="Theme.Light.PrevButton.Texture[32]Resource"/>
-			</item>
-			<item>
 				<property name="ID" value="Theme.Light.RepeatButton.Texture"/>
 				<property name="ResourceClassName" value="TASETexture"/>
 				<property name="Resource" value="Theme.Light.RepeatButton.TextureResource"/>
@@ -526,11 +481,6 @@
 				<property name="ID" value="Theme.Light.Slider[2].Thumb"/>
 				<property name="ResourceClassName" value="TASETexture"/>
 				<property name="Resource" value="Theme.Light.Slider[2].ThumbResource"/>
-			</item>
-			<item>
-				<property name="ID" value="Theme.Light.StopButton.Texture[32]"/>
-				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" value="Theme.Light.StopButton.Texture[32]Resource"/>
 			</item>
 			<item>
 				<property name="ID" value="Theme.Light.Tab[0].Skin"/>
@@ -553,29 +503,29 @@
 				<property name="Resource" value="Theme.Light.Slider[0].SkinResource"/>
 			</item>
 			<item>
-				<property name="ID" value="Skin.PrevButton.Texture[24]"/>
+				<property name="ID" value="Skin.PrevButton.Texture"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" value="Skin.PrevButton.Texture[24]Resource"/>
+				<property name="Resource" value="Skin.PrevButton.TextureResource"/>
 			</item>
 			<item>
-				<property name="ID" value="Skin.PlayButton.Texture[24]"/>
+				<property name="ID" value="Skin.PlayButton.Texture"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" value="Skin.PlayButton.Texture[24]Resource"/>
+				<property name="Resource" value="Skin.PlayButton.TextureResource"/>
 			</item>
 			<item>
-				<property name="ID" value="Skin.PauseButton.Texture[24]"/>
+				<property name="ID" value="Skin.PauseButton.Texture"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" value="Skin.PauseButton.Texture[24]Resource"/>
+				<property name="Resource" value="Skin.PauseButton.TextureResource"/>
 			</item>
 			<item>
-				<property name="ID" value="Skin.StopButton.Texture[24]"/>
+				<property name="ID" value="Skin.StopButton.Texture"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" value="Skin.StopButton.Texture[24]Resource"/>
+				<property name="Resource" value="Skin.StopButton.TextureResource"/>
 			</item>
 			<item>
-				<property name="ID" value="Skin.NextButton.Texture[24]"/>
+				<property name="ID" value="Skin.NextButton.Texture"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" value="Skin.NextButton.Texture[24]Resource"/>
+				<property name="Resource" value="Skin.NextButton.TextureResource"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.ScrollBarH.Skin"/>
@@ -929,6 +879,11 @@
 				<property name="ID" value="Skin.LibraryTable.Marks"/>
 				<property name="ResourceClassName" value="TACLResourceTexture"/>
 				<property name="Resource" value="Skin.LibraryTable.MarksResource"/>
+			</item>
+			<item>
+				<property name="ID" value="Skin.StatusGauge.Texture"/>
+				<property name="ResourceClassName" value="TASETexture"/>
+				<property name="Resource" value="Skin.StatusGauge.TextureResource"/>
 			</item>
 		</resources>
 		<menu>

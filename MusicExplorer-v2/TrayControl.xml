@@ -46,6 +46,46 @@
 						<property name="Texture" value="TC_CtrlArea.Texture"/>
 					</properties>
 					<controls>
+						<control class="Button" name="TC_RepeatStatus">
+							<properties>
+								<property name="Bindings">
+									<link Source="acPlayerRepeat" SourcePin="State" TargetPin="State"/>
+								</property>
+								<property name="PlaceInfo" anchors="1,0,0,1" margins="148,3,100,0" Size="20,21"/>
+								<property name="Skin" link="Skin.StatusGauge.Texture"/>
+								<property name="FramesPerState" value="1"/>
+								<property name="Fonts">
+									<property name="Normal">
+										<property name="Color" value="66051"/>
+										<property name="Height" value="-11"/>
+										<property name="Name" value="Tahoma"/>
+										<property name="Quality" value="fqDefault"/>
+										<property name="Style" value=""/>
+									</property>
+									<property name="Hot">
+										<property name="Color" value="66051"/>
+										<property name="Height" value="-11"/>
+										<property name="Name" value="Tahoma"/>
+										<property name="Quality" value="fqDefault"/>
+										<property name="Style" value=""/>
+									</property>
+									<property name="Pressed">
+										<property name="Color" value="66051"/>
+										<property name="Height" value="-11"/>
+										<property name="Name" value="Tahoma"/>
+										<property name="Quality" value="fqDefault"/>
+										<property name="Style" value=""/>
+									</property>
+									<property name="Disabled">
+										<property name="Color" value="66051"/>
+										<property name="Height" value="-11"/>
+										<property name="Name" value="Tahoma"/>
+										<property name="Quality" value="fqDefault"/>
+										<property name="Style" value=""/>
+									</property>
+								</property>
+							</properties>
+						</control>
 						<control class="Button" name="TC_RepeatButton">
 							<properties>
 								<property name="Bindings">
@@ -62,6 +102,46 @@
 									<property name="Hot"/>
 									<property name="Pressed"/>
 									<property name="Disabled"/>
+								</property>
+							</properties>
+						</control>
+						<control class="Button" name="TC_ShuffleStatus">
+							<properties>
+								<property name="Bindings">
+									<link Source="acPlayerShuffle" SourcePin="State" TargetPin="State"/>
+								</property>
+								<property name="PlaceInfo" anchors="1,0,0,1" margins="172,12,29,0" Size="20,21"/>
+								<property name="Skin" link="Skin.StatusGauge.Texture"/>
+								<property name="FramesPerState" value="1"/>
+								<property name="Fonts">
+									<property name="Normal">
+										<property name="Color" value="66051"/>
+										<property name="Height" value="-11"/>
+										<property name="Name" value="Tahoma"/>
+										<property name="Quality" value="fqDefault"/>
+										<property name="Style" value=""/>
+									</property>
+									<property name="Hot">
+										<property name="Color" value="66051"/>
+										<property name="Height" value="-11"/>
+										<property name="Name" value="Tahoma"/>
+										<property name="Quality" value="fqDefault"/>
+										<property name="Style" value=""/>
+									</property>
+									<property name="Pressed">
+										<property name="Color" value="66051"/>
+										<property name="Height" value="-11"/>
+										<property name="Name" value="Tahoma"/>
+										<property name="Quality" value="fqDefault"/>
+										<property name="Style" value=""/>
+									</property>
+									<property name="Disabled">
+										<property name="Color" value="66051"/>
+										<property name="Height" value="-11"/>
+										<property name="Name" value="Tahoma"/>
+										<property name="Quality" value="fqDefault"/>
+										<property name="Style" value=""/>
+									</property>
 								</property>
 							</properties>
 						</control>
@@ -93,7 +173,23 @@
 									<link Source="acPlayerSeekBackward" SourcePin="Action" TargetPin="ActionOnHold"/>
 								</property>
 								<property name="PlaceInfo" anchors="1,0,0,1" margins="24,0,204,0" Size="24,24"/>
-								<property name="Skin" link="Skin.PrevButton.Texture[24]"/>
+								<property name="Skin" link="Skin.PrevButton.Texture"/>
+								<property name="Fonts">
+									<property name="Normal"/>
+									<property name="Hot"/>
+									<property name="Pressed"/>
+									<property name="Disabled"/>
+								</property>
+							</properties>
+						</control>
+						<control class="Button" name="TC_PlayStatus">
+							<properties>
+								<property name="Bindings">
+									<link Source="prvPlayerState" SourcePin="State" TargetPin="State" Expression="Value = 1"/>
+								</property>
+								<property name="PlaceInfo" anchors="1,0,0,1" margins="48,0,168,0" Size="24,24"/>
+								<property name="Skin" link="Skin.StatusGauge.Texture"/>
+								<property name="FramesPerState" value="1"/>
 								<property name="Fonts">
 									<property name="Normal"/>
 									<property name="Hot"/>
@@ -108,10 +204,25 @@
 									<link Source="acPlayerPlay" SourcePin="Action" TargetPin="Action"/>
 									<link Source="acPlayerPlay" SourcePin="Action" TargetPin="ContextMenu"/>
 									<link Source="acPlayerPlay" SourcePin="Action" TargetPin="Hint"/>
-									<link Source="prvPlayerState" SourcePin="State" TargetPin="State" Expression="Value = 1"/>
 								</property>
 								<property name="PlaceInfo" anchors="1,0,0,1" margins="48,0,180,0" Size="24,24"/>
-								<property name="Skin" link="Skin.PlayButton.Texture[24]"/>
+								<property name="Skin" link="Skin.PlayButton.Texture"/>
+								<property name="Fonts">
+									<property name="Normal"/>
+									<property name="Hot"/>
+									<property name="Pressed"/>
+									<property name="Disabled"/>
+								</property>
+							</properties>
+						</control>
+						<control class="Button" name="TC_PauseStatus">
+							<properties>
+								<property name="Bindings">
+									<link Source="prvPlayerState" SourcePin="State" TargetPin="State" Expression="Value = 2"/>
+								</property>
+								<property name="PlaceInfo" anchors="1,0,0,1" margins="72,5,120,0" Size="20,21"/>
+								<property name="Skin" link="Skin.StatusGauge.Texture"/>
+								<property name="FramesPerState" value="1"/>
 								<property name="Fonts">
 									<property name="Normal"/>
 									<property name="Hot"/>
@@ -126,10 +237,25 @@
 									<link Source="acPlayerPause" SourcePin="Action" TargetPin="Action"/>
 									<link Source="acPlayerPause" SourcePin="Action" TargetPin="ContextMenu"/>
 									<link Source="acPlayerPause" SourcePin="Action" TargetPin="Hint"/>
-									<link Source="prvPlayerState" SourcePin="State" TargetPin="State" Expression="Value = 2"/>
 								</property>
 								<property name="PlaceInfo" anchors="1,0,0,1" margins="72,0,156,0" Size="24,24"/>
-								<property name="Skin" link="Skin.PauseButton.Texture[24]"/>
+								<property name="Skin" link="Skin.PauseButton.Texture"/>
+								<property name="Fonts">
+									<property name="Normal"/>
+									<property name="Hot"/>
+									<property name="Pressed"/>
+									<property name="Disabled"/>
+								</property>
+							</properties>
+						</control>
+						<control class="Button" name="TC_StopStatus">
+							<properties>
+								<property name="Bindings">
+									<link Source="acPlayerStop" SourcePin="Flashing" TargetPin="State"/>
+								</property>
+								<property name="PlaceInfo" anchors="1,0,0,1" margins="96,0,108,0" Size="20,21"/>
+								<property name="Skin" link="Skin.StatusGauge.Texture"/>
+								<property name="FramesPerState" value="1"/>
 								<property name="Fonts">
 									<property name="Normal"/>
 									<property name="Hot"/>
@@ -144,10 +270,9 @@
 									<link Source="acPlayerStop" SourcePin="Action" TargetPin="Action"/>
 									<link Source="acPlayerStop" SourcePin="Action" TargetPin="ContextMenu"/>
 									<link Source="acPlayerStop" SourcePin="Action" TargetPin="Hint"/>
-									<link Source="acPlayerStop" SourcePin="Flashing" TargetPin="State"/>
 								</property>
 								<property name="PlaceInfo" anchors="1,0,0,1" margins="96,0,132,0" Size="24,24"/>
-								<property name="Skin" link="Skin.StopButton.Texture[24]"/>
+								<property name="Skin" link="Skin.StopButton.Texture"/>
 								<property name="Fonts">
 									<property name="Normal"/>
 									<property name="Hot"/>
@@ -165,7 +290,7 @@
 									<link Source="acPlayerSeekForward" SourcePin="Action" TargetPin="ActionOnHold"/>
 								</property>
 								<property name="PlaceInfo" anchors="1,0,0,1" margins="120,0,108,0" Size="24,24"/>
-								<property name="Skin" link="Skin.NextButton.Texture[24]"/>
+								<property name="Skin" link="Skin.NextButton.Texture"/>
 								<property name="Fonts">
 									<property name="Normal"/>
 									<property name="Hot"/>

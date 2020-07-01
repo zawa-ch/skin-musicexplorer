@@ -674,6 +674,22 @@
 										<property name="Texture" value="MF_StatusBar_PlayCtrlArea.Texture"/>
 									</properties>
 									<controls>
+										<control class="Button" name="MF_RepeatStatus0">
+											<properties>
+												<property name="Bindings">
+													<link Source="acPlayerRepeat" SourcePin="State" TargetPin="State"/>
+												</property>
+												<property name="PlaceInfo" anchors="0,0,1,1" margins="34,39,194,0" Size="24,24"/>
+												<property name="Skin" link="Skin.StatusGauge.Texture"/>
+												<property name="FramesPerState" value="1"/>
+												<property name="Fonts">
+													<property name="Normal"/>
+													<property name="Hot"/>
+													<property name="Pressed"/>
+													<property name="Disabled"/>
+												</property>
+											</properties>
+										</control>
 										<control class="Button" name="MF_RepeatButton0">
 											<properties>
 												<property name="Bindings">
@@ -686,6 +702,22 @@
 												<property name="PlaceInfo" anchors="0,0,1,1" margins="50,42,194,0" Size="20,21"/>
 												<property name="Skin" link="Skin.RepeatButton.Texture"/>
 												<property name="FramesPerState" value="3"/>
+												<property name="Fonts">
+													<property name="Normal"/>
+													<property name="Hot"/>
+													<property name="Pressed"/>
+													<property name="Disabled"/>
+												</property>
+											</properties>
+										</control>
+										<control class="Button" name="MF_ShuffleStatus0">
+											<properties>
+												<property name="Bindings">
+													<link Source="acPlayerShuffle" SourcePin="State" TargetPin="State"/>
+												</property>
+												<property name="PlaceInfo" anchors="0,0,1,1" margins="2,31,170,0" Size="24,24"/>
+												<property name="Skin" link="Skin.StatusGauge.Texture"/>
+												<property name="FramesPerState" value="1"/>
 												<property name="Fonts">
 													<property name="Normal"/>
 													<property name="Hot"/>
@@ -723,7 +755,23 @@
 													<link Source="acPlayerSeekBackward" SourcePin="Action" TargetPin="ActionOnHold"/>
 												</property>
 												<property name="PlaceInfo" anchors="0,0,1,1" margins="76,23,133,0" Size="32,32"/>
-												<property name="Skin" link="Skin.PrevButton.Texture[32]"/>
+												<property name="Skin" link="Skin.PrevButton.Texture"/>
+												<property name="Fonts">
+													<property name="Normal"/>
+													<property name="Hot"/>
+													<property name="Pressed"/>
+													<property name="Disabled"/>
+												</property>
+											</properties>
+										</control>
+										<control class="Button" name="MF_PlayStatus0">
+											<properties>
+												<property name="Bindings">
+													<link Source="prvPlayerState" SourcePin="State" TargetPin="State" Expression="Value = 1"/>
+												</property>
+												<property name="PlaceInfo" anchors="0,0,1,1" margins="99,34,101,0" Size="32,32"/>
+												<property name="Skin" link="Skin.StatusGauge.Texture"/>
+												<property name="FramesPerState" value="1"/>
 												<property name="Fonts">
 													<property name="Normal"/>
 													<property name="Hot"/>
@@ -738,10 +786,25 @@
 													<link Source="acPlayerPlay" SourcePin="Action" TargetPin="Action"/>
 													<link Source="acPlayerPlay" SourcePin="Action" TargetPin="ContextMenu"/>
 													<link Source="acPlayerPlay" SourcePin="Action" TargetPin="Hint"/>
-													<link Source="prvPlayerState" SourcePin="State" TargetPin="State" Expression="Value = 1"/>
 												</property>
 												<property name="PlaceInfo" anchors="0,0,1,1" margins="112,23,101,0" Size="32,32"/>
-												<property name="Skin" link="Skin.PlayButton.Texture[32]"/>
+												<property name="Skin" link="Skin.PlayButton.Texture"/>
+												<property name="Fonts">
+													<property name="Normal"/>
+													<property name="Hot"/>
+													<property name="Pressed"/>
+													<property name="Disabled"/>
+												</property>
+											</properties>
+										</control>
+										<control class="Button" name="MF_PauseStatus0">
+											<properties>
+												<property name="Bindings">
+													<link Source="prvPlayerState" SourcePin="State" TargetPin="State" Expression="Value = 2"/>
+												</property>
+												<property name="PlaceInfo" anchors="0,0,1,1" margins="95,31,69,0" Size="32,32"/>
+												<property name="Skin" link="Skin.StatusGauge.Texture"/>
+												<property name="FramesPerState" value="1"/>
 												<property name="Fonts">
 													<property name="Normal"/>
 													<property name="Hot"/>
@@ -756,10 +819,25 @@
 													<link Source="acPlayerPause" SourcePin="Action" TargetPin="Action"/>
 													<link Source="acPlayerPause" SourcePin="Action" TargetPin="ContextMenu"/>
 													<link Source="acPlayerPause" SourcePin="Action" TargetPin="Hint"/>
-													<link Source="prvPlayerState" SourcePin="State" TargetPin="State" Expression="Value = 2"/>
 												</property>
 												<property name="PlaceInfo" anchors="0,0,1,1" margins="144,23,69,0" Size="32,32"/>
-												<property name="Skin" link="Skin.PauseButton.Texture[32]"/>
+												<property name="Skin" link="Skin.PauseButton.Texture"/>
+												<property name="Fonts">
+													<property name="Normal"/>
+													<property name="Hot"/>
+													<property name="Pressed"/>
+													<property name="Disabled"/>
+												</property>
+											</properties>
+										</control>
+										<control class="Button" name="MF_StopStatus0">
+											<properties>
+												<property name="Bindings">
+													<link Source="acPlayerStop" SourcePin="Flashing" TargetPin="State"/>
+												</property>
+												<property name="PlaceInfo" anchors="0,0,1,1" margins="127,31,37,0" Size="32,32"/>
+												<property name="Skin" link="Skin.StatusGauge.Texture"/>
+												<property name="FramesPerState" value="1"/>
 												<property name="Fonts">
 													<property name="Normal"/>
 													<property name="Hot"/>
@@ -774,10 +852,9 @@
 													<link Source="acPlayerStop" SourcePin="Action" TargetPin="Action"/>
 													<link Source="acPlayerStop" SourcePin="Action" TargetPin="ContextMenu"/>
 													<link Source="acPlayerStop" SourcePin="Action" TargetPin="Hint"/>
-													<link Source="acPlayerStop" SourcePin="Flashing" TargetPin="State"/>
 												</property>
 												<property name="PlaceInfo" anchors="0,0,1,1" margins="176,23,37,0" Size="32,32"/>
-												<property name="Skin" link="Skin.StopButton.Texture[32]"/>
+												<property name="Skin" link="Skin.StopButton.Texture"/>
 												<property name="Fonts">
 													<property name="Normal"/>
 													<property name="Hot"/>
@@ -795,7 +872,7 @@
 													<link Source="acPlayerSeekForward" SourcePin="Action" TargetPin="ActionOnHold"/>
 												</property>
 												<property name="PlaceInfo" anchors="0,0,1,1" margins="208,23,5,0" Size="32,32"/>
-												<property name="Skin" link="Skin.NextButton.Texture[32]"/>
+												<property name="Skin" link="Skin.NextButton.Texture"/>
 												<property name="Fonts">
 													<property name="Normal"/>
 													<property name="Hot"/>
