@@ -63,6 +63,9 @@
 						</control>
 						<control link="DropWheel_RND">
 							<properties>
+								<property name="Bindings">
+									<link Source="Skin_RandomIconState" SourcePin="Position" TargetPin="State" Expression="Value * 2"/>
+								</property>
 								<property name="PlaceInfo" anchors="1,0,0,0" margins="0,27,83,27" Size="40,48"/>
 								<property name="Skin" link="Skin.RandomButton.Texture"/>
 								<property name="FramesPerState" value="2"/>

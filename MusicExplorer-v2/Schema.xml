@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<skin target="450" edition="0" ID="0bbd1b1bf8c40a91a509749cbc0a2d9c" AllowColoration="1">
+<skin target="450" edition="0" ID="e47a891e6831f5e14f696a6104e17e1c" AllowColoration="1">
 	<properties>
 		<resources>
 			<item>
@@ -1242,6 +1242,11 @@
 					<link Source="Setting_PrimaryColorEdge" SourcePin="Position" TargetPin="Value2"/>
 				</property>
 				<property name="Expression" value="If(Value1, If(Value2, 2, 1), 0)"/>
+			</properties>
+		</provider>
+		<provider name="Skin_RandomIconState" class="LogicalOperatorCounter">
+			<properties>
+				<property name="Module" value="6"/>
 			</properties>
 		</provider>
 	</providers>
