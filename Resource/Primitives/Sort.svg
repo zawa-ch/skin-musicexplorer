@@ -112,9 +112,10 @@
 			style="fill:none;stroke:none"
 		/>
 		<path
-			id="path840"
-			d="m 23,18 -4,4 -4,-4 m -6,-4 4,-4 4,4"
+			id="path1"
+			d="m 21,18 -3,3 -3,-3 m -4,-4 3,-3 3,3"
 			style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round"
+			sodipodi:nodetypes="cccccc"
 		/>
 	</g>
 </svg>

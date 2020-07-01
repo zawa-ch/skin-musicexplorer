@@ -121,14 +121,14 @@
 		<circle
 			id="path2"
 			cx="14"
-			cy="11"
+			cy="12"
 			r="2"
 			style="fill:#000000;stroke:none"
 		/>
 		<circle
 			id="path1"
-			cx="21"
-			cy="17"
+			cx="20"
+			cy="17.5"
 			r="2"
 			style="fill:#000000;stroke:none"
 		/>
