@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<skin target="450" edition="0" ID="3d14f237eb7859ea0d62e25ec4e2e287" AllowColoration="1">
+<skin target="450" edition="0" ID="625cd5c7ccfd0b87c4c2c5d85acab659" AllowColoration="1">
 	<properties>
 		<resources>
 			<item>
@@ -1240,17 +1240,6 @@
 								<property name="RadioGroupIndex" value="0"/>
 							</properties>
 						</item>
-						<item name="CCM0_CopyLastPathButton">
-							<properties>
-								<property name="Caption" value="Copy to last path"/>
-								<property name="Glyph" value="CCM0_CopyLastPathButton.Glyph"/>
-								<property name="Bindings">
-									<link Source="acPlayableFileCopyToLastPath" SourcePin="Action" TargetPin="Accessibility"/>
-									<link Source="acPlayableFileCopyToLastPath" SourcePin="Action" TargetPin="Action"/>
-								</property>
-								<property name="RadioGroupIndex" value="0"/>
-							</properties>
-						</item>
 					</items>
 				</item>
 				<item name="CCM0_SetStarMenu">
@@ -1399,6 +1388,45 @@
 					</properties>
 				</item>
 			</items>
+		</provider>
+		<provider name="Setting_LevelGaugeRangeMax" class="LogicalOperatorCounter">
+			<properties>
+				<property name="Module" value="25"/>
+			</properties>
+		</provider>
+		<provider name="Visual_ScaledLevelL" class="LogicalOperatorCommutator">
+			<properties>
+				<property name="Bindings">
+					<link Source="Visual_LoggedLevelL" SourcePin="Result" TargetPin="Value1"/>
+					<link Source="Setting_LevelGaugeRangeMax" SourcePin="Position" TargetPin="Value2"/>
+				</property>
+				<property name="Expression" value="(Value1) / (100 + Value2 * 2) * 100"/>
+			</properties>
+		</provider>
+		<provider name="Visual_ScaledLevelR" class="LogicalOperatorCommutator">
+			<properties>
+				<property name="Bindings">
+					<link Source="Visual_LoggedLevelR" SourcePin="Result" TargetPin="Value1"/>
+					<link Source="Setting_LevelGaugeRangeMax" SourcePin="Position" TargetPin="Value2"/>
+				</property>
+				<property name="Expression" value="(Value1) / (100 + Value2 * 2) * 100"/>
+			</properties>
+		</provider>
+		<provider name="Skin_PeakAreaLevel" class="LogicalOperatorCommutator">
+			<properties>
+				<property name="Bindings">
+					<link Source="Setting_LevelGaugeRangeMax" SourcePin="Position" TargetPin="Value1"/>
+				</property>
+				<property name="Expression" value="(Value1 * 2) / (100 + Value1 * 2) * 100"/>
+			</properties>
+		</provider>
+		<provider name="String_LevelGaugeRangeMax_SetValue" class="StringOperatorConcatenator">
+			<properties>
+				<property name="Bindings">
+					<link Source="Setting_LevelGaugeRangeMax" SourcePin="Position" TargetPin="Value1"/>
+				</property>
+				<property name="Expression" value="+%Value1 dB"/>
+			</properties>
 		</provider>
 	</providers>
 	<localizations default="English.lng">

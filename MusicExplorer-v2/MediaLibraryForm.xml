@@ -486,6 +486,7 @@
 													<link Source="prvMusicLibraryManager" SourcePin="BackgroundTaskCount" TargetPin="Visibility" Expression=" NOT Value = 0"/>
 												</property>
 												<property name="Alignment" value="laClient"/>
+												<property name="AlignmentLevel" value="1"/>
 												<property name="Color"/>
 												<property name="Texture" value="MLF_ToolBar2.Texture"/>
 											</properties>
