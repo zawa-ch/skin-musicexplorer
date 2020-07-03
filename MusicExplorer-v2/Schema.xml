@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<skin target="450" edition="0" ID="8f0394a1e4439caaa9403fb4acd91ba6" AllowColoration="1">
+<skin target="450" edition="0" ID="3d14f237eb7859ea0d62e25ec4e2e287" AllowColoration="1">
 	<properties>
 		<resources>
 			<item>
@@ -870,6 +870,16 @@
 				<property name="ResourceClassName" value="TASETexture"/>
 				<property name="Resource" value="Skin.Playlist.ItemSwitchesResource"/>
 			</item>
+			<item>
+				<property name="ID" value="Skin.CheckBoxButton.Texture"/>
+				<property name="ResourceClassName" value="TASETexture"/>
+				<property name="Resource" value="Skin.CheckBoxButton.TextureResource"/>
+			</item>
+			<item>
+				<property name="ID" value="Skin.PlayerStatusGauge.Texture"/>
+				<property name="ResourceClassName" value="TASETexture"/>
+				<property name="Resource" value="Skin.PlayerStatusGauge.TextureResource"/>
+			</item>
 		</resources>
 		<menu>
 			<property name="Borders">
@@ -1057,7 +1067,6 @@
 		<provider name="Setting_UsePlayStateStaticIcon" class="LogicalOperatorCounter">
 			<properties>
 				<property name="Module" value="2"/>
-				<property name="PositionDefault" value="1"/>
 			</properties>
 		</provider>
 		<provider name="String_VolumeSliderHint" class="StringOperatorConcatenator">
