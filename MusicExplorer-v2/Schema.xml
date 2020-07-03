@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<skin target="450" edition="0" ID="cfdd48d4b0fb7a8dda3ab1b5bcc9c799" AllowColoration="1">
+<skin target="450" edition="0" ID="8f0394a1e4439caaa9403fb4acd91ba6" AllowColoration="1">
 	<properties>
 		<resources>
 			<item>
@@ -859,6 +859,16 @@
 				<property name="ID" value="Skin.EscapeButton.Texture"/>
 				<property name="ResourceClassName" value="TASETexture"/>
 				<property name="Resource" value="Skin.EscapeButton.TextureResource"/>
+			</item>
+			<item>
+				<property name="ID" value="Skin.Playlist.HeaderSwitches"/>
+				<property name="ResourceClassName" value="TASETexture"/>
+				<property name="Resource" value="Skin.Playlist.HeaderSwitchesResource"/>
+			</item>
+			<item>
+				<property name="ID" value="Skin.Playlist.ItemSwitches"/>
+				<property name="ResourceClassName" value="TASETexture"/>
+				<property name="Resource" value="Skin.Playlist.ItemSwitchesResource"/>
 			</item>
 		</resources>
 		<menu>

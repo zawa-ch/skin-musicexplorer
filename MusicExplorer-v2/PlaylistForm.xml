@@ -237,7 +237,7 @@
 																</property>
 															</property>
 															<property name="HeaderIndents" value="4,2,4,2"/>
-															<property name="HeaderSwitches" value="Playlist.Resources.HeaderSwitches"/>
+															<property name="HeaderSwitches" link="Skin.Playlist.HeaderSwitches"/>
 															<property name="ItemBackgroundColors">
 																<property name="Normal">
 																	<property name="ID" value="Colors.Unset"/>
@@ -346,7 +346,7 @@
 															</property>
 															<property name="ItemLine2Offset" value="1"/>
 															<property name="ItemMarks" value="Playlist.Resources.ItemMarks"/>
-															<property name="ItemSwitches" value="Playlist.Resources.ItemSwitches"/>
+															<property name="ItemSwitches" link="Skin.Playlist.ItemSwitches"/>
 															<property name="OverlayColor"/>
 														</property>
 													</properties>
