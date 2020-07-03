@@ -719,7 +719,7 @@
 								</item>
 								<item class="LayoutContainer" name="MLF_PlayCtrlBar_CtrlArea">
 									<properties>
-										<property name="SizeMinimal" value="176,24"/>
+										<property name="SizeMinimal" value="300,24"/>
 										<property name="Alignment" value="laBottom"/>
 										<property name="Color"/>
 										<property name="Texture" value="MLF_PlayCtrlBar_CtrlArea.Texture"/>
@@ -767,6 +767,7 @@
 													<link Source="acPlayerPlay" SourcePin="Action" TargetPin="Hint"/>
 												</property>
 												<property name="PlaceInfo" anchors="1,0,0,1" margins="24,0,120,0" Size="24,24"/>
+												<property name="PopupMenu" value="pmQuickOptions"/>
 												<property name="Skin" link="Skin.PlayButton.Texture"/>
 												<property name="Fonts">
 													<property name="Normal"/>
@@ -929,6 +930,30 @@
 													<property name="Hot"/>
 													<property name="Pressed"/>
 													<property name="Disabled"/>
+												</property>
+											</properties>
+										</control>
+										<control class="SliderHorizontal" name="MLF_VolumeSlider">
+											<properties>
+												<property name="Bindings">
+													<link Source="prvVolume" SourcePin="Action" TargetPin="Accessibility"/>
+													<link Source="prvVolume" SourcePin="Action" TargetPin="Action"/>
+													<link Source="acPlayerVolumeMute" SourcePin="Action" TargetPin="ContextMenu"/>
+													<link Source="String_VolumeSliderHint" SourcePin="Result" TargetPin="Hint"/>
+												</property>
+												<property name="PlaceInfo" anchors="0,0,1,0" margins="84,0,0,0" Size="116,16"/>
+												<property name="Skin" link="Skin.Slider[2].Skin"/>
+												<property name="Color"/>
+												<property name="ColorProgress"/>
+												<property name="SkinThumb" link="Skin.Slider[2].Thumb"/>
+												<property name="TextLabels">
+													<property name="Font"/>
+													<property name="FontProgress"/>
+													<property name="OverlayColor"/>
+												</property>
+												<property name="Waveform">
+													<property name="Color"/>
+													<property name="ColorProgress"/>
 												</property>
 											</properties>
 										</control>

@@ -790,6 +790,7 @@
 													<link Source="acPlayerPlay" SourcePin="Action" TargetPin="Hint"/>
 												</property>
 												<property name="PlaceInfo" anchors="0,0,1,1" margins="112,23,101,0" Size="32,32"/>
+												<property name="PopupMenu" value="pmQuickOptions"/>
 												<property name="Skin" link="Skin.PlayButton.Texture"/>
 												<property name="Fonts">
 													<property name="Normal"/>
