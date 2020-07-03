@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<skin target="450" edition="0" ID="7f91f14c83f6eca1d7aa8906c4bee372" AllowColoration="1">
+<skin target="450" edition="0" ID="fca19ff8f951533048e5ae727a588d3c" AllowColoration="1">
 	<properties>
 		<resources>
 			<item>
@@ -849,6 +849,11 @@
 				<property name="ID" value="Skin.ScrollBarV.Skin.NoButton"/>
 				<property name="ResourceClassName" value="TASETexture"/>
 				<property name="Resource" value="Skin.ScrollBarV.Skin.NoButtonResource"/>
+			</item>
+			<item>
+				<property name="ID" value="Textures.Transparent"/>
+				<property name="ResourceClassName" value="TASETexture"/>
+				<property name="Resource" value="Textures.TransparentResource"/>
 			</item>
 		</resources>
 		<menu>

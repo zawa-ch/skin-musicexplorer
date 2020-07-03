@@ -624,7 +624,8 @@
 													<link Source="prvPlayingFileInfo" SourcePin="Waveform" TargetPin="Waveform"/>
 												</property>
 												<property name="PlaceInfo" anchors="1,1,1,1" margins="0,0,0,0" Size="257,24"/>
-												<property name="Skin" value="PF_Seekbar0.Skin"/>
+												<property name="PopupMenu" value="pmJump"/>
+												<property name="Skin" link="Textures.Unset"/>
 												<property name="Color"/>
 												<property name="ColorProgress"/>
 												<property name="SkinThumb" value="PF_Seekbar0.SkinThumb"/>
@@ -646,7 +647,7 @@
 										<control class="BlurredGlass" name="PF_SeekbarBlurGlass">
 											<properties>
 												<property name="PlaceInfo" anchors="1,1,1,1" margins="0,0,0,0" Size="100,100"/>
-												<property name="Skin" value="PF_SeekbarBlurGlass.Skin"/>
+												<property name="Skin" link="Textures.Transparent"/>
 												<property name="BlurLevel" value="20"/>
 												<property name="Color"/>
 											</properties>
@@ -657,7 +658,7 @@
 													<link Source="String_Playtime" SourcePin="Result" TargetPin="DisplayValue"/>
 												</property>
 												<property name="PlaceInfo" anchors="0,1,1,1" margins="276,0,4,0" Size="112,24"/>
-												<property name="Skin" value="PF_PlayTimeText.Skin"/>
+												<property name="Skin" link="Textures.Transparent"/>
 												<property name="Alignment" value="taRightJustify"/>
 												<property name="Color"/>
 												<property name="Font">
@@ -671,7 +672,7 @@
 													<link Source="String_RotaryPlayingFileInfoWithNotification" SourcePin="Result" TargetPin="DisplayValue"/>
 												</property>
 												<property name="PlaceInfo" anchors="1,1,1,1" margins="4,0,120,0" Size="120,20"/>
-												<property name="Skin" value="PF_PlayInfoText.Skin"/>
+												<property name="Skin" link="Textures.Transparent"/>
 												<property name="Color"/>
 												<property name="Font">
 													<property name="ID" value="Skin.TextNormal"/>

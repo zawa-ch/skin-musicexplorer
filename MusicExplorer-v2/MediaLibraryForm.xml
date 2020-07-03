@@ -660,7 +660,8 @@
 													<link Source="prvPlayingFileInfo" SourcePin="Waveform" TargetPin="Waveform"/>
 												</property>
 												<property name="PlaceInfo" anchors="1,1,1,1" margins="0,0,0,0" Size="177,24"/>
-												<property name="Skin" value="MLF_Seekbar0.Skin"/>
+												<property name="PopupMenu" value="pmJump"/>
+												<property name="Skin" link="Textures.Unset"/>
 												<property name="Color"/>
 												<property name="ColorProgress"/>
 												<property name="SkinThumb" value="MLF_Seekbar0.SkinThumb"/>
@@ -682,7 +683,7 @@
 										<control class="BlurredGlass" name="MLF_SeekbarBlurGlass">
 											<properties>
 												<property name="PlaceInfo" anchors="1,1,1,1" margins="0,0,0,0" Size="176,24"/>
-												<property name="Skin" value="MLF_SeekbarBlurGlass.Skin"/>
+												<property name="Skin" link="Textures.Transparent"/>
 												<property name="BlurLevel" value="20"/>
 												<property name="Color"/>
 											</properties>
@@ -693,7 +694,7 @@
 													<link Source="String_Playtime" SourcePin="Result" TargetPin="DisplayValue"/>
 												</property>
 												<property name="PlaceInfo" anchors="0,1,1,1" margins="64,0,4,0" Size="112,24"/>
-												<property name="Skin" value="MLF_PlayTimeText.Skin"/>
+												<property name="Skin" link="Textures.Transparent"/>
 												<property name="Alignment" value="taRightJustify"/>
 												<property name="Color"/>
 												<property name="Font">
@@ -707,7 +708,7 @@
 													<link Source="String_RotaryPlayingFileInfoWithNotification" SourcePin="Result" TargetPin="DisplayValue"/>
 												</property>
 												<property name="PlaceInfo" anchors="1,1,1,1" margins="4,0,120,0" Size="52,24"/>
-												<property name="Skin" value="MLF_PlayInfoText.Skin"/>
+												<property name="Skin" link="Textures.Transparent"/>
 												<property name="Color"/>
 												<property name="Font">
 													<property name="ID" value="Skin.TextNormal"/>

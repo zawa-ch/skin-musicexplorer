@@ -633,6 +633,7 @@
 													<link Source="prvPlayerState" SourcePin="State" TargetPin="Visibility" Expression=" NOT Value = 0"/>
 												</property>
 												<property name="PlaceInfo" anchors="1,1,1,1" margins="-16,0,-16,0" Size="640,25"/>
+												<property name="PopupMenu" value="pmJump"/>
 												<property name="Skin" link="Skin.Slider[0].Skin"/>
 												<property name="Color"/>
 												<property name="ColorProgress"/>
@@ -957,6 +958,21 @@
 												<property name="Skin" value="MF_CoverArt0.Skin"/>
 											</properties>
 										</control>
+										<control class="TextDisplay" name="MF_SongInfoText3">
+											<properties>
+												<property name="Bindings">
+													<link Source="prvPlayingFileInfo" SourcePin="FileInfo" TargetPin="DisplayValue" TextFormat="#%Index%IF(%TrackNumber, / %IF(%DiskNumber,Disc%DiskNumber - %TrackNumber,Track%TrackNumber),)"/>
+													<link Source="prvPlayerState" SourcePin="State" TargetPin="Visibility" Expression=" NOT Value = 0"/>
+												</property>
+												<property name="PlaceInfo" anchors="1,1,1,0" margins="108,0,10,43" Size="150,12"/>
+												<property name="Skin" link="Textures.Transparent"/>
+												<property name="AlignmentVertical" value="taAlignBottom"/>
+												<property name="Color"/>
+												<property name="Font">
+													<property name="ID" value="Skin.TextNormal.Small"/>
+												</property>
+											</properties>
+										</control>
 										<control class="Rating" name="MF_Rating0">
 											<properties>
 												<property name="Bindings">
@@ -973,7 +989,7 @@
 													<link Source="prvPlayingFileInfo" SourcePin="FileInfo" TargetPin="DisplayValue" TextFormat="%UserTemplate5"/>
 												</property>
 												<property name="PlaceInfo" anchors="1,1,1,0" margins="38,12,10,31" Size="315,12"/>
-												<property name="Skin" value="MF_SongInfoText2.Skin"/>
+												<property name="Skin" link="Textures.Transparent"/>
 												<property name="AlignmentVertical" value="taAlignBottom"/>
 												<property name="Color"/>
 												<property name="Font">
@@ -987,7 +1003,7 @@
 													<link Source="prvPlayingFileInfo" SourcePin="FileInfo" TargetPin="DisplayValue" TextFormat="%UserTemplate4"/>
 												</property>
 												<property name="PlaceInfo" anchors="1,1,1,0" margins="38,24,8,19" Size="317,12"/>
-												<property name="Skin" value="MF_SongInfoText1.Skin"/>
+												<property name="Skin" link="Textures.Transparent"/>
 												<property name="AlignmentVertical" value="taAlignBottom"/>
 												<property name="Color"/>
 												<property name="Font">
@@ -1001,7 +1017,7 @@
 													<link Source="prvVisual" SourcePin="DisplayValue" TargetPin="DisplayValue"/>
 												</property>
 												<property name="PlaceInfo" anchors="1,0,0,1" margins="1,35,380,1" Size="18,18"/>
-												<property name="Skin" value="MF_SpectrumDisplay0.Skin"/>
+												<property name="Skin" link="Textures.Unset"/>
 												<property name="Color">
 													<property name="ID" value="Skin.SecondoryColor"/>
 												</property>
@@ -1019,14 +1035,16 @@
 											<properties>
 												<property name="Bindings">
 													<link Source="prvPlayingFileInfo" SourcePin="FileInfo" TargetPin="DisplayValue" TextFormat="%IF(%UserTemplate2,%UserTemplate2 - ,)%UserTemplate1"/>
+													<link Source="acPlayableFileShowFileInfoAtCursor" SourcePin="Action" TargetPin="Action"/>
 												</property>
 												<property name="PlaceInfo" anchors="1,0,1,1" margins="25,37,10,0" Size="365,20"/>
-												<property name="Skin" value="MF_SongInfoText0.Skin"/>
+												<property name="Skin" link="Textures.Unset"/>
 												<property name="AlignmentVertical" value="taAlignBottom"/>
 												<property name="Color"/>
 												<property name="Font">
 													<property name="ID" value="Skin.TextNormal.Large"/>
 												</property>
+												<property name="HitTestByText" value="True"/>
 											</properties>
 										</control>
 									</controls>
