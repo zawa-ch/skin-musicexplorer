@@ -669,7 +669,7 @@
 																</item>
 																<item class="LayoutContainer" name="MF_OP_Setting1_ItemArea">
 																	<properties>
-																		<property name="SizeMinimal" value="0,48"/>
+																		<property name="SizeMinimal" value="0,72"/>
 																		<property name="AlignmentLevel" value="1"/>
 																		<property name="Color"/>
 																		<property name="Texture" link="Textures.Unset"/>
@@ -731,19 +731,75 @@
 																				</property>
 																			</properties>
 																		</control>
+																		<control class="TextDisplay" name="MF_OP_Setting1_Item1Text">
+																			<properties>
+																				<property name="PlaceInfo" anchors="1,1,1,0" margins="28,24,8,40" Size="443,24"/>
+																				<property name="Skin" link="Textures.Transparent"/>
+																				<property name="Color"/>
+																				<property name="Font">
+																					<property name="ID" value="Skin.TextNormal"/>
+																				</property>
+																				<property name="Template" value="Level gauge: Range min"/>
+																			</properties>
+																		</control>
+																		<control class="TextDisplay" name="MF_OP_Setting1_Item1SetValueText">
+																			<properties>
+																				<property name="Bindings">
+																					<link Source="String_LevelGaugeRangeMin_SetValue" SourcePin="Result" TargetPin="DisplayValue"/>
+																				</property>
+																				<property name="PlaceInfo" anchors="0,1,1,0" margins="359,24,8,40" Size="120,24"/>
+																				<property name="Skin" link="Textures.Transparent"/>
+																				<property name="Alignment" value="taRightJustify"/>
+																				<property name="Color"/>
+																				<property name="Font">
+																					<property name="ID" value="Skin.TextNormal"/>
+																				</property>
+																			</properties>
+																		</control>
+																		<control class="SliderHorizontal" name="MF_OP_Setting1_Item1Slider">
+																			<properties>
+																				<property name="Bindings">
+																					<link Source="Setting_LevelGaugeRangeMin" SourcePin="Position" TargetPin="Action"/>
+																				</property>
+																				<property name="PlaceInfo" anchors="1,1,1,0" margins="24,26,4,26" Size="447,20"/>
+																				<property name="Skin" link="Skin.Slider[0].Skin"/>
+																				<property name="Color"/>
+																				<property name="ColorProgress"/>
+																				<property name="SkinThumb" link="Textures.Unset"/>
+																				<property name="TextLabels">
+																					<property name="Font">
+																						<property name="ID" value="Fonts.Unset"/>
+																					</property>
+																					<property name="FontProgress">
+																						<property name="ID" value="Fonts.Unset"/>
+																					</property>
+																					<property name="OverlayColor">
+																						<property name="ID" value="Colors.Unset"/>
+																					</property>
+																				</property>
+																				<property name="Waveform">
+																					<property name="Color">
+																						<property name="ID" value="Colors.Unset"/>
+																					</property>
+																					<property name="ColorProgress">
+																						<property name="ID" value="Colors.Unset"/>
+																					</property>
+																				</property>
+																			</properties>
+																		</control>
 																		<control class="Switch" name="MF_OP_Setting0_Item2Switch">
 																			<properties>
 																				<property name="Bindings">
 																					<link Source="Setting_UsePlayStateStaticIcon" SourcePin="Position" TargetPin="Action" Expression=" NOT Value"/>
 																					<link Source="Setting_UsePlayStateStaticIcon" SourcePin="Position" TargetPin="State"/>
 																				</property>
-																				<property name="PlaceInfo" anchors="1,1,0,0" margins="20,24,435,0" Size="24,24"/>
+																				<property name="PlaceInfo" anchors="1,1,0,0" margins="20,48,435,24" Size="24,24"/>
 																				<property name="Skin" link="Skin.CheckBoxButton.Texture"/>
 																			</properties>
 																		</control>
 																		<control class="TextDisplay" name="MF_OP_Setting0_Item2Text">
 																			<properties>
-																				<property name="PlaceInfo" anchors="1,1,1,0" margins="48,24,4,0" Size="427,24"/>
+																				<property name="PlaceInfo" anchors="1,1,1,0" margins="48,48,4,24" Size="427,24"/>
 																				<property name="Skin" link="Textures.Transparent"/>
 																				<property name="Color"/>
 																				<property name="Font">
