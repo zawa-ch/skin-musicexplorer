@@ -1038,6 +1038,7 @@
 													<link Source="acPlayableFileShowFileInfoAtCursor" SourcePin="Action" TargetPin="Action"/>
 												</property>
 												<property name="PlaceInfo" anchors="1,0,1,1" margins="25,37,10,0" Size="365,20"/>
+												<property name="PopupMenu" value="ML_PlayingFileInfoContextMenu"/>
 												<property name="Skin" link="Textures.Unset"/>
 												<property name="AlignmentVertical" value="taAlignBottom"/>
 												<property name="Color"/>

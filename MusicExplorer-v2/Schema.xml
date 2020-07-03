@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<skin target="450" edition="0" ID="fca19ff8f951533048e5ae727a588d3c" AllowColoration="1">
+<skin target="450" edition="0" ID="2819584628699bb5ce08bd81cb86126b" AllowColoration="1">
 	<properties>
 		<resources>
 			<item>
@@ -1173,6 +1173,208 @@
 			<properties>
 				<property name="Module" value="6"/>
 			</properties>
+		</provider>
+		<provider name="ML_PlayingFileInfoContextMenu" class="CustomContextMenu">
+			<items>
+				<item name="CCM0_ShowQFIButton">
+					<properties>
+						<property name="Caption" value="Show QFI"/>
+						<property name="Glyph" value="CCM0_ShowQFIButton.Glyph"/>
+						<property name="Bindings">
+							<link Source="acPlayableFileShowFileInfoAtCursor" SourcePin="Action" TargetPin="Accessibility"/>
+							<link Source="acPlayableFileShowFileInfoAtCursor" SourcePin="Action" TargetPin="Action"/>
+						</property>
+						<property name="RadioGroupIndex" value="0"/>
+					</properties>
+				</item>
+				<item name="CCM0_CopyMenu">
+					<properties>
+						<property name="Caption" value="Copy..."/>
+						<property name="Glyph" value="CCM0_CopyMenu.Glyph"/>
+						<property name="RadioGroupIndex" value="0"/>
+					</properties>
+					<items>
+						<item name="CCM0_CopyFileButton">
+							<properties>
+								<property name="Caption" value="File"/>
+								<property name="Glyph" value="CCM0_CopyFileButton.Glyph"/>
+								<property name="Bindings">
+									<link Source="acPlayableFileCopyFileToClipboard" SourcePin="Action" TargetPin="Accessibility"/>
+									<link Source="acPlayableFileCopyFileToClipboard" SourcePin="Action" TargetPin="Action"/>
+								</property>
+								<property name="RadioGroupIndex" value="0"/>
+							</properties>
+						</item>
+						<item name="CCM0_CopyFileInfoButton">
+							<properties>
+								<property name="Caption" value="Infomation"/>
+								<property name="Glyph" value="CCM0_CopyFileInfoButton.Glyph"/>
+								<property name="Bindings">
+									<link Source="acPlayableFileCopyInfoToClipboard" SourcePin="Action" TargetPin="Accessibility"/>
+									<link Source="acPlayableFileCopyInfoToClipboard" SourcePin="Action" TargetPin="Action"/>
+								</property>
+								<property name="RadioGroupIndex" value="0"/>
+							</properties>
+						</item>
+						<item name="CCM0_CopyLastPathButton">
+							<properties>
+								<property name="Caption" value="Copy to last path"/>
+								<property name="Glyph" value="CCM0_CopyLastPathButton.Glyph"/>
+								<property name="Bindings">
+									<link Source="acPlayableFileCopyToLastPath" SourcePin="Action" TargetPin="Accessibility"/>
+									<link Source="acPlayableFileCopyToLastPath" SourcePin="Action" TargetPin="Action"/>
+								</property>
+								<property name="RadioGroupIndex" value="0"/>
+							</properties>
+						</item>
+					</items>
+				</item>
+				<item name="CCM0_SetStarMenu">
+					<properties>
+						<property name="Caption" value="Mark..."/>
+						<property name="Glyph" value="CCM0_SetStarMenu.Glyph"/>
+						<property name="Bindings">
+							<link Source="prvPlayingFileInfo" SourcePin="MarkAvailable" TargetPin="Visibility"/>
+						</property>
+						<property name="RadioGroupIndex" value="0"/>
+					</properties>
+					<items>
+						<item name="CCM0_SetMark0Button">
+							<properties>
+								<property name="Caption" value="0"/>
+								<property name="RadioItem" value="True"/>
+								<property name="Glyph" value="CCM0_SetMark0Button.Glyph"/>
+								<property name="Bindings">
+									<link Source="acPlayableFileSetMark0" SourcePin="Action" TargetPin="Accessibility"/>
+									<link Source="acPlayableFileSetMark0" SourcePin="Action" TargetPin="Action"/>
+									<link Source="prvPlayingFileInfo" SourcePin="Mark" TargetPin="State" Expression="Value = 0"/>
+								</property>
+								<property name="RadioGroupIndex" value="1"/>
+							</properties>
+						</item>
+						<item name="CCM0_SetMark1Button">
+							<properties>
+								<property name="Caption" value="1"/>
+								<property name="RadioItem" value="True"/>
+								<property name="Glyph" value="CCM0_SetMark1Button.Glyph"/>
+								<property name="Bindings">
+									<link Source="acPlayableFileSetMark1" SourcePin="Action" TargetPin="Accessibility"/>
+									<link Source="acPlayableFileSetMark1" SourcePin="Action" TargetPin="Action"/>
+									<link Source="prvPlayingFileInfo" SourcePin="Mark" TargetPin="State" Expression="Value = 1"/>
+								</property>
+								<property name="RadioGroupIndex" value="1"/>
+							</properties>
+						</item>
+						<item name="CCM0_SetMark2Button">
+							<properties>
+								<property name="Caption" value="2"/>
+								<property name="RadioItem" value="True"/>
+								<property name="Glyph" value="CCM0_SetMark2Button.Glyph"/>
+								<property name="Bindings">
+									<link Source="acPlayableFileSetMark2" SourcePin="Action" TargetPin="Accessibility"/>
+									<link Source="acPlayableFileSetMark2" SourcePin="Action" TargetPin="Action"/>
+									<link Source="prvPlayingFileInfo" SourcePin="Mark" TargetPin="State" Expression="Value = 2"/>
+								</property>
+								<property name="RadioGroupIndex" value="1"/>
+							</properties>
+						</item>
+						<item name="CCM0_SetMark3Button">
+							<properties>
+								<property name="Caption" value="3"/>
+								<property name="RadioItem" value="True"/>
+								<property name="Glyph" value="CCM0_SetMark3Button.Glyph"/>
+								<property name="Bindings">
+									<link Source="acPlayableFileSetMark3" SourcePin="Action" TargetPin="Accessibility"/>
+									<link Source="acPlayableFileSetMark3" SourcePin="Action" TargetPin="Action"/>
+									<link Source="prvPlayingFileInfo" SourcePin="Mark" TargetPin="State" Expression="Value = 3"/>
+								</property>
+								<property name="RadioGroupIndex" value="1"/>
+							</properties>
+						</item>
+						<item name="CCM0_SetMark4Button">
+							<properties>
+								<property name="Caption" value="4"/>
+								<property name="RadioItem" value="True"/>
+								<property name="Glyph" value="CCM0_SetMark4Button.Glyph"/>
+								<property name="Bindings">
+									<link Source="acPlayableFileSetMark4" SourcePin="Action" TargetPin="Accessibility"/>
+									<link Source="acPlayableFileSetMark4" SourcePin="Action" TargetPin="Action"/>
+									<link Source="prvPlayingFileInfo" SourcePin="Mark" TargetPin="State" Expression="Value = 4"/>
+								</property>
+								<property name="RadioGroupIndex" value="1"/>
+							</properties>
+						</item>
+						<item name="CCM0_SetMark5Button">
+							<properties>
+								<property name="Caption" value="5"/>
+								<property name="RadioItem" value="True"/>
+								<property name="Glyph" value="CCM0_SetMark5Button.Glyph"/>
+								<property name="Bindings">
+									<link Source="acPlayableFileSetMark5" SourcePin="Action" TargetPin="Accessibility"/>
+									<link Source="acPlayableFileSetMark5" SourcePin="Action" TargetPin="Action"/>
+									<link Source="prvPlayingFileInfo" SourcePin="Mark" TargetPin="State" Expression="Value = 5"/>
+								</property>
+								<property name="RadioGroupIndex" value="1"/>
+							</properties>
+						</item>
+					</items>
+				</item>
+				<item name="CCM0_ShowFolderButton">
+					<properties>
+						<property name="Caption" value="Show Folder"/>
+						<property name="Glyph" value="CCM0_ShowFolderButton.Glyph"/>
+						<property name="Bindings">
+							<link Source="acPlayableFileFolder" SourcePin="Action" TargetPin="Accessibility"/>
+							<link Source="acPlayableFileFolder" SourcePin="Action" TargetPin="Action"/>
+						</property>
+						<property name="RadioGroupIndex" value="1"/>
+					</properties>
+				</item>
+				<item name="CCM0_ShowPlaylistButton">
+					<properties>
+						<property name="Caption" value="Show Playlist"/>
+						<property name="Glyph" value="CCM0_ShowPlaylistButton.Glyph"/>
+						<property name="Bindings">
+							<link Source="acPlayableFileToggleSwitchInPlaylist" SourcePin="Action" TargetPin="Accessibility"/>
+							<link Source="acPlayableFileToggleSwitchInPlaylist" SourcePin="Action" TargetPin="Action"/>
+						</property>
+						<property name="RadioGroupIndex" value="1"/>
+					</properties>
+				</item>
+				<item name="CCM0_FindMLButton">
+					<properties>
+						<property name="Caption" value="Find ML"/>
+						<property name="Glyph" value="CCM0_FindMLButton.Glyph"/>
+						<property name="Bindings">
+							<link Source="acPlayableFileFindInML" SourcePin="Action" TargetPin="Accessibility"/>
+							<link Source="acPlayableFileFindInML" SourcePin="Action" TargetPin="Action"/>
+						</property>
+						<property name="RadioGroupIndex" value="1"/>
+					</properties>
+				</item>
+				<item name="CCM0_ShowQTEButton">
+					<properties>
+						<property name="Caption" value="Edit tag..."/>
+						<property name="Glyph" value="CCM0_ShowQTEButton.Glyph"/>
+						<property name="Bindings">
+							<link Source="acPlayableFileShowQTE" SourcePin="Action" TargetPin="Accessibility"/>
+							<link Source="acPlayableFileShowQTE" SourcePin="Action" TargetPin="Action"/>
+						</property>
+						<property name="RadioGroupIndex" value="1"/>
+					</properties>
+				</item>
+				<item name="CCM0_DeleteFileButton">
+					<properties>
+						<property name="Caption" value="Delete Physically"/>
+						<property name="Glyph" value="CCM0_DeleteFileButton.Glyph"/>
+						<property name="Bindings">
+							<link Source="acPlayableFileDeletePhysically" SourcePin="Action" TargetPin="Accessibility"/>
+							<link Source="acPlayableFileDeletePhysically" SourcePin="Action" TargetPin="Action"/>
+						</property>
+						<property name="RadioGroupIndex" value="1"/>
+					</properties>
+				</item>
+			</items>
 		</provider>
 	</providers>
 	<localizations default="English.lng">
