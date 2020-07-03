@@ -399,13 +399,13 @@
 										<property name="Texture" value="PF_ToolBar0.Texture"/>
 									</properties>
 									<controls>
-										<control class="TextDisplay" name="TextDisplay">
+										<control class="TextDisplay" name="PF_StatusText">
 											<properties>
 												<property name="Bindings">
 													<link Source="String_PlaylistInfo" SourcePin="Result" TargetPin="DisplayValue"/>
 												</property>
 												<property name="PlaceInfo" anchors="1,1,1,1" margins="4,0,4,0" Size="120,20"/>
-												<property name="Skin" value="TextDisplay.Skin"/>
+												<property name="Skin" value="PF_StatusText.Skin"/>
 												<property name="Color"/>
 												<property name="Font">
 													<property name="ID" value="Skin.TextNormal"/>

@@ -450,34 +450,86 @@
 								<property name="Texture" value="MLF_ToolBar.Texture"/>
 							</properties>
 							<items>
-								<item class="LayoutContainer" name="MLF_ToolBar0">
+								<item class="LayoutItem" name="MLF_ToolBar0">
 									<properties>
 										<property name="Alignment" value="laClient"/>
-										<property name="Color"/>
-										<property name="Texture" value="MLF_ToolBar0.Texture"/>
 									</properties>
-									<controls>
-										<control class="TextDisplay" name="TextDisplay1">
+									<items>
+										<item class="LayoutContainer" name="MLF_ToolBar1">
 											<properties>
 												<property name="Bindings">
-													<link Source="String_LibraryInfo" SourcePin="Result" TargetPin="DisplayValue"/>
+													<link Source="MLF_ToolBar2" SourcePin="Visibility" TargetPin="Visibility" Expression=" NOT Value"/>
 												</property>
-												<property name="PlaceInfo" anchors="1,1,1,1" margins="4,0,4,0" Size="120,20"/>
-												<property name="Skin" value="TextDisplay1.Skin"/>
+												<property name="Alignment" value="laClient"/>
 												<property name="Color"/>
-												<property name="Font">
-													<property name="ID" value="Skin.TextNormal"/>
-												</property>
+												<property name="Texture" value="MLF_ToolBar1.Texture"/>
 											</properties>
-										</control>
-									</controls>
+											<controls>
+												<control class="TextDisplay" name="MLF_StatusText">
+													<properties>
+														<property name="Bindings">
+															<link Source="String_LibraryInfo" SourcePin="Result" TargetPin="DisplayValue"/>
+														</property>
+														<property name="PlaceInfo" anchors="1,1,1,1" margins="4,0,4,0" Size="120,20"/>
+														<property name="Skin" value="MLF_StatusText.Skin"/>
+														<property name="Color"/>
+														<property name="Font">
+															<property name="ID" value="Skin.TextNormal"/>
+														</property>
+													</properties>
+												</control>
+											</controls>
+										</item>
+										<item class="LayoutContainer" name="MLF_ToolBar2">
+											<properties>
+												<property name="Bindings">
+													<link Source="prvMusicLibraryManager" SourcePin="BackgroundTaskCount" TargetPin="Visibility" Expression=" NOT Value = 0"/>
+												</property>
+												<property name="Alignment" value="laClient"/>
+												<property name="Color"/>
+												<property name="Texture" value="MLF_ToolBar2.Texture"/>
+											</properties>
+											<controls>
+												<control class="TextDisplay" name="MLF_BackGroundTaskText">
+													<properties>
+														<property name="Bindings">
+															<link Source="prvMusicLibraryManager" SourcePin="BackgroundTask" TargetPin="DisplayValue"/>
+														</property>
+														<property name="PlaceInfo" anchors="1,1,1,1" margins="4,0,28,0" Size="120,20"/>
+														<property name="Skin" value="MLF_BackGroundTaskText.Skin"/>
+														<property name="Color"/>
+														<property name="Font">
+															<property name="ID" value="Skin.TextNormal"/>
+														</property>
+													</properties>
+												</control>
+												<control class="Button" name="MLF_BackGroundTaskCancelButton">
+													<properties>
+														<property name="Bindings">
+															<link Source="prvMusicLibraryManager" SourcePin="BackgroundTaskCancelAction" TargetPin="Accessibility"/>
+															<link Source="prvMusicLibraryManager" SourcePin="BackgroundTaskCancelAction" TargetPin="Action"/>
+															<link Source="prvMusicLibraryManager" SourcePin="BackgroundTaskCancelAction" TargetPin="Hint"/>
+														</property>
+														<property name="PlaceInfo" anchors="0,0,1,1" margins="94,10,0,0" Size="20,21"/>
+														<property name="Skin" link="Skin.EscapeButton.Texture"/>
+														<property name="Fonts">
+															<property name="Normal"/>
+															<property name="Hot"/>
+															<property name="Pressed"/>
+															<property name="Disabled"/>
+														</property>
+													</properties>
+												</control>
+											</controls>
+										</item>
+									</items>
 								</item>
-								<item class="LayoutContainer" name="MLF_ToolBar1">
+								<item class="LayoutContainer" name="MLF_ToolBar3">
 									<properties>
 										<property name="SizeMinimal" value="96,0"/>
 										<property name="Alignment" value="laRight"/>
 										<property name="Color"/>
-										<property name="Texture" value="MLF_ToolBar1.Texture"/>
+										<property name="Texture" value="MLF_ToolBar3.Texture"/>
 									</properties>
 									<controls>
 										<control class="Button" name="MLF_AddButton">
@@ -539,7 +591,7 @@
 										</control>
 									</controls>
 								</item>
-								<item class="LayoutContainer" name="MLF_ToolBar2">
+								<item class="LayoutContainer" name="MLF_ToolBar4">
 									<properties>
 										<property name="SizeMaximal" value="400,0"/>
 										<property name="Alignment" value="laClient"/>
@@ -548,7 +600,7 @@
 										<property name="Color">
 											<property name="ID" value="Skin.SecondoryColor[t10]"/>
 										</property>
-										<property name="Texture" value="MLF_ToolBar2.Texture"/>
+										<property name="Texture" value="MLF_ToolBar4.Texture"/>
 									</properties>
 									<items>
 										<item class="LayoutTexture" name="MLF_ToolBar2_LayoutFix">
