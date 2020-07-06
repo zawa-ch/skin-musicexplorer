@@ -533,6 +533,413 @@
 										</control>
 									</controls>
 								</item>
+								<item class="LayoutContainer" name="MF_MainArea_PC">
+									<properties>
+										<property name="Alignment" value="laClient"/>
+										<property name="Color"/>
+										<property name="Texture" link="Textures.Unset"/>
+										<property name="DisplayName" value="Play Control"/>
+									</properties>
+									<items>
+										<item class="LayoutTabbedGroup" name="LayoutTabbedGroup">
+											<properties>
+												<property name="Alignment" value="laClient"/>
+											</properties>
+											<items>
+												<item class="LayoutContainer" name="MF_PC_CoverArtView">
+													<properties>
+														<property name="Alignment" value="laClient"/>
+														<property name="Color"/>
+														<property name="Texture" link="Textures.Unset"/>
+														<property name="DisplayName" value="Coverart"/>
+													</properties>
+													<controls>
+														<control class="CoverArtDisplay" name="MF_PC_CoverArt0">
+															<properties>
+																<property name="Bindings">
+																	<link Source="prvPlayingFileInfo" SourcePin="CoverArt" TargetPin="DisplayValue"/>
+																</property>
+																<property name="PlaceInfo" anchors="1,1,1,1" margins="0,0,0,0" Size="200,200"/>
+																<property name="Skin" link="Textures.Unset"/>
+															</properties>
+														</control>
+														<control class="BlurredGlass" name="MF_PC_BlurredGlass">
+															<properties>
+																<property name="PlaceInfo" anchors="1,1,1,1" margins="0,0,0,0" Size="100,100"/>
+																<property name="Skin" link="Textures.Unset"/>
+																<property name="BlurLevel" value="20"/>
+																<property name="Color">
+																	<property name="ID" value="Skin.BaseColor[t75]"/>
+																</property>
+															</properties>
+														</control>
+													</controls>
+												</item>
+												<item class="LayoutContainer" name="MF_PC_DSPView">
+													<properties>
+														<property name="Alignment" value="laClient"/>
+														<property name="Color"/>
+														<property name="Texture" link="Textures.Unset"/>
+														<property name="DisplayName" value="DSP"/>
+													</properties>
+													<items>
+														<item class="LayoutScrollView" name="MF_PC_DSPViewClient">
+															<properties>
+																<property name="Alignment" value="laClient"/>
+																<property name="Color"/>
+																<property name="Texture" link="Textures.Unset"/>
+															</properties>
+															<items>
+																<item class="LayoutTexture" name="MF_PC_DSPMain">
+																	<properties>
+																		<property name="SizeMaximal" value="600,0"/>
+																		<property name="Alignment" value="laClient"/>
+																		<property name="AlignmentLevel" value="1"/>
+																		<property name="Color"/>
+																		<property name="Texture" link="Textures.Unset"/>
+																	</properties>
+																	<items>
+																		<item class="LayoutItem" name="MF_PC_DSP0">
+																			<items>
+																				<item class="LayoutContainer" name="MF_PC_DSP0TitleArea">
+																					<properties>
+																						<property name="SizeMinimal" value="0,24"/>
+																						<property name="Color"/>
+																						<property name="Texture" link="Textures.Unset"/>
+																					</properties>
+																					<controls>
+																						<control class="TextDisplay" name="MF_PC_DSP0TitleText">
+																							<properties>
+																								<property name="PlaceInfo" anchors="1,1,1,1" margins="4,0,4,0" Size="120,20"/>
+																								<property name="Skin" link="Textures.Unset"/>
+																								<property name="Color">
+																									<property name="ID" value="Colors.Unset"/>
+																								</property>
+																								<property name="Font">
+																									<property name="ID" value="Skin.TextNormal"/>
+																								</property>
+																								<property name="Template" value="Equalizer"/>
+																							</properties>
+																						</control>
+																					</controls>
+																				</item>
+																				<item class="LayoutContainer" name="MF_PC_DSP0Client">
+																					<properties>
+																						<property name="SizeMinimal" value="0,144"/>
+																						<property name="AlignmentLevel" value="1"/>
+																						<property name="Color"/>
+																						<property name="Texture" link="Textures.Unset"/>
+																					</properties>
+																					<items>
+																						<item class="LayoutContainer" name="MF_PC_DSP_EqualizerArea">
+																							<properties>
+																								<property name="SizeMinimal" value="138,0"/>
+																								<property name="Alignment" value="laClient"/>
+																								<property name="AlignmentMargins" value="4,0,4,0"/>
+																								<property name="Color"/>
+																								<property name="Texture" link="Textures.Unset"/>
+																							</properties>
+																							<controls>
+																								<control class="SpectrumDisplay" name="MF_PC_DSP_SpectrumDisplay">
+																									<properties>
+																										<property name="Bindings">
+																											<link Source="prvVisual" SourcePin="DisplayValue" TargetPin="DisplayValue"/>
+																										</property>
+																										<property name="PlaceInfo" anchors="1,1,1,1" margins="0,0,0,0" Size="100,50"/>
+																										<property name="Skin" link="Textures.Unset"/>
+																										<property name="Color">
+																											<property name="ID" value="Skin.PrimaryColor[t50]"/>
+																										</property>
+																										<property name="ColumnsCount" value="36"/>
+																										<property name="ColumnsIndent" value="0"/>
+																										<property name="PeakColor">
+																											<property name="ID" value="Skin.PrimaryColor[t50]"/>
+																										</property>
+																										<property name="PeakColumns" link="Textures.Unset"/>
+																										<property name="PeakLimits" link="Textures.Unset"/>
+																										<property name="Source" value="ssCommon"/>
+																									</properties>
+																								</control>
+																								<control class="EqualizerDisplay" name="MF_PC_DSP_EqualizerDisplay">
+																									<properties>
+																										<property name="Bindings">
+																											<link Source="prvEqualizer" SourcePin="Curve" TargetPin="Action"/>
+																										</property>
+																										<property name="PlaceInfo" anchors="1,1,1,1" margins="0,0,0,0" Size="153,22"/>
+																										<property name="PopupMenu" value="pmEqualizer"/>
+																										<property name="Skin" link="Textures.Unset"/>
+																										<property name="ColorCurve">
+																											<property name="ID" value="Skin.TextColored.Color"/>
+																										</property>
+																										<property name="ColorCurveArea1">
+																											<property name="ID" value="Colors.Unset"/>
+																										</property>
+																										<property name="ColorCurveArea2">
+																											<property name="ID" value="Colors.Unset"/>
+																										</property>
+																										<property name="ColorPreamp">
+																											<property name="ID" value="Skin.TextColored.Color"/>
+																										</property>
+																									</properties>
+																								</control>
+																							</controls>
+																						</item>
+																						<item class="LayoutContainer" name="MF_PC_DSP_PeakGaugeArea">
+																							<properties>
+																								<property name="SizeMinimal" value="28,0"/>
+																								<property name="Alignment" value="laRight"/>
+																								<property name="AlignmentLevel" value="1"/>
+																								<property name="AlignmentMargins" value="4,0,4,0"/>
+																								<property name="Color"/>
+																								<property name="Texture" link="Textures.Unset"/>
+																							</properties>
+																							<controls>
+																								<control class="Gauge" name="MF_PC_DSP_PeakGaugeL">
+																									<properties>
+																										<property name="Bindings">
+																											<link Source="Visual_LoggedLevelL" SourcePin="Result" TargetPin="DisplayValue"/>
+																										</property>
+																										<property name="PlaceInfo" anchors="1,1,0,1" margins="0,0,12,0" Size="12,144"/>
+																										<property name="Skin" link="Textures.Unset"/>
+																										<property name="Color">
+																											<property name="ID" value="Colors.Unset"/>
+																										</property>
+																										<property name="ColorProgress">
+																											<property name="ID" value="Skin.PrimaryColor"/>
+																										</property>
+																										<property name="Kind" value="gkVertical"/>
+																										<property name="ReactionSpeedLevelDown" value="1"/>
+																									</properties>
+																								</control>
+																								<control class="Gauge" name="MF_PC_DSP_PeakGaugeR">
+																									<properties>
+																										<property name="Bindings">
+																											<link Source="Visual_LoggedLevelR" SourcePin="Result" TargetPin="DisplayValue"/>
+																										</property>
+																										<property name="PlaceInfo" anchors="0,1,1,1" margins="17,0,0,0" Size="12,144"/>
+																										<property name="Skin" link="Textures.Unset"/>
+																										<property name="Color">
+																											<property name="ID" value="Colors.Unset"/>
+																										</property>
+																										<property name="ColorProgress">
+																											<property name="ID" value="Skin.PrimaryColor"/>
+																										</property>
+																										<property name="Kind" value="gkVertical"/>
+																										<property name="ReactionSpeedLevelDown" value="1"/>
+																									</properties>
+																								</control>
+																							</controls>
+																						</item>
+																					</items>
+																				</item>
+																			</items>
+																		</item>
+																		<item class="LayoutItem" name="MF_PC_DSP1">
+																			<properties>
+																				<property name="AlignmentLevel" value="1"/>
+																			</properties>
+																			<items>
+																				<item class="LayoutContainer" name="MF_PC_DSP1TitleArea">
+																					<properties>
+																						<property name="SizeMinimal" value="0,24"/>
+																						<property name="Color"/>
+																						<property name="Texture" link="Textures.Unset"/>
+																					</properties>
+																					<controls>
+																						<control class="TextDisplay" name="MF_PC_DSP1TitleText">
+																							<properties>
+																								<property name="PlaceInfo" anchors="1,1,1,1" margins="4,0,4,0" Size="120,20"/>
+																								<property name="Skin" link="Textures.Unset"/>
+																								<property name="Color"/>
+																								<property name="Font"/>
+																								<property name="Template" value="Effects"/>
+																							</properties>
+																						</control>
+																					</controls>
+																				</item>
+																				<item class="LayoutContainer" name="MF_PC_DSP1Client">
+																					<properties>
+																						<property name="SizeMinimal" value="0,120"/>
+																						<property name="Color"/>
+																						<property name="Texture" link="Textures.Unset"/>
+																					</properties>
+																				</item>
+																			</items>
+																		</item>
+																		<item class="LayoutTexture" name="MF_PC_DSPBottomLayout">
+																			<properties>
+																				<property name="Alignment" value="laClient"/>
+																				<property name="Color"/>
+																				<property name="Texture" link="Textures.Unset"/>
+																			</properties>
+																		</item>
+																	</items>
+																</item>
+																<item class="LayoutTexture" name="MF_PC_DSPLeftLayout">
+																	<properties>
+																		<property name="Alignment" value="laClient"/>
+																		<property name="Color"/>
+																		<property name="Texture" link="Textures.Unset"/>
+																	</properties>
+																</item>
+																<item class="LayoutTexture" name="MF_PC_DSPRightLayout">
+																	<properties>
+																		<property name="Alignment" value="laClient"/>
+																		<property name="AlignmentLevel" value="2"/>
+																		<property name="Color"/>
+																		<property name="Texture" link="Textures.Unset"/>
+																	</properties>
+																</item>
+															</items>
+														</item>
+														<item class="LayoutContainer" name="MF_PC_DSPViewVScrollArea">
+															<properties>
+																<property name="Bindings">
+																	<link Source="MF_PC_DSPViewClient" SourcePin="ScrollBarVert" TargetPin="Visibility"/>
+																</property>
+																<property name="SizeMinimal" value="12,0"/>
+																<property name="Alignment" value="laRight"/>
+																<property name="Color"/>
+																<property name="Texture" link="Textures.Unset"/>
+															</properties>
+															<controls>
+																<control class="ScrollBarVertical" name="MF_PC_DSPScrollBarVertical">
+																	<properties>
+																		<property name="Bindings">
+																			<link Source="MF_PC_DSPViewClient" SourcePin="ScrollBarVert" TargetPin="Action"/>
+																		</property>
+																		<property name="PlaceInfo" anchors="0,1,1,1" margins="2,0,0,0" Size="12,40"/>
+																		<property name="Skin" link="Skin.ScrollBarV.Skin"/>
+																		<property name="SkinButtonDown" link="Skin.ScrollBarV.DownButton"/>
+																		<property name="SkinButtonUp" link="Skin.ScrollBarV.UpButton"/>
+																		<property name="SkinThumb" link="Skin.ScrollBarV.Thumb"/>
+																	</properties>
+																</control>
+															</controls>
+														</item>
+													</items>
+												</item>
+											</items>
+										</item>
+										<item class="LayoutTexture" name="MF_PC_CtrlArea">
+											<properties>
+												<property name="SizeMinimal" value="0,24"/>
+												<property name="Alignment" value="laBottom"/>
+												<property name="Color">
+													<property name="ID" value="Theme.Dark.SecondoryColor[t10]"/>
+												</property>
+												<property name="Texture" link="Textures.Unset"/>
+											</properties>
+											<items>
+												<item class="LayoutContainer" name="MF_PC_CtrlArea0">
+													<properties>
+														<property name="Alignment" value="laClient"/>
+														<property name="Color">
+															<property name="ID" value="Colors.Unset"/>
+														</property>
+														<property name="Texture" link="Textures.Unset"/>
+													</properties>
+													<controls>
+														<control class="TabControl" name="TabControl1">
+															<properties>
+																<property name="Bindings">
+																	<link Source="LayoutTabbedGroup" SourcePin="Pages" TargetPin="Action"/>
+																</property>
+																<property name="PlaceInfo" anchors="1,1,1,1" margins="0,0,0,0" Size="250,23"/>
+																<property name="Skin" link="Textures.Unset"/>
+																<property name="DragDropIndicator">
+																	<property name="ID" value="Skin.SecondoryColor"/>
+																</property>
+																<property name="DragDropIndicatorBorder">
+																	<property name="ID" value="Skin.SecondoryColor"/>
+																</property>
+																<property name="TabsOptions">
+																	<property name="Font">
+																		<property name="ID" value="Skin.Tab.Normal.Font"/>
+																	</property>
+																	<property name="FontHot">
+																		<property name="ID" value="Skin.Tab.Hot.Font"/>
+																	</property>
+																	<property name="FontActive">
+																		<property name="ID" value="Skin.Tab.Active.Font"/>
+																	</property>
+																	<property name="FontActiveHot">
+																		<property name="ID" value="Skin.Tab.ActiveHot.Font"/>
+																	</property>
+																	<property name="FontPlaying">
+																		<property name="ID" value="Skin.Tab.Playing.Font"/>
+																	</property>
+																	<property name="FontPlayingActive">
+																		<property name="ID" value="Skin.Tab.PlayingActive.Font"/>
+																	</property>
+																	<property name="FontPlayingActiveHot">
+																		<property name="ID" value="Skin.Tab.PlayingActiveHot.Font"/>
+																	</property>
+																	<property name="FontPlayingHot">
+																		<property name="ID" value="Skin.Tab.PlayingHot.Font"/>
+																	</property>
+																	<property name="AutoSize" value="True"/>
+																	<property name="AutoSizeMaxWidth" value="120"/>
+																	<property name="ShowPartiallyVisibleTabs" value="True"/>
+																	<property name="Skin" link="Skin.Tab[0].Skin"/>
+																	<property name="TextOffsets" value="8,0,8,0"/>
+																	<property name="TextOffsetsActive" value="8,0,8,0"/>
+																</property>
+															</properties>
+														</control>
+													</controls>
+												</item>
+												<item class="LayoutContainer" name="MF_PC_CtrlArea1">
+													<properties>
+														<property name="SizeMinimal" value="220,0"/>
+														<property name="Alignment" value="laRight"/>
+														<property name="Color"/>
+														<property name="Texture" link="Textures.Unset"/>
+													</properties>
+													<controls>
+														<control class="Button" name="MF_ABRepeatButton0">
+															<properties>
+																<property name="Bindings">
+																	<link Source="acPlayerRepeatPartAB" SourcePin="Action" TargetPin="Accessibility"/>
+																	<link Source="acPlayerRepeatPartAB" SourcePin="Action" TargetPin="Action"/>
+																	<link Source="acPlayerRepeatPartAB" SourcePin="Action" TargetPin="ContextMenu"/>
+																	<link Source="acPlayerRepeatPartAB" SourcePin="Action" TargetPin="Hint"/>
+																	<link Source="acPlayerRepeatPartAB" SourcePin="State" TargetPin="State"/>
+																</property>
+																<property name="PlaceInfo" anchors="0,0,1,1" margins="39,4,161,0" Size="20,21"/>
+																<property name="Skin" value="MF_ABRepeatButton0.Skin"/>
+																<property name="Fonts">
+																	<property name="Normal"/>
+																	<property name="Hot"/>
+																	<property name="Pressed"/>
+																	<property name="Disabled"/>
+																</property>
+															</properties>
+														</control>
+														<control class="Button" name="MF_DSPButton0">
+															<properties>
+																<property name="Bindings">
+																	<link Source="acMainDSPManager" SourcePin="Action" TargetPin="Accessibility"/>
+																	<link Source="acMainDSPManager" SourcePin="Action" TargetPin="Action"/>
+																	<link Source="acMainDSPManager" SourcePin="Action" TargetPin="ContextMenu"/>
+																	<link Source="acMainDSPManager" SourcePin="Action" TargetPin="Hint"/>
+																</property>
+																<property name="PlaceInfo" anchors="0,0,1,1" margins="15,2,185,0" Size="20,21"/>
+																<property name="Skin" value="MF_DSPButton0.Skin"/>
+																<property name="Fonts">
+																	<property name="Normal"/>
+																	<property name="Hot"/>
+																	<property name="Pressed"/>
+																	<property name="Disabled"/>
+																</property>
+															</properties>
+														</control>
+													</controls>
+												</item>
+											</items>
+										</item>
+									</items>
+								</item>
 								<item class="LayoutContainer" name="MF_MainArea_OP">
 									<properties>
 										<property name="Alignment" value="laClient"/>
@@ -551,7 +958,7 @@
 												<item class="LayoutTexture" name="MF_OP_Layout0">
 													<properties>
 														<property name="LayoutDirection" value="ldVertical"/>
-														<property name="SizeMaximal" value="640,0"/>
+														<property name="SizeMaximal" value="600,0"/>
 														<property name="SizeMinimal" value="10,0"/>
 														<property name="Alignment" value="laClient"/>
 														<property name="AlignmentLevel" value="1"/>

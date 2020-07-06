@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<skin target="450" edition="0" ID="b68654ed0b07a1ed57188f77baf9ff83" AllowColoration="1">
+<skin target="450" edition="0" ID="f18bbbfc5f3e74b7026e711613833772" AllowColoration="1">
 	<properties>
 		<resources>
 			<item>
@@ -880,6 +880,13 @@
 				<property name="ResourceClassName" value="TASETexture"/>
 				<property name="Resource" value="Skin.PlayerStatusGauge.TextureResource"/>
 			</item>
+			<item>
+				<property name="ID" value="Skin.TextColored.Color"/>
+				<property name="ResourceClassName" value="TACLResourceColor"/>
+				<property name="Resource">
+					<property name="Value" value="4286585856"/>
+				</property>
+			</item>
 		</resources>
 		<menu>
 			<property name="Borders">
@@ -1442,6 +1449,27 @@
 					<link Source="Setting_LevelGaugeRangeMin" SourcePin="Position" TargetPin="Value1" Expression="Value - 50"/>
 				</property>
 				<property name="Expression" value="%Value1 dB"/>
+			</properties>
+		</provider>
+		<provider name="Skin_BalanceLavelVisualizationHandler" class="ScriptableVisualizationHandler">
+			<properties>
+				<property name="Bindings">
+					<link Source="prvVisual" SourcePin="DisplayValue" TargetPin="Action"/>
+				</property>
+				<property name="Script" value="Skin_BalanceLavelVisualizationHandler" Compiled="0"/>
+			</properties>
+		</provider>
+		<provider name="Var_BalanceLevel" class="LogicalOperatorCounter">
+			<properties>
+				<property name="Module" value="65536"/>
+				<property name="PositionDefault" value="32768"/>
+			</properties>
+		</provider>
+		<provider name="Visual_BalanceLavel" class="LogicalOperatorCommutator">
+			<properties>
+				<property name="Bindings">
+					<link Source="Var_BalanceLevel" SourcePin="Position" TargetPin="Value1" Expression="Value * 100 / 65535"/>
+				</property>
 			</properties>
 		</provider>
 	</providers>
