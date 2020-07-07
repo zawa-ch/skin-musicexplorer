@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<skin target="450" edition="0" ID="f18bbbfc5f3e74b7026e711613833772" AllowColoration="1">
+<skin target="450" edition="0" ID="4bb82d1eb2bc18507b65970e199d2a82" AllowColoration="1">
 	<properties>
 		<resources>
 			<item>
@@ -887,6 +887,26 @@
 					<property name="Value" value="4286585856"/>
 				</property>
 			</item>
+			<item>
+				<property name="ID" value="Skin.DSPButton.Texture"/>
+				<property name="ResourceClassName" value="TASETexture"/>
+				<property name="Resource" value="Skin.DSPButton.TextureResource"/>
+			</item>
+			<item>
+				<property name="ID" value="Skin.ABRepeatButton.Texture"/>
+				<property name="ResourceClassName" value="TASETexture"/>
+				<property name="Resource" value="Skin.ABRepeatButton.TextureResource"/>
+			</item>
+			<item>
+				<property name="ID" value="Skin.RecordButton.Texture"/>
+				<property name="ResourceClassName" value="TASETexture"/>
+				<property name="Resource" value="Skin.RecordButton.TextureResource"/>
+			</item>
+			<item>
+				<property name="ID" value="Skin.TimerButton.Texture"/>
+				<property name="ResourceClassName" value="TASETexture"/>
+				<property name="Resource" value="Skin.TimerButton.TextureResource"/>
+			</item>
 		</resources>
 		<menu>
 			<property name="Borders">
@@ -1465,11 +1485,27 @@
 				<property name="PositionDefault" value="32768"/>
 			</properties>
 		</provider>
-		<provider name="Visual_BalanceLavel" class="LogicalOperatorCommutator">
+		<provider name="Visual_BalanceLevel" class="LogicalOperatorCommutator">
 			<properties>
 				<property name="Bindings">
 					<link Source="Var_BalanceLevel" SourcePin="Position" TargetPin="Value1" Expression="Value * 100 / 65535"/>
 				</property>
+			</properties>
+		</provider>
+		<provider name="Visual_BalanceLevelL" class="LogicalOperatorCommutator">
+			<properties>
+				<property name="Bindings">
+					<link Source="Var_BalanceLevel" SourcePin="Position" TargetPin="Value1"/>
+				</property>
+				<property name="Expression" value="(Value1 - 32768) * 100 / 32767"/>
+			</properties>
+		</provider>
+		<provider name="Visual_BalanceLevelR" class="LogicalOperatorCommutator">
+			<properties>
+				<property name="Bindings">
+					<link Source="Var_BalanceLevel" SourcePin="Position" TargetPin="Value1"/>
+				</property>
+				<property name="Expression" value="(32768 - Value1) * 100 / 32767"/>
 			</properties>
 		</provider>
 	</providers>
