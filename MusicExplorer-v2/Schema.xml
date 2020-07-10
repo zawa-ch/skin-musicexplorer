@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<skin target="450" edition="0" ID="2267383545cd3b874ae5a34de317f88f" AllowColoration="1">
+<skin target="450" edition="0" ID="051c408b4f69cf45ec4bf307cc988315" AllowColoration="1">
 	<properties>
 		<resources>
 			<item>
@@ -372,18 +372,6 @@
 				<property name="ID" value="Textures.LogoPrimary[64]"/>
 				<property name="ResourceClassName" value="TASETexture"/>
 				<property name="Resource" value="Textures.LogoPrimary[64]Resource"/>
-			</item>
-			<item>
-				<property name="ID" value="Fonts.Unset"/>
-				<property name="ResourceClassName" value="TASEFont"/>
-				<property name="Resource"/>
-			</item>
-			<item>
-				<property name="ID" value="Colors.Unset"/>
-				<property name="ResourceClassName" value="TACLResourceColor"/>
-				<property name="Resource">
-					<property name="Value" value="0"/>
-				</property>
 			</item>
 			<item>
 				<property name="ID" value="Skin.Tab.Playing.Font"/>
