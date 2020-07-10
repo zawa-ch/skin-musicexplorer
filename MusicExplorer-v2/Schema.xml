@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<skin target="450" edition="0" ID="07455bc26fea4d16e224eb60807bf691" AllowColoration="1">
+<skin target="450" edition="0" ID="2267383545cd3b874ae5a34de317f88f" AllowColoration="1">
 	<properties>
 		<resources>
 			<item>
@@ -33,17 +33,17 @@
 			<item>
 				<property name="ID" value="Skin.MinimizeButton.Texture"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.MinimizeButton.Texture"/>
+				<property name="Resource" link="Theme.Light.MinimizeButton.Texture"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.CloseButton.Texture"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.CloseButton.Texture"/>
+				<property name="Resource" link="Theme.Light.CloseButton.Texture"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.MaximizeButton.Texture"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.MaximizeButton.Texture"/>
+				<property name="Resource" link="Theme.Light.MaximizeButton.Texture"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.PrimaryColor"/>
@@ -56,14 +56,14 @@
 				<property name="ID" value="Skin.ActiveWindowEdge.Color"/>
 				<property name="ResourceClassName" value="TACLResourceColor"/>
 				<property name="Resource">
-					<property name="ID" value="Theme.Dark.ActiveWindowEdge.Color"/>
+					<property name="ID" value="Theme.Light.ActiveWindowEdge.Color"/>
 				</property>
 			</item>
 			<item>
 				<property name="ID" value="Skin.InactiveWindowEdge.Color"/>
 				<property name="ResourceClassName" value="TACLResourceColor"/>
 				<property name="Resource">
-					<property name="ID" value="Theme.Dark.InactiveWindowEdge.Color"/>
+					<property name="ID" value="Theme.Light.InactiveWindowEdge.Color"/>
 				</property>
 			</item>
 			<item>
@@ -136,7 +136,7 @@
 				<property name="ID" value="Skin.TextNormal"/>
 				<property name="ResourceClassName" value="TASEFont"/>
 				<property name="Resource">
-					<property name="ID" value="Theme.Dark.TextNormal"/>
+					<property name="ID" value="Theme.Light.TextNormal"/>
 				</property>
 			</item>
 			<item>
@@ -167,67 +167,67 @@
 				<property name="ID" value="Skin.TitleNormal.Font"/>
 				<property name="ResourceClassName" value="TASEFont"/>
 				<property name="Resource">
-					<property name="ID" value="Theme.Dark.TitleNormal.Font"/>
+					<property name="ID" value="Theme.Light.TitleNormal.Font"/>
 				</property>
 			</item>
 			<item>
 				<property name="ID" value="Skin.TitleInactive.FontEx"/>
 				<property name="ResourceClassName" value="TASEFont"/>
 				<property name="Resource">
-					<property name="ID" value="Theme.Dark.TitleInactive.FontEx"/>
+					<property name="ID" value="Theme.Light.TitleInactive.FontEx"/>
 				</property>
 			</item>
 			<item>
 				<property name="ID" value="Skin.RepeatButton.Texture"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.RepeatButton.Texture"/>
+				<property name="Resource" link="Theme.Light.RepeatButton.Texture"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.ShuffleButton.Texture"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.ShuffleButton.Texture"/>
+				<property name="Resource" link="Theme.Light.ShuffleButton.Texture"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.Slider[2].Skin"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.Slider[2].Skin"/>
+				<property name="Resource" link="Theme.Light.Slider[2].Skin"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.Slider[2].Thumb"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.Slider[2].Thumb"/>
+				<property name="Resource" link="Theme.Light.Slider[2].Thumb"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.RatingMark.Texture"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.RatingMark.Texture"/>
+				<property name="Resource" link="Theme.Light.RatingMark.Texture"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.BaseColor"/>
 				<property name="ResourceClassName" value="TACLResourceColor"/>
 				<property name="Resource">
-					<property name="ID" value="Theme.Dark.BaseColor"/>
+					<property name="ID" value="Theme.Light.BaseColor"/>
 				</property>
 			</item>
 			<item>
 				<property name="ID" value="Skin.SecondoryColor[t10]"/>
 				<property name="ResourceClassName" value="TACLResourceColor"/>
 				<property name="Resource">
-					<property name="ID" value="Theme.Dark.SecondoryColor[t10]"/>
+					<property name="ID" value="Theme.Light.SecondoryColor[t10]"/>
 				</property>
 			</item>
 			<item>
 				<property name="ID" value="Skin.SecondoryColor[t50]"/>
 				<property name="ResourceClassName" value="TACLResourceColor"/>
 				<property name="Resource">
-					<property name="ID" value="Theme.Dark.SecondoryColor[t50]"/>
+					<property name="ID" value="Theme.Light.SecondoryColor[t50]"/>
 				</property>
 			</item>
 			<item>
 				<property name="ID" value="Skin.SecondoryColor"/>
 				<property name="ResourceClassName" value="TACLResourceColor"/>
 				<property name="Resource">
-					<property name="ID" value="Theme.Dark.SecondoryColor"/>
+					<property name="ID" value="Theme.Light.SecondoryColor"/>
 				</property>
 			</item>
 			<item>
@@ -286,7 +286,7 @@
 				<property name="ID" value="Skin.BaseColor[t75]"/>
 				<property name="ResourceClassName" value="TACLResourceColor"/>
 				<property name="Resource">
-					<property name="ID" value="Theme.Dark.BaseColor[t75]"/>
+					<property name="ID" value="Theme.Light.BaseColor[t75]"/>
 				</property>
 			</item>
 			<item>
@@ -306,7 +306,7 @@
 			<item>
 				<property name="ID" value="Skin.Tab[0].Skin"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.Tab[0].Skin"/>
+				<property name="Resource" link="Theme.Light.Tab[0].Skin"/>
 			</item>
 			<item>
 				<property name="ID" value="Theme.Light.Tab.Normal.Font"/>
@@ -329,14 +329,14 @@
 				<property name="ID" value="Skin.Tab.Active.Font"/>
 				<property name="ResourceClassName" value="TASEFont"/>
 				<property name="Resource">
-					<property name="ID" value="Theme.Dark.Tab.Active.Font"/>
+					<property name="ID" value="Theme.Light.Tab.Active.Font"/>
 				</property>
 			</item>
 			<item>
 				<property name="ID" value="Skin.Tab.Normal.Font"/>
 				<property name="ResourceClassName" value="TASEFont"/>
 				<property name="Resource">
-					<property name="ID" value="Theme.Dark.Tab.Normal.Font"/>
+					<property name="ID" value="Theme.Light.Tab.Normal.Font"/>
 				</property>
 			</item>
 			<item>
@@ -351,7 +351,7 @@
 				<property name="ID" value="Skin.Tab.Hot.Font"/>
 				<property name="ResourceClassName" value="TASEFont"/>
 				<property name="Resource">
-					<property name="ID" value="Theme.Dark.Tab.Hot.Font"/>
+					<property name="ID" value="Theme.Light.Tab.Hot.Font"/>
 				</property>
 			</item>
 			<item>
@@ -365,7 +365,7 @@
 				<property name="ID" value="Skin.Tab.ActiveHot.Font"/>
 				<property name="ResourceClassName" value="TASEFont"/>
 				<property name="Resource">
-					<property name="ID" value="Theme.Dark.Tab.ActiveHot.Font"/>
+					<property name="ID" value="Theme.Light.Tab.ActiveHot.Font"/>
 				</property>
 			</item>
 			<item>
@@ -389,7 +389,7 @@
 				<property name="ID" value="Skin.Tab.Playing.Font"/>
 				<property name="ResourceClassName" value="TASEFont"/>
 				<property name="Resource">
-					<property name="ID" value="Theme.Dark.Tab.Playing.Font"/>
+					<property name="ID" value="Theme.Light.Tab.Playing.Font"/>
 				</property>
 			</item>
 			<item>
@@ -410,7 +410,7 @@
 				<property name="ID" value="Skin.Tab.PlayingActive.Font"/>
 				<property name="ResourceClassName" value="TASEFont"/>
 				<property name="Resource">
-					<property name="ID" value="Theme.Dark.Tab.PlayingActive.Font"/>
+					<property name="ID" value="Theme.Light.Tab.PlayingActive.Font"/>
 				</property>
 			</item>
 			<item>
@@ -424,7 +424,7 @@
 				<property name="ID" value="Skin.Tab.PlayingActiveHot.Font"/>
 				<property name="ResourceClassName" value="TASEFont"/>
 				<property name="Resource">
-					<property name="ID" value="Theme.Dark.Tab.PlayingActiveHot.Font"/>
+					<property name="ID" value="Theme.Light.Tab.PlayingActiveHot.Font"/>
 				</property>
 			</item>
 			<item>
@@ -438,13 +438,13 @@
 				<property name="ID" value="Skin.Tab.PlayingHot.Font"/>
 				<property name="ResourceClassName" value="TASEFont"/>
 				<property name="Resource">
-					<property name="ID" value="Theme.Dark.Tab.PlayingHot.Font"/>
+					<property name="ID" value="Theme.Light.Tab.PlayingHot.Font"/>
 				</property>
 			</item>
 			<item>
 				<property name="ID" value="Skin.Tab[1].Skin"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.Tab[1].Skin"/>
+				<property name="Resource" link="Theme.Light.Tab[1].Skin"/>
 			</item>
 			<item>
 				<property name="ID" value="Theme.Light.RepeatButton.Texture"/>
@@ -459,78 +459,78 @@
 			<item>
 				<property name="ID" value="Skin.Slider[0].Skin"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.Slider[0].Skin"/>
+				<property name="Resource" link="Theme.Light.Slider[0].Skin"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.PrevButton.Texture"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.PrevButton.Texture"/>
+				<property name="Resource" link="Theme.Light.PrevButton.Texture"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.PlayButton.Texture"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.PlayButton.Texture"/>
+				<property name="Resource" link="Theme.Light.PlayButton.Texture"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.PauseButton.Texture"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.PauseButton.Texture"/>
+				<property name="Resource" link="Theme.Light.PauseButton.Texture"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.StopButton.Texture"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.StopButton.Texture"/>
+				<property name="Resource" link="Theme.Light.StopButton.Texture"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.NextButton.Texture"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.NextButton.Texture"/>
+				<property name="Resource" link="Theme.Light.NextButton.Texture"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.ScrollBarH.Skin"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.ScrollBarH.Skin"/>
+				<property name="Resource" link="Theme.Light.ScrollBarH.Skin"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.ScrollBarV.Skin"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.ScrollBarV.Skin"/>
+				<property name="Resource" link="Theme.Light.ScrollBarV.Skin"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.ScrollBarH.Thumb"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.ScrollBarH.Thumb"/>
+				<property name="Resource" link="Theme.Light.ScrollBarH.Thumb"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.ScrollBarV.Thumb"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.ScrollBarV.Thumb"/>
+				<property name="Resource" link="Theme.Light.ScrollBarV.Thumb"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.ScrollBarV.UpButton"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.ScrollBarV.UpButton"/>
+				<property name="Resource" link="Theme.Light.ScrollBarV.UpButton"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.ScrollBarV.DownButton"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.ScrollBarV.DownButton"/>
+				<property name="Resource" link="Theme.Light.ScrollBarV.DownButton"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.ScrollBarH.LeftButton"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.ScrollBarH.LeftButton"/>
+				<property name="Resource" link="Theme.Light.ScrollBarH.LeftButton"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.ScrollBarH.RightButton"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.ScrollBarH.RightButton"/>
+				<property name="Resource" link="Theme.Light.ScrollBarH.RightButton"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.TextDisabled.FontEx"/>
 				<property name="ResourceClassName" value="TASEFont"/>
 				<property name="Resource">
-					<property name="ID" value="Theme.Dark.TextDisabled.FontEx"/>
+					<property name="ID" value="Theme.Light.TextDisabled.FontEx"/>
 				</property>
 			</item>
 			<item>
@@ -545,7 +545,7 @@
 				<property name="ID" value="Skin.Playlist.ItemLine1.Dead"/>
 				<property name="ResourceClassName" value="TACLResourceFont"/>
 				<property name="Resource">
-					<property name="ID" value="Theme.Dark.Playlist.ItemLine1.Dead"/>
+					<property name="ID" value="Theme.Light.Playlist.ItemLine1.Dead"/>
 				</property>
 			</item>
 			<item>
@@ -584,21 +584,21 @@
 				<property name="ID" value="Skin.Playlist.ItemLine1.Normal"/>
 				<property name="ResourceClassName" value="TACLResourceFont"/>
 				<property name="Resource">
-					<property name="ID" value="Theme.Dark.Playlist.ItemLine1.Normal"/>
+					<property name="ID" value="Theme.Light.Playlist.ItemLine1.Normal"/>
 				</property>
 			</item>
 			<item>
 				<property name="ID" value="Skin.Playlist.ItemLine2.Dead"/>
 				<property name="ResourceClassName" value="TACLResourceFont"/>
 				<property name="Resource">
-					<property name="ID" value="Theme.Dark.Playlist.ItemLine2.Dead"/>
+					<property name="ID" value="Theme.Light.Playlist.ItemLine2.Dead"/>
 				</property>
 			</item>
 			<item>
 				<property name="ID" value="Skin.Playlist.ItemLine2.Normal"/>
 				<property name="ResourceClassName" value="TACLResourceFont"/>
 				<property name="Resource">
-					<property name="ID" value="Theme.Dark.Playlist.ItemLine2.Normal"/>
+					<property name="ID" value="Theme.Light.Playlist.ItemLine2.Normal"/>
 				</property>
 			</item>
 			<item>
@@ -612,49 +612,49 @@
 				<property name="ID" value="Skin.Playlist.Header.Normal"/>
 				<property name="ResourceClassName" value="TACLResourceFont"/>
 				<property name="Resource">
-					<property name="ID" value="Theme.Dark.Playlist.Header.Normal"/>
+					<property name="ID" value="Theme.Light.Playlist.Header.Normal"/>
 				</property>
 			</item>
 			<item>
 				<property name="ID" value="Skin.AddButton.Texture"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.AddButton.Texture"/>
+				<property name="Resource" link="Theme.Light.AddButton.Texture"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.DeleteButton.Texture"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.DeleteButton.Texture"/>
+				<property name="Resource" link="Theme.Light.DeleteButton.Texture"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.SortButton.Texture"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.SortButton.Texture"/>
+				<property name="Resource" link="Theme.Light.SortButton.Texture"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.MiscButton.Texture"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.MiscButton.Texture"/>
+				<property name="Resource" link="Theme.Light.MiscButton.Texture"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.BookmarkButton.Texture"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.BookmarkButton.Texture"/>
+				<property name="Resource" link="Theme.Light.BookmarkButton.Texture"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.BackSpaceButton.Texture"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.BackSpaceButton.Texture"/>
+				<property name="Resource" link="Theme.Light.BackSpaceButton.Texture"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.OptionButton.Texture"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.OptionButton.Texture"/>
+				<property name="Resource" link="Theme.Light.OptionButton.Texture"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.TextNormal.Color"/>
 				<property name="ResourceClassName" value="TACLResourceColor"/>
 				<property name="Resource">
-					<property name="ID" value="Theme.Dark.TextNormal.Color"/>
+					<property name="ID" value="Theme.Light.TextNormal.Color"/>
 				</property>
 			</item>
 			<item>
@@ -674,17 +674,17 @@
 			<item>
 				<property name="ID" value="Skin.LibraryTable.ColumnHeaderSortingArrow"/>
 				<property name="ResourceClassName" value="TACLResourceTexture"/>
-				<property name="Resource" link="Theme.Dark.LibraryTable.ColumnHeaderSortingArrow"/>
+				<property name="Resource" link="Theme.Light.LibraryTable.ColumnHeaderSortingArrow"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.LibraryTable.ColumnHeaderFilterButton"/>
 				<property name="ResourceClassName" value="TACLResourceTexture"/>
-				<property name="Resource" link="Theme.Dark.LibraryTable.ColumnHeaderFilterButton"/>
+				<property name="Resource" link="Theme.Light.LibraryTable.ColumnHeaderFilterButton"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.LibraryTable.ColumnHeaderSkin"/>
 				<property name="ResourceClassName" value="TACLResourceTexture"/>
-				<property name="Resource" link="Theme.Dark.LibraryTable.ColumnHeaderSkin"/>
+				<property name="Resource" link="Theme.Light.LibraryTable.ColumnHeaderSkin"/>
 			</item>
 			<item>
 				<property name="ID" value="Textures.Unset"/>
@@ -695,7 +695,7 @@
 				<property name="ID" value="Skin.TextDisabled.Color"/>
 				<property name="ResourceClassName" value="TACLResourceColor"/>
 				<property name="Resource">
-					<property name="ID" value="Theme.Dark.TextDisabled.Color"/>
+					<property name="ID" value="Theme.Light.TextDisabled.Color"/>
 				</property>
 			</item>
 			<item>
@@ -708,101 +708,101 @@
 			<item>
 				<property name="ID" value="Skin.GroupingTree.AlphabeticIndexSkin"/>
 				<property name="ResourceClassName" value="TACLResourceTexture"/>
-				<property name="Resource" link="Theme.Dark.GroupingTree.AlphabeticIndexSkin"/>
+				<property name="Resource" link="Theme.Light.GroupingTree.AlphabeticIndexSkin"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.GroupingTree.AlphabeticIndexScrollerGlyph"/>
 				<property name="ResourceClassName" value="TACLResourceTexture"/>
-				<property name="Resource" link="Theme.Dark.GroupingTree.AlphabeticIndexScrollerGlyph"/>
+				<property name="Resource" link="Theme.Light.GroupingTree.AlphabeticIndexScrollerGlyph"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.SecondoryColor[o50]"/>
 				<property name="ResourceClassName" value="TACLResourceColor"/>
 				<property name="Resource">
-					<property name="ID" value="Theme.Dark.SecondoryColor[o50]"/>
+					<property name="ID" value="Theme.Light.SecondoryColor[o50]"/>
 				</property>
 			</item>
 			<item>
 				<property name="ID" value="Skin.SecondoryColor[o10]"/>
 				<property name="ResourceClassName" value="TACLResourceColor"/>
 				<property name="Resource">
-					<property name="ID" value="Theme.Dark.SecondoryColor[o10]"/>
+					<property name="ID" value="Theme.Light.SecondoryColor[o10]"/>
 				</property>
 			</item>
 			<item>
 				<property name="ID" value="Skin.PrimaryColor[o50]"/>
 				<property name="ResourceClassName" value="TACLResourceColor"/>
 				<property name="Resource">
-					<property name="ID" value="Theme.Dark.PrimaryColor[o50]"/>
+					<property name="ID" value="Theme.Light.PrimaryColor[o50]"/>
 				</property>
 			</item>
 			<item>
 				<property name="ID" value="Skin.GroupingTree.AlphabeticIndexCell"/>
 				<property name="ResourceClassName" value="TACLResourceTexture"/>
-				<property name="Resource" link="Theme.Dark.GroupingTree.AlphabeticIndexCell"/>
+				<property name="Resource" link="Theme.Light.GroupingTree.AlphabeticIndexCell"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.PrimaryColor[o20]"/>
 				<property name="ResourceClassName" value="TACLResourceColor"/>
 				<property name="Resource">
-					<property name="ID" value="Theme.Dark.PrimaryColor[o20]"/>
+					<property name="ID" value="Theme.Light.PrimaryColor[o20]"/>
 				</property>
 			</item>
 			<item>
 				<property name="ID" value="Skin.TopButton.Texture"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.TopButton.Texture"/>
+				<property name="Resource" link="Theme.Light.TopButton.Texture"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.BottomButton.Texture"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.BottomButton.Texture"/>
+				<property name="Resource" link="Theme.Light.BottomButton.Texture"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.DownButton.Texture"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.DownButton.Texture"/>
+				<property name="Resource" link="Theme.Light.DownButton.Texture"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.LeftButton.Texture"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.LeftButton.Texture"/>
+				<property name="Resource" link="Theme.Light.LeftButton.Texture"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.RightButton.Texture"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.RightButton.Texture"/>
+				<property name="Resource" link="Theme.Light.RightButton.Texture"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.UpButton.Texture"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.UpButton.Texture"/>
+				<property name="Resource" link="Theme.Light.UpButton.Texture"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.RandomButton.Texture"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.RandomButton.Texture"/>
+				<property name="Resource" link="Theme.Light.RandomButton.Texture"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.ExpandButton.Texture"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.ExpandButton.Texture"/>
+				<property name="Resource" link="Theme.Light.ExpandButton.Texture"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.CenterButton.Texture"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.CenterButton.Texture"/>
+				<property name="Resource" link="Theme.Light.CenterButton.texture"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.FullScreenButton.Texture"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.FullScreenButton.Texture"/>
+				<property name="Resource" link="Theme.Light.FullScreenButton.Texture"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.TextDisabled.Font"/>
 				<property name="ResourceClassName" value="TACLResourceFont"/>
 				<property name="Resource">
-					<property name="ID" value="Theme.Dark.TextDisabled.Font"/>
+					<property name="ID" value="Theme.Light.TextDisabled.Font"/>
 				</property>
 			</item>
 			<item>
@@ -818,7 +818,7 @@
 			<item>
 				<property name="ID" value="Skin.LibraryTable.Marks"/>
 				<property name="ResourceClassName" value="TACLResourceTexture"/>
-				<property name="Resource" link="Theme.Dark.LibraryTable.Marks"/>
+				<property name="Resource" link="Theme.Light.LibraryTable.Marks"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.StatusGauge.Texture"/>
@@ -828,22 +828,22 @@
 			<item>
 				<property name="ID" value="Skin.ScrollBarH.Buttons"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.ScrollBarH.Buttons"/>
+				<property name="Resource" link="Theme.Light.ScrollBarH.Buttons"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.ScrollBarV.Buttons"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.ScrollBarV.Buttons"/>
+				<property name="Resource" link="Theme.Light.ScrollBarV.Buttons"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.ScrollBarH.Skin.NoButton"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.ScrollBarH.Skin.NoButton"/>
+				<property name="Resource" link="Theme.Light.ScrollBarH.Skin.NoButton"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.ScrollBarV.Skin.NoButton"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.ScrollBarV.Skin.NoButton"/>
+				<property name="Resource" link="Theme.Light.ScrollBarV.Skin.NoButton"/>
 			</item>
 			<item>
 				<property name="ID" value="Textures.Transparent"/>
@@ -853,54 +853,54 @@
 			<item>
 				<property name="ID" value="Skin.EscapeButton.Texture"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.EscapeButton.Texture"/>
+				<property name="Resource" link="Theme.Light.EscapeButton.Texture"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.Playlist.HeaderSwitches"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.Playlist.HeaderSwitches"/>
+				<property name="Resource" link="Theme.Light.Playlist.HeaderSwitches"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.Playlist.ItemSwitches"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.Playlist.ItemSwitches"/>
+				<property name="Resource" link="Theme.Light.Playlist.ItemSwitches"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.CheckBoxButton.Texture"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.CheckBoxButton.Texture"/>
+				<property name="Resource" link="Theme.Light.CheckBoxButton.Texture"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.PlayerStatusGauge.Texture"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.PlayerStatusGauge.Texture"/>
+				<property name="Resource" link="Theme.Light.PlayerStatusGauge.Texture"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.TextColored.Color"/>
 				<property name="ResourceClassName" value="TACLResourceColor"/>
 				<property name="Resource">
-					<property name="ID" value="Theme.Dark.TextColored.Color"/>
+					<property name="ID" value="Theme.Light.TextColored.Color"/>
 				</property>
 			</item>
 			<item>
 				<property name="ID" value="Skin.DSPButton.Texture"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.DSPButton.Texture"/>
+				<property name="Resource" link="Theme.Light.DSPButton.Texture"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.ABRepeatButton.Texture"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.ABRepeatButton.Texture"/>
+				<property name="Resource" link="Theme.Light.ABRepeatButton.Texture"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.RecordButton.Texture"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.RecordButton.Texture"/>
+				<property name="Resource" link="Theme.Light.RecordButton.Texture"/>
 			</item>
 			<item>
 				<property name="ID" value="Skin.TimerButton.Texture"/>
 				<property name="ResourceClassName" value="TASETexture"/>
-				<property name="Resource" link="Theme.Dark.TimerButton.Texture"/>
+				<property name="Resource" link="Theme.Light.TimerButton.Texture"/>
 			</item>
 			<item>
 				<property name="ID" value="Theme.Light.ActiveWindowEdge.Color"/>

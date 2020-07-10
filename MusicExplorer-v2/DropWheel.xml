@@ -230,7 +230,7 @@
 						<control link="DropWheel_OK">
 							<properties>
 								<property name="PlaceInfo" anchors="0,0,0,0" margins="35,34,35,34" Size="48,48"/>
-								<property name="Skin" value="DropWheel_OK.Skin"/>
+								<property name="Skin" link="Skin.CenterButton.Texture"/>
 								<property name="Fonts">
 									<property name="Normal">
 										<property name="ID" value="Skin.DropWheel_OK.Fonts.Normal"/>

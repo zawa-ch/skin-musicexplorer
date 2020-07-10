@@ -274,6 +274,23 @@
 														<property name="ParentBackground" value="True"/>
 														<property name="Borders" value=""/>
 														<property name="GridLines" value="tlglHorzontal"/>
+														<property name="Style">
+															<property name="ColorBorder">
+																<property name="ID" value="Colors.Unset"/>
+															</property>
+															<property name="ColorContent">
+																<property name="ID" value="Colors.Unset"/>
+															</property>
+															<property name="ColorContentDisabled">
+																<property name="ID" value="Colors.Unset"/>
+															</property>
+															<property name="ColorText">
+																<property name="ID" value="Skin.TextNormal.Color"/>
+															</property>
+															<property name="ColorTextDisabled">
+																<property name="ID" value="Skin.TextDisabled.Color"/>
+															</property>
+														</property>
 														<property name="StyleContent">
 															<property name="GridColor">
 																<property name="ID" value="Skin.SecondoryColor[o50]"/>
@@ -636,18 +653,13 @@
 												<property name="Color"/>
 												<property name="Font">
 													<property name="ID" value="Skin.TextNormal"/>
-													<property name="Color" value="4278190080"/>
-													<property name="Height" value="13"/>
-													<property name="Name" value="Yu Gothic UI"/>
-													<property name="Quality" value="fqDefault"/>
-													<property name="Style" value=""/>
 												</property>
 												<property name="HintTextColor"/>
 												<property name="SelectionColor">
-													<property name="Value" value="2298452761"/>
+													<property name="ID" value="Skin.PrimaryColor[t50]"/>
 												</property>
 												<property name="SelectionTextColor">
-													<property name="Value" value="4278190080"/>
+													<property name="ID" value="Theme.Light.TextNormal.Color"/>
 												</property>
 											</properties>
 										</control>
