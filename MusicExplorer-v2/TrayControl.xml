@@ -7,7 +7,7 @@
 				<property name="Color">
 					<property name="ID" value="Skin.BaseColor"/>
 				</property>
-				<property name="Texture" value="TrayControlMain.Texture"/>
+				<property name="Texture" link="Textures.Unset"/>
 			</properties>
 			<items>
 				<item class="LayoutContainer" name="TC_InfoArea">
@@ -17,7 +17,7 @@
 						</property>
 						<property name="Alignment" value="laClient"/>
 						<property name="Color"/>
-						<property name="Texture" value="TC_InfoArea.Texture"/>
+						<property name="Texture" link="Textures.Unset"/>
 					</properties>
 					<controls>
 						<control class="TextDisplay" name="TC_FileInfoText">
@@ -26,7 +26,7 @@
 									<link Source="TC_FileInfo" SourcePin="Result" TargetPin="DisplayValue"/>
 								</property>
 								<property name="PlaceInfo" anchors="1,1,1,1" margins="4,0,4,4" Size="232,24"/>
-								<property name="Skin" value="TC_FileInfoText.Skin"/>
+								<property name="Skin" link="Textures.Transparent"/>
 								<property name="Color"/>
 								<property name="Font">
 									<property name="ID" value="Skin.TextNormal"/>
@@ -43,7 +43,7 @@
 						<property name="Alignment" value="laClient"/>
 						<property name="AlignmentLevel" value="1"/>
 						<property name="Color"/>
-						<property name="Texture" value="TC_CtrlArea.Texture"/>
+						<property name="Texture" link="Textures.Unset"/>
 					</properties>
 					<controls>
 						<control class="Button" name="TC_RepeatStatus">
@@ -55,34 +55,10 @@
 								<property name="Skin" link="Skin.StatusGauge.Texture"/>
 								<property name="FramesPerState" value="1"/>
 								<property name="Fonts">
-									<property name="Normal">
-										<property name="Color" value="66051"/>
-										<property name="Height" value="-11"/>
-										<property name="Name" value="Tahoma"/>
-										<property name="Quality" value="fqDefault"/>
-										<property name="Style" value=""/>
-									</property>
-									<property name="Hot">
-										<property name="Color" value="66051"/>
-										<property name="Height" value="-11"/>
-										<property name="Name" value="Tahoma"/>
-										<property name="Quality" value="fqDefault"/>
-										<property name="Style" value=""/>
-									</property>
-									<property name="Pressed">
-										<property name="Color" value="66051"/>
-										<property name="Height" value="-11"/>
-										<property name="Name" value="Tahoma"/>
-										<property name="Quality" value="fqDefault"/>
-										<property name="Style" value=""/>
-									</property>
-									<property name="Disabled">
-										<property name="Color" value="66051"/>
-										<property name="Height" value="-11"/>
-										<property name="Name" value="Tahoma"/>
-										<property name="Quality" value="fqDefault"/>
-										<property name="Style" value=""/>
-									</property>
+									<property name="Normal"/>
+									<property name="Hot"/>
+									<property name="Pressed"/>
+									<property name="Disabled"/>
 								</property>
 							</properties>
 						</control>
@@ -114,34 +90,10 @@
 								<property name="Skin" link="Skin.StatusGauge.Texture"/>
 								<property name="FramesPerState" value="1"/>
 								<property name="Fonts">
-									<property name="Normal">
-										<property name="Color" value="66051"/>
-										<property name="Height" value="-11"/>
-										<property name="Name" value="Tahoma"/>
-										<property name="Quality" value="fqDefault"/>
-										<property name="Style" value=""/>
-									</property>
-									<property name="Hot">
-										<property name="Color" value="66051"/>
-										<property name="Height" value="-11"/>
-										<property name="Name" value="Tahoma"/>
-										<property name="Quality" value="fqDefault"/>
-										<property name="Style" value=""/>
-									</property>
-									<property name="Pressed">
-										<property name="Color" value="66051"/>
-										<property name="Height" value="-11"/>
-										<property name="Name" value="Tahoma"/>
-										<property name="Quality" value="fqDefault"/>
-										<property name="Style" value=""/>
-									</property>
-									<property name="Disabled">
-										<property name="Color" value="66051"/>
-										<property name="Height" value="-11"/>
-										<property name="Name" value="Tahoma"/>
-										<property name="Quality" value="fqDefault"/>
-										<property name="Style" value=""/>
-									</property>
+									<property name="Normal"/>
+									<property name="Hot"/>
+									<property name="Pressed"/>
+									<property name="Disabled"/>
 								</property>
 							</properties>
 						</control>
@@ -310,10 +262,10 @@
 							<link Source="prvPlayingFileInfo" SourcePin="Waveform" TargetPin="Waveform"/>
 						</property>
 						<property name="PlaceInfo" anchors="1,1,1,1" margins="0,0,0,0" Size="0,0"/>
-						<property name="Skin" value="TC_Seekbar0.Skin"/>
+						<property name="Skin" link="Textures.Unset"/>
 						<property name="Color"/>
 						<property name="ColorProgress"/>
-						<property name="SkinThumb" value="TC_Seekbar0.SkinThumb"/>
+						<property name="SkinThumb" link="Textures.Unset"/>
 						<property name="TextLabels">
 							<property name="Font"/>
 							<property name="FontProgress"/>
@@ -338,12 +290,12 @@
 							<link Source="prvPlayerState" SourcePin="Action" TargetPin="Hint"/>
 						</property>
 						<property name="PlaceInfo" anchors="1,0,1,1" margins="0,20,0,0" Size="48,4"/>
-						<property name="Skin" value="TC_Seekbar1.Skin"/>
+						<property name="Skin" link="Textures.Unset"/>
 						<property name="Color"/>
 						<property name="ColorProgress">
 							<property name="ID" value="Skin.PrimaryColor"/>
 						</property>
-						<property name="SkinThumb" value="TC_Seekbar1.SkinThumb"/>
+						<property name="SkinThumb" link="Textures.Unset"/>
 						<property name="TextLabels">
 							<property name="Font"/>
 							<property name="FontProgress"/>
