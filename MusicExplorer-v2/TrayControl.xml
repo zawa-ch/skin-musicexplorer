@@ -262,7 +262,7 @@
 							<link Source="prvPlayingFileInfo" SourcePin="Waveform" TargetPin="Waveform"/>
 						</property>
 						<property name="PlaceInfo" anchors="1,1,1,1" margins="0,0,0,0" Size="0,0"/>
-						<property name="Skin" link="Textures.Unset"/>
+						<property name="Skin" link="Textures.Transparent"/>
 						<property name="Color"/>
 						<property name="ColorProgress"/>
 						<property name="SkinThumb" link="Textures.Unset"/>
@@ -290,7 +290,7 @@
 							<link Source="prvPlayerState" SourcePin="Action" TargetPin="Hint"/>
 						</property>
 						<property name="PlaceInfo" anchors="1,0,1,1" margins="0,20,0,0" Size="48,4"/>
-						<property name="Skin" link="Textures.Unset"/>
+						<property name="Skin" link="Textures.Transparent"/>
 						<property name="Color"/>
 						<property name="ColorProgress">
 							<property name="ID" value="Skin.PrimaryColor"/>

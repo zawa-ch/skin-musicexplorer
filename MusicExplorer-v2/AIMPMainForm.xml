@@ -32,7 +32,7 @@
 											<link Source="AIMPMainForm" SourcePin="Active" TargetPin="Visibility" Expression=" NOT Value"/>
 										</property>
 										<property name="PlaceInfo" anchors="1,1,1,1" margins="34,0,124,0" Size="483,24"/>
-										<property name="Skin" link="Textures.Unset"/>
+										<property name="Skin" link="Textures.Transparent"/>
 										<property name="Color"/>
 										<property name="Font">
 											<property name="ID" value="Skin.TitleInactive.FontEx"/>
@@ -46,7 +46,7 @@
 											<link Source="AIMPMainForm" SourcePin="Active" TargetPin="Visibility"/>
 										</property>
 										<property name="PlaceInfo" anchors="1,1,1,1" margins="34,0,124,0" Size="483,24"/>
-										<property name="Skin" link="Textures.Unset"/>
+										<property name="Skin" link="Textures.Transparent"/>
 										<property name="Color"/>
 										<property name="Font">
 											<property name="ID" value="Skin.TitleNormal.Font"/>
@@ -2383,7 +2383,7 @@
 										<control class="TextDisplay" name="MF_SongInfoText1">
 											<properties>
 												<property name="Bindings">
-													<link Source="prvPlayingFileInfo" SourcePin="FileInfo" TargetPin="DisplayValue" TextFormat="%UserTemplate4"/>
+													<link Source="prvPlayingFileInfo" SourcePin="FileInfo" TargetPin="DisplayValue" TextFormat="%UserTemplate3"/>
 												</property>
 												<property name="PlaceInfo" anchors="1,1,1,0" margins="38,24,8,19" Size="317,12"/>
 												<property name="Skin" link="Textures.Transparent"/>
