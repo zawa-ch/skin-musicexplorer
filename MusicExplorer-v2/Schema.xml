@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<skin target="450" edition="0" ID="b9eafec92cd43343c0cdbcbfd2cd562e" AllowColoration="1">
+<skin target="450" edition="0" ID="faba68690e6103d42974c5a21b684236" AllowColoration="1">
 	<properties>
 		<resources>
 			<item>
@@ -1770,7 +1770,7 @@
 				<property name="ID" value="Skin.ContextMenu.ColorBorder1"/>
 			</property>
 			<property name="ColorBorder2">
-				<property name="ID" value="Colors.Unset"/>
+				<property name="Value" value="0"/>
 			</property>
 			<property name="Font">
 				<property name="ID" value="Skin.ContextMenu.Font"/>
@@ -1785,7 +1785,7 @@
 			<property name="TextureGutter" link="Skin.ContextMenu.Texture"/>
 			<property name="TextureSeparator" link="Skin.ContextMenu.Separator"/>
 			<property name="ColorListBorder">
-				<property name="ID" value="Colors.Unset"/>
+				<property name="Value" value="0"/>
 			</property>
 			<property name="ColorListRow1">
 				<property name="ID" value="Skin.ContextMenu.ColorListRow1"/>
