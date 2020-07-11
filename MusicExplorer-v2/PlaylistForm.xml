@@ -5,7 +5,7 @@
 			<properties>
 				<property name="Alignment" value="laClient"/>
 				<property name="Color"/>
-				<property name="Texture" value="PF_WindowArea.Texture"/>
+				<property name="Texture" link="Textures.Unset"/>
 			</properties>
 			<items>
 				<item class="LayoutContainer" name="PlaylistFormMain">
@@ -14,7 +14,7 @@
 						<property name="Color">
 							<property name="ID" value="Skin.BaseColor"/>
 						</property>
-						<property name="Texture" value="PlaylistFormMain.Texture"/>
+						<property name="Texture" link="Textures.Unset"/>
 					</properties>
 					<items>
 						<item class="LayoutContainer" name="PF_TitleBar">
@@ -25,7 +25,7 @@
 								<property name="SizeMaximal" value="0,24"/>
 								<property name="SizeMinimal" value="110,24"/>
 								<property name="Color"/>
-								<property name="Texture" value="PF_TitleBar.Texture"/>
+								<property name="Texture" link="Textures.Unset"/>
 							</properties>
 							<controls>
 								<control class="TextDisplay" name="PF_TitleTextInactive">
@@ -34,7 +34,7 @@
 											<link Source="PlaylistForm" SourcePin="Active" TargetPin="Visibility" Expression=" NOT Value"/>
 										</property>
 										<property name="PlaceInfo" anchors="1,1,1,1" margins="34,0,84,0" Size="0,24"/>
-										<property name="Skin" value="PF_TitleTextInactive.Skin"/>
+										<property name="Skin" link="Textures.Transparent"/>
 										<property name="Color"/>
 										<property name="Font">
 											<property name="ID" value="Skin.TitleInactive.FontEx"/>
@@ -48,7 +48,7 @@
 											<link Source="PlaylistForm" SourcePin="Active" TargetPin="Visibility"/>
 										</property>
 										<property name="PlaceInfo" anchors="1,1,1,1" margins="34,0,84,0" Size="0,24"/>
-										<property name="Skin" value="PF_TitleText.Skin"/>
+										<property name="Skin" link="Textures.Transparent"/>
 										<property name="Color"/>
 										<property name="Font">
 											<property name="ID" value="Skin.TitleNormal.Font"/>
@@ -95,18 +95,10 @@
 										<property name="PlaceInfo" anchors="1,1,0,1" margins="0,0,72,0" Size="30,24"/>
 										<property name="Skin" link="Skin.MainmenuButton.Texture"/>
 										<property name="Fonts">
-											<property name="Normal">
-												<property name="ID" value="Skin.TitleButton.Fonts.Normal"/>
-											</property>
-											<property name="Hot">
-												<property name="ID" value="Skin.TitleButton.Fonts.Normal"/>
-											</property>
-											<property name="Pressed">
-												<property name="ID" value="Skin.TitleButton.Fonts.Normal"/>
-											</property>
-											<property name="Disabled">
-												<property name="ID" value="Skin.TitleButton.Fonts.Normal"/>
-											</property>
+											<property name="Normal"/>
+											<property name="Hot"/>
+											<property name="Pressed"/>
+											<property name="Disabled"/>
 										</property>
 									</properties>
 								</control>
@@ -116,8 +108,8 @@
 							<properties>
 								<property name="Alignment" value="laClient"/>
 								<property name="Color"/>
-								<property name="Texture" value="PF_MainArea.Texture"/>
-								<property name="TextureSplitter" value="PF_MainArea.TextureSplitter"/>
+								<property name="Texture" link="Textures.Unset"/>
+								<property name="TextureSplitter" link="Textures.Unset"/>
 							</properties>
 							<items>
 								<item class="LayoutContainer" name="PF_MainArea_TAB">
@@ -128,7 +120,7 @@
 										<property name="SizeMinimal" value="10,0"/>
 										<property name="Alignment" value="laClient"/>
 										<property name="Color"/>
-										<property name="Texture" value="PF_MainArea_TAB.Texture"/>
+										<property name="Texture" link="Textures.Unset"/>
 									</properties>
 									<controls>
 										<control class="TabControl" name="PF_PlaylistTab">
@@ -139,7 +131,7 @@
 												</property>
 												<property name="PlaceInfo" anchors="1,1,1,1" margins="0,0,0,0" Size="250,23"/>
 												<property name="PopupMenu" value="pmPlaylistTabs"/>
-												<property name="Skin" value="PF_PlaylistTab.Skin"/>
+												<property name="Skin" link="Textures.Unset"/>
 												<property name="DragDropIndicator">
 													<property name="ID" value="Skin.SecondoryColor"/>
 												</property>
@@ -189,14 +181,14 @@
 										<property name="Alignment" value="laClient"/>
 										<property name="AlignmentLevel" value="1"/>
 										<property name="Color"/>
-										<property name="Texture" value="PF_MainArea_PLS.Texture"/>
+										<property name="Texture" link="Textures.Unset"/>
 									</properties>
 									<items>
 										<item class="LayoutContainer" name="PF_PLS_Contents">
 											<properties>
 												<property name="Alignment" value="laClient"/>
 												<property name="Color"/>
-												<property name="Texture" value="PF_PLS_Contents.Texture"/>
+												<property name="Texture" link="Textures.Unset"/>
 											</properties>
 											<controls>
 												<control link="Playlist">
@@ -204,10 +196,10 @@
 														<property name="Tag" value="3"/>
 														<property name="PlaceInfo" anchors="1,1,1,1" margins="0,0,0,0" Size="0,0"/>
 														<property name="PopupMenu" value="pmPlaylistMain"/>
-														<property name="Skin" value="Playlist.Skin"/>
+														<property name="Skin" link="Textures.Unset"/>
 														<property name="ParentBackground" value="True"/>
 														<property name="Resources">
-															<property name="Background" value="Playlist.Resources.Background"/>
+															<property name="Background" link="Textures.Unset"/>
 															<property name="BackgroundColor">
 																<property name="Value" value="0"/>
 															</property>
@@ -215,7 +207,7 @@
 															<property name="FocusRectColor">
 																<property name="ID" value="Skin.SecondoryColor"/>
 															</property>
-															<property name="HeaderBackground" value="Playlist.Resources.HeaderBackground"/>
+															<property name="HeaderBackground" link="Textures.Unset"/>
 															<property name="HeaderBackgroundColors">
 																<property name="Selected"/>
 																<property name="SelectedFocused"/>
@@ -240,7 +232,7 @@
 															<property name="HeaderSwitches" link="Skin.Playlist.HeaderSwitches"/>
 															<property name="ItemBackgroundColors">
 																<property name="Normal">
-																	<property name="ID" value="Colors.Unset"/>
+																	<property name="Value" value="0"/>
 																</property>
 																<property name="Normal2">
 																	<property name="ID" value="Skin.SecondoryColor[t10]"/>
@@ -345,7 +337,7 @@
 																</property>
 															</property>
 															<property name="ItemLine2Offset" value="1"/>
-															<property name="ItemMarks" value="Playlist.Resources.ItemMarks"/>
+															<property name="ItemMarks" link="Textures.Unset"/>
 															<property name="ItemSwitches" link="Skin.Playlist.ItemSwitches"/>
 															<property name="OverlayColor"/>
 														</property>
@@ -361,7 +353,7 @@
 												<property name="SizeMinimal" value="12,0"/>
 												<property name="Alignment" value="laRight"/>
 												<property name="Color"/>
-												<property name="Texture" value="PF_PLS_VScrollArea.Texture"/>
+												<property name="Texture" link="Textures.Unset"/>
 											</properties>
 											<controls>
 												<control class="ScrollBarVertical" name="PF_PLSScrollBarVertical">
@@ -389,14 +381,14 @@
 								<property name="Alignment" value="laBottom"/>
 								<property name="AlignmentLevel" value="1"/>
 								<property name="Color"/>
-								<property name="Texture" value="PF_ToolBar.Texture"/>
+								<property name="Texture" link="Textures.Unset"/>
 							</properties>
 							<items>
 								<item class="LayoutContainer" name="PF_ToolBar0">
 									<properties>
 										<property name="Alignment" value="laClient"/>
 										<property name="Color"/>
-										<property name="Texture" value="PF_ToolBar0.Texture"/>
+										<property name="Texture" link="Textures.Unset"/>
 									</properties>
 									<controls>
 										<control class="TextDisplay" name="PF_StatusText">
@@ -405,7 +397,7 @@
 													<link Source="String_PlaylistInfo" SourcePin="Result" TargetPin="DisplayValue"/>
 												</property>
 												<property name="PlaceInfo" anchors="1,1,1,1" margins="4,0,4,0" Size="120,20"/>
-												<property name="Skin" value="PF_StatusText.Skin"/>
+												<property name="Skin" link="Textures.Transparent"/>
 												<property name="Color"/>
 												<property name="Font">
 													<property name="ID" value="Skin.TextNormal"/>
@@ -419,7 +411,7 @@
 										<property name="SizeMinimal" value="148,0"/>
 										<property name="Alignment" value="laRight"/>
 										<property name="Color"/>
-										<property name="Texture" value="PF_ToolBar1.Texture"/>
+										<property name="Texture" link="Textures.Unset"/>
 									</properties>
 									<controls>
 										<control class="Button" name="PF_PlaylistAddButton">
@@ -514,7 +506,7 @@
 										<property name="Color">
 											<property name="ID" value="Skin.SecondoryColor[t10]"/>
 										</property>
-										<property name="Texture" value="PF_ToolBar2.Texture"/>
+										<property name="Texture" link="Textures.Unset"/>
 									</properties>
 									<items>
 										<item class="LayoutTexture" name="PF_ToolBar2_LayoutFix">
@@ -524,7 +516,7 @@
 												<property name="SizeMinimal" value="100,0"/>
 												<property name="Alignment" value="laClient"/>
 												<property name="Color"/>
-												<property name="Texture" value="PF_ToolBar2_LayoutFix.Texture"/>
+												<property name="Texture" link="Textures.Unset"/>
 											</properties>
 										</item>
 										<item class="LayoutTexture" name="PF_ToolBar2_LayoutExpand">
@@ -535,7 +527,7 @@
 												<property name="Alignment" value="laClient"/>
 												<property name="AlignmentLevel" value="1"/>
 												<property name="Color"/>
-												<property name="Texture" value="PF_ToolBar2_LayoutExpand.Texture"/>
+												<property name="Texture" link="Textures.Unset"/>
 											</properties>
 										</item>
 									</items>
@@ -546,10 +538,8 @@
 													<link Source="Playlist" SourcePin="QuickSearch" TargetPin="Action"/>
 												</property>
 												<property name="PlaceInfo" anchors="1,1,1,1" margins="4,0,24,0" Size="92,24"/>
-												<property name="Skin" value="PF_SearchEdit.Skin"/>
-												<property name="Color">
-													<property name="ID" value="Colors.Unset"/>
-												</property>
+												<property name="Skin" link="Textures.Unset"/>
+												<property name="Color"/>
 												<property name="Font">
 													<property name="ID" value="Skin.TextNormal"/>
 												</property>
@@ -588,7 +578,7 @@
 										<property name="Color">
 											<property name="ID" value="Skin.SecondoryColor"/>
 										</property>
-										<property name="Texture" value="PF_ToolBarSepalater.Texture"/>
+										<property name="Texture" link="Textures.Unset"/>
 									</properties>
 								</item>
 							</items>
@@ -602,7 +592,7 @@
 								<property name="Color">
 									<property name="ID" value="Skin.SecondoryColor[t10]"/>
 								</property>
-								<property name="Texture" value="PF_PlayCtrlBar.Texture"/>
+								<property name="Texture" link="Textures.Unset"/>
 							</properties>
 							<items>
 								<item class="LayoutContainer" name="PF_PlayCtrlBar_SeekArea">
@@ -611,7 +601,7 @@
 										<property name="SizeMinimal" value="120,24"/>
 										<property name="Alignment" value="laClient"/>
 										<property name="Color"/>
-										<property name="Texture" value="PF_PlayCtrlBar_SeekArea.Texture"/>
+										<property name="Texture" link="Textures.Unset"/>
 									</properties>
 									<controls>
 										<control class="SliderHorizontal" name="PF_Seekbar0">
@@ -628,7 +618,7 @@
 												<property name="Skin" link="Textures.Unset"/>
 												<property name="Color"/>
 												<property name="ColorProgress"/>
-												<property name="SkinThumb" value="PF_Seekbar0.SkinThumb"/>
+												<property name="SkinThumb" link="Textures.Unset"/>
 												<property name="TextLabels">
 													<property name="Font"/>
 													<property name="FontProgress"/>
@@ -686,7 +676,7 @@
 										<property name="SizeMinimal" value="300,24"/>
 										<property name="Alignment" value="laBottom"/>
 										<property name="Color"/>
-										<property name="Texture" value="PF_PlayCtrlBar_CtrlArea.Texture"/>
+										<property name="Texture" link="Textures.Unset"/>
 									</properties>
 									<controls>
 										<control class="Button" name="PF_PrevButton">
@@ -939,9 +929,9 @@
 								</property>
 								<property name="Alignment" value="laClient"/>
 								<property name="Color">
-									<property name="Value" value="4290756543"/>
+									<property name="ID" value="Skin.InactiveWindowEdge.Color"/>
 								</property>
-								<property name="Texture" value="PlaylistFormEdge_Top_0.Texture"/>
+								<property name="Texture" link="Textures.Unset"/>
 							</properties>
 						</item>
 						<item class="LayoutTexture" name="PlaylistFormEdge_Top_1">
@@ -952,9 +942,9 @@
 								<property name="Alignment" value="laClient"/>
 								<property name="AlignmentLevel" value="1"/>
 								<property name="Color">
-									<property name="Value" value="4282335039"/>
+									<property name="ID" value="Skin.ActiveWindowEdge.Color"/>
 								</property>
-								<property name="Texture" value="PlaylistFormEdge_Top_1.Texture"/>
+								<property name="Texture" link="Textures.Unset"/>
 							</properties>
 						</item>
 						<item class="LayoutTexture" name="PlaylistFormEdge_Top_2">
@@ -965,9 +955,9 @@
 								<property name="Alignment" value="laClient"/>
 								<property name="AlignmentLevel" value="2"/>
 								<property name="Color">
-									<property name="Value" value="4294941465"/>
+									<property name="ID" value="Skin.PrimaryColor"/>
 								</property>
-								<property name="Texture" value="PlaylistFormEdge_Top_2.Texture"/>
+								<property name="Texture" link="Textures.Unset"/>
 							</properties>
 						</item>
 					</items>
@@ -985,9 +975,9 @@
 								</property>
 								<property name="Alignment" value="laClient"/>
 								<property name="Color">
-									<property name="Value" value="4290756543"/>
+									<property name="ID" value="Skin.InactiveWindowEdge.Color"/>
 								</property>
-								<property name="Texture" value="PlaylistFormEdge_Bottom_0.Texture"/>
+								<property name="Texture" link="Textures.Unset"/>
 							</properties>
 						</item>
 						<item class="LayoutTexture" name="PlaylistFormEdge_Bottom_1">
@@ -998,9 +988,9 @@
 								<property name="Alignment" value="laClient"/>
 								<property name="AlignmentLevel" value="1"/>
 								<property name="Color">
-									<property name="Value" value="4282335039"/>
+									<property name="ID" value="Skin.ActiveWindowEdge.Color"/>
 								</property>
-								<property name="Texture" value="PlaylistFormEdge_Bottom_1.Texture"/>
+								<property name="Texture" link="Textures.Unset"/>
 							</properties>
 						</item>
 						<item class="LayoutTexture" name="PlaylistFormEdge_Bottom_2">
@@ -1011,9 +1001,9 @@
 								<property name="Alignment" value="laClient"/>
 								<property name="AlignmentLevel" value="2"/>
 								<property name="Color">
-									<property name="Value" value="4294941465"/>
+									<property name="ID" value="Skin.PrimaryColor"/>
 								</property>
-								<property name="Texture" value="PlaylistFormEdge_Bottom_2.Texture"/>
+								<property name="Texture" link="Textures.Unset"/>
 							</properties>
 						</item>
 					</items>
@@ -1031,9 +1021,9 @@
 								</property>
 								<property name="Alignment" value="laClient"/>
 								<property name="Color">
-									<property name="Value" value="4290756543"/>
+									<property name="ID" value="Skin.InactiveWindowEdge.Color"/>
 								</property>
-								<property name="Texture" value="PlaylistFormEdge_Left_0.Texture"/>
+								<property name="Texture" link="Textures.Unset"/>
 							</properties>
 						</item>
 						<item class="LayoutTexture" name="PlaylistFormEdge_Left_1">
@@ -1044,9 +1034,9 @@
 								<property name="Alignment" value="laClient"/>
 								<property name="AlignmentLevel" value="1"/>
 								<property name="Color">
-									<property name="Value" value="4282335039"/>
+									<property name="ID" value="Skin.ActiveWindowEdge.Color"/>
 								</property>
-								<property name="Texture" value="PlaylistFormEdge_Left_1.Texture"/>
+								<property name="Texture" link="Textures.Unset"/>
 							</properties>
 						</item>
 						<item class="LayoutTexture" name="PlaylistFormEdge_Left_2">
@@ -1057,9 +1047,9 @@
 								<property name="Alignment" value="laClient"/>
 								<property name="AlignmentLevel" value="2"/>
 								<property name="Color">
-									<property name="Value" value="4294941465"/>
+									<property name="ID" value="Skin.PrimaryColor"/>
 								</property>
-								<property name="Texture" value="PlaylistFormEdge_Left_2.Texture"/>
+								<property name="Texture" link="Textures.Unset"/>
 							</properties>
 						</item>
 					</items>
@@ -1077,9 +1067,9 @@
 								</property>
 								<property name="Alignment" value="laClient"/>
 								<property name="Color">
-									<property name="Value" value="4290756543"/>
+									<property name="ID" value="Skin.InactiveWindowEdge.Color"/>
 								</property>
-								<property name="Texture" value="PlaylistFormEdge_Right_0.Texture"/>
+								<property name="Texture" link="Textures.Unset"/>
 							</properties>
 						</item>
 						<item class="LayoutTexture" name="PlaylistFormEdge_Right_1">
@@ -1090,9 +1080,9 @@
 								<property name="Alignment" value="laClient"/>
 								<property name="AlignmentLevel" value="1"/>
 								<property name="Color">
-									<property name="Value" value="4282335039"/>
+									<property name="ID" value="Skin.ActiveWindowEdge.Color"/>
 								</property>
-								<property name="Texture" value="PlaylistFormEdge_Right_1.Texture"/>
+								<property name="Texture" link="Textures.Unset"/>
 							</properties>
 						</item>
 						<item class="LayoutTexture" name="PlaylistFormEdge_Right_2">
@@ -1103,9 +1093,9 @@
 								<property name="Alignment" value="laClient"/>
 								<property name="AlignmentLevel" value="2"/>
 								<property name="Color">
-									<property name="Value" value="4294941465"/>
+									<property name="ID" value="Skin.PrimaryColor"/>
 								</property>
-								<property name="Texture" value="PlaylistFormEdge_Right_2.Texture"/>
+								<property name="Texture" link="Textures.Unset"/>
 							</properties>
 						</item>
 					</items>
@@ -1125,7 +1115,7 @@
 						</property>
 						<property name="Alignment" value="laClient"/>
 						<property name="Color"/>
-						<property name="Texture" value="PlaylistFormShadow_Top_0.Texture"/>
+						<property name="Texture" link="Textures.Transparent"/>
 					</properties>
 				</item>
 				<item class="LayoutTexture" name="PlaylistFormShadow_Top_1">
@@ -1136,7 +1126,7 @@
 						<property name="Alignment" value="laClient"/>
 						<property name="AlignmentLevel" value="1"/>
 						<property name="Color"/>
-						<property name="Texture" value="PlaylistFormShadow_Top_1.Texture"/>
+						<property name="Texture" link="Skin.FormShadow.Top"/>
 					</properties>
 				</item>
 			</items>
@@ -1155,7 +1145,7 @@
 						</property>
 						<property name="Alignment" value="laClient"/>
 						<property name="Color"/>
-						<property name="Texture" value="PlaylistFormShadow_Bottom_0.Texture"/>
+						<property name="Texture" link="Textures.Transparent"/>
 					</properties>
 				</item>
 				<item class="LayoutTexture" name="PlaylistFormShadow_Bottom_1">
@@ -1166,7 +1156,7 @@
 						<property name="Alignment" value="laClient"/>
 						<property name="AlignmentLevel" value="1"/>
 						<property name="Color"/>
-						<property name="Texture" value="PlaylistFormShadow_Bottom_1.Texture"/>
+						<property name="Texture" link="Skin.FormShadow.Bottom"/>
 					</properties>
 				</item>
 			</items>
@@ -1185,7 +1175,7 @@
 						</property>
 						<property name="Alignment" value="laClient"/>
 						<property name="Color"/>
-						<property name="Texture" value="PlaylistFormShadow_Left_0.Texture"/>
+						<property name="Texture" link="Textures.Transparent"/>
 					</properties>
 				</item>
 				<item class="LayoutTexture" name="PlaylistFormShadow_Left_1">
@@ -1196,7 +1186,7 @@
 						<property name="Alignment" value="laClient"/>
 						<property name="AlignmentLevel" value="1"/>
 						<property name="Color"/>
-						<property name="Texture" value="PlaylistFormShadow_Left_1.Texture"/>
+						<property name="Texture" link="Skin.FormShadow.Left"/>
 					</properties>
 				</item>
 			</items>
@@ -1215,7 +1205,7 @@
 						</property>
 						<property name="Alignment" value="laClient"/>
 						<property name="Color"/>
-						<property name="Texture" value="PlaylistFormShadow_Right_0.Texture"/>
+						<property name="Texture" link="Textures.Transparent"/>
 					</properties>
 				</item>
 				<item class="LayoutTexture" name="PlaylistFormShadow_Right_1">
@@ -1226,7 +1216,7 @@
 						<property name="Alignment" value="laClient"/>
 						<property name="AlignmentLevel" value="1"/>
 						<property name="Color"/>
-						<property name="Texture" value="PlaylistFormShadow_Right_1.Texture"/>
+						<property name="Texture" link="Skin.FormShadow.Right"/>
 					</properties>
 				</item>
 			</items>
