@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<image>
-	<properties>
-		<property name="Layout" value="ilVertical"/>
-		<property name="HitTestMaskMode" value="ihtmTransparent"/>
-		<property name="Margins" value="2,2,2,2"/>
-	</properties>
-</image>

@@ -5,7 +5,7 @@
 			<properties>
 				<property name="Alignment" value="laClient"/>
 				<property name="Color"/>
-				<property name="Texture" value="MLF_WindowArea.Texture"/>
+				<property name="Texture" link="Textures.Unset"/>
 			</properties>
 			<items>
 				<item class="LayoutContainer" name="MediaLibraryFormMain">
@@ -14,7 +14,7 @@
 						<property name="Color">
 							<property name="ID" value="Skin.BaseColor"/>
 						</property>
-						<property name="Texture" value="MediaLibraryFormMain.Texture"/>
+						<property name="Texture" link="Textures.Unset"/>
 					</properties>
 					<items>
 						<item class="LayoutContainer" name="MLF_TitleBar">
@@ -25,7 +25,7 @@
 								<property name="SizeMaximal" value="0,24"/>
 								<property name="SizeMinimal" value="110,24"/>
 								<property name="Color"/>
-								<property name="Texture" value="MLF_TitleBar.Texture"/>
+								<property name="Texture" link="Textures.Unset"/>
 							</properties>
 							<controls>
 								<control class="TextDisplay" name="MLF_TitleTextInactive">
@@ -34,7 +34,7 @@
 											<link Source="MediaLibraryForm" SourcePin="Active" TargetPin="Visibility" Expression=" NOT Value"/>
 										</property>
 										<property name="PlaceInfo" anchors="1,1,1,1" margins="34,0,84,0" Size="58,24"/>
-										<property name="Skin" value="MLF_TitleTextInactive.Skin"/>
+										<property name="Skin" link="Textures.Transparent"/>
 										<property name="Color"/>
 										<property name="Font">
 											<property name="ID" value="Skin.TitleInactive.FontEx"/>
@@ -48,7 +48,7 @@
 											<link Source="MediaLibraryForm" SourcePin="Active" TargetPin="Visibility"/>
 										</property>
 										<property name="PlaceInfo" anchors="1,1,1,1" margins="34,0,84,0" Size="58,24"/>
-										<property name="Skin" value="MLF_TitleText.Skin"/>
+										<property name="Skin" link="Textures.Transparent"/>
 										<property name="Color"/>
 										<property name="Font">
 											<property name="ID" value="Skin.TitleNormal.Font"/>
@@ -122,8 +122,8 @@
 									<properties>
 										<property name="Alignment" value="laClient"/>
 										<property name="Color"/>
-										<property name="Texture" value="MLF_MainArea_0.Texture"/>
-										<property name="TextureSplitter" value="MLF_MainArea_0.TextureSplitter"/>
+										<property name="Texture" link="Textures.Unset"/>
+										<property name="TextureSplitter" link="Textures.Unset"/>
 									</properties>
 									<items>
 										<item class="LayoutContainer" name="MLF_MainArea_1">
@@ -132,14 +132,14 @@
 												<property name="Alignment" value="laClient"/>
 												<property name="AlignmentLevel" value="1"/>
 												<property name="Color"/>
-												<property name="Texture" value="MLF_MainArea_1.Texture"/>
+												<property name="Texture" link="Textures.Unset"/>
 											</properties>
 											<controls>
 												<control link="MLGroupingTree">
 													<properties>
 														<property name="PlaceInfo" anchors="1,1,1,1" margins="0,20,0,0" Size="100,120"/>
 														<property name="PopupMenu" value="pmMLGroupingTree"/>
-														<property name="Skin" value="MLGroupingTree.Skin"/>
+														<property name="Skin" link="Textures.Unset"/>
 														<property name="Font">
 															<property name="ID" value="Skin.TextNormal"/>
 														</property>
@@ -148,13 +148,13 @@
 														<property name="GridLines" value="tlglHorzontal"/>
 														<property name="Style">
 															<property name="ColorBorder">
-																<property name="ID" value="Colors.Unset"/>
+																<property name="Value" value="0"/>
 															</property>
 															<property name="ColorContent">
-																<property name="ID" value="Colors.Unset"/>
+																<property name="Value" value="0"/>
 															</property>
 															<property name="ColorContentDisabled">
-																<property name="ID" value="Colors.Unset"/>
+																<property name="Value" value="0"/>
 															</property>
 															<property name="ColorText">
 																<property name="ID" value="Skin.TextNormal.Color"/>
@@ -197,7 +197,7 @@
 															<property name="RowColorSelectedTextInactive">
 																<property name="ID" value="Skin.TextNormal.Color"/>
 															</property>
-															<property name="RowExpandButton" link="Skin.GroupingTree.RowExpandButton"/>
+															<property name="RowExpandButton" link="Skin.ExpandButton.Texture"/>
 															<property name="FocusRectColor">
 																<property name="Value" value="0"/>
 															</property>
@@ -213,29 +213,29 @@
 																<property name="ID" value="Skin.TextNormal"/>
 																<property name="Style" value="fsBold"/>
 															</property>
-															<property name="AlphabeticIndexScroller" value="MLGroupingTree.StyleContent.AlphabeticIndexScroller"/>
+															<property name="AlphabeticIndexScroller" link="Textures.Unset"/>
 															<property name="AlphabeticIndexScrollerGlyph" link="Skin.GroupingTree.AlphabeticIndexScrollerGlyph"/>
-															<property name="NodeImages" value="MLGroupingTree.StyleContent.NodeImages"/>
+															<property name="NodeImages" link="Textures.Unset"/>
 														</property>
 														<property name="StyleScrollBox">
-															<property name="TextureBackgroundHorz" value="MLGroupingTree.StyleScrollBox.TextureBackgroundHorz"/>
+															<property name="TextureBackgroundHorz" link="Textures.Unset"/>
 															<property name="TextureBackgroundVert" link="Skin.ScrollBarV.Skin"/>
-															<property name="TextureButtonsHorz" value="MLGroupingTree.StyleScrollBox.TextureButtonsHorz"/>
+															<property name="TextureButtonsHorz" link="Textures.Unset"/>
 															<property name="TextureButtonsVert" link="Skin.ScrollBarV.Buttons"/>
-															<property name="TextureThumbHorz" value="MLGroupingTree.StyleScrollBox.TextureThumbHorz"/>
+															<property name="TextureThumbHorz" link="Textures.Unset"/>
 															<property name="TextureThumbVert" link="Skin.ScrollBarV.Thumb"/>
-															<property name="TextureSizeGripArea" value="MLGroupingTree.StyleScrollBox.TextureSizeGripArea"/>
+															<property name="TextureSizeGripArea" link="Textures.Unset"/>
 														</property>
 													</properties>
 												</control>
-												<control class="Button" name="Button">
+												<control class="Button" name="MLF_GroupingPresetButton">
 													<properties>
 														<property name="Bindings">
 															<link Source="prvMusicLibraryManager" SourcePin="GroupingPresets" TargetPin="ContextMenu"/>
 															<link Source="prvMusicLibraryManager" SourcePin="GroupingPresets" TargetPin="DisplayValue"/>
 														</property>
 														<property name="PlaceInfo" anchors="1,1,1,0" margins="0,0,0,120" Size="100,20"/>
-														<property name="Skin" value="Button.Skin"/>
+														<property name="Skin" link="Textures.Unset"/>
 														<property name="Alignment" value="taLeftJustify"/>
 														<property name="Fonts">
 															<property name="Normal">
@@ -260,20 +260,37 @@
 												<property name="SizeMinimal" value="30,0"/>
 												<property name="Alignment" value="laClient"/>
 												<property name="Color"/>
-												<property name="Texture" value="MLF_MainArea_2.Texture"/>
+												<property name="Texture" link="Textures.Unset"/>
 											</properties>
 											<controls>
 												<control link="MLTable">
 													<properties>
 														<property name="PlaceInfo" anchors="1,1,1,1" margins="0,0,0,0" Size="0,0"/>
 														<property name="PopupMenu" value="pmMLTable"/>
-														<property name="Skin" value="MLTable.Skin"/>
+														<property name="Skin" link="Textures.Unset"/>
 														<property name="Font">
 															<property name="ID" value="Skin.TextNormal"/>
 														</property>
 														<property name="ParentBackground" value="True"/>
 														<property name="Borders" value=""/>
 														<property name="GridLines" value="tlglHorzontal"/>
+														<property name="Style">
+															<property name="ColorBorder">
+																<property name="Value" value="0"/>
+															</property>
+															<property name="ColorContent">
+																<property name="Value" value="0"/>
+															</property>
+															<property name="ColorContentDisabled">
+																<property name="Value" value="0"/>
+															</property>
+															<property name="ColorText">
+																<property name="ID" value="Skin.TextNormal.Color"/>
+															</property>
+															<property name="ColorTextDisabled">
+																<property name="ID" value="Skin.TextDisabled.Color"/>
+															</property>
+														</property>
 														<property name="StyleContent">
 															<property name="GridColor">
 																<property name="ID" value="Skin.SecondoryColor[o50]"/>
@@ -340,7 +357,7 @@
 																<property name="ID" value="Skin.TextNormal.Color"/>
 															</property>
 															<property name="GroupDetailsMinWidth" value="80"/>
-															<property name="GroupDetailsPreviewArea" value="MLTable.StyleContent.GroupDetailsPreviewArea"/>
+															<property name="GroupDetailsPreviewArea" link="Textures.Unset"/>
 															<property name="GroupDetailsWidth" value="120"/>
 															<property name="GroupDetailsTitleFont">
 																<property name="ID" value="Skin.TextNormal.Large"/>
@@ -356,7 +373,7 @@
 															<property name="ThumbnailsContentOffsets">
 																<property name="All" value="8"/>
 															</property>
-															<property name="ThumbnailsExpandButton" value="MLTable.StyleContent.ThumbnailsExpandButton"/>
+															<property name="ThumbnailsExpandButton" link="Textures.Unset"/>
 														</property>
 														<property name="StyleScrollBox">
 															<property name="TextureBackgroundHorz" link="Skin.ScrollBarH.Skin"/>
@@ -365,11 +382,26 @@
 															<property name="TextureButtonsVert" link="Skin.ScrollBarV.Buttons"/>
 															<property name="TextureThumbHorz" link="Skin.ScrollBarH.Thumb"/>
 															<property name="TextureThumbVert" link="Skin.ScrollBarV.Thumb"/>
-															<property name="TextureSizeGripArea" value="MLTable.StyleScrollBox.TextureSizeGripArea"/>
+															<property name="TextureSizeGripArea" link="Textures.Unset"/>
 														</property>
 														<property name="StyleFilterBox">
+															<property name="StyleTreeListBackground">
+																<property name="ColorBorder">
+																	<property name="ID" value="Skin.ActiveWindowEdge.Color"/>
+																</property>
+																<property name="ColorContent">
+																	<property name="ID" value="Skin.BaseColor"/>
+																</property>
+																<property name="ColorContentDisabled">
+																	<property name="Value" value="0"/>
+																</property>
+																<property name="ColorText">
+																	<property name="ID" value="Skin.TextNormal.Color"/>
+																</property>
+															</property>
 															<property name="StyleTreeListScrollBox">
 																<property name="TextureBackgroundVert" link="Skin.ScrollBarV.Skin"/>
+																<property name="TextureButtonsVert" link="Skin.ScrollBarV.Buttons"/>
 																<property name="TextureThumbVert" link="Skin.ScrollBarV.Thumb"/>
 															</property>
 														</property>
@@ -384,16 +416,16 @@
 										<property name="SizeMinimal" value="80,0"/>
 										<property name="Alignment" value="laLeft"/>
 										<property name="Color"/>
-										<property name="Texture" value="MLF_MainArea_3.Texture"/>
+										<property name="Texture" link="Textures.Unset"/>
 									</properties>
 									<controls>
-										<control class="TabControl" name="TabControl">
+										<control class="TabControl" name="MLF_LibrarySourceTab">
 											<properties>
 												<property name="Bindings">
 													<link Source="prvMusicLibraryManager" SourcePin="DataSources" TargetPin="Action"/>
 												</property>
 												<property name="PlaceInfo" anchors="1,1,1,1" margins="0,0,0,0" Size="250,23"/>
-												<property name="Skin" value="TabControl.Skin"/>
+												<property name="Skin" link="Textures.Unset"/>
 												<property name="DragDropIndicator">
 													<property name="ID" value="Skin.SecondoryColor"/>
 												</property>
@@ -446,37 +478,90 @@
 								<property name="Alignment" value="laBottom"/>
 								<property name="AlignmentLevel" value="1"/>
 								<property name="Color"/>
-								<property name="Texture" value="MLF_ToolBar.Texture"/>
+								<property name="Texture" link="Textures.Unset"/>
 							</properties>
 							<items>
-								<item class="LayoutContainer" name="MLF_ToolBar0">
+								<item class="LayoutItem" name="MLF_ToolBar0">
 									<properties>
 										<property name="Alignment" value="laClient"/>
-										<property name="Color"/>
-										<property name="Texture" value="MLF_ToolBar0.Texture"/>
 									</properties>
-									<controls>
-										<control class="TextDisplay" name="TextDisplay1">
+									<items>
+										<item class="LayoutContainer" name="MLF_ToolBar1">
 											<properties>
 												<property name="Bindings">
-													<link Source="String_LibraryInfo" SourcePin="Result" TargetPin="DisplayValue"/>
+													<link Source="MLF_ToolBar2" SourcePin="Visibility" TargetPin="Visibility" Expression=" NOT Value"/>
 												</property>
-												<property name="PlaceInfo" anchors="1,1,1,1" margins="4,0,4,0" Size="120,20"/>
-												<property name="Skin" value="TextDisplay1.Skin"/>
+												<property name="Alignment" value="laClient"/>
 												<property name="Color"/>
-												<property name="Font">
-													<property name="ID" value="Skin.TextNormal"/>
-												</property>
+												<property name="Texture" link="Textures.Unset"/>
 											</properties>
-										</control>
-									</controls>
+											<controls>
+												<control class="TextDisplay" name="MLF_StatusText">
+													<properties>
+														<property name="Bindings">
+															<link Source="String_LibraryInfo" SourcePin="Result" TargetPin="DisplayValue"/>
+														</property>
+														<property name="PlaceInfo" anchors="1,1,1,1" margins="4,0,4,0" Size="120,20"/>
+														<property name="Skin" link="Textures.Transparent"/>
+														<property name="Color"/>
+														<property name="Font">
+															<property name="ID" value="Skin.TextNormal"/>
+														</property>
+													</properties>
+												</control>
+											</controls>
+										</item>
+										<item class="LayoutContainer" name="MLF_ToolBar2">
+											<properties>
+												<property name="Bindings">
+													<link Source="prvMusicLibraryManager" SourcePin="BackgroundTaskCount" TargetPin="Visibility" Expression=" NOT Value = 0"/>
+												</property>
+												<property name="Alignment" value="laClient"/>
+												<property name="AlignmentLevel" value="1"/>
+												<property name="Color"/>
+												<property name="Texture" link="Textures.Unset"/>
+											</properties>
+											<controls>
+												<control class="TextDisplay" name="MLF_BackGroundTaskText">
+													<properties>
+														<property name="Bindings">
+															<link Source="prvMusicLibraryManager" SourcePin="BackgroundTask" TargetPin="DisplayValue"/>
+														</property>
+														<property name="PlaceInfo" anchors="1,1,1,1" margins="4,0,28,0" Size="120,20"/>
+														<property name="Skin" link="Textures.Transparent"/>
+														<property name="Color"/>
+														<property name="Font">
+															<property name="ID" value="Skin.TextNormal"/>
+														</property>
+													</properties>
+												</control>
+												<control class="Button" name="MLF_BackGroundTaskCancelButton">
+													<properties>
+														<property name="Bindings">
+															<link Source="prvMusicLibraryManager" SourcePin="BackgroundTaskCancelAction" TargetPin="Accessibility"/>
+															<link Source="prvMusicLibraryManager" SourcePin="BackgroundTaskCancelAction" TargetPin="Action"/>
+															<link Source="prvMusicLibraryManager" SourcePin="BackgroundTaskCancelAction" TargetPin="Hint"/>
+														</property>
+														<property name="PlaceInfo" anchors="0,0,1,1" margins="94,10,0,0" Size="20,21"/>
+														<property name="Skin" link="Skin.EscapeButton.Texture"/>
+														<property name="Fonts">
+															<property name="Normal"/>
+															<property name="Hot"/>
+															<property name="Pressed"/>
+															<property name="Disabled"/>
+														</property>
+													</properties>
+												</control>
+											</controls>
+										</item>
+									</items>
 								</item>
-								<item class="LayoutContainer" name="MLF_ToolBar1">
+								<item class="LayoutContainer" name="MLF_ToolBar3">
 									<properties>
 										<property name="SizeMinimal" value="96,0"/>
 										<property name="Alignment" value="laRight"/>
 										<property name="Color"/>
-										<property name="Texture" value="MLF_ToolBar1.Texture"/>
+										<property name="Texture" link="Textures.Unset"/>
 									</properties>
 									<controls>
 										<control class="Button" name="MLF_AddButton">
@@ -538,7 +623,7 @@
 										</control>
 									</controls>
 								</item>
-								<item class="LayoutContainer" name="MLF_ToolBar2">
+								<item class="LayoutContainer" name="MLF_ToolBar4">
 									<properties>
 										<property name="SizeMaximal" value="400,0"/>
 										<property name="Alignment" value="laClient"/>
@@ -547,7 +632,7 @@
 										<property name="Color">
 											<property name="ID" value="Skin.SecondoryColor[t10]"/>
 										</property>
-										<property name="Texture" value="MLF_ToolBar2.Texture"/>
+										<property name="Texture" link="Textures.Unset"/>
 									</properties>
 									<items>
 										<item class="LayoutTexture" name="MLF_ToolBar2_LayoutFix">
@@ -557,7 +642,7 @@
 												<property name="Alignment" value="laClient"/>
 												<property name="AlignmentLevel" value="1"/>
 												<property name="Color"/>
-												<property name="Texture" value="MLF_ToolBar2_LayoutFix.Texture"/>
+												<property name="Texture" link="Textures.Unset"/>
 											</properties>
 										</item>
 										<item class="LayoutTexture" name="MLF_ToolBar2_LayoutExpand">
@@ -567,7 +652,7 @@
 												</property>
 												<property name="Alignment" value="laClient"/>
 												<property name="Color"/>
-												<property name="Texture" value="MLF_ToolBar2_LayoutExpand.Texture"/>
+												<property name="Texture" link="Textures.Unset"/>
 											</properties>
 										</item>
 									</items>
@@ -578,22 +663,17 @@
 													<link Source="MLTable" SourcePin="QuickSearch" TargetPin="Action"/>
 												</property>
 												<property name="PlaceInfo" anchors="1,1,1,1" margins="4,0,28,0" Size="75,21"/>
-												<property name="Skin" value="MLF_SearchEdit.Skin"/>
+												<property name="Skin" link="Textures.Unset"/>
 												<property name="Color"/>
 												<property name="Font">
 													<property name="ID" value="Skin.TextNormal"/>
-													<property name="Color" value="4278190080"/>
-													<property name="Height" value="13"/>
-													<property name="Name" value="Yu Gothic UI"/>
-													<property name="Quality" value="fqDefault"/>
-													<property name="Style" value=""/>
 												</property>
 												<property name="HintTextColor"/>
 												<property name="SelectionColor">
-													<property name="Value" value="2298452761"/>
+													<property name="ID" value="Skin.PrimaryColor[t50]"/>
 												</property>
 												<property name="SelectionTextColor">
-													<property name="Value" value="4278190080"/>
+													<property name="ID" value="Theme.Light.TextNormal.Color"/>
 												</property>
 											</properties>
 										</control>
@@ -623,7 +703,7 @@
 										<property name="Color">
 											<property name="ID" value="Skin.SecondoryColor"/>
 										</property>
-										<property name="Texture" value="MLF_ToolBarSeparater.Texture"/>
+										<property name="Texture" link="Textures.Unset"/>
 									</properties>
 								</item>
 							</items>
@@ -635,9 +715,9 @@
 								</property>
 								<property name="Alignment" value="laBottom"/>
 								<property name="Color">
-									<property name="Value" value="578846848"/>
+									<property name="ID" value="Skin.SecondoryColor[t10]"/>
 								</property>
-								<property name="Texture" value="MLF_PlayCtrlBar.Texture"/>
+								<property name="Texture" link="Textures.Unset"/>
 							</properties>
 							<items>
 								<item class="LayoutContainer" name="MLF_PlayCtrlBar_SeekArea">
@@ -646,7 +726,7 @@
 										<property name="SizeMinimal" value="120,24"/>
 										<property name="Alignment" value="laClient"/>
 										<property name="Color"/>
-										<property name="Texture" value="MLF_PlayCtrlBar_SeekArea.Texture"/>
+										<property name="Texture" link="Textures.Unset"/>
 									</properties>
 									<controls>
 										<control class="SliderHorizontal" name="MLF_Seekbar0">
@@ -659,10 +739,11 @@
 													<link Source="prvPlayingFileInfo" SourcePin="Waveform" TargetPin="Waveform"/>
 												</property>
 												<property name="PlaceInfo" anchors="1,1,1,1" margins="0,0,0,0" Size="177,24"/>
-												<property name="Skin" value="MLF_Seekbar0.Skin"/>
+												<property name="PopupMenu" value="pmJump"/>
+												<property name="Skin" link="Textures.Unset"/>
 												<property name="Color"/>
 												<property name="ColorProgress"/>
-												<property name="SkinThumb" value="MLF_Seekbar0.SkinThumb"/>
+												<property name="SkinThumb" link="Textures.Unset"/>
 												<property name="TextLabels">
 													<property name="Font"/>
 													<property name="FontProgress"/>
@@ -681,7 +762,7 @@
 										<control class="BlurredGlass" name="MLF_SeekbarBlurGlass">
 											<properties>
 												<property name="PlaceInfo" anchors="1,1,1,1" margins="0,0,0,0" Size="176,24"/>
-												<property name="Skin" value="MLF_SeekbarBlurGlass.Skin"/>
+												<property name="Skin" link="Textures.Transparent"/>
 												<property name="BlurLevel" value="20"/>
 												<property name="Color"/>
 											</properties>
@@ -692,7 +773,7 @@
 													<link Source="String_Playtime" SourcePin="Result" TargetPin="DisplayValue"/>
 												</property>
 												<property name="PlaceInfo" anchors="0,1,1,1" margins="64,0,4,0" Size="112,24"/>
-												<property name="Skin" value="MLF_PlayTimeText.Skin"/>
+												<property name="Skin" link="Textures.Transparent"/>
 												<property name="Alignment" value="taRightJustify"/>
 												<property name="Color"/>
 												<property name="Font">
@@ -706,7 +787,7 @@
 													<link Source="String_RotaryPlayingFileInfoWithNotification" SourcePin="Result" TargetPin="DisplayValue"/>
 												</property>
 												<property name="PlaceInfo" anchors="1,1,1,1" margins="4,0,120,0" Size="52,24"/>
-												<property name="Skin" value="MLF_PlayInfoText.Skin"/>
+												<property name="Skin" link="Textures.Transparent"/>
 												<property name="Color"/>
 												<property name="Font">
 													<property name="ID" value="Skin.TextNormal"/>
@@ -717,10 +798,10 @@
 								</item>
 								<item class="LayoutContainer" name="MLF_PlayCtrlBar_CtrlArea">
 									<properties>
-										<property name="SizeMinimal" value="176,24"/>
+										<property name="SizeMinimal" value="300,24"/>
 										<property name="Alignment" value="laBottom"/>
 										<property name="Color"/>
-										<property name="Texture" value="MLF_PlayCtrlBar_CtrlArea.Texture"/>
+										<property name="Texture" link="Textures.Unset"/>
 									</properties>
 									<controls>
 										<control class="Button" name="MLF_PrevButton">
@@ -732,7 +813,23 @@
 													<link Source="acPlayerSeekBackward" SourcePin="Action" TargetPin="ActionOnHold"/>
 												</property>
 												<property name="PlaceInfo" anchors="1,0,0,1" margins="0,0,144,0" Size="24,24"/>
-												<property name="Skin" link="Skin.PrevButton.Texture[24]"/>
+												<property name="Skin" link="Skin.PrevButton.Texture"/>
+												<property name="Fonts">
+													<property name="Normal"/>
+													<property name="Hot"/>
+													<property name="Pressed"/>
+													<property name="Disabled"/>
+												</property>
+											</properties>
+										</control>
+										<control class="Button" name="MLF_PlayStatus">
+											<properties>
+												<property name="Bindings">
+													<link Source="prvPlayerState" SourcePin="State" TargetPin="State" Expression="Value = 1"/>
+												</property>
+												<property name="PlaceInfo" anchors="1,0,0,1" margins="24,0,144,0" Size="24,24"/>
+												<property name="Skin" link="Skin.StatusGauge.Texture"/>
+												<property name="FramesPerState" value="1"/>
 												<property name="Fonts">
 													<property name="Normal"/>
 													<property name="Hot"/>
@@ -747,10 +844,26 @@
 													<link Source="acPlayerPlay" SourcePin="Action" TargetPin="Action"/>
 													<link Source="acPlayerPlay" SourcePin="Action" TargetPin="ContextMenu"/>
 													<link Source="acPlayerPlay" SourcePin="Action" TargetPin="Hint"/>
-													<link Source="prvPlayerState" SourcePin="State" TargetPin="State" Expression="Value = 1"/>
 												</property>
 												<property name="PlaceInfo" anchors="1,0,0,1" margins="24,0,120,0" Size="24,24"/>
-												<property name="Skin" link="Skin.PlayButton.Texture[24]"/>
+												<property name="PopupMenu" value="pmQuickOptions"/>
+												<property name="Skin" link="Skin.PlayButton.Texture"/>
+												<property name="Fonts">
+													<property name="Normal"/>
+													<property name="Hot"/>
+													<property name="Pressed"/>
+													<property name="Disabled"/>
+												</property>
+											</properties>
+										</control>
+										<control class="Button" name="MLF_PauseStatus">
+											<properties>
+												<property name="Bindings">
+													<link Source="prvPlayerState" SourcePin="State" TargetPin="State" Expression="Value = 2"/>
+												</property>
+												<property name="PlaceInfo" anchors="1,0,0,1" margins="48,0,120,0" Size="24,24"/>
+												<property name="Skin" link="Skin.StatusGauge.Texture"/>
+												<property name="FramesPerState" value="1"/>
 												<property name="Fonts">
 													<property name="Normal"/>
 													<property name="Hot"/>
@@ -765,10 +878,25 @@
 													<link Source="acPlayerPause" SourcePin="Action" TargetPin="Action"/>
 													<link Source="acPlayerPause" SourcePin="Action" TargetPin="ContextMenu"/>
 													<link Source="acPlayerPause" SourcePin="Action" TargetPin="Hint"/>
-													<link Source="prvPlayerState" SourcePin="State" TargetPin="State" Expression="Value = 2"/>
 												</property>
 												<property name="PlaceInfo" anchors="1,0,0,1" margins="48,0,96,0" Size="24,24"/>
-												<property name="Skin" link="Skin.PauseButton.Texture[24]"/>
+												<property name="Skin" link="Skin.PauseButton.Texture"/>
+												<property name="Fonts">
+													<property name="Normal"/>
+													<property name="Hot"/>
+													<property name="Pressed"/>
+													<property name="Disabled"/>
+												</property>
+											</properties>
+										</control>
+										<control class="Button" name="MLF_StopStatus">
+											<properties>
+												<property name="Bindings">
+													<link Source="acPlayerStop" SourcePin="Flashing" TargetPin="State"/>
+												</property>
+												<property name="PlaceInfo" anchors="1,0,0,1" margins="72,0,96,0" Size="24,24"/>
+												<property name="Skin" link="Skin.StatusGauge.Texture"/>
+												<property name="FramesPerState" value="1"/>
 												<property name="Fonts">
 													<property name="Normal"/>
 													<property name="Hot"/>
@@ -783,10 +911,9 @@
 													<link Source="acPlayerStop" SourcePin="Action" TargetPin="Action"/>
 													<link Source="acPlayerStop" SourcePin="Action" TargetPin="ContextMenu"/>
 													<link Source="acPlayerStop" SourcePin="Action" TargetPin="Hint"/>
-													<link Source="acPlayerStop" SourcePin="Flashing" TargetPin="State"/>
 												</property>
 												<property name="PlaceInfo" anchors="1,0,0,1" margins="72,0,72,0" Size="24,24"/>
-												<property name="Skin" link="Skin.StopButton.Texture[24]"/>
+												<property name="Skin" link="Skin.StopButton.Texture"/>
 												<property name="Fonts">
 													<property name="Normal"/>
 													<property name="Hot"/>
@@ -804,7 +931,23 @@
 													<link Source="acPlayerSeekForward" SourcePin="Action" TargetPin="ActionOnHold"/>
 												</property>
 												<property name="PlaceInfo" anchors="1,0,0,1" margins="96,0,48,0" Size="24,24"/>
-												<property name="Skin" link="Skin.NextButton.Texture[24]"/>
+												<property name="Skin" link="Skin.NextButton.Texture"/>
+												<property name="Fonts">
+													<property name="Normal"/>
+													<property name="Hot"/>
+													<property name="Pressed"/>
+													<property name="Disabled"/>
+												</property>
+											</properties>
+										</control>
+										<control class="Button" name="MLF_RepeatStatus">
+											<properties>
+												<property name="Bindings">
+													<link Source="acPlayerRepeat" SourcePin="State" TargetPin="State"/>
+												</property>
+												<property name="PlaceInfo" anchors="1,0,0,1" margins="128,0,40,0" Size="24,24"/>
+												<property name="Skin" link="Skin.StatusGauge.Texture"/>
+												<property name="FramesPerState" value="1"/>
 												<property name="Fonts">
 													<property name="Normal"/>
 													<property name="Hot"/>
@@ -833,6 +976,22 @@
 												</property>
 											</properties>
 										</control>
+										<control class="Button" name="MLF_ShuffleStatus">
+											<properties>
+												<property name="Bindings">
+													<link Source="acPlayerShuffle" SourcePin="State" TargetPin="State"/>
+												</property>
+												<property name="PlaceInfo" anchors="1,0,0,1" margins="152,0,16,0" Size="24,24"/>
+												<property name="Skin" link="Skin.StatusGauge.Texture"/>
+												<property name="FramesPerState" value="1"/>
+												<property name="Fonts">
+													<property name="Normal"/>
+													<property name="Hot"/>
+													<property name="Pressed"/>
+													<property name="Disabled"/>
+												</property>
+											</properties>
+										</control>
 										<control class="Button" name="MLF_ShuffleButton">
 											<properties>
 												<property name="Bindings">
@@ -850,6 +1009,30 @@
 													<property name="Hot"/>
 													<property name="Pressed"/>
 													<property name="Disabled"/>
+												</property>
+											</properties>
+										</control>
+										<control class="SliderHorizontal" name="MLF_VolumeSlider">
+											<properties>
+												<property name="Bindings">
+													<link Source="prvVolume" SourcePin="Action" TargetPin="Accessibility"/>
+													<link Source="prvVolume" SourcePin="Action" TargetPin="Action"/>
+													<link Source="acPlayerVolumeMute" SourcePin="Action" TargetPin="ContextMenu"/>
+													<link Source="String_VolumeSliderHint" SourcePin="Result" TargetPin="Hint"/>
+												</property>
+												<property name="PlaceInfo" anchors="0,0,1,0" margins="84,0,0,0" Size="116,16"/>
+												<property name="Skin" link="Skin.Slider[2].Skin"/>
+												<property name="Color"/>
+												<property name="ColorProgress"/>
+												<property name="SkinThumb" link="Skin.Slider[2].Thumb"/>
+												<property name="TextLabels">
+													<property name="Font"/>
+													<property name="FontProgress"/>
+													<property name="OverlayColor"/>
+												</property>
+												<property name="Waveform">
+													<property name="Color"/>
+													<property name="ColorProgress"/>
 												</property>
 											</properties>
 										</control>
@@ -871,9 +1054,9 @@
 								</property>
 								<property name="Alignment" value="laClient"/>
 								<property name="Color">
-									<property name="Value" value="4290756543"/>
+									<property name="ID" value="Skin.InactiveWindowEdge.Color"/>
 								</property>
-								<property name="Texture" value="MediaLibraryFormEdge_Top_0.Texture"/>
+								<property name="Texture" link="Textures.Unset"/>
 							</properties>
 						</item>
 						<item class="LayoutTexture" name="MediaLibraryFormEdge_Top_1">
@@ -884,9 +1067,9 @@
 								<property name="Alignment" value="laClient"/>
 								<property name="AlignmentLevel" value="1"/>
 								<property name="Color">
-									<property name="Value" value="4282335039"/>
+									<property name="ID" value="Skin.ActiveWindowEdge.Color"/>
 								</property>
-								<property name="Texture" value="MediaLibraryFormEdge_Top_1.Texture"/>
+								<property name="Texture" link="Textures.Unset"/>
 							</properties>
 						</item>
 						<item class="LayoutTexture" name="MediaLibraryFormEdge_Top_2">
@@ -897,9 +1080,9 @@
 								<property name="Alignment" value="laClient"/>
 								<property name="AlignmentLevel" value="2"/>
 								<property name="Color">
-									<property name="Value" value="4294941465"/>
+									<property name="ID" value="Skin.PrimaryColor"/>
 								</property>
-								<property name="Texture" value="MediaLibraryFormEdge_Top_2.Texture"/>
+								<property name="Texture" link="Textures.Unset"/>
 							</properties>
 						</item>
 					</items>
@@ -917,9 +1100,9 @@
 								</property>
 								<property name="Alignment" value="laClient"/>
 								<property name="Color">
-									<property name="Value" value="4290756543"/>
+									<property name="ID" value="Skin.InactiveWindowEdge.Color"/>
 								</property>
-								<property name="Texture" value="MediaLibraryFormEdge_Bottom_0.Texture"/>
+								<property name="Texture" link="Textures.Unset"/>
 							</properties>
 						</item>
 						<item class="LayoutTexture" name="MediaLibraryFormEdge_Bottom_1">
@@ -930,9 +1113,9 @@
 								<property name="Alignment" value="laClient"/>
 								<property name="AlignmentLevel" value="1"/>
 								<property name="Color">
-									<property name="Value" value="4282335039"/>
+									<property name="ID" value="Skin.ActiveWindowEdge.Color"/>
 								</property>
-								<property name="Texture" value="MediaLibraryFormEdge_Bottom_1.Texture"/>
+								<property name="Texture" link="Textures.Unset"/>
 							</properties>
 						</item>
 						<item class="LayoutTexture" name="MediaLibraryFormEdge_Bottom_2">
@@ -943,9 +1126,9 @@
 								<property name="Alignment" value="laClient"/>
 								<property name="AlignmentLevel" value="2"/>
 								<property name="Color">
-									<property name="Value" value="4294941465"/>
+									<property name="ID" value="Skin.PrimaryColor"/>
 								</property>
-								<property name="Texture" value="MediaLibraryFormEdge_Bottom_2.Texture"/>
+								<property name="Texture" link="Textures.Unset"/>
 							</properties>
 						</item>
 					</items>
@@ -963,9 +1146,9 @@
 								</property>
 								<property name="Alignment" value="laClient"/>
 								<property name="Color">
-									<property name="Value" value="4290756543"/>
+									<property name="ID" value="Skin.InactiveWindowEdge.Color"/>
 								</property>
-								<property name="Texture" value="MediaLibraryFormEdge_Left_0.Texture"/>
+								<property name="Texture" link="Textures.Unset"/>
 							</properties>
 						</item>
 						<item class="LayoutTexture" name="MediaLibraryFormEdge_Left_1">
@@ -976,9 +1159,9 @@
 								<property name="Alignment" value="laClient"/>
 								<property name="AlignmentLevel" value="1"/>
 								<property name="Color">
-									<property name="Value" value="4282335039"/>
+									<property name="ID" value="Skin.ActiveWindowEdge.Color"/>
 								</property>
-								<property name="Texture" value="MediaLibraryFormEdge_Left_1.Texture"/>
+								<property name="Texture" link="Textures.Unset"/>
 							</properties>
 						</item>
 						<item class="LayoutTexture" name="MediaLibraryFormEdge_Left_2">
@@ -989,9 +1172,9 @@
 								<property name="Alignment" value="laClient"/>
 								<property name="AlignmentLevel" value="2"/>
 								<property name="Color">
-									<property name="Value" value="4294941465"/>
+									<property name="ID" value="Skin.PrimaryColor"/>
 								</property>
-								<property name="Texture" value="MediaLibraryFormEdge_Left_2.Texture"/>
+								<property name="Texture" link="Textures.Unset"/>
 							</properties>
 						</item>
 					</items>
@@ -1009,9 +1192,9 @@
 								</property>
 								<property name="Alignment" value="laClient"/>
 								<property name="Color">
-									<property name="Value" value="4290756543"/>
+									<property name="ID" value="Skin.InactiveWindowEdge.Color"/>
 								</property>
-								<property name="Texture" value="MediaLibraryFormEdge_Right_0.Texture"/>
+								<property name="Texture" link="Textures.Unset"/>
 							</properties>
 						</item>
 						<item class="LayoutTexture" name="MediaLibraryFormEdge_Right_1">
@@ -1022,9 +1205,9 @@
 								<property name="Alignment" value="laClient"/>
 								<property name="AlignmentLevel" value="1"/>
 								<property name="Color">
-									<property name="Value" value="4282335039"/>
+									<property name="ID" value="Skin.ActiveWindowEdge.Color"/>
 								</property>
-								<property name="Texture" value="MediaLibraryFormEdge_Right_1.Texture"/>
+								<property name="Texture" link="Textures.Unset"/>
 							</properties>
 						</item>
 						<item class="LayoutTexture" name="MediaLibraryFormEdge_Right_2">
@@ -1035,9 +1218,9 @@
 								<property name="Alignment" value="laClient"/>
 								<property name="AlignmentLevel" value="2"/>
 								<property name="Color">
-									<property name="Value" value="4294941465"/>
+									<property name="ID" value="Skin.PrimaryColor"/>
 								</property>
-								<property name="Texture" value="MediaLibraryFormEdge_Right_2.Texture"/>
+								<property name="Texture" link="Textures.Unset"/>
 							</properties>
 						</item>
 					</items>
@@ -1057,7 +1240,7 @@
 						</property>
 						<property name="Alignment" value="laClient"/>
 						<property name="Color"/>
-						<property name="Texture" value="MediaLibraryFormShadow_Top_0.Texture"/>
+						<property name="Texture" link="Textures.Transparent"/>
 					</properties>
 				</item>
 				<item class="LayoutTexture" name="MediaLibraryFormShadow_Top_1">
@@ -1068,7 +1251,7 @@
 						<property name="Alignment" value="laClient"/>
 						<property name="AlignmentLevel" value="1"/>
 						<property name="Color"/>
-						<property name="Texture" value="MediaLibraryFormShadow_Top_1.Texture"/>
+						<property name="Texture" link="Skin.FormShadow.Top"/>
 					</properties>
 				</item>
 			</items>
@@ -1087,7 +1270,7 @@
 						</property>
 						<property name="Alignment" value="laClient"/>
 						<property name="Color"/>
-						<property name="Texture" value="MediaLibraryFormShadow_Bottom_0.Texture"/>
+						<property name="Texture" link="Textures.Transparent"/>
 					</properties>
 				</item>
 				<item class="LayoutTexture" name="MediaLibraryFormShadow_Bottom_1">
@@ -1098,7 +1281,7 @@
 						<property name="Alignment" value="laClient"/>
 						<property name="AlignmentLevel" value="1"/>
 						<property name="Color"/>
-						<property name="Texture" value="MediaLibraryFormShadow_Bottom_1.Texture"/>
+						<property name="Texture" link="Skin.FormShadow.Bottom"/>
 					</properties>
 				</item>
 			</items>
@@ -1117,7 +1300,7 @@
 						</property>
 						<property name="Alignment" value="laClient"/>
 						<property name="Color"/>
-						<property name="Texture" value="MediaLibraryFormShadow_Left_0.Texture"/>
+						<property name="Texture" link="Textures.Transparent"/>
 					</properties>
 				</item>
 				<item class="LayoutTexture" name="MediaLibraryFormShadow_Left_1">
@@ -1128,7 +1311,7 @@
 						<property name="Alignment" value="laClient"/>
 						<property name="AlignmentLevel" value="1"/>
 						<property name="Color"/>
-						<property name="Texture" value="MediaLibraryFormShadow_Left_1.Texture"/>
+						<property name="Texture" link="Skin.FormShadow.Left"/>
 					</properties>
 				</item>
 			</items>
@@ -1147,7 +1330,7 @@
 						</property>
 						<property name="Alignment" value="laClient"/>
 						<property name="Color"/>
-						<property name="Texture" value="MediaLibraryFormShadow_Right_0.Texture"/>
+						<property name="Texture" link="Textures.Transparent"/>
 					</properties>
 				</item>
 				<item class="LayoutTexture" name="MediaLibraryFormShadow_Right_1">
@@ -1158,7 +1341,7 @@
 						<property name="Alignment" value="laClient"/>
 						<property name="AlignmentLevel" value="1"/>
 						<property name="Color"/>
-						<property name="Texture" value="MediaLibraryFormShadow_Right_1.Texture"/>
+						<property name="Texture" link="Skin.FormShadow.Right"/>
 					</properties>
 				</item>
 			</items>

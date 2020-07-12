@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<imageSet>
-	<image dpi="96">DropWheel.Texture</image>
-	<image dpi="120">DropWheel.Texture-120</image>
-	<image dpi="144">DropWheel.Texture-144</image>
-	<image dpi="192">DropWheel.Texture-192</image>
-	<image dpi="384">DropWheel.Texture-384</image>
-</imageSet>

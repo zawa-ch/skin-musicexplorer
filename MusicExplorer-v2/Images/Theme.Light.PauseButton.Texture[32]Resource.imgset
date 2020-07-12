@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<imageSet>
-	<image dpi="96">Theme.Light.PauseButton.Texture[32]Resource</image>
-	<image dpi="120">Theme.Light.PauseButton.Texture[32]Resource-120</image>
-	<image dpi="144">Theme.Light.PauseButton.Texture[32]Resource-144</image>
-	<image dpi="192">Theme.Light.PauseButton.Texture[32]Resource-192</image>
-	<image dpi="384">Theme.Light.PauseButton.Texture[32]Resource-384</image>
-</imageSet>

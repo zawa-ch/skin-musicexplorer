@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<imageSet>
-	<image dpi="96">PlaylistFormShadow_Bottom_1.Texture</image>
-	<image dpi="120">PlaylistFormShadow_Bottom_1.Texture-120</image>
-	<image dpi="144">PlaylistFormShadow_Bottom_1.Texture-144</image>
-	<image dpi="192">PlaylistFormShadow_Bottom_1.Texture-192</image>
-	<image dpi="384">PlaylistFormShadow_Bottom_1.Texture-384</image>
-</imageSet>
