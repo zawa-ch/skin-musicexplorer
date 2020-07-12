@@ -16,8 +16,7 @@ AIMP公式サイトから最新のバージョンをダウンロードできま�
 
 - v1.12  
   ![v1.12 screenshot](assets/Thumb.png)  
-- v2.00 alpha 50  
-  (Playing: Madeon - You're On (feat. Kyan))  
+- v2.00 alpha 100  
   ![v2.00 alpha50 screenshot](assets/v2-thumbnail0.png)  
 
 ## 開発環境
